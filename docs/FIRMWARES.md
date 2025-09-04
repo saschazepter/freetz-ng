@@ -150,7 +150,7 @@ Currently supported devices and firmwares
     - 257.07.30 rev99334 {ALL} [PSQ19P2NL4]
     - 257.07.58 rev108018 {ALL} [MOVE21NL1]
     - 257.08.02 rev117982 {ALL} [Smart24 P1 NL1]
-    - 257.08.10 rev122076 {ALL} [Smart24 P2] (Labor)
+    - 257.08.20 rev123884 {ALL} [Smart24 P2]
   * __Fritz!Box 5590 Fiber__
     - 272.07.30 rev101793 {ALL} [PSQ19P2NL4]
     - 272.07.58 rev109907 {ALL} [MOVE21NL1]
