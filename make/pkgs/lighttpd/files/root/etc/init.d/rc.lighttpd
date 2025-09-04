@@ -9,8 +9,16 @@ DAEMON_ENV='LD_PRELOAD='
 [ -r /etc/options.cfg ] && . /etc/options.cfg
 
 
+validate_conf() {
+	$DAEMON_BIN -tt -f $DAEMON_CONFIG >/dev/null 2>&1 && return
+	echo "$DAEMON_CONFIG validation failed:"
+	$DAEMON_BIN -tt -f $DAEMON_CONFIG
+	exit $?
+}
+
 config() {
 	modlib_config
+	validate_conf
 	rm -f /var/log/${DAEMON}_*.log 2>/dev/null
 	modunreg status lighttpd lighttpd-log
 	if [ "$LIGHTTPD_LOGGING" = "yes" ]; then
@@ -23,21 +31,12 @@ config() {
 	fi
 }
 
-validate_conf() {
-	$DAEMON -tt -f $DAEMON_CONFIG >/dev/null || {
-		echo 1>&2 "$DAEMON_CONFIG validation failed"
-		return 1
-	}
-}
-
 start() {
-	validate_conf || exit 1
-	modlib_startdaemon $DAEMON -f $DAEMON_CONFIG
+	modlib_startdaemon $DAEMON_BIN -f $DAEMON_CONFIG
 }
 
 reload() {
-	validate_conf || exit 1
-	killall -USR1 $DAEMON # HUP reopens the log !
+	killall -USR1 $DAEMON_BIN # HUP reopens the log !
 }
 
 case $1 in
