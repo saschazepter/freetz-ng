@@ -4,7 +4,7 @@ $(PKG)_HASH:=52f25811f00dfe714e0bcf122358ee0ad74e25db3ad230d5a4196e7a62633f27
 $(PKG)_SITE:=https://www.vervest.org/htp/archive/c
 ### WEBSITE:=https://www.vervest.org/htp/
 ### MANPAGE:=https://www.vervest.org/htp/?FAQ
-### CHANGES:=https://github.com/twekkel/htpdate/blob/master/Changelog
+### CHANGES:=https://github.com/twekkel/htpdate/releases
 ### CVSREPO:=https://github.com/twekkel/htpdate
 ### SUPPORT:=fda77
 
