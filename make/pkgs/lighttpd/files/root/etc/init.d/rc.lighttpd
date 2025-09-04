@@ -10,9 +10,9 @@ DAEMON_ENV='LD_PRELOAD='
 
 
 validate_conf() {
-	$DAEMON_BIN -tt -f $DAEMON_CONFIG >/dev/null 2>&1 && return
+	$DAEMON_BIN -tt -f "$DAEMON_CONFIG" >/dev/null 2>&1 && return
 	echo "$DAEMON_CONFIG validation failed:"
-	$DAEMON_BIN -tt -f $DAEMON_CONFIG
+	$DAEMON_BIN -tt -f "$DAEMON_CONFIG"
 	exit $?
 }
 
@@ -32,7 +32,7 @@ config() {
 }
 
 start() {
-	modlib_startdaemon $DAEMON_BIN -f $DAEMON_CONFIG
+	modlib_startdaemon $DAEMON_BIN -f "$DAEMON_CONFIG"
 }
 
 reload() {
