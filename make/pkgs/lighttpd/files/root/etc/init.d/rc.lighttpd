@@ -18,7 +18,7 @@ validate_conf() {
 
 config() {
 	modlib_config
-	validate_conf
+	[ "$LIGHTTPD_VALIDATION" = "yes" ] && validate_conf
 	rm -f /var/log/${DAEMON}_*.log 2>/dev/null
 	modunreg status lighttpd lighttpd-log
 	if [ "$LIGHTTPD_LOGGING" = "yes" ]; then
