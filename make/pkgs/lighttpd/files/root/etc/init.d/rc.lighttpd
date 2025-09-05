@@ -1,7 +1,7 @@
 #!/bin/sh
 
 DAEMON=lighttpd
-DAEMON_LONG_NAME="lighttpd web server"
+DAEMON_LONG_NAME="Lighttpd"
 DAEMON_CONFIG="/mod/etc/$DAEMON/$DAEMON.conf"
 DAEMON_ENV='LD_PRELOAD='
 . /etc/init.d/modlibrc
