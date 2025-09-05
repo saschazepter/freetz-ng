@@ -11,7 +11,7 @@ DAEMON_ENV='LD_PRELOAD='
 
 validate_conf() {
 	$DAEMON_BIN -tt -f "$DAEMON_CONFIG" >/dev/null 2>&1 && return
-	echo "$DAEMON_CONFIG validation failed:"
+	echo "$DAEMON_LONG_NAME: $DAEMON_CONFIG validation ... failed."
 	$DAEMON_BIN -tt -f "$DAEMON_CONFIG"
 	exit $?
 }
