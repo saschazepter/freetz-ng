@@ -83,11 +83,16 @@ case $1 in
 	restart)
 		modlib_restart
 		;;
+	validate)
+		modlib_config
+		$DAEMON_BIN -tt -f "$DAEMON_CONFIG"
+		exit $?
+		;;
 	status)
 		modlib_status
 		;;
 	*)
-		echo "Usage: $0 [load|unload|start|stop|reload|restart|status]" 1>&2
+		echo "Usage: $0 [load|unload|start|stop|reload|restart|validate|status]" 1>&2
 		exit 1
 		;;
 esac
