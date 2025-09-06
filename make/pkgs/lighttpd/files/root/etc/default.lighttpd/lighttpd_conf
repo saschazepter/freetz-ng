@@ -49,6 +49,13 @@ server.username = "wwwrun"
 server.groupname = "wwwrun"
 EOF
 
+sockets="0.0.0.0"
+[ "$LIGHTTPD_IPV6_SUPPORT" == "yes" ] && sockets="$sockets [::]"
+
+for socket in $sockets; do
+	echo '$SERVER["socket"] == "'"$socket:$LIGHTTPD_PORT"'" { }'
+done
+
 ! [ "$LIGHTTPD_HTTP2_ENABLED" == "yes" ] && echo 'server.feature-flags += ("server.h2proto" => "disable")'
 
 out="connection.kbytes-per-second = $LIGHTTPD_LIMITCONN\nserver.kbytes-per-second = $LIGHTTPD_LIMITSRV"
@@ -106,18 +113,15 @@ if [ "$LIGHTTPD_SSLENABLE" = "enable" ]; then
 			virtsrv="${LIGHTTPD_SSLVIRT}"
 		fi
 
-		if [ "$LIGHTTPD_IPV6_SUPPORT" == "yes" ]; then
-			lighttpd_socket="[::]:$LIGHTTPD_SSLPORT"
-		else
-			lighttpd_socket="*:$LIGHTTPD_SSLPORT"
-		fi
-		echo '$SERVER["socket"] == "'"$lighttpd_socket"'" {'
-		echo 'ssl.engine = "enable"'
-		if [ -n "$virtsrv" ]; then
-			virthost_conf "$virtsrv"
-			echo 'else { url.access-deny = ( "" ) }'
-		fi
-		echo '}'
+		for socket in $sockets; do
+		echo '$SERVER["socket"] == "'"$socket:$LIGHTTPD_SSLPORT"'" {'
+			echo 'ssl.engine = "enable"'
+			if [ -n "$virtsrv" ]; then
+				virthost_conf "$virtsrv"
+				echo 'else { url.access-deny = ( "" ) }'
+			fi
+			echo '}'
+		done
 
 		if [ "$LIGHTTPD_SSLREDIRECT" = "yes" ]; then
 			echo 'server.modules += ( "mod_redirect" )'
