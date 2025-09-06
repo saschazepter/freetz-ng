@@ -46,7 +46,7 @@ EOF
 
 if [ -d /proc/sys/net/ipv6 ] || find /lib/modules/*-*/kernel/net/ipv6 -maxdepth 1 -name ipv6.ko >/dev/null 2>&1; then
 	cgi_print_checkbox_p "ipv6_support" "$LIGHTTPD_IPV6_SUPPORT" \
-	  "$(lang de:"Aktiviere IPv6 Unterst&uuml;tzung" en:"Enable IPv6 support")"
+	  "$(lang de:"Aktiviere zus&auml;tzliche IPv6 Unterst&uuml;tzung" en:"Enable additional IPv6 support")"
 fi
 
 cgi_print_checkbox_p "validation" "$LIGHTTPD_VALIDATION" \
