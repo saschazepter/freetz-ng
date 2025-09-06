@@ -67,12 +67,12 @@ fi
 if [ "$FREETZ_PACKAGE_LIGHTTPD_MOD_OPENSSL" = "y" ]; then
 	echo 'server.modules += ( "mod_openssl" )'
 fi
-#if [ "$FREETZ_PACKAGE_LIGHTTPD_MOD_GNUTLS" = "y" ]; then
-#	echo 'server.modules += ( "mod_gnutls" )'
-#fi
-#if [ "$FREETZ_PACKAGE_LIGHTTPD_MOD_MBEDTLS" = "y" ]; then
-#	echo 'server.modules += ( "mod_mbedtls" )'
-#fi
+if [ "$FREETZ_PACKAGE_LIGHTTPD_MOD_GNUTLS" = "y" ]; then
+	echo 'server.modules += ( "mod_gnutls" )'
+fi
+if [ "$FREETZ_PACKAGE_LIGHTTPD_MOD_MBEDTLS" = "y" ]; then
+	echo 'server.modules += ( "mod_mbedtls" )'
+fi
 if [ "$LIGHTTPD_SSLENABLE" = "enable" ]; then
 	echo 'ssl.pemfile = "/tmp/flash/lighttpd/crt.pem"'
 	# (setting ssl.verifyclient.ca-file is for client certificate verification;
