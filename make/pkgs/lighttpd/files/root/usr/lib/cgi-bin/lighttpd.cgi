@@ -52,7 +52,7 @@ fi
 cgi_print_checkbox_p "validation" "$LIGHTTPD_VALIDATION" \
   "$(lang de:"Konfiguartion vor dem Starten pr&uuml;fen" en:"Validate configuration before start")"
 
-dirs=$LIGHTTPD_DOCROOT
+dirs=${LIGHTTPD_DOCROOT%/}
 [ "$LIGHTTPD_CHROOT" = "yes" ] && dirs="$dirs/websites"
 [ "$LIGHTTPD_VIRTHOST" = "yes" ] && dirs="$dirs/default</li><li>$dirs/$LIGHTTPD_VIRTHOSTTYPE"
 dirs="<ul><li>$dirs</li></ul>"
