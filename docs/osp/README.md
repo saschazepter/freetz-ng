@@ -441,7 +441,6 @@ Content: [FritzBox](#fritzbox) - [FritzDect](#fritzdect) - [FritzPowerline](#fri
   * fritzbox-7530-ax/
     - [source-files-FRITZ.Box_7530_AX-07.57.tar.gz](https://osp.avm.de/fritzbox/fritzbox-7530-ax/source-files-FRITZ.Box_7530_AX-07.57.tar.gz)
     - [source-files-FRITZ.Box_7530_AX-07.81.tar.gz](https://osp.avm.de/fritzbox/fritzbox-7530-ax/source-files-FRITZ.Box_7530_AX-07.81.tar.gz)
-    - [source-files-FRITZ.Box_7530_AX-brcma9-07.56.tar.gz](https://osp.avm.de/fritzbox/fritzbox-7530-ax/source-files-FRITZ.Box_7530_AX-brcma9-07.56.tar.gz)
     - [source-files-FRITZ.Box_7530_AX-brcma9-07.80.tar.gz](https://osp.avm.de/fritzbox/fritzbox-7530-ax/source-files-FRITZ.Box_7530_AX-brcma9-07.80.tar.gz)
     - [source-files-FRITZ.Box_7530_AX-brcma9-08.00.tar.gz](https://osp.avm.de/fritzbox/fritzbox-7530-ax/source-files-FRITZ.Box_7530_AX-brcma9-08.00.tar.gz)
     - [source-files-FRITZ.Box_7530_AX-brcma9-08.02.tar.gz](https://osp.avm.de/fritzbox/fritzbox-7530-ax/source-files-FRITZ.Box_7530_AX-brcma9-08.02.tar.gz)
