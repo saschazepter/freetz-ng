@@ -114,7 +114,7 @@ if [ "$LIGHTTPD_SSLENABLE" = "enable" ]; then
 		fi
 
 		for socket in $sockets; do
-		echo '$SERVER["socket"] == "'"$socket:$LIGHTTPD_SSLPORT"'" {'
+			echo '$SERVER["socket"] == "'"$socket:$LIGHTTPD_SSLPORT"'" {'
 			echo 'ssl.engine = "enable"'
 			if [ -n "$virtsrv" ]; then
 				virthost_conf "$virtsrv"
@@ -131,7 +131,7 @@ if [ "$LIGHTTPD_SSLENABLE" = "enable" ]; then
 				echo '$HTTP["host"] =~ "^([^:]+)(?:\:[0-9]+)?$" {'
 				echo 'url.redirect = ( "" => "https://%1'"${REDIRECT_PORT_SUFFIX}"'${url.path}${qsa}" )'
 			else
-				echo 'url.redirect = ("" => "https://${url.authority}'"${REDIRECT_PORT_SUFFIX}"'${url.path}${qsa}")'
+				echo 'url.redirect = ( "" => "https://${url.authority}'"${REDIRECT_PORT_SUFFIX}"'${url.path}${qsa}")'
 			fi
 			if [ -n "$virtsrv" ]; then
 				virthost_conf "$virtsrv"
