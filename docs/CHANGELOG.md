@@ -56,7 +56,7 @@ Latest changes
 
   - Host tools:
     * automake 1.18
-    * ca-bundle 2025-08-12
+    * ca-bundle 2025-09-09
     * cmake 4.1.1
     * dtc 1.7.2
     * fakeroot 1.37.1.2
@@ -103,7 +103,7 @@ Latest changes
     * Atop 2.11.1
     * BIND 9.11.37/9.20.11
     * bvi 1.5.0
-    * CA-bundle 2025-07-15
+    * CA-bundle 2025-09-09
     * Curl 8.12.1/8.15.0
     * Dante 1.4.4
     * dehydrated 0.7.2
