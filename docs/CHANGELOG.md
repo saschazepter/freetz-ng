@@ -115,6 +115,7 @@ Latest changes
     * Git 2.50.1
     * HAProxy 2.6.22
     * htop 1.0.3/3.4.1
+    * htpdate 2.0.1
     * ImageMagick 7.1.0-62/7.1.2-2
     * iptables 1.4.11.1/1.4.21/1.6.2/1.8.11
     * jq 1.8.1
