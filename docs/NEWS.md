@@ -5,8 +5,8 @@
     von AVM genutzte zu sein! Durch autofix bzw oldconfig werden keine neue oder unbekannte Optionen erkannt.<br>
     Zu den ganzen Kernel der 8.10-Labor fehlen nach wie vor die Sourcen von AVM.<br>
     - [Sourcecode von AVM anfordern](https://github.com/orgs/Freetz-NG/discussions/134)<br>
-    - [osp.avm.de](https://osp.avm.de)<br>
-    - [freetz-ng.github.io](https://freetz-ng.github.io/freetz-ng/osp/)<br>
+    - [osp.avm.de/](https://osp.avm.de)<br>
+    - [freetz-ng.github.io/freetz-ng/osp/](https://freetz-ng.github.io/freetz-ng/osp/)<br>
 
   * __[2025-08-07](#2025-08-07)__<a id='2025-08-07'></a><br>
     Neue "Sicherheitsinfos zu Updates" auf avm.de wurden heute veröffentlicht.<br>
