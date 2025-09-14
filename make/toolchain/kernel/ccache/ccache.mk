@@ -1,7 +1,12 @@
 CCACHE_KERNEL_VERSION:=4.11.3
+# Since cmake 4.12 is cmake 3.18 required, ubuntu 24lts has cmake 3.16.3
 CCACHE_KERNEL_SOURCE:=ccache-$(CCACHE_KERNEL_VERSION).tar.xz
 CCACHE_KERNEL_HASH:=d5a340e199977b7b1e89c0add794132c977fdc2ecc7ca5451e03d43627a1b1be
 CCACHE_KERNEL_SITE:=https://github.com/ccache/ccache/releases/download/v$(CCACHE_KERNEL_VERSION)
+### WEBSITE:=https://ccache.dev/
+### MANPAGE:=https://ccache.dev/documentation.html
+### CHANGES:=https://ccache.dev/releasenotes.html
+### CVSREPO:=https://github.com/ccache/ccache
 
 CCACHE_KERNEL_DIR:=$(KERNEL_TOOLCHAIN_DIR)/ccache-$(CCACHE_KERNEL_VERSION)
 CCACHE_KERNEL_MAKE_DIR:=$(MAKE_DIR)/toolchain/kernel/ccache
