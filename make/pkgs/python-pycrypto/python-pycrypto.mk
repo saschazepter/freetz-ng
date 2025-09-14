@@ -6,7 +6,6 @@ $(PKG)_SITE:=https://www.pycrypto.org/pub/dlitz/crypto/pycrypto/,https://ftp.dli
 ### MANPAGE:=https://www.pycrypto.org/doc/
 ### CHANGES:=https://github.com/pycrypto/pycrypto/tags
 ### CVSREPO:=https://github.com/pycrypto/pycrypto
-### SUPPORT:=X
 
 $(PKG)_DEPENDS_ON += python gmp
 $(PKG)_DEPENDS_ON += python2-host
