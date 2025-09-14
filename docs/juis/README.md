@@ -66,7 +66,7 @@ Content: [FOS-Release](#fos-release) - [FOS-Labor](#fos-labor) - [FOS-Inhaus](#f
   - HWR 253: [FRITZ.Repeater_6000-07.58.image](http://download.avm.de/fritzwlan/fritzrepeater-6000/deutschland/fritz.os/FRITZ.Repeater_6000-07.58.image)
   - HWR 254: [FRITZ.Box_6820v3_LTE-07.59.image](http://download.avm.de/fritzbox/fritzbox-6820-lte-v3/deutschland/fritz.os/FRITZ.Box_6820v3_LTE-07.59.image)
   - HWR 256: [FRITZ.Box_7530_AX-08.20.image](http://download.avm.de/fritzbox/fritzbox-7530-ax/deutschland/fritz.os/FRITZ.Box_7530_AX-08.20.image)
-  - HWR 257: [FRITZ.Box_5530_Fiber-08.02.image](http://download.avm.de/fritzbox/fritzbox-5530-fiber/deutschland/fritz.os/FRITZ.Box_5530_Fiber-08.02.image)
+  - HWR 257: [FRITZ.Box_5530_Fiber-08.20.image](http://download.avm.de/fritzbox/fritzbox-5530-fiber/deutschland/fritz.os/FRITZ.Box_5530_Fiber-08.20.image)
   - HWR 258: [FRITZ.Box_6850_5G-08.03.image](http://download.avm.de/fritzbox/fritzbox-6850-5g/deutschland/fritz.os/FRITZ.Box_6850_5G-08.03.image)
   - HWR 259: [FRITZ.Box_7590_AX-08.20.image](http://download.avm.de/fritzbox/fritzbox-7590-ax/deutschland/fritz.os/FRITZ.Box_7590_AX-08.20.image)
   - HWR 260: [FRITZ.Box_7583_VDSL-08.20.image](http://download.avm.de/fritzbox/fritzbox-7583-vdsl/deutschland/fritz.os/FRITZ.Box_7583_VDSL-08.20.image)
@@ -83,6 +83,7 @@ Content: [FOS-Release](#fos-release) - [FOS-Labor](#fos-labor) - [FOS-Inhaus](#f
 
 ### FOS-Labor
   - HWR 226: [FRITZ.Box_7590-08.10-122720-LabBETA.image](http://download.example.com/labor/Smart24P2/7590/FRITZ.Box_7590-08.10-122720-LabBETA.image)
+  - HWR 227: [FRITZ.Box_4040-07.59.image](http://download.avm.de/firmware/4040/347831279831289213893218/FRITZ.Box_4040-07.59.image)
   - HWR 236: [FRITZ.Box_7530-08.10-123914-LabBETA.image](http://download.example.com/labor/Smart24P2/7530/FRITZ.Box_7530-08.10-123914-LabBETA.image)
   - HWR 239: [FRITZ.Box_7583-07.39-103075-LabBETA.image](http://download.example.com/labor/MOVE21/7583/FRITZ.Box_7583-07.39-103075-LabBETA.image)
   - HWR 247: [FRITZ.Box_7520-08.10-123542-LabBETA.image](http://download.example.com/labor/Smart24P2/7520/FRITZ.Box_7520-08.10-123542-LabBETA.image)
