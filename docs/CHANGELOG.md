@@ -104,7 +104,7 @@ Latest changes
     * BIND 9.11.37/9.20.11
     * bvi 1.5.0
     * CA-bundle 2025-09-09
-    * Curl 8.12.1/8.15.0
+    * Curl 8.12.1/8.16.0
     * Dante 1.4.4
     * dehydrated 0.7.2
     * Dnsmasq 2.80/2.91

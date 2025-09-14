@@ -1,8 +1,8 @@
-$(call PKG_INIT_BIN, $(if $(FREETZ_LIB_libcurl_WITH_VERSION_ABANDON),8.12.1,8.15.0))
+$(call PKG_INIT_BIN, $(if $(FREETZ_LIB_libcurl_WITH_VERSION_ABANDON),8.12.1,8.16.0))
 $(PKG)_LIB_VERSION:=4.8.0
 $(PKG)_SOURCE:=$(pkg)-$($(PKG)_VERSION).tar.xz
 $(PKG)_HASH_ABANDON:=0341f1ed97a26c811abaebd37d62b833956792b7607ea3f15d001613c76de202
-$(PKG)_HASH_CURRENT:=6cd0a8a5b126ddfda61c94dc2c3fc53481ba7a35461cf7c5ab66aa9d6775b609
+$(PKG)_HASH_CURRENT:=40c8cddbcb6cc6251c03dea423a472a6cea4037be654ba5cf5dec6eb2d22ff1d
 $(PKG)_HASH:=$($(PKG)_HASH_$(if $(FREETZ_LIB_libcurl_WITH_VERSION_ABANDON),ABANDON,CURRENT))
 $(PKG)_SITE:=https://curl.se/download,https://curl.haxx.se/download
 ### WEBSITE:=https://curl.se/
