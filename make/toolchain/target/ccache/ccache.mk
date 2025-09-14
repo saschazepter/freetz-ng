@@ -1,5 +1,5 @@
 CCACHE_VERSION:=4.11.3
-# Since cmake 4.12 is cmake 3.18 required, ubuntu 24lts has cmake 3.16.3
+# Since cmake 4.12 is cmake 3.18 required, ubuntu 20lts has cmake 3.16.3
 CCACHE_SOURCE:=ccache-$(CCACHE_VERSION).tar.xz
 CCACHE_HASH:=d5a340e199977b7b1e89c0add794132c977fdc2ecc7ca5451e03d43627a1b1be
 CCACHE_SITE:=https://github.com/ccache/ccache/releases/download/v$(CCACHE_VERSION)
