@@ -120,7 +120,7 @@ Latest changes
     * iptables 1.4.11.1/1.4.21/1.6.2/1.8.11
     * jq 1.8.1
     * LCD4linux eadf4603
-    * Lighttpd 1.4.81
+    * Lighttpd 1.4.82
     * Lua 5.1.5/5.4.8
     * mc (Midnight Commander) 4.8.31/4.8.33
     * Minicom 2.10
