@@ -135,8 +135,8 @@ Content: [FritzBox](#fritzbox) - [FritzPowerline](#fritzpowerline) - [FritzSmart
     - deutschland: [FRITZ.Box_7490-07.60.image](https://download.avm.de/fritzbox/fritzbox-7490/deutschland/fritz.os/FRITZ.Box_7490-07.60.image)
     - other: [FRITZ.Box_7490-07.60.image](https://download.avm.de/fritzbox/fritzbox-7490/other/fritz.os/FRITZ.Box_7490-07.60.image)
   * fritzbox-7510/
-    - deutschland: [FRITZ.Box_7510-08.02.image](https://download.avm.de/fritzbox/fritzbox-7510/deutschland/fritz.os/FRITZ.Box_7510-08.02.image)
-    - other: [FRITZ.Box_7510-08.02.image](https://download.avm.de/fritzbox/fritzbox-7510/other/fritz.os/FRITZ.Box_7510-08.02.image)
+    - deutschland: [FRITZ.Box_7510-08.20.image](https://download.avm.de/fritzbox/fritzbox-7510/deutschland/fritz.os/FRITZ.Box_7510-08.20.image)
+    - other: [FRITZ.Box_7510-08.20.image](https://download.avm.de/fritzbox/fritzbox-7510/other/fritz.os/FRITZ.Box_7510-08.20.image)
   * fritzbox-7520/
     - deutschland: [FRITZ.Box_7520-08.02.image](https://download.avm.de/fritzbox/fritzbox-7520/deutschland/fritz.os/FRITZ.Box_7520-08.02.image)
   * fritzbox-7520-B/
@@ -235,8 +235,8 @@ Content: [FritzBox](#fritzbox) - [FritzPowerline](#fritzpowerline) - [FritzSmart
   * fritzmesh-set-4200/
     - other: [FRITZ.Repeater_3000_AX-08.03.image](https://download.avm.de/fritzwlan/fritzmesh-set-4200/other/fritz.os/FRITZ.Repeater_3000_AX-08.03.image)
   * fritzrepeater-1200/
-    - deutschland: [FRITZ.Repeater_1200-07.58.image](https://download.avm.de/fritzwlan/fritzrepeater-1200/deutschland/fritz.os/FRITZ.Repeater_1200-07.58.image)
-    - other: [FRITZ.Repeater_1200-07.58.image](https://download.avm.de/fritzwlan/fritzrepeater-1200/other/fritz.os/FRITZ.Repeater_1200-07.58.image)
+    - deutschland: [FRITZ.Repeater_1200-08.20.image](https://download.avm.de/fritzwlan/fritzrepeater-1200/deutschland/fritz.os/FRITZ.Repeater_1200-08.20.image)
+    - other: [FRITZ.Repeater_1200-08.20.image](https://download.avm.de/fritzwlan/fritzrepeater-1200/other/fritz.os/FRITZ.Repeater_1200-08.20.image)
   * fritzrepeater-1200-ax/
     - deutschland: [FRITZ.Repeater_1200_AX-07.58.image](https://download.avm.de/fritzwlan/fritzrepeater-1200-ax/deutschland/fritz.os/FRITZ.Repeater_1200_AX-07.58.image)
     - other: [FRITZ.Repeater_1200_AX-07.58.image](https://download.avm.de/fritzwlan/fritzrepeater-1200-ax/other/fritz.os/FRITZ.Repeater_1200_AX-07.58.image)
@@ -246,6 +246,9 @@ Content: [FritzBox](#fritzbox) - [FritzPowerline](#fritzpowerline) - [FritzSmart
   * fritzrepeater-2400/
     - deutschland: [FRITZ.Repeater_2400-07.58.image](https://download.avm.de/fritzwlan/fritzrepeater-2400/deutschland/fritz.os/FRITZ.Repeater_2400-07.58.image)
     - other: [FRITZ.Repeater_2400-07.58.image](https://download.avm.de/fritzwlan/fritzrepeater-2400/other/fritz.os/FRITZ.Repeater_2400-07.58.image)
+  * fritzrepeater-2700/
+    - deutschland: [FRITZ.Repeater_2700-08.06.image](https://download.avm.de/fritzwlan/fritzrepeater-2700/deutschland/fritz.os/FRITZ.Repeater_2700-08.06.image)
+    - other: [FRITZ.Repeater_2700-08.06.image](https://download.avm.de/fritzwlan/fritzrepeater-2700/other/fritz.os/FRITZ.Repeater_2700-08.06.image)
   * fritzrepeater-3000/
     - deutschland: [FRITZ.Repeater_3000-07.58.image](https://download.avm.de/fritzwlan/fritzrepeater-3000/deutschland/fritz.os/FRITZ.Repeater_3000-07.58.image)
     - other: [FRITZ.Repeater_3000-07.58.image](https://download.avm.de/fritzwlan/fritzrepeater-3000/other/fritz.os/FRITZ.Repeater_3000-07.58.image)
