@@ -536,6 +536,7 @@ config FREETZ_AVM_HAS_FIRMWARE_08_2X
 	default y
 	depends on \
 		( (FREETZ_TYPE_LANG_DE||FREETZ_TYPE_LANG_EN) && ( \
+			FREETZ_TYPE_1200_W5 || \
 			FREETZ_TYPE_5530 || \
 			FREETZ_TYPE_7530_W6_V1 || \
 			FREETZ_TYPE_7510 || \
