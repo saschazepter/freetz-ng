@@ -193,6 +193,10 @@ choice
 		bool "kernel-4.19.183"
 		depends on FREETZ_AVM_PROP_KERNEL_4_19_183
 
+	config FREETZ_KERNEL_VERSION_4_19_294
+		bool "kernel-4.19.294"
+		depends on FREETZ_AVM_PROP_KERNEL_4_19_294
+
 
 	config FREETZ_KERNEL_VERSION_5_4_213
 		bool "kernel-5.4.213"
