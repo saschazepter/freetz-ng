@@ -157,7 +157,7 @@ Latest changes
 
   - Libraries:
     * cairo 1.18.4
-    * expat 2.7.1
+    * expat 2.7.3
     * gettext 0.24
     * gmp 6.3.0
     * harfbuzz 11.4.5
