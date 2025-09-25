@@ -3241,7 +3241,7 @@ config FREETZ_AVM_PROP_ARCH_LE
 	def_bool y
 config FREETZ_AVM_PROP_ARCH_ARM
 	def_bool y
-config FREETZ_AVM_PROP_GCC_10_
+config FREETZ_AVM_PROP_GCC_10_5
 	def_bool y
 config FREETZ_AVM_PROP_LIBC_GLIBC
 	def_bool y
@@ -4589,7 +4589,7 @@ config FREETZ_AVM_PROP_ARCH_LE
 	def_bool y
 config FREETZ_AVM_PROP_ARCH_ARM
 	def_bool y
-config FREETZ_AVM_PROP_GCC_10_
+config FREETZ_AVM_PROP_GCC_10_5
 	def_bool y
 config FREETZ_AVM_PROP_LIBC_GLIBC
 	def_bool y
