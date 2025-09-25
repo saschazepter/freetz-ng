@@ -1109,7 +1109,10 @@ if [ "$DO_MOD" -gt 0 ]; then
 				fi
 			fi
 
-			fn=${bn//_/[-+._]}
+			case "$bn" in
+				*xx)  fn="${bn//xx/++]}" ;;
+				*)    fn="${bn//_/[-+._]}" ;;
+			esac
 			sizeinfo "$bn"
 			[ "$FREETZ_SEPARATE_AVM_UCLIBC" == "y" ] \
 			  && LIBPATHS="${FREETZ_LIBRARY_DIR#/} lib usr/lib usr/lib/xtables" \
