@@ -1110,7 +1110,7 @@ if [ "$DO_MOD" -gt 0 ]; then
 			fi
 
 			case "$bn" in
-				*xx)  fn="${bn//xx/++]}" ;;
+				*xx)  fn="${bn//xx/++}" ;;
 				*)    fn="${bn//_/[-+._]}" ;;
 			esac
 			sizeinfo "$bn"
