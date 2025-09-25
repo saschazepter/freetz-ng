@@ -58,6 +58,8 @@ config FREETZ_GCC_CPU
 #		FREETZ_CPU_MODEL_ARM_cortex_a53 && FREETZ_BUILD_TOOLCHAIN
 #	default "cortex-a9" if \
 #		FREETZ_CPU_MODEL_ARM_cortex_a9 && FREETZ_BUILD_TOOLCHAIN
+	default "cortex-a7" if \
+		FREETZ_CPU_MODEL_ARM_cortex_a7 && FREETZ_BUILD_TOOLCHAIN
 	default "cortex-a9" if \
 		FREETZ_CPU_MODEL_ARM_cortex
 	#
