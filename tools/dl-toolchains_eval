@@ -3,11 +3,13 @@
 #Arg $1: <VERSION>
 #Arg $2: <new|old|all|gen>
 
-DLTCIN='config/mod/dl-toolchain.in'
 VERSION="$(tools/freetz_revision short)"
 VERSION="${1:-r${VERSION%-*}}"
 [ "$1" == "own" ] && VERSION="rLOCAL"
 SUFFIX="freetz-${VERSION}-shared-glibc"
+
+DLTCIN='config/mod/dl-toolchain.in'
+echo "Update FREETZ_TARGET_UCLIBC_* in $DLTCIN!"
 
 rm -f out.{raw,kernel,target}
 make kconfig-host-conf &>/dev/null
@@ -104,8 +106,8 @@ KERN="$(echo $line | sed -n 's/.*kernel-//p')"
 [ -z "$KERN" ] && KERN=2
 echo -n " && FREETZ_KERNEL_VERSION_${KERN//./_}" >> out.target
 
-echo $linek | sed -nr 's/.*_gcc-[0-9.]*-bcm.*/ \&\& FREETZ_SYSTEM_TYPE_BCM63138/p' >> out.kernel
-echo $linet | sed -nr 's/.*_gcc-[0-9.]*-bcm.*/ \&\& FREETZ_SYSTEM_TYPE_BCM63138/p' >> out.target
+echo $linek | sed -nr 's/.*_gcc-[0-9.]*-bcm.*/  \&\& FREETZ_SYSTEM_TYPE_BCM63138/p' >> out.kernel
+echo $linet | sed -nr 's/.*_gcc-[0-9.]*-bcm.*/  \&\& FREETZ_SYSTEM_TYPE_BCM63138/p' >> out.target
 
 echo | tee -a out.kernel >> out.target
 done
