@@ -75,7 +75,7 @@ Latest changes
     * openssl 3.5.3
     * pkgconf 2.5.1
     * precompiled host-tools 2025-09-25
-    * precompiled toolchains r26458
+    * precompiled toolchains r26741
     * python 3.13.7
     * python2-pip 20.3.4
     * python2-setuptools 44.1.1
