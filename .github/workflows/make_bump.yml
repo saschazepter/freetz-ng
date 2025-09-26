@@ -48,7 +48,7 @@ jobs:
       - name: parse
         id: parse
         run: |
-          pkg="echo "${{ github.event.inputs.bump }}" | sed 's/ //g'"
+          pkg="$(echo "${{ github.event.inputs.bump }}" | sed 's/ //g')"
           [ -z "$pkg" ] && pkg="$(git log --format=%B -n1 ${{ github.sha }} | sed -nr 's/^(add|bump|fix|test) ([^ ,:]*).*/\2/pI')"
           [ -z "$pkg" ] && echo "No add, bump, fix or test." && echo 'matrix=["skip"]' >> $GITHUB_OUTPUT && exit
           sed -rn 's/.* && dltc "(.*)".*/\1/p' tools/dl-toolchains_make | \
