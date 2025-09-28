@@ -6,7 +6,7 @@ $(PKG)_HASH:=$($(PKG)_HASH_$($(PKG)_VERSION))
 $(PKG)_SITE:=https://www.tinc-vpn.org/packages
 ### WEBSITE:=https://www.tinc-vpn.org/
 ### MANPAGE:=https://www.tinc-vpn.org/docs/
-### CHANGES:=https://www.tinc-vpn.org/news/
+### CHANGES:=http://www.tinc-vpn.org/news/
 ### CVSREPO:=https://www.tinc-vpn.org/git/browse?p=tinc
 ### SUPPORT:=fda77
 
