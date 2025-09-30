@@ -191,7 +191,6 @@ jobs:
           [ "$TYPE" = "libs" ] && for x in $(sed -n 's/^[\tmenu]*config FREETZ_LIB_//p' make/libs/$pkg/Config.in); do sed "/[^ ]FREETZ_LIB_$x[ =]/d"  -i .config; done
           [ "$TYPE" = "libs" ] && for x in $(sed -n 's/^[\tmenu]*config FREETZ_LIB_//p' make/libs/$pkg/Config.in); do echo     "FREETZ_LIB_$x=y"      >> .config; done
           echo "################################################################" && bash -c "echo pkg=$pkg" && bash -c "echo PKG=$PKG"
-          mkdir -p dl/ 2>/dev/null || true
           useradd freetz -s $(which bash) -d $(pwd) -M && chown freetz . -R
           su freetz -c "umask 0022 && make olddefconfig"
           BAD=y

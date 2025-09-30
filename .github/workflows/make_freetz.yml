@@ -119,7 +119,6 @@ jobs:
 
       - name: generate
         run: |
-          mkdir -p dl/ 2>/dev/null || true
           useradd freetz -s $(which bash) -d $(pwd) -M && chown freetz . -R
           su freetz -c "umask 0022 && make olddefconfig && make && rm -f images/latest.image"
 
