@@ -121,15 +121,14 @@ jobs:
         env:
           ACTIONS_VERSION: ${{ steps.version.outputs.version }}
         run: |
-          useradd freetz -s $(which bash) -d $(pwd) -M && chown freetz . -R
-          su freetz -c "umask 0022 && tools/dl-toolchains_make $ACTIONS_VERSION ${{ steps.args.outputs.args }}"
+          tools/dl-toolchains_make $ACTIONS_VERSION ${{ steps.args.outputs.args }}
 
       - name: result
         env:
           ACTIONS_VERSION: ${{ steps.version.outputs.version }}
         run: |
           echo "################################################################"
-          su freetz -c "umask 0022 && tools/dl-toolchains_eval $ACTIONS_VERSION all | grep -v '"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"'"
+          tools/dl-toolchains_eval $ACTIONS_VERSION all | grep -v '"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"'
           ls -al dl/*-shared-glibc.tar.lzma && du -sh dl/*-shared-glibc.tar.lzma
 
 #     - name: cleanup

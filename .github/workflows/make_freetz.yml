@@ -119,8 +119,7 @@ jobs:
 
       - name: generate
         run: |
-          useradd freetz -s $(which bash) -d $(pwd) -M && chown freetz . -R
-          su freetz -c "umask 0022 && make && rm -f images/latest.image"
+          make && rm -f images/latest.image
 
       - name: result
         run: |
