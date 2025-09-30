@@ -1,5 +1,10 @@
 # Neuigkeiten
 
+  * __[2025-09-30](#2025-09-30)__<a id='2025-09-30'></a><br>
+    Es wurde ein neuer [Tag](https://github.com/Freetz-NG/freetz-ng/tags) `ng25090` erstellt.<br>
+    Ein Tag sollte wie in der [README](https://github.com/Freetz-NG/freetz-ng#or-clone-a-single-tag) beschrieben mit git ausgecheckt werden.<br>
+    Siehe [ng25090](https://github.com/Freetz-NG/freetz-ng/releases/tag/ng25090)<br>
+
   * __[2025-09-11](#2025-09-11)__<a id='2025-09-11'></a><br>
     *Trommelwirbel* Die Kernel-.config aus dem 7530ax 8.20 Quellcodekonglomerat scheint zu 100% die wirklich<br>
     von AVM genutzte zu sein! Durch autofix bzw oldconfig werden keine neuen oder unbekannten Optionen erkannt.<br>
