@@ -155,9 +155,7 @@ endif
 
 # Current user == root? -> Error
 ifeq ($(shell echo "$${UID}"),0)
-ifeq ($(shell echo "$${GITHUB_ACTIONS}"),)
 $(error Running makefile as root is prohibited! Please build Freetz as normal user)
-endif
 endif
 
 # Mod archive unpacked incorrectly (heuristics)? -> Error
