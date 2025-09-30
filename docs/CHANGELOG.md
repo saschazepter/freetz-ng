@@ -146,7 +146,7 @@ Latest changes
     * Smartmontools 7.5
     * socat 1.8.0.3
     * sslh 2.2.4
-    * strace 4.9/5.0/6.16
+    * strace 4.9/5.0/6.17
     * Stunnel 5.75
     * Sudo 1.9.17p2
     * tcpdump 4.1.1/4.99.4
