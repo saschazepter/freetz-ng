@@ -119,7 +119,9 @@ jobs:
 
       - name: generate
         run: |
-          make && rm -f images/latest.image
+          useradd freetz -s $(which bash) -d $(pwd) -M && chown freetz . -R
+          su freetz -c "make"
+          rm -f images/latest.image
 
       - name: result
         run: |

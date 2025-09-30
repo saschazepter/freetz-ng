@@ -195,13 +195,14 @@ jobs:
           [ "$TYPE" = "libs" ] && for x in $(sed -n 's/^[\tmenu]*config FREETZ_LIB_//p' make/libs/$pkg/Config.in); do sed "/[^ ]FREETZ_LIB_$x[ =]/d"  -i .config; done
           [ "$TYPE" = "libs" ] && for x in $(sed -n 's/^[\tmenu]*config FREETZ_LIB_//p' make/libs/$pkg/Config.in); do echo     "FREETZ_LIB_$x=y"      >> .config; done
           echo "################################################################" && bash -c "echo pkg=$pkg" && bash -c "echo PKG=$PKG"
-          make olddefconfig
+          useradd freetz -s $(which bash) -d $(pwd) -M && chown freetz . -R
+          su freetz -c "make olddefconfig"
           BAD=y
           [ "$TYPE" = "pkgs" ] && grep -q "^FREETZ_PACKAGE_$PKG=y" .config && BAD=n
           [ "$TYPE" = "libs" ] && for x in $(sed -n 's/^[\tmenu]*config FREETZ_LIB_//p' make/libs/$pkg/Config.in); do grep -q "^FREETZ_LIB_$x=y" .config && BAD=n ; done
           echo "bad=$BAD" >> $GITHUB_OUTPUT
           [ "$BAD" = "y" ] && echo "Could not enable precompiled" && exit
-          [ "$BAD" = "n" ] && make ${pkg}-precompiled
+          [ "$BAD" = "n" ] && su freetz -c "make ${pkg}-precompiled"
 
       - name: result
         if: steps.generate.outputs.bad == 'n'

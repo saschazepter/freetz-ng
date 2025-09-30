@@ -125,14 +125,15 @@ jobs:
         env:
           ACTIONS_VERSION: ${{ steps.version.outputs.version }}
         run: |
-          tools/dl-toolchains_make $ACTIONS_VERSION ${{ steps.args.outputs.args }}
+          useradd freetz -s $(which bash) -d $(pwd) -M && chown freetz . -R
+          su freetz -c "tools/dl-toolchains_make $ACTIONS_VERSION ${{ steps.args.outputs.args }}"
 
       - name: result
         env:
           ACTIONS_VERSION: ${{ steps.version.outputs.version }}
         run: |
           echo "################################################################"
-          tools/dl-toolchains_eval $ACTIONS_VERSION all | grep -v '"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"'
+          su freetz -c "tools/dl-toolchains_eval $ACTIONS_VERSION all | grep -v '"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"'"
           ls -al dl/*-shared-glibc.tar.lzma && du -sh dl/*-shared-glibc.tar.lzma
 
 #     - name: cleanup
