@@ -72,7 +72,7 @@ jobs:
         env:
           ACTIONS_VERSION: ${{ steps.version.outputs.version }}
         run: |
-          tools/dl-hosttools $ACTIONS_VERSION && rm -f tools-$ACTIONS_VERSION.*
+          tools/dl-hosttools $ACTIONS_VERSION
 
       - name: cleanup
         env:
