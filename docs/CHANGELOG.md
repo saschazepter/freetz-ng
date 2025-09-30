@@ -59,7 +59,7 @@ Latest changes
   - Host tools:
     * automake 1.18
     * ca-bundle 2025-09-09
-    * cmake 4.1.1
+    * cmake 4.1.2
     * dtc 1.7.2
     * fakeroot 1.37.1.2
     * gmp 6.3.0
