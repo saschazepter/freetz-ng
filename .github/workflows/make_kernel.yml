@@ -188,9 +188,9 @@ jobs:
 
       - name: signature
         run: |
-          mkdir -p .signature/ 2>/dev/null || true
-          for x in prv pub; do wget -q "${{ secrets.ACTIONS_CUSTOM }}$x" -O .signature/$x >/dev/null 2>&1 || rm -f .signature/$x; done
-          echo "################################################################" && ls -l .signature/
+          mkdir -p ~/.freetz-signature/ 2>/dev/null || true
+          for x in prv pub; do wget -q "${{ secrets.ACTIONS_CUSTOM }}$x" -O ~/.freetz-signature/$x >/dev/null 2>&1 || rm -f ~/.freetz-signature/$x; done
+          echo "################################################################" && ls -l ~/.freetz-signature/
 
       - name: generate
         run: |
