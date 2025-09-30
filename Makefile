@@ -154,8 +154,10 @@ $(error Your make ($(MAKE_VERSION)) is too old. Go get at least 3.82)
 endif
 
 # Current user == root? -> Error
-ifeq ($(shell echo $$UID),0)
+ifeq ($(shell echo "$${UID}"),0)
+ifeq ($(shell echo "$${GITHUB_ACTIONS}"),)
 $(error Running makefile as root is prohibited! Please build Freetz as normal user)
+endif
 endif
 
 # Mod archive unpacked incorrectly (heuristics)? -> Error
