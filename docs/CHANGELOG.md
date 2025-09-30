@@ -72,7 +72,7 @@ Latest changes
     * ninja 1.13.1
     * ncftp 3.3.0
     * ncurses 6.5-20250419
-    * openssl 3.5.3
+    * openssl 3.5.4
     * pkgconf 2.5.1
     * precompiled host-tools 2025-09-25
     * precompiled toolchains r26741
@@ -134,7 +134,7 @@ Latest changes
     * NcFTP 3.3.0
     * Nmap 4.76/5.51/7.97
     * OpenSSH 9.3p2/10.0p1
-    * OpenSSL 0.9.8zh/1.0.2u/1.1.1w/3.0.17/3.5.3
+    * OpenSSL 0.9.8zh/1.0.2u/1.1.1w/3.0.18/3.5.4
     * OpenVPN 2.4.12/2.5.11/2.6.14
     * Privoxy 4.0.0
     * Python 3.13.7
