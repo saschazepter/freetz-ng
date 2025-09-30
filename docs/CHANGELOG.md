@@ -65,7 +65,7 @@ Latest changes
     * gmp 6.3.0
     * gperf 3.2
     * iPerf3 3.3/3.19.1
-    * kconfig 6.16
+    * kconfig 6.17
     * libtool 2.5.4
     * m4 1.4.20
     * meson 1.9.1
