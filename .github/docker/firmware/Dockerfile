@@ -16,7 +16,7 @@ RUN \
  && useradd $BUILD_USER -s $(which bash) -M -d /workspace && \
     echo "$BUILD_USER ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers && \
     mkdir -p /workspace && \
-    echo -e 'umask 0022\nexport LANG=en_US.utf8' > /workspace/.profile && \
+    echo -e 'export LANG=en_US.utf8\n' > /workspace/.profile && \
     chown -R $BUILD_USER /workspace
 
 WORKDIR /workspace
