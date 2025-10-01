@@ -1,5 +1,5 @@
 FROM ubuntu:20.04
-ARG BUILD_USER=builduser
+ARG BUILD_USER=freetz
 
 RUN \
     apt-get -y update && apt-get -y upgrade && apt-get -y dist-upgrade \
