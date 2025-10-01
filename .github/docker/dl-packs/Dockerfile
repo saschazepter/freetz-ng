@@ -4,8 +4,7 @@ ARG BUILD_GRP=freetz
 ARG BUILD_UID=1001
 ARG BUILD_GID=1001
 
-RUN \
-    apt-get -y update && apt-get -y upgrade && apt-get -y dist-upgrade \
+RUN apt-get -y update && apt-get -y upgrade && apt-get -y dist-upgrade \
  && DEBIAN_FRONTEND=noninteractive apt-get -y install \
     bash locales libarchive-zip-perl  \
     pv cpio rsync kmod imagemagick inkscape graphicsmagick subversion git bc unar wget sudo gcc g++ binutils autoconf automake \
