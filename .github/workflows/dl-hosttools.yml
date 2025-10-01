@@ -73,8 +73,7 @@ jobs:
         env:
           ACTIONS_VERSION: ${{ steps.version.outputs.version }}
         run: |
-          useradd freetz -s $(which bash) -d $(pwd) -M && chown freetz . -R
-          su freetz -c "tools/dl-hosttools $ACTIONS_VERSION"
+          tools/dl-hosttools $ACTIONS_VERSION
 
       - name: cleanup
         env:
