@@ -55,9 +55,6 @@ jobs:
       - name: teeest
         run: |
           echo
-          echo "useradd"
-          useradd --help
-          echo
           echo "/etc/passwd"
           cat /etc/passwd || true
           echo
@@ -69,6 +66,7 @@ jobs:
           echo
           echo "HOME=$HOME"
           echo "DIR=$PWD"
+          echo "TMP=$(mktemp -u || true)"
           cd ~/
           pwd || true
           echo
@@ -108,6 +106,12 @@ jobs:
           echo
           echo "/workspace"
           ls -al /workspace || true
+          echo
+          echo "useradd"
+          useradd --help
+          echo
+          echo "usermod"
+          usermod --help
 
       - name: clone
         uses: actions/checkout@v5
