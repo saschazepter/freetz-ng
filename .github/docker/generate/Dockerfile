@@ -16,7 +16,7 @@ RUN \
  && DEBIAN_FRONTEND=noninteractive apt-get -y clean \
  && rm -rf /var/lib/apt/lists/* \
  && locale-gen en_US.utf8 && locale-gen de_DE.UTF-8 && update-locale \
- && groupadd $BUILD_GRP -o -g $BUILD_GID
+ && groupadd $BUILD_GRP -o -g $BUILD_GID \
  && useradd $BUILD_USR -o -s $(which bash) -d /workspace -u $BUILD_UID -g $BUILD_GID \
  && usermod $BUILD_USR -a -G root \
  && echo "$BUILD_USR ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers \
