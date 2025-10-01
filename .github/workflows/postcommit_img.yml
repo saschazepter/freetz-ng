@@ -20,6 +20,7 @@ jobs:
 #     image: ubuntu:20.04
 #     image: freetzng/dl-packs
       image: ghcr.io/freetz-ng/dl-packs
+      options: --user 1001:1001
     runs-on: ubuntu-latest
     if: github.repository == 'freetz-ng/freetz-ng'
 

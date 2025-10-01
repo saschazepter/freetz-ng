@@ -19,6 +19,7 @@ jobs:
 #     image: ubuntu:20.04
 #     image: freetzng/firmware
       image: ghcr.io/freetz-ng/firmware
+      options: --user 1001:1001
 #   strategy:
 #     fail-fast: false
 #     max-parallel: 16
