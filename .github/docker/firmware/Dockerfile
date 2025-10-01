@@ -17,7 +17,7 @@ RUN \
     echo "$BUILD_USER ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers && \
     mkdir -p /workspace && \
     echo -e 'export LANG=en_US.utf8\n' > /workspace/.profile && \
-    chown -R $BUILD_USER /workspace
+    chown -R $BUILD_USER:$BUILD_USER /workspace
 
 WORKDIR /workspace
 ENV BUILD_USER=$BUILD_USER
