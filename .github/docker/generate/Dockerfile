@@ -5,10 +5,15 @@ RUN \
     apt-get -y update && apt-get -y upgrade && apt-get -y dist-upgrade \
  && DEBIAN_FRONTEND=noninteractive apt-get -y install \
     git bash locales imagemagick netcat curl bsdmainutils xxd libarchive-zip-perl wget \
+    \
+    \
+    \
+    \
+    \
  && DEBIAN_FRONTEND=noninteractive apt-get -y clean \
  && rm -rf /var/lib/apt/lists/* \
  && locale-gen en_US.utf8 && locale-gen de_DE.UTF-8 && update-locale \
- && useradd $BUILD_USER -s $(which bash) -M -d /workspace && \
+ && useradd $BUILD_USER -s $(which bash) -M -d /workspace -u 1111 -G root && \
     echo "$BUILD_USER ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers && \
     mkdir -p /workspace && \
     echo -e 'export LANG=en_US.utf8\n' > /workspace/.profile && \
