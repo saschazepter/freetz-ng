@@ -4,6 +4,7 @@ on:
   push:
     branches: [ master ]
     paths:
+      - '.github/workflows/make_bump.yml'
       - 'docs/CHANGELOG.md'
       - 'make/pkgs/**'
       - 'make/libs/**'

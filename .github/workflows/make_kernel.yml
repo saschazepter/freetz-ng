@@ -1,10 +1,10 @@
 name: make_kernel
 
 on:
-# push:
-#   branches: [ master ]
-#   paths:
-#     - '.github/workflows/make_kernel.yml'
+  push:
+    branches: [ master ]
+    paths:
+      - '.github/workflows/make_kernel.yml'
   schedule:
     - cron: '00 15 28 * *'
   workflow_dispatch:
