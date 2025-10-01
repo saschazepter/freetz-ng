@@ -21,6 +21,7 @@ jobs:
 #     image: ubuntu:20.04
 #     image: freetzng/generate
       image: ghcr.io/freetz-ng/generate
+      options: --user 1001:1001
     runs-on: ubuntu-latest
 
     outputs:
