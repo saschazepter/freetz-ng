@@ -598,7 +598,7 @@ if [ "$DO_UNPACK" -gt 0 ]; then
 			echo2 "$AVMPLUGIN image"
 			modunpack_autodetect_fs "$AVMPLUGINS_DIR/plugin-${AVMPLUGIN}" "$i" > /dev/null
 		done
-		chmod -R +w "$AVMPLUGINS_DIR"
+		chmod -f -R +w "$AVMPLUGINS_DIR"
 	fi
 
 	if [ ! -r "$FILESYSTEM_DIR/var" ]; then
