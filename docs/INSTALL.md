@@ -60,7 +60,7 @@ Verfügbare Scripte und Tools zum Flashen über den Bootloader:
    Neue Cable Fritzboxen mit Puma7, zb 6591 & 6660
     - `tools/push_firmware` von Freetz-NG
     - [uimg-tool](https://bitbucket.org/fesc2000/uimg-tool.git) von fesc2000 zum ent-/packen, wird in Freetz-NG genutzt
-    -  Infos zur BIOS-Version bei [ffritz von fesc2000](https://bitbucket.org/fesc2000/ffritz/src/6591/README-6591.md)
+    - Infos zur BIOS-Version bei [ffritz von fesc2000](https://bitbucket.org/fesc2000/ffritz/src/6591/README-6591.md)
 
 Um es kurz zusammenzufassen: Einfach `tools/push_firmware` verwenden und den Rest vergessen ...
 
