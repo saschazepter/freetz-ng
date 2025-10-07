@@ -56,7 +56,7 @@ Content: [FOS-Release](#fos-release) - [FOS-Labor](#fos-labor) - [FOS-Inhaus](#f
   - HWR 236: [FRITZ.Box_7530-08.02.image](http://download.avm.de/fritzbox/fritzbox-7530/deutschland/fritz.os/FRITZ.Box_7530-08.02.image)
   - HWR 239: [FRITZ.Box_7583-08.20.image](http://download.avm.de/fritzbox/fritzbox-7583/deutschland/fritz.os/FRITZ.Box_7583-08.20.image)
   - HWR 240: [FRITZ.Repeater_600-07.58.image](http://download.avm.de/fritzwlan/fritzrepeater-600/deutschland/fritz.os/FRITZ.Repeater_600-07.58.image)
-  - HWR 241: [FRITZ.Repeater_2400-07.58.image](http://download.avm.de/fritzwlan/fritzrepeater-2400/deutschland/fritz.os/FRITZ.Repeater_2400-07.58.image)
+  - HWR 241: [FRITZ.Repeater_2400-08.20.image](http://download.avm.de/fritzwlan/fritzrepeater-2400/deutschland/fritz.os/FRITZ.Repeater_2400-08.20.image)
   - HWR 243: [FRITZ.Box_5491-07.31.image](http://download.avm.de/fritzbox/fritzbox-5491/deutschland/fritz.os/FRITZ.Box_5491-07.31.image)
   - HWR 244: [FRITZ.Repeater_1200-08.20.image](http://download.avm.de/fritzwlan/fritzrepeater-1200/deutschland/fritz.os/FRITZ.Repeater_1200-08.20.image)
   - HWR 246: [FRITZ.Repeater_3000-07.58.image](http://download.avm.de/fritzwlan/fritzrepeater-3000/deutschland/fritz.os/FRITZ.Repeater_3000-07.58.image)
@@ -87,7 +87,6 @@ Content: [FOS-Release](#fos-release) - [FOS-Labor](#fos-labor) - [FOS-Inhaus](#f
   - HWR 229: [FRITZ.Powerline_1260E-08.10-124742-LabBETA.image](http://download.example.com/labor/Smart24P2/1260E/FRITZ.Powerline_1260E-08.10-124742-LabBETA.image)
   - HWR 236: [FRITZ.Box_7530-08.10-123914-LabBETA.image](http://download.example.com/labor/Smart24P2/7530/FRITZ.Box_7530-08.10-123914-LabBETA.image)
   - HWR 239: [FRITZ.Box_7583-07.39-103075-LabBETA.image](http://download.example.com/labor/MOVE21/7583/FRITZ.Box_7583-07.39-103075-LabBETA.image)
-  - HWR 241: [FRITZ.Repeater_2400-08.20.image](http://download.avm.de/fritzwlan/fritzrepeater-2400/deutschland/fritz.os/FRITZ.Repeater_2400-08.20.image)
   - HWR 247: [FRITZ.Box_7520-08.10-123542-LabBETA.image](http://download.example.com/labor/Smart24P2/7520/FRITZ.Box_7520-08.10-123542-LabBETA.image)
   - HWR 249: [FRITZ.Powerline_1260-08.10-124743-LabBETA.image](http://download.example.com/labor/Smart24P2/1260/FRITZ.Powerline_1260-08.10-124743-LabBETA.image)
   - HWR 258: [FRITZ.Box_6850_5G-08.10-124812-LabBETA.image](http://download.example.com/labor/Smart24P2/68505G/FRITZ.Box_6850_5G-08.10-124812-LabBETA.image)
@@ -157,4 +156,4 @@ Content: [FOS-Release](#fos-release) - [FOS-Labor](#fos-labor) - [FOS-Inhaus](#f
   - MHW 08.03: [08.03.05.11.avm.de.upd](http://download.avm.de/dect/0803/smart24p1/08.03.05.11.avm.de.upd)
 
 ### BPjM
-  - CRC c4118afb: [bpjm.data](http://download.avm.de/bpjm/283039/bpjm.data)
+  - CRC 9da1f6f2: [bpjm.data](http://download.avm.de/bpjm/286966/bpjm.data)
