@@ -27,7 +27,7 @@ Currently supported devices and firmwares
 
 ### Not supported devices
 
-  * Repeater N/G, 310, 600 v1+v2 & 1160: No LAN ports, so a recovery is not possible.
+  * Repeater N/G, 310 a+b, 600 v1+v2 & 1160: No LAN ports, so a recovery is not possible.
 
 ### Newer firmware versions
 
