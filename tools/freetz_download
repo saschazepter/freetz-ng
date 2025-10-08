@@ -321,6 +321,7 @@ enumerate_mirrors_official() {
 #				sites[${#sites[@]}]=https://download.avm.de/inhaus/MOVE21/$subpath
 #				sites[${#sites[@]}]=https://download.avm.de/inhaus/WU22PSQ19/$subpath
 #				sites[${#sites[@]}]=https://download.avm.de/testfeld/$subpath
+				sites[${#sites[@]}]=https://download.avm.de/firmware/jz149773-dtag
 				sites[${#sites[@]}]=https://download.avm.de/archive/fritz.box/$subpath
 				sites[${#sites[@]}]=https://service.avm.de/downloads/LaborPlus/$subpath
 				sites[${#sites[@]}]=https://service.avm.de/downloads/downgrade/$subpath
