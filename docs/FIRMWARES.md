@@ -240,7 +240,7 @@ Currently supported devices and firmwares
     - 258.07.30 rev94600 {ALL} [PSQ19P2NL4]
     - 258.07.59 rev114650 {ALL} [MOVE21NL2]
     - 258.08.03 rev119185 {ALL} [Smart24 P1 NL1]
-    - 258.08.10 rev122254 {ALL} [Smart24 P2] (Labor)
+    - 258.08.20 rev124915 {ALL} [Smart24 P2]
 
   * __Fritz!Box 6860 5G (UNTESTED)__
     - 277.08.03 rev119187 {ALL} [Smart24 P1 FCS]
