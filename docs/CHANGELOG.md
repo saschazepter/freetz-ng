@@ -53,6 +53,7 @@ Latest changes
   - Build system:
 
   - Host tools:
+    * python 3.13.8
 
   - AVM sources:
 
