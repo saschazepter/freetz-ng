@@ -1,4 +1,4 @@
-# procps-ng 4.0.4 (full binaries)
+# procps-ng 4.0.4 (binaries only)
   - Homepage: [https://gitlab.com/procps-ng/procps](https://gitlab.com/procps-ng/procps)
   - Manpage: [https://linux.die.net/man/1/ps](https://linux.die.net/man/1/ps)
   - Changelog: [https://gitlab.com/procps-ng/procps/-/tags](https://gitlab.com/procps-ng/procps/-/tags)
