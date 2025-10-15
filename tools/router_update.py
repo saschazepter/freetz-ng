@@ -6,8 +6,8 @@ Emulates the web interface update process with interactive/batch modes,
 progress bars, dry-run, debug capabilities, and advanced UX.
 
 Usage:
-  python3 router_update.py --host 192.168.178.1 --password <pwd>
-  ROUTER_PASSWORD=<pwd> python3 router_update.py --host 192.168.178.1
+  router_update.py --host 192.168.178.1 --password <pwd>
+  ROUTER_PASSWORD=<pwd> router_update.py --host 192.168.178.1
 """
 import os, sys, argparse, time, subprocess, threading, pty, select, errno, re, getpass
 from glob import glob
