@@ -61,6 +61,7 @@ Latest changes
 
   - Packages:
     * BIND 9.11.37/9.20.13
+    * procps-ng 4.0.4
     * Tor 0.4.8.19
 
   - Libraries:
