@@ -104,7 +104,7 @@ Content: [FOS-Release](#fos-release) - [FOS-Labor](#fos-labor) - [FOS-Inhaus](#f
   - HWR 240: [FRITZ.Repeater_600-08.10-125418-Inhaus.image](http://download.example.com/inhaus/Smart24P2/600/FRITZ.Repeater_600-08.10-125418-Inhaus.image)
   - HWR 247: [FRITZ.Box_7520-08.10-123540-Inhaus.image](http://download.example.com/inhaus/Smart24P2/7520/FRITZ.Box_7520-08.10-123540-Inhaus.image)
   - HWR 249: [FRITZ.Powerline_1260-08.10-124397-Inhaus.image](http://download.example.com/inhaus/Smart24P2/1260/FRITZ.Powerline_1260-08.10-124397-Inhaus.image)
-  - HWR 253: [FRITZ.Repeater_6000-08.10-125322-Inhaus.image](http://download.example.com/inhaus/Smart24P2/6000/FRITZ.Repeater_6000-08.10-125322-Inhaus.image)
+  - HWR 253: [FRITZ.Repeater_6000-08.10-125438-Inhaus.image](http://download.example.com/inhaus/Smart24P2/6000/FRITZ.Repeater_6000-08.10-125438-Inhaus.image)
   - HWR 256: [FRITZ.Box_7530_AX-08.20-125458-Inhaus.image](http://download.example.com/inhaus/Smart24P2NL1/7530AX/FRITZ.Box_7530_AX-08.20-125458-Inhaus.image)
   - HWR 257: [FRITZ.Box_5530_Fiber-08.10-123807-Inhaus.image](http://download.example.com/inhaus/Smart24P2/5530Fiber/FRITZ.Box_5530_Fiber-08.10-123807-Inhaus.image)
   - HWR 258: [FRITZ.Box_6850_5G-08.10-124810-Inhaus.image](http://download.example.com/inhaus/Smart24P2/68505G/FRITZ.Box_6850_5G-08.10-124810-Inhaus.image)
