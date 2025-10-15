@@ -692,6 +692,23 @@ Index: [A](#a) - [B](#b) - [C](#c) - [D](#d) - [E](#e) - [F](#f) - [G](#g) - [H]
      - [Installation](../../docs/make/privoxy.md#installation)
      - [Diskussion](../../docs/make/privoxy.md#diskussion)
 
+  * **[procps-full: procps-ng 4.0.4 (full binaries)](../../docs/make/procps-full.md)<a id='procps-full'></a>**<br>
+    procps-ng - /proc filesystem utilities (full versions) This package provides the full versions of procps utilities with the suffix "full" to avoid conflicts with BusyBox versions. Binaries included (all with -full suffix): - psfull      - process status - topfull     - display Linux processes - freefull    - display amount of free and used memory - uptimefull  - tell how long the system has been running - vmstatfull  - virtual memory statistics - wfull       - show who is logged on - pmapfull    - report memory map of a process - pgrepfull   - look up processes based on name - pkillfull   - signal processes based on name - pidoffull   - find the process ID of a running program - pwdxfull    - report current working directory of a process - slabtopfull - display kernel slab cache information - tloadfull   - graphic representation of system load average - watchfull   - execute a program periodically - skillfull   - send a signal or report process status - snicefull   - renice a process - sysctlfull  - configure kernel parameters at runtime - killfull    - terminate a process Total size: ~400 KB Can be externalized to save flash memory.
+     - [Process Information](../../docs/make/procps-full.md#process-information)
+     - [Memory and System Information](../../docs/make/procps-full.md#memory-and-system-information)
+     - [Process Management](../../docs/make/procps-full.md#process-management)
+     - [Process Inspection](../../docs/make/procps-full.md#process-inspection)
+     - [System Utilities](../../docs/make/procps-full.md#system-utilities)
+     - [Basic Process Monitoring](../../docs/make/procps-full.md#basic-process-monitoring)
+     - [Memory and System Info](../../docs/make/procps-full.md#memory-and-system-info)
+     - [Advanced Process Analysis](../../docs/make/procps-full.md#advanced-process-analysis)
+     - [System Configuration](../../docs/make/procps-full.md#system-configuration)
+     - [Build Configuration](../../docs/make/procps-full.md#build-configuration)
+     - [Known Limitations](../../docs/make/procps-full.md#known-limitations)
+     - [Command not found](../../docs/make/procps-full.md#command-not-found)
+     - [Permission denied](../../docs/make/procps-full.md#permission-denied)
+     - [Externalization not working](../../docs/make/procps-full.md#externalization-not-working)
+
   * **[ProxyChains-NG 4.17](../../docs/make/proxychains-ng.md)<a id='proxychains-ng'></a>**<br>
     A preloader which hooks calls to sockets in dynamically linked programs and redirects it through one or more socks/http proxies, tor is also supported. Usage: proxychains4 telnet mail.example.com 25
 

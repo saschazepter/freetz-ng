@@ -3,7 +3,7 @@
   - Manpage: [https://linux.die.net/man/1/ps](https://linux.die.net/man/1/ps)
   - Changelog: [https://gitlab.com/procps-ng/procps/-/tags](https://gitlab.com/procps-ng/procps/-/tags)
   - Repository: [https://gitlab.com/procps-ng/procps](https://gitlab.com/procps-ng/procps)
-  - Package: [ircama-ps/make/pkgs/procps-full/](https://github.com/Ircama/freetz-ng/tree/ircama-ps/make/pkgs/procps-full/)
+  - Package: [master/make/pkgs/procps-full/](https://github.com/Freetz-NG/freetz-ng/tree/master/make/pkgs/procps-full/)
   - Maintainer: [@Ircama](https://github.com/Ircama)
 
 ## Overview
