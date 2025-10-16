@@ -56,6 +56,7 @@ Latest changes
     * python 3.13.8
 
   - AVM sources:
+    * 7510     8.20 - 5.4.213
 
   - Scripts:
     * ssh_firmware_update.py - utility for upgrading firmware and external over SSH
