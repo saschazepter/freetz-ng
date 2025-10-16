@@ -57,6 +57,7 @@ Latest changes
 
   - AVM sources:
     * 7510     8.20 - 5.4.213
+    * Gateway  8.20 - 5.4.213
 
   - Scripts:
     * ssh_firmware_update.py - utility for upgrading firmware and external over SSH
