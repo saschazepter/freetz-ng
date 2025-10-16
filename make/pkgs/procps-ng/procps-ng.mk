@@ -22,6 +22,27 @@ $(PKG)_EXCLUDED                     += $(filter-out $($(PKG)_BINARIES_TARGET_DIR
 
 $(PKG)_CONFIGURE_PRE_CMDS += $(AUTORECONF)
 
+$(PKG)_REBUILD_SUBOPTS += FREETZ_PACKAGE_PROCPS_NG_WITH_NONE
+ifneq ($(strip $(FREETZ_PACKAGE_PROCPS_NG_WITH_NCURSESW)),y)
+ifneq ($(strip $(FREETZ_PACKAGE_PROCPS_NG_WITH_NCURSES)),y)
+$(PKG)_CONFIGURE_OPTIONS += --without-ncurses
+endif
+endif
+
+$(PKG)_REBUILD_SUBOPTS += FREETZ_PACKAGE_PROCPS_NG_WITH_NCURSES
+ifeq ($(strip $(FREETZ_PACKAGE_PROCPS_NG_WITH_NCURSES)),y)
+$(PKG)_DEPENDS_ON += ncurses-terminfo ncurses
+$(PKG)_CONFIGURE_ENV += NCURSES_LIBS=-lncurses
+$(PKG)_CONFIGURE_OPTIONS += --with-ncurses
+endif
+
+$(PKG)_REBUILD_SUBOPTS += FREETZ_PACKAGE_PROCPS_NG_WITH_NCURSESW
+ifeq ($(strip $(FREETZ_PACKAGE_PROCPS_NG_WITH_NCURSESW)),y)
+$(PKG)_DEPENDS_ON += ncurses-terminfo ncursesw
+$(PKG)_CONFIGURE_ENV += NCURSES_LIBS=-lncursesw
+$(PKG)_CONFIGURE_OPTIONS += --with-ncurses
+endif
+
 $(PKG)_CONFIGURE_PRE_CMDS += $(call PKG_PREVENT_RPATH_HARDCODING,./configure)
 
 $(PKG)_CONFIGURE_OPTIONS += --enable-static
@@ -30,6 +51,7 @@ $(PKG)_CONFIGURE_OPTIONS += --disable-rpath
 $(PKG)_CONFIGURE_OPTIONS += --disable-nls
 $(PKG)_CONFIGURE_OPTIONS += --enable-w-from
 $(PKG)_CONFIGURE_OPTIONS += --enable-skill
+$(PKG)_CONFIGURE_OPTIONS += --disable-watch8bit
 $(PKG)_CONFIGURE_OPTIONS += --disable-libselinux
 $(PKG)_CONFIGURE_OPTIONS += --without-systemd
 $(PKG)_CONFIGURE_OPTIONS += --without-elogind

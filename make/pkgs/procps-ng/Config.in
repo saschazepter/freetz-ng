@@ -9,6 +9,22 @@ menuconfig FREETZ_PACKAGE_PROCPS_NG
 
 if FREETZ_PACKAGE_PROCPS_NG
 
+	choice
+		prompt "Widget library"
+		default FREETZ_PACKAGE_PROCPS_NG_WITH_NONE
+
+		config FREETZ_PACKAGE_PROCPS_NG_WITH_NONE
+		bool "None"
+
+		config FREETZ_PACKAGE_PROCPS_NG_WITH_NCURSES
+		bool "Ncurses"
+		select FREETZ_LIB_libncurses
+
+		config FREETZ_PACKAGE_PROCPS_NG_WITH_NCURSESW
+		bool "Ncursesw"
+		select FREETZ_LIB_libncursesw
+	endchoice
+
 	config FREETZ_PACKAGE_PROCPS_NG_FREE
 		bool "free - display memory usage"
 		default y
@@ -65,6 +81,7 @@ if FREETZ_PACKAGE_PROCPS_NG
 
 	config FREETZ_PACKAGE_PROCPS_NG_SLABTOP
 		bool "slabtop - kernel slab cache info"
+		depends on !FREETZ_PACKAGE_PROCPS_NG_WITH_NONE
 		default n
 		help
 			Display kernel slab cache information in real time.
@@ -89,6 +106,7 @@ if FREETZ_PACKAGE_PROCPS_NG
 
 	config FREETZ_PACKAGE_PROCPS_NG_TOP
 		bool "top - display Linux processes"
+		depends on !FREETZ_PACKAGE_PROCPS_NG_WITH_NONE
 		default y
 		help
 			Display Linux processes in real-time.
@@ -107,6 +125,7 @@ if FREETZ_PACKAGE_PROCPS_NG
 
 	config FREETZ_PACKAGE_PROCPS_NG_WATCH
 		bool "watch - execute program periodically"
+		depends on !FREETZ_PACKAGE_PROCPS_NG_WITH_NONE
 		default n
 		help
 			Execute a program periodically, showing output fullscreen.
