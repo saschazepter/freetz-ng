@@ -7,26 +7,6 @@ menuconfig FREETZ_PACKAGE_PROCPS_NG
 		This package provides the full versions of procps utilities with
 		the suffix "-ng" to avoid conflicts with BusyBox versions.
 		
-		Binaries included:
-		  - ps-ng      - process status
-		  - top-ng     - display Linux processes
-		  - free-ng    - display amount of free and used memory
-		  - uptime-ng  - tell how long the system has been running
-		  - vmstat-ng  - virtual memory statistics
-		  - w-ng       - show who is logged on
-		  - pmap-ng    - report memory map of a process
-		  - pgrep-ng   - look up processes based on name
-		  - pkill-ng   - signal processes based on name
-		  - pidof-ng   - find the process ID of a running program
-		  - pwdx-ng    - report current working directory of a process
-		  - slabtop-ng - display kernel slab cache information
-		  - tload-ng   - graphic representation of system load average
-		  - watch-ng   - execute a program periodically
-		  - skill-ng   - send a signal or report process status
-		  - snice-ng   - renice a process
-		  - sysctl-ng  - configure kernel parameters at runtime
-		  - kill-ng    - terminate a process
-		
 		Total size: ~400 KB
 
 if FREETZ_PACKAGE_PROCPS_NG
