@@ -57,6 +57,9 @@ Latest changes
 
   - AVM sources:
 
+  - Scripts:
+    * ssh_firmware_update.py - utility for upgrading firmware and external over SSH
+
   - Patches:
 
   - Packages:
