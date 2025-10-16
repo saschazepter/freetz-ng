@@ -693,7 +693,7 @@ Index: [A](#a) - [B](#b) - [C](#c) - [D](#d) - [E](#e) - [F](#f) - [G](#g) - [H]
      - [Diskussion](../../docs/make/privoxy.md#diskussion)
 
   * **[procps-ng 4.0.4 (binaries only)](../../docs/make/procps-ng.md)<a id='procps-ng'></a>**<br>
-    procps-ng - /proc filesystem utilities (full versions) This package provides the full versions of procps utilities with the suffix "full" to avoid conflicts with BusyBox versions. Binaries included: - psfull      - process status - topfull     - display Linux processes - freefull    - display amount of free and used memory - uptimefull  - tell how long the system has been running - vmstatfull  - virtual memory statistics - wfull       - show who is logged on - pmapfull    - report memory map of a process - pgrepfull   - look up processes based on name - pkillfull   - signal processes based on name - pidoffull   - find the process ID of a running program - pwdxfull    - report current working directory of a process - slabtopfull - display kernel slab cache information - tloadfull   - graphic representation of system load average - watchfull   - execute a program periodically - skillfull   - send a signal or report process status - snicefull   - renice a process - sysctlfull  - configure kernel parameters at runtime - killfull    - terminate a process Total size: ~400 KB
+    procps-ng - /proc filesystem utilities This package provides the full versions of procps utilities with the suffix "-ng" to avoid conflicts with BusyBox versions.
      - [Process Information](../../docs/make/procps-ng.md#process-information)
      - [Memory and System Information](../../docs/make/procps-ng.md#memory-and-system-information)
      - [Process Management](../../docs/make/procps-ng.md#process-management)
