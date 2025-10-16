@@ -27,6 +27,7 @@ $(PKG)_CONFIGURE_OPTIONS += --disable-shared
 $(PKG)_CONFIGURE_OPTIONS += --disable-nls
 $(PKG)_CONFIGURE_OPTIONS += --enable-w-from
 $(PKG)_CONFIGURE_OPTIONS += --enable-skill
+$(PKG)_CONFIGURE_OPTIONS += --disable--libselinux
 $(PKG)_CONFIGURE_OPTIONS += --without-systemd
 $(PKG)_CONFIGURE_OPTIONS += --without-elogind
 
