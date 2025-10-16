@@ -2,139 +2,139 @@ menuconfig FREETZ_PACKAGE_PROCPS_NG
 	bool "procps-ng 4.0.4 (binaries only)"
 	default n
 	help
-		procps-ng - /proc filesystem utilities (full versions)
+		procps-ng - /proc filesystem utilities
 		
 		This package provides the full versions of procps utilities with
-		the suffix "full" to avoid conflicts with BusyBox versions.
+		the suffix "-ng" to avoid conflicts with BusyBox versions.
 		
 		Binaries included:
-		  - psfull      - process status
-		  - topfull     - display Linux processes
-		  - freefull    - display amount of free and used memory
-		  - uptimefull  - tell how long the system has been running
-		  - vmstatfull  - virtual memory statistics
-		  - wfull       - show who is logged on
-		  - pmapfull    - report memory map of a process
-		  - pgrepfull   - look up processes based on name
-		  - pkillfull   - signal processes based on name
-		  - pidoffull   - find the process ID of a running program
-		  - pwdxfull    - report current working directory of a process
-		  - slabtopfull - display kernel slab cache information
-		  - tloadfull   - graphic representation of system load average
-		  - watchfull   - execute a program periodically
-		  - skillfull   - send a signal or report process status
-		  - snicefull   - renice a process
-		  - sysctlfull  - configure kernel parameters at runtime
-		  - killfull    - terminate a process
+		  - ps-ng      - process status
+		  - top-ng     - display Linux processes
+		  - free-ng    - display amount of free and used memory
+		  - uptime-ng  - tell how long the system has been running
+		  - vmstat-ng  - virtual memory statistics
+		  - w-ng       - show who is logged on
+		  - pmap-ng    - report memory map of a process
+		  - pgrep-ng   - look up processes based on name
+		  - pkill-ng   - signal processes based on name
+		  - pidof-ng   - find the process ID of a running program
+		  - pwdx-ng    - report current working directory of a process
+		  - slabtop-ng - display kernel slab cache information
+		  - tload-ng   - graphic representation of system load average
+		  - watch-ng   - execute a program periodically
+		  - skill-ng   - send a signal or report process status
+		  - snice-ng   - renice a process
+		  - sysctl-ng  - configure kernel parameters at runtime
+		  - kill-ng    - terminate a process
 		
 		Total size: ~400 KB
 
 if FREETZ_PACKAGE_PROCPS_NG
 
 	config FREETZ_PACKAGE_PROCPS_NG_PS
-		bool "psfull - process status"
+		bool "ps - process status"
 		default y
 		help
 			Report a snapshot of the current processes.
 
 	config FREETZ_PACKAGE_PROCPS_NG_TOP
-		bool "topfull - display Linux processes"
+		bool "top - display Linux processes"
 		default y
 		help
 			Display Linux processes in real-time.
 
 	config FREETZ_PACKAGE_PROCPS_NG_FREE
-		bool "freefull - display memory usage"
+		bool "free - display memory usage"
 		default y
 		help
 			Display amount of free and used memory in the system.
 
 	config FREETZ_PACKAGE_PROCPS_NG_UPTIME
-		bool "uptimefull - system uptime"
+		bool "uptime - system uptime"
 		default y
 		help
 			Tell how long the system has been running.
 
 	config FREETZ_PACKAGE_PROCPS_NG_VMSTAT
-		bool "vmstatfull - virtual memory statistics"
+		bool "vmstat - virtual memory statistics"
 		default y
 		help
 			Report virtual memory statistics.
 
 	config FREETZ_PACKAGE_PROCPS_NG_W
-		bool "wfull - show who is logged on"
+		bool "w - show who is logged on"
 		default y
 		help
 			Show who is logged on and what they are doing.
 
 	config FREETZ_PACKAGE_PROCPS_NG_PMAP
-		bool "pmapfull - process memory map"
+		bool "pmap - process memory map"
 		default n
 		help
 			Report memory map of a process.
 
 	config FREETZ_PACKAGE_PROCPS_NG_PGREP
-		bool "pgrepfull - lookup processes by name"
+		bool "pgrep - lookup processes by name"
 		default n
 		help
 			Look up processes based on name and other attributes.
 
 	config FREETZ_PACKAGE_PROCPS_NG_PKILL
-		bool "pkillfull - signal processes by name"
+		bool "pkill - signal processes by name"
 		default n
 		help
 			Signal processes based on name and other attributes.
 
 	config FREETZ_PACKAGE_PROCPS_NG_PIDOF
-		bool "pidoffull - find process ID"
+		bool "pidof - find process ID"
 		default n
 		help
 			Find the process ID of a running program.
 
 	config FREETZ_PACKAGE_PROCPS_NG_PWDX
-		bool "pwdxfull - current directory of process"
+		bool "pwdx - current directory of process"
 		default n
 		help
 			Report current working directory of a process.
 
 	config FREETZ_PACKAGE_PROCPS_NG_SLABTOP
-		bool "slabtopfull - kernel slab cache info"
+		bool "slabtop - kernel slab cache info"
 		default n
 		help
 			Display kernel slab cache information in real time.
 
 	config FREETZ_PACKAGE_PROCPS_NG_TLOAD
-		bool "tloadfull - graphical load average"
+		bool "tload - graphical load average"
 		default n
 		help
 			Graphic representation of system load average.
 
 	config FREETZ_PACKAGE_PROCPS_NG_WATCH
-		bool "watchfull - execute program periodically"
+		bool "watch - execute program periodically"
 		default n
 		help
 			Execute a program periodically, showing output fullscreen.
 
 	config FREETZ_PACKAGE_PROCPS_NG_SKILL
-		bool "skillfull - send signal to processes"
+		bool "skill - send signal to processes"
 		default n
 		help
 			Send a signal or report process status.
 
 	config FREETZ_PACKAGE_PROCPS_NG_SNICE
-		bool "snicefull - renice processes"
+		bool "snice - renice processes"
 		default n
 		help
 			Renice a process.
 
 	config FREETZ_PACKAGE_PROCPS_NG_SYSCTL
-		bool "sysctlfull - kernel parameters"
+		bool "sysctl - kernel parameters"
 		default n
 		help
 			Configure kernel parameters at runtime.
 
 	config FREETZ_PACKAGE_PROCPS_NG_KILL
-		bool "killfull - terminate process"
+		bool "kill - terminate process"
 		default n
 		help
 			Terminate a process by PID.

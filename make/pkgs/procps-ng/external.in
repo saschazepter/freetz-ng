@@ -6,10 +6,10 @@ config EXTERNAL_FREETZ_PACKAGE_PROCPS_NG
 		Externalize procps-ng binaries to USB storage.
 		
 		Recommended for devices with limited flash memory.
-		The procps-full package includes multiple utilities
+		The procps-ng package includes multiple utilities
 		that can be stored on external storage to save
 		internal flash space.
 		
-		All selected binaries will be externalized with "full"
-		suffix, eg "psfull".
+		All selected binaries will be externalized with "-ng"
+		suffix, eg "ps-ng".
 
