@@ -24,6 +24,7 @@ $(PKG)_CONFIGURE_PRE_CMDS += $(call PKG_PREVENT_RPATH_HARDCODING,./configure)
 
 $(PKG)_CONFIGURE_OPTIONS += --enable-static
 $(PKG)_CONFIGURE_OPTIONS += --disable-shared
+$(PKG)_CONFIGURE_OPTIONS += --disable-rpath
 $(PKG)_CONFIGURE_OPTIONS += --disable-nls
 $(PKG)_CONFIGURE_OPTIONS += --enable-w-from
 $(PKG)_CONFIGURE_OPTIONS += --enable-skill
