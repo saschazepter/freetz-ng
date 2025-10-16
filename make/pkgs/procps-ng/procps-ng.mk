@@ -29,8 +29,6 @@ $(PKG)_CONFIGURE_OPTIONS += --enable-w-from
 $(PKG)_CONFIGURE_OPTIONS += --enable-skill
 $(PKG)_CONFIGURE_OPTIONS += --without-systemd
 $(PKG)_CONFIGURE_OPTIONS += --without-elogind
-$(PKG)_CONFIGURE_OPTIONS += ac_cv_func_malloc_0_nonnull=yes
-$(PKG)_CONFIGURE_OPTIONS += ac_cv_func_realloc_0_nonnull=yes
 
 
 $(PKG_SOURCE_DOWNLOAD)
