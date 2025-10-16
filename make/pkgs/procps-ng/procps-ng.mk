@@ -20,6 +20,8 @@ $(PKG)_FILTER_OUT                    = $(foreach k,$(1), $(foreach v,$(2), $(if 
 $(PKG)_BINARIES_TARGET_DIR          := $(call $(PKG)_FILTER_OUT,$($(PKG)_BINARIES_TARGET),$($(PKG)_BINARIES_ALL_TARGET_DIR))
 $(PKG)_EXCLUDED                     += $(filter-out $($(PKG)_BINARIES_TARGET_DIR),$($(PKG)_BINARIES_ALL_TARGET_DIR))
 
+$(PKG)_CONFIGURE_PRE_CMDS += $(AUTORECONF)
+
 $(PKG)_CONFIGURE_PRE_CMDS += $(call PKG_PREVENT_RPATH_HARDCODING,./configure)
 
 $(PKG)_CONFIGURE_OPTIONS += --enable-static
