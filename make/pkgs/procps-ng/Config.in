@@ -6,8 +6,6 @@ menuconfig FREETZ_PACKAGE_PROCPS_NG
 		
 		This package provides the full versions of procps utilities with
 		the suffix "-ng" to avoid conflicts with BusyBox versions.
-		
-		Total size: ~400 KB
 
 if FREETZ_PACKAGE_PROCPS_NG
 
