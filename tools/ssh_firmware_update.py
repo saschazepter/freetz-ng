@@ -7,8 +7,12 @@ Emulates the web interface update process with interactive/batch modes,
 progress bars, dry-run, debug capabilities, and advanced UX.
 
 Usage:
-  ssh_firmware_update.py --host 192.168.178.1 --password <pwd>
+  tools/ssh_firmware_update.py --host 192.168.178.1 --password <pwd>
   ROUTER_PASSWORD=<pwd> ssh_firmware_update.py --host 192.168.178.1
+  
+If you don't have python3 installed:
+  make python3-host-precompiled
+  tools/path/python3 tools/ssh_firmware_update.py ...
 """
 import os, sys, argparse, time, subprocess, threading, pty, select, errno, re, getpass
 from glob import glob
