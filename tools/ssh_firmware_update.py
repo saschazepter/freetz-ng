@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 """
-router_update.py — Freetz-NG FRITZ!Box Update via SSH/SCP
+ssh_firmware_update.py — Freetz-NG FRITZ!Box Update via SSH/SCP
+by Ircama, 2025
 
 Emulates the web interface update process with interactive/batch modes, 
 progress bars, dry-run, debug capabilities, and advanced UX.
 
 Usage:
-  router_update.py --host 192.168.178.1 --password <pwd>
-  ROUTER_PASSWORD=<pwd> router_update.py --host 192.168.178.1
+  ssh_firmware_update.py --host 192.168.178.1 --password <pwd>
+  ROUTER_PASSWORD=<pwd> ssh_firmware_update.py --host 192.168.178.1
 """
 import os, sys, argparse, time, subprocess, threading, pty, select, errno, re, getpass
 from glob import glob
@@ -22,7 +23,7 @@ DEFAULT_EXTERNAL_BASE = '/var/media/ftp/external'
 PING_TIMEOUT = 1
 BOOT_WAIT_MAX_TRIES = 450  # one try every two seconds; 15 minutes
 SSH_TEST_CMD = 'pwd'
-SSH_LOG_FILE = '/tmp/router_update_ssh.log'
+SSH_LOG_FILE = '/tmp/ssh_firmware_update.log'
 
 # --- COLORS AND EMOJIS ---
 COLORS = {
