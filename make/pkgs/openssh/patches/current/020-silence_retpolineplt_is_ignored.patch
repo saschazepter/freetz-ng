@@ -1,18 +1,18 @@
 --- configure
 +++ configure
-@@ -10324,6 +10324,7 @@
- fi
- rm -f core conftest.err conftest.$ac_objext conftest.beam conftest.$ac_ext
+@@ -10488,6 +10488,7 @@
+ 	       { printf "%s\n" "$as_me:${as_lineno-$LINENO}: result: $ac_res" >&5
+ printf "%s\n" "$ac_res" >&6; }
  } # clang
 +if false; then
  	{
- 	{ printf "%s\n" "$as_me:${as_lineno-$LINENO}: checking if $LD supports link flag -Wl,-z,retpolineplt" >&5
- printf %s "checking if $LD supports link flag -Wl,-z,retpolineplt... " >&6; }
-@@ -15867,6 +15868,7 @@
- fi
- rm -f core conftest.err conftest.$ac_objext conftest.beam conftest.$ac_ext
+   ossh_cache_var=ossh_cv_ldflag__Wl__z_retpolineplt
+   { printf "%s\n" "$as_me:${as_lineno-$LINENO}: checking if $LD supports link flag -Wl,-z,retpolineplt" >&5
+@@ -16154,6 +16155,7 @@
+ 	       { printf "%s\n" "$as_me:${as_lineno-$LINENO}: result: $ac_res" >&5
+ printf "%s\n" "$ac_res" >&6; }
  }
 +fi
  	{
- 	{ printf "%s\n" "$as_me:${as_lineno-$LINENO}: checking if $LD supports link flag -pie" >&5
- printf %s "checking if $LD supports link flag -pie... " >&6; }
+   ossh_cache_var=ossh_cv_ldflag__pie
+   { printf "%s\n" "$as_me:${as_lineno-$LINENO}: checking if $LD supports link flag -pie" >&5
