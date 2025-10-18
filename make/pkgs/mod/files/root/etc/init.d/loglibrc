@@ -23,6 +23,11 @@ loglib_logger() {
 
 loglib_system() {
 	loglib_freetz "$@"
+
+	# no single dot lines
+	[ "$2" == "." ] && return
+	[ "$2" == " ." ] && return
+
 	loglib_console "$@"
 	loglib_logger "$@"
 }

@@ -21,7 +21,6 @@ log() {
 	done
 	[ -z "$*" ] && return
 	echo $newl -e "$addl$*" | tee -a $LOG_FILE
-	[ "$*" == "." -o "$*" == " ." ] && return
 	IFS='\n' echo "$*" | while read -r line; do
 		loglib_system "$DAEMON" "$line"
 	done
