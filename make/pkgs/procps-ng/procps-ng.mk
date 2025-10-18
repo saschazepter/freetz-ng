@@ -1,6 +1,6 @@
-$(call PKG_INIT_BIN, 4.0.4)
+$(call PKG_INIT_BIN, 4.0.5)
 $(PKG)_SOURCE:=$(pkg)-$($(PKG)_VERSION).tar.xz
-$(PKG)_HASH:=22870d6feb2478adb617ce4f09a787addaf2d260c5a8aa7b17d889a962c5e42e
+$(PKG)_HASH:=c2e6d193cc78f84cd6ddb72aaf6d5c6a9162f0470e5992092057f5ff518562fa
 $(PKG)_SITE:=@SF/procps-ng/Production
 ### WEBSITE:=https://gitlab.com/procps-ng/procps
 ### MANPAGE:=https://linux.die.net/man/1/ps
@@ -51,6 +51,7 @@ $(PKG)_CONFIGURE_OPTIONS += --disable-rpath
 $(PKG)_CONFIGURE_OPTIONS += --disable-nls
 $(PKG)_CONFIGURE_OPTIONS += --enable-w-from
 $(PKG)_CONFIGURE_OPTIONS += --enable-skill
+$(PKG)_CONFIGURE_OPTIONS += --disable-pidwait
 $(PKG)_CONFIGURE_OPTIONS += --disable-watch8bit
 $(PKG)_CONFIGURE_OPTIONS += --disable-libselinux
 $(PKG)_CONFIGURE_OPTIONS += --without-systemd

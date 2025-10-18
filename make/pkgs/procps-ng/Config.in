@@ -1,5 +1,5 @@
 menuconfig FREETZ_PACKAGE_PROCPS_NG
-	bool "procps-ng 4.0.4 (binaries only)"
+	bool "procps-ng 4.0.5 (binaries only)"
 	depends on FREETZ_KERNEL_VERSION_3_MIN
 	default n
 	help
