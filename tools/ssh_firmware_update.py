@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
 ssh_firmware_update.py — Freetz-NG FRITZ!Box Update via SSH/SCP
+by Ircama, 2025
 
 Emulates the web interface update process with interactive/batch modes, 
 progress bars, dry-run, debug capabilities, and advanced UX.
