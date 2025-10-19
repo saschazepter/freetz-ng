@@ -18,8 +18,14 @@ config FREETZ_DL_SITE
 	default "@AVM/fritzbox.fon_wlan/firmware/english/annex_a"                                                          if FREETZ_TYPE_WLAN    && FREETZ_TYPE_LANG_EN && FREETZ_TYPE_ANNEX_A
 	default "@AVM/fritzbox.fon_wlan/firmware/english/annex_b"                                                          if FREETZ_TYPE_WLAN    && FREETZ_TYPE_LANG_EN && FREETZ_TYPE_ANNEX_B
 	#
+	default "@AVM/fritz.wlan_repeater_ng/firmware/deutsch"                                                             if FREETZ_TYPE_WRNG    && FREETZ_TYPE_LANG_DE
+	default "@AVM/fritz.wlan_repeater_ng/firmware/english"                                                             if FREETZ_TYPE_WRNG    && FREETZ_TYPE_LANG_EN
+	#
 	default "@AVM/fritzwlan/fritzwlan-repeater-300e/deutschland/fritz.os"                                              if FREETZ_TYPE_0300    && FREETZ_TYPE_LANG_DE
 	default "@AVM/fritzwlan/fritzwlan-repeater-300e/other/fritz.os"                                                    if FREETZ_TYPE_0300    && FREETZ_TYPE_LANG_EN
+	#
+	default "@AVM/fritzwlan/fritzwlan-repeater-310-a/{deutschland,other}/fritz.os"                                     if FREETZ_TYPE_0310_V1
+	default "@AVM/fritzwlan/fritzwlan-repeater-310-b/{deutschland,other}/fritz.os"                                     if FREETZ_TYPE_0310_V2
 	#
 	default "@AVM/fritzwlan/fritzwlan-repeater-450e/{other,deutschland}/fritz.os"                                      if FREETZ_TYPE_0450
 	#
@@ -27,6 +33,11 @@ config FREETZ_DL_SITE
 	#
 	default "@AVM/firmware/546E/8723218764/CE"                                                                         if FREETZ_TYPE_0546    && FREETZ_TYPE_FIRMWARE_06_5X
 	default "@AVM/fritzpowerline/fritzpowerline-546e/{deutschland,other}/fritz.os"                                     if FREETZ_TYPE_0546
+	#
+	default "@AVM/fritzwlan/fritzrepeater-600/{deutschland,other}/fritz.os"                                            if FREETZ_TYPE_0600_V1
+	default "@AVM/fritzwlan/fritzrepeater-600v2/{deutschland,other}/fritz.os"                                          if FREETZ_TYPE_0600_V2
+	#
+	default "@AVM/fritzwlan/fritzwlan-repeater-1160/{deutschland,other}/fritz.os"                                      if FREETZ_TYPE_1160
 	#
 	default "@AVM/fritzwlan/fritzrepeater-1200/{other,deutschland}/fritz.os,@AVM/1200"                                 if FREETZ_TYPE_1200_W5
 	#
@@ -119,6 +130,8 @@ config FREETZ_DL_SITE
 	#
 	default "@AVM/firmware/6430/65797387"                                                                              if FREETZ_TYPE_6430    && FREETZ_TYPE_FIRMWARE_07_1X
 	default "@AVM/fritzbox-6430-cable/deutschland/fritz.os"                                                            if FREETZ_TYPE_6430
+	#
+	default "@AVM/fritzbox-6320-cable/{deutschland,other}/fritz.os"                                                    if FREETZ_TYPE_6320
 	#
 	default "@AVM/firmware/6490/78434061"                                                                              if FREETZ_TYPE_6490    && FREETZ_TYPE_FIRMWARE_06_8X
 	default "@AVM/firmware/6490/59088767"                                                                              if FREETZ_TYPE_6490    && FREETZ_TYPE_FIRMWARE_07_0X
@@ -286,8 +299,14 @@ config FREETZ_DL_SOURCE
 	default "FRITZ.Box_Fon_WLAN.AnnexA.en.08.04.49.image"                                         if FREETZ_TYPE_WLAN     && FREETZ_TYPE_LANG_EN && FREETZ_TYPE_ANNEX_A
 	default "FRITZ.Box_Fon_WLAN.AnnexB.en.08.04.49.image"                                         if FREETZ_TYPE_WLAN     && FREETZ_TYPE_LANG_EN && FREETZ_TYPE_ANNEX_B
 	#
+	default "fritz.wlan_repeater_ng_68.04.88.image"                                               if FREETZ_TYPE_WRNG     && FREETZ_TYPE_LANG_DE
+	default "fritz.wlan_repeater_ng_en.68.04.88.image"                                            if FREETZ_TYPE_WRNG     && FREETZ_TYPE_LANG_EN
+	#
 	default "FRITZ.Box_WLAN_Repeater_300E-06.34.image"                                            if FREETZ_TYPE_0300     && FREETZ_TYPE_LANG_DE
 	default "FRITZ.Box_WLAN_Repeater_300E.en-de-es-it-fr-pl.101.06.34.image"                      if FREETZ_TYPE_0300     && FREETZ_TYPE_LANG_EN
+	#
+	default "FRITZ.Repeater_310a-07.16.image/FRITZ.Repeater_310-07.16.image"                      if FREETZ_TYPE_0310_V1                         && FREETZ_TYPE_FIRMWARE_07_1X
+	default "FRITZ.Repeater_310b-07.16.image/FRITZ.Repeater_310-07.16.image"                      if FREETZ_TYPE_0310_V2                         && FREETZ_TYPE_FIRMWARE_07_1X
 	#
 	default "FRITZ.Box_WLAN_Repeater_450E.128.06.51.image"                                        if FREETZ_TYPE_0450                            && FREETZ_TYPE_FIRMWARE_06_5X
 	default "FRITZ.Box_WLAN_Repeater_450E.128.06.92.image"                                        if FREETZ_TYPE_0450                            && FREETZ_TYPE_FIRMWARE_06_9X
@@ -305,6 +324,11 @@ config FREETZ_DL_SOURCE
 	default "FRITZ.Powerline_546E.118.06.92.image"                                                if FREETZ_TYPE_0546                            && FREETZ_TYPE_FIRMWARE_06_9X
 	default "FRITZ.Powerline_546E.118.07.01.image"                                                if FREETZ_TYPE_0546                            && FREETZ_TYPE_FIRMWARE_07_0X
 	default "FRITZ.Powerline_546E.118.07.15.image"                                                if FREETZ_TYPE_0546                            && FREETZ_TYPE_FIRMWARE_07_1X
+	#
+	default "FRITZ.Repeater_600v2-07.58.image"                                                    if FREETZ_TYPE_0600_V1                         && FREETZ_TYPE_FIRMWARE_07_5X
+	default "FRITZ.Repeater_600-07.58.image"                                                      if FREETZ_TYPE_0600_V2                         && FREETZ_TYPE_FIRMWARE_07_5X
+	#
+	default "FRITZ.Box_WLAN_Repeater_1160-07.15.image"                                            if FREETZ_TYPE_1160                            && FREETZ_TYPE_FIRMWARE_07_1X
 	#
 	default "FRITZ.Repeater_1200-07.14.image"                                                     if FREETZ_TYPE_1200_W5                         && FREETZ_TYPE_FIRMWARE_07_1X
 	default "FRITZ.Repeater_1200-07.29.image"                                                     if FREETZ_TYPE_1200_W5                         && FREETZ_TYPE_FIRMWARE_07_2X
@@ -455,6 +479,8 @@ config FREETZ_DL_SOURCE
 	#
 	default "FRITZ.Repeater_6000-07.31-V2.image/FRITZ.Repeater_6000-07.31.image"                  if FREETZ_TYPE_6000                            && FREETZ_TYPE_FIRMWARE_07_2X
 	default "FRITZ.Repeater_6000-07.58.image"                                                     if FREETZ_TYPE_6000                            && FREETZ_TYPE_FIRMWARE_07_5X
+	#
+	default "FRITZ.Box_6320_Cable.104.06.03.image"                                                if FREETZ_TYPE_6320                            && FREETZ_TYPE_FIRMWARE_06_0X
 	#
 	default "FRITZ.Box_6430_Cable-07.12.image"                                                    if FREETZ_TYPE_6430                            && FREETZ_TYPE_FIRMWARE_07_1X
 	default "FRITZ.Box_6430_Cable-07.30.image"                                                    if FREETZ_TYPE_6430                            && FREETZ_TYPE_FIRMWARE_07_2X
