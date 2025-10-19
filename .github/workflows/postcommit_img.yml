@@ -85,10 +85,10 @@ jobs:
         run: |
           FOS="${{ github.event.inputs.fos }}"
           [ -z "$FOS" ] && FOS="08_2X"
-          [ "$FOS" = "alles" ] && FOS="${FOS:0:3}"
+          [ "$FOS" = "alles" ] && FOS="${FOS%es}"
           [ "$FOS" = "freetz_org" ] && FOS="$(sed -rn "s/^config FREETZ_AVM_HAS_FIRMWARE_(0[456])/\1/p" config/avm/availability.in) 07_0X 07_1X"
           [ "$FOS" = "freetz-ng" ] && FOS="07_2X 07_5X $(sed -rn "s/^config FREETZ_AVM_HAS_FIRMWARE_(0[89])/\1/p" config/avm/availability.in)"
-          [ "$FOS" != "${FOS#Fos}" ] && FOS="${FOS:3}"
+          [ "$FOS" != "${FOS#Fos}" ] && FOS="${FOS#Fos}"
           for fos in $FOS; do \
             [ "${#fos}" != "3" ] && echo -n "FREETZ_AVM_VERSION_"; \
             echo -n "$fos "; \
