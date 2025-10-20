@@ -2069,7 +2069,7 @@ if [ "$DO_PACK" -gt 0 ]; then
 			[ "$FREETZ_AVM_HAS_FWLAYOUT_3" == "y" ] && FILESYSTEM_LIMIT="$(sed -nr 's/^ATOM_filesystem_size=(.*)/\1/p' ${FIRMWARE_DIR}/var/install)"
 			[ "$FREETZ_AVM_HAS_FWLAYOUT_4" == "y" ] && FILESYSTEM_LIMIT="75496960"  # https://bitbucket.org/fesc2000/ffritz/src/6591/README-6591.md
 			[ "$FREETZ_AVM_HAS_FWLAYOUT_5" == "y" ] && FILESYSTEM_LIMIT="$(( $FREETZ_AVM_HAS_FIT_SIZE *1024*1024 ))"
-		#	[ -z "$FILESYSTEM_LIMIT" ] && error 1 "Can't find filesystem_size in var/install"
+			[ "$FILESYSTEM_LIMIT" == "0" ] && FILESYSTEM_LIMIT=""
 		fi
 		let FILESYSTEM_SIZE="$(wc -c < "$FILESYSTEM_MOD")"
 
