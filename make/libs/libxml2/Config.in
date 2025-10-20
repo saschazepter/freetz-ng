@@ -17,23 +17,6 @@ if FREETZ_LIB_libxml2
 			Adds html parsing capability to libxml2. This increases the size of
 			libxml2 by 120kB. Html parsing is required to build libxslt.
 
-	config FREETZ_LIB_libxml2_WITH_TREE
-		bool "Build with tree manipulation API"
-		default n
-		help
-			Enables the tree manipulation API in libxml2 (--with-tree=yes).
-			This provides functions for creating, modifying, and traversing
-			XML document trees.
-			
-			Required by:
-			- XML Schema validation (--with-schemas)
-			- PHP DOM extension
-			- Applications that need to manipulate XML trees
-			
-			Size impact: Minimal (most code is already included in base build)
-			
-			Note: Automatically enabled by PHP when DOM support is requested.
-
 	config FREETZ_LIB_libxml2_WITH_RELAXNG
 		bool "Build with Relax-NG support"
 		default n
