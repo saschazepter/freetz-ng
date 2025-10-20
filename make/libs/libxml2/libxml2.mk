@@ -43,7 +43,6 @@ $(PKG)_CONFIGURE_OPTIONS += --with-c14n=yes
 $(PKG)_CONFIGURE_OPTIONS += --with-catalog=no
 $(PKG)_CONFIGURE_OPTIONS += --with-html=$(if $(FREETZ_LIB_libxml2_WITH_HTML),yes,no)
 $(PKG)_CONFIGURE_OPTIONS += --with-legacy=no		#deprecated APIs for compatibility
-$(PKG)_CONFIGURE_OPTIONS += --with-lzma=no
 $(PKG)_CONFIGURE_OPTIONS += --with-output=yes		#serialization support
 $(PKG)_CONFIGURE_OPTIONS += --with-pattern=yes		#xmlPattern selection interface
 $(PKG)_CONFIGURE_OPTIONS += --with-push=yes		#PUSH parser interfaces
