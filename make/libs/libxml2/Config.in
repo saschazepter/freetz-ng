@@ -11,30 +11,19 @@ config FREETZ_LIB_libxml2
 if FREETZ_LIB_libxml2
 
 	config FREETZ_LIB_libxml2_WITH_HTML
-		bool "Build with HTML support"
+		bool "Build with HTML parser"
 		default n
 		help
 			Adds html parsing capability to libxml2. This increases the size of
-			libxml2 by 120kB. Html parsing is required to build libxslt.
+			libxml2 by 121kB. Html parsing is required to build libxslt.
 
 	config FREETZ_LIB_libxml2_WITH_RELAXNG
-		bool "Build with Relax-NG support"
+		bool "Build with RELAX NG support"
 		default n
 		help
-			Enables Relax-NG schema validation support (--with-relaxng=yes).
-			Relax-NG is an alternative to XML Schema for validating XML documents.
-			
-			Required by:
-			- PHP's DOMDocument::relaxNGValidate() methods
-			- Applications using Relax-NG validation
-			
-			Dependencies:
-			- Requires --with-tree=yes (tree manipulation API)
-			- Included in --with-schemas=yes (XML Schema support)
-			
-			Size impact: Adds approximately 50-80 KB to libxml2
-			
-			Note: Automatically enabled by PHP when DOM support is requested.
+			Enables RELAX NG schema validation support.
+			RELAX NG is an alternative to XML Schema for validating XML documents.
+			This increases the size of libxml2 by 96kB.
 
 endif # FREETZ_LIB_libxml2
 
