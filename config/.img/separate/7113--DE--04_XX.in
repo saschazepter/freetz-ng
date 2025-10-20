@@ -1,34 +1,40 @@
-if FREETZ_TYPE_5124 && FREETZ_TYPE_LANG_EN && FREETZ_TYPE_ANNEX_A
+if FREETZ_TYPE_7113 && FREETZ_TYPE_LANG_DE && FREETZ_AVM_VERSION_04_XX
 
 config FREETZ_AVM_PROP_NAME
 	string
-	default "FRITZ!Box Fon 5124 Annex A"
+	default "FRITZ!Box Fon WLAN 7113"
 
 config FREETZ_AVM_PROP_MAJOR
 	string
-	default "57"
+	default "60"
 
 config FREETZ_AVM_PROP_HWREV
 	string
-	default "126"
+	default "129"
 
 config FREETZ_AVM_HAS_SIGNATURE
 	def_bool y
 
-config FREETZ_AVM_HAS_BRANDING_avme
+config FREETZ_AVM_HAS_MULTIPLE_BRANDINGS
+	def_bool y
+
+config FREETZ_AVM_HAS_BRANDING_1und1
+	def_bool y
+
+config FREETZ_AVM_HAS_BRANDING_avm
+	def_bool y
+
+config FREETZ_AVM_HAS_BRANDING_freenet
 	def_bool y
 
 config FREETZ_AVM_SERIAL_CONSOLE_DEVICE
 	string
 	default "/dev/ttyS0"
 
-config FREETZ_AVM_HAS_AURA_USB
+config FREETZ_AVM_HAS_CVE_2014_9727
 	def_bool y
 
-config FREETZ_AVM_HAS_USB_HOST_AHCI
-	def_bool y
-
-config FREETZ_AVM_HAS_USB_HOST
+config FREETZ_AVM_HAS_WLAN
 	def_bool y
 
 config FREETZ_AVM_HAS_PHONE
@@ -49,49 +55,22 @@ config FREETZ_AVM_HAS_TELNETD
 config FREETZ_AVM_HAS_DMESG_LINK
 	def_bool y
 
-config FREETZ_AVM_HAS_TC
-	def_bool y
-
-config FREETZ_AVM_HAS_SAMBA_SMBD
-	def_bool y
-
-config FREETZ_AVM_HAS_CTLMGR_CTL
-	def_bool y
-
 config FREETZ_AVM_HAS_SHOWDSLDSTAT
 	def_bool y
 
 config FREETZ_AVM_HAS_DSLD
 	def_bool y
 
+config FREETZ_AVM_HAS_WEBSRV
+	def_bool y
+
 config FREETZ_AVM_HAS_DTRACE
-	def_bool y
-
-config FREETZ_AVM_HAS_PRINTSERV
-	def_bool y
-
-config FREETZ_AVM_HAS_MEDIASRV
 	def_bool y
 
 config FREETZ_AVM_HAS_OPENSSL
 	def_bool y
 
 config FREETZ_AVM_HAS_OPENSSL_VERSION_09
-	def_bool y
-
-config FREETZ_AVM_HAS_KIDS
-	def_bool y
-
-config FREETZ_AVM_HAS_EXT2_MODULE
-	def_bool y
-
-config FREETZ_AVM_HAS_FAT_MODULE
-	def_bool y
-
-config FREETZ_AVM_HAS_NLS_MODULE
-	def_bool y
-
-config FREETZ_AVM_HAS_ISOFS_MODULE
 	def_bool y
 
 config FREETZ_AVM_PROP_SQUASHFS_VERSION_2
@@ -121,7 +100,7 @@ config FREETZ_AVM_PROP_GCC_3_4
 config FREETZ_AVM_PROP_LIBC_UCLIBC
 	def_bool y
 
-config FREETZ_AVM_PROP_UCLIBC_0_9_29
+config FREETZ_AVM_PROP_UCLIBC_0_9_28
 	def_bool y
 
 endif
