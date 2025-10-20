@@ -15,6 +15,9 @@ $(PKG)_STAGING_BINARY:=$(TARGET_TOOLCHAIN_STAGING_DIR)/usr/lib/$($(PKG)_LIBNAME)
 $(PKG)_TARGET_BINARY:=$($(PKG)_TARGET_DIR)/$($(PKG)_LIBNAME)
 
 $(PKG)_REBUILD_SUBOPTS += FREETZ_LIB_libxml2_WITH_HTML
+$(PKG)_REBUILD_SUBOPTS += FREETZ_LIB_libxml2_WITH_TREE
+$(PKG)_REBUILD_SUBOPTS += FREETZ_LIB_libxml2_WITH_RELAXNG
+$(PKG)_REBUILD_SUBOPTS += FREETZ_LIB_libxml2_WITH_EXTENDED_FEATURES
 
 ifeq ($(strip $(FREETZ_TARGET_UCLIBC_0_9_28)),y)
 $(PKG)_DEPENDS_ON += iconv
@@ -49,6 +52,8 @@ $(PKG)_CONFIGURE_OPTIONS += --with-push=yes		#PUSH parser interfaces
 $(PKG)_CONFIGURE_OPTIONS += --with-reader=yes		#xmlReader parsing interface
 $(PKG)_CONFIGURE_OPTIONS += --with-regexps=yes		#Regular Expressions support
 $(PKG)_CONFIGURE_OPTIONS += --with-sax1=yes		#old SAX1 interface
+$(PKG)_CONFIGURE_OPTIONS += --with-tree=$(if $(FREETZ_LIB_libxml2_WITH_TREE),yes,no)		#tree manipulation API (required by schemas)
+$(PKG)_CONFIGURE_OPTIONS += --with-relaxng=$(if $(FREETZ_LIB_libxml2_WITH_RELAXNG),yes,no)		#Relax-NG support (required by PHP)
 $(PKG)_CONFIGURE_OPTIONS += --with-schemas=yes		#Relax-NG and Schemas support
 $(PKG)_CONFIGURE_OPTIONS += --with-schematron=no	#Schematron support
 $(PKG)_CONFIGURE_OPTIONS += --with-valid=yes		#DTD validation support
