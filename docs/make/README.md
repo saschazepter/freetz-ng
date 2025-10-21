@@ -194,6 +194,9 @@ Index: [A](#a) - [B](#b) - [C](#c) - [D](#d) - [E](#e) - [F](#f) - [G](#g) - [H]
   * **[FFmpeg 5.1.4/7.1.1](ffmpeg.md)<a id='ffmpeg'></a>**<br>
     FFmpeg is a complete, cross-platform solution to record, convert and stream audio and video.
 
+  * **[file 5.45 (binary only)](file.md)<a id='file'></a>**<br>
+    The file command is used to identify a particular file according to the type of data contained by the file. File can identify many different file types, including ELF binaries, system libraries, RPM packages, and many different graphics formats. This utility is essential for analyzing binaries and file formats on the target system, especially useful for debugging cross-compilation issues. Can be externalized to save flash memory.
+
   * **[Fontconfig 2.17.1 (binary only)](fontconfig.md)<a id='fontconfig'></a>**<br>
     Fontconfig is a library for configuring and customizing font access. This package adds /etc/fontsfonts.conf
 
