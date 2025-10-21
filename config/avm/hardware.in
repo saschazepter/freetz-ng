@@ -53,8 +53,10 @@ config FREETZ_SYSTEM_TYPE_AR934x
 	default y
 	depends on \
 		FREETZ_TYPE_0300 || \
+		FREETZ_TYPE_0310_V2 || \
 		FREETZ_TYPE_0540 || \
 		FREETZ_TYPE_0546 || \
+		FREETZ_TYPE_1160 || \
 		FREETZ_TYPE_1240_W5 || \
 		FREETZ_TYPE_6810 || \
 		FREETZ_TYPE_6842
@@ -191,15 +193,18 @@ config FREETZ_SYSTEM_TYPE_QCA955x
 	bool
 	default y
 	depends on \
+		FREETZ_TYPE_0310_V1 || \
+		FREETZ_TYPE_0450 || \
 		FREETZ_TYPE_1750 || \
 		FREETZ_TYPE_1759 || \
-		FREETZ_TYPE_0450 || \
 		FREETZ_TYPE_6820
 
 config FREETZ_SYSTEM_TYPE_QCA956x
 	bool
 	default y
 	depends on \
+		FREETZ_TYPE_0600_V1 || \
+		FREETZ_TYPE_0600_V2 || \
 		FREETZ_TYPE_2400_W5 || \
 		FREETZ_TYPE_4020
 
@@ -215,6 +220,7 @@ config FREETZ_SYSTEM_TYPE_UR8
 	bool
 	default y
 	depends on \
+		FREETZ_TYPE_WRNG || \
 		FREETZ_TYPE_3270 || \
 		FREETZ_TYPE_7240 || \
 		FREETZ_TYPE_7270 || \
