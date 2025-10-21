@@ -80,6 +80,7 @@ Latest changes
     * libxml2 2.15.1
     * libyaml 0.2.5
     * openjp2 2.5.4
+    * pcre2 10.47
 
   - Firmware updates:
     * Please see [FIRMWARES](FIRMWARES.md) for the list of currently supported devices and firmwares.
