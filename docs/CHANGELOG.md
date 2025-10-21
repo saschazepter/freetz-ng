@@ -53,8 +53,8 @@ Latest changes
   - Build system:
 
   - Host tools:
-    * python 3.13.8
     * file 5.45
+    * python 3.13.8
 
   - AVM sources:
     * 7510     8.20 - 5.4.213
@@ -76,9 +76,9 @@ Latest changes
 
   - Libraries:
     * harfbuzz 12.1.0
-    * openjp2 2.5.4
     * libxml2 2.15.1
     * libyaml 0.2.5
+    * openjp2 2.5.4
 
   - Firmware updates:
     * Please see [FIRMWARES](FIRMWARES.md) for the list of currently supported devices and firmwares.
