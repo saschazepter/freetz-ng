@@ -164,7 +164,7 @@ config FREETZ_SYSTEM_TYPE_PUMA5
 	bool
 	default y
 	depends on \
-		FREETZ_TYPE_6320 ||
+		FREETZ_TYPE_6320 || \
 		FREETZ_TYPE_6360
 
 config FREETZ_SYSTEM_TYPE_PUMA6_X86
