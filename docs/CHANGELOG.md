@@ -54,6 +54,7 @@ Latest changes
 
   - Host tools:
     * python 3.13.8
+    * file 5.45
 
   - AVM sources:
     * 7510     8.20 - 5.4.213
