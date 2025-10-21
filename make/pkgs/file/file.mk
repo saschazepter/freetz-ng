@@ -20,6 +20,13 @@ $(PKG)_DEPENDS_ON += file-host
 
 $(PKG)_CONFIGURE_OPTIONS += --enable-static
 $(PKG)_CONFIGURE_OPTIONS += --disable-shared
+$(PKG)_CONFIGURE_OPTIONS += --disable-elf
+$(PKG)_CONFIGURE_OPTIONS += --disable-elf-core
+$(PKG)_CONFIGURE_OPTIONS += --disable-zlib
+$(PKG)_CONFIGURE_OPTIONS += --disable-bzlib
+$(PKG)_CONFIGURE_OPTIONS += --disable-xzlib
+$(PKG)_CONFIGURE_OPTIONS += --disable-zstdlib
+$(PKG)_CONFIGURE_OPTIONS += --disable-lzlib
 $(PKG)_CONFIGURE_OPTIONS += --disable-libseccomp
 
 
