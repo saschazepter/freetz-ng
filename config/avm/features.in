@@ -7,6 +7,7 @@ config FREETZ_TYPE_CABLE
 	default y
 	depends on \
 		FREETZ_TYPE_6320 || \
+		FREETZ_TYPE_6360 || \
 		FREETZ_TYPE_6430 || \
 		FREETZ_TYPE_6490 || \
 		FREETZ_TYPE_6590 || \
