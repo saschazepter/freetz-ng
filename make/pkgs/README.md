@@ -280,9 +280,6 @@ Index: [A](#a) - [B](#b) - [C](#c) - [D](#d) - [E](#e) - [F](#f) - [G](#g) - [H]
   * **[FFmpeg 5.1.4/7.1.1](../../docs/make/ffmpeg.md)<a id='ffmpeg'></a>**<br>
     FFmpeg is a complete, cross-platform solution to record, convert and stream audio and video.
 
-  * **[file 5.45 (binary only)](../../docs/make/file.md)<a id='file'></a>**<br>
-    file - determine file type The file command is used to identify a particular file according to the type of data contained by the file. File can identify many different file types, including ELF binaries, system libraries, RPM packages, and many different graphics formats. This utility is essential for analyzing binaries and file formats on the target system, especially useful for debugging cross-compilation issues.
-
   * **[Fontconfig 2.17.1 (binary only)](../../docs/make/fontconfig.md)<a id='fontconfig'></a>**<br>
     Fontconfig is a library for configuring and customizing font access. This package adds /etc/fontsfonts.conf
 
@@ -1087,6 +1084,9 @@ Index: [A](#a) - [B](#b) - [C](#c) - [D](#d) - [E](#e) - [F](#f) - [G](#g) - [H]
     XZ is the successor to the Lempel-Ziv/Markov-chain Algorithm compression format, which provides memory-hungry but powerful compression (often better than bzip2) and fast, easy decompression. This package provides the command line tools for working with XZ compression. They can also handle the older LZMA format, and if invoked via appropriate symlinks will emulate the behavior of the commands in the lzma package.
 
 # Debug helpers
+
+  * **[file 5.45 (binary only)](../../docs/make/file.md)<a id='file'></a>**<br>
+    file - determine file type The file command is used to identify a particular file according to the type of data contained by the file. File can identify many different file types, including ELF binaries, system libraries, RPM packages, and many different graphics formats. This utility is essential for analyzing binaries and file formats on the target system, especially useful for debugging cross-compilation issues.
 
   * **<u>gdb GNU debugger 6.8/7.9.1 (binary only) - DEPRECATED</u><a id='gdb'></a>**<br>
     Select the version of gdb you wish to use.
