@@ -299,7 +299,17 @@ validate_signature() {
 		[ $RET -ne 0 ] && error $RET "image could not be verified with public key"
 	else
 		# img
-		cat "$2" > "$TMP/img"
+		case "$(echo "${2##*.}" | tr '[:upper:]' '[:lower:]')" in
+			cvc)
+				p7b_header="$(( $($TOOLS_DIR/sfk hexfind "$2" _./var/_ | sed -n 's/.*hit at offset //p' |head -n1) ))"
+				image_size=$(stat -c %s "$2")
+				image_tail=$(( $image_size - ${p7b_header:-0} ))
+				tail -c $image_tail "$2" > "$TMP/img"
+				;;
+			*)
+				cat "$2" > "$TMP/img"
+				;;
+		esac
 		# fix
 		local FIX="$(mktemp -p $TMP)"
 		"$TAR_GNU" -f "$TMP/img"  --owner=0 --group=0 --numeric-owner  --format=oldgnu  -C "$TMP"  --append  ${FIX##*/}
@@ -454,9 +464,11 @@ if [ "$DO_UNPACK" -gt 0 ]; then
 	mkdir "$ORG_DIR"
 
 	# validate_signature
-	if [ "$FIRMWARE_EXTENSION" == "cvc" ]; then
-		[ $DO_VALIDATE -ne 1 ] && validate_signature "$DO_VALIDATE"
-	elif [ "$FIRMWARE_EXTENSION" != "exe" ]; then
+#	if [ "$FIRMWARE_EXTENSION" == "cvc" ]; then
+#		[ $DO_VALIDATE -ne 1 ] && validate_signature "$DO_VALIDATE"
+#		TODO: Code Validation Certificate
+#	elif [ "$FIRMWARE_EXTENSION" != "exe" ]; then
+	if [ "$FIRMWARE_EXTENSION" != "exe" ]; then
 		validate_signature "$DO_VALIDATE" "$FIRMWARE" "$FIRMWARE_PUB"
 	else
 		validate_signature "0"
@@ -466,19 +478,12 @@ if [ "$DO_UNPACK" -gt 0 ]; then
 	mkdir "$FIRMWARE_DIR"
 
 	if [ "$FIRMWARE_EXTENSION" == "cvc" ]; then
-		# Check and skip garbage (cvc&p7b)
-		image_size="0x$(printf "%08X\n" $(stat -c %s "$FIRMWARE"))"
-		image_grbg="$($TOOLS_DIR/sfk hexfind "$FIRMWARE" _./var/_ | sed -n 's/.*hit at offset //p' |head -n1)"
-		[ -n "$image_grbg" ] && echo "Skipping $(($image_grbg)) Bytes garbage"
-		# validate_signature
-		if [ $DO_VALIDATE -eq 1 ]; then
-			TMP_SIG="$(mktemp -t freetz-sig-XXX)"
-			tail -c $(( $image_size - ${image_grbg:-0x0} )) "$FIRMWARE" > "$TMP_SIG"
-			validate_signature "$DO_VALIDATE" "$TMP_SIG" "$FIRMWARE_PUB"
-			rm "$TMP_SIG"
-		fi
-		# Unpack standard *.image file in tar format
-		tail -c $(( $image_size - ${image_grbg:-0x0} )) "$FIRMWARE" | \
+		# Unpack *.cvc file in tar format without p7b header
+		p7b_header="$(( $($TOOLS_DIR/sfk hexfind "$FIRMWARE" _./var/_ | sed -n 's/.*hit at offset //p' |head -n1) ))"
+		image_size=$(stat -c %s "$FIRMWARE")
+		image_tail=$(( $image_size - ${p7b_header:-0} ))
+		echo "Skipping $(($p7b_header)) Bytes p7b header of cvc"
+		tail -c $image_tail "$FIRMWARE" | \
 		  "$TAR_GNU" -x  --owner=0 --group=0 --numeric-owner  -C "$FIRMWARE_DIR" || untar_failed=1
 	elif [ "$FIRMWARE_EXTENSION" != "exe" ]; then
 		# Unpack standard *.image file in tar format
