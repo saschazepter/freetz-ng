@@ -83,6 +83,7 @@ Content: [FOS-Release](#fos-release) - [FOS-Labor](#fos-labor) - [FOS-Inhaus](#f
 
 ### FOS-Labor
   - HWR 226: [FRITZ.Box_7590-08.10-122720-LabBETA.image](http://download.example.com/labor/Smart24P2/7590/FRITZ.Box_7590-08.10-122720-LabBETA.image)
+  - HWR 227: [FRITZ.Box_4040-07.59.image](http://download.avm.de/firmware/4040/347831279831289213893218/FRITZ.Box_4040-07.59.image)
   - HWR 229: [FRITZ.Powerline_1260E-08.10-124742-LabBETA.image](http://download.example.com/labor/Smart24P2/1260E/FRITZ.Powerline_1260E-08.10-124742-LabBETA.image)
   - HWR 236: [FRITZ.Box_7530-08.10-125376-LabBETA.image](http://download.example.com/labor/Smart24P2/7530/FRITZ.Box_7530-08.10-125376-LabBETA.image)
   - HWR 239: [FRITZ.Box_7583-07.39-103075-LabBETA.image](http://download.example.com/labor/MOVE21/7583/FRITZ.Box_7583-07.39-103075-LabBETA.image)
@@ -116,7 +117,7 @@ Content: [FOS-Release](#fos-release) - [FOS-Labor](#fos-labor) - [FOS-Inhaus](#f
   - HWR 268: [FRITZ.Repeater_1200_AX-08.10-125428-Inhaus.image](http://download.example.com/inhaus/Smart24P2/1200AX/FRITZ.Repeater_1200_AX-08.10-125428-Inhaus.image)
   - HWR 270: [FRITZ.Repeater_3000_AX-08.10-125435-Inhaus.image](http://download.example.com/inhaus/Smart24P2/3000AX/FRITZ.Repeater_3000_AX-08.10-125435-Inhaus.image)
   - HWR 271: [FRITZ.Box_7510-08.10-124563-Inhaus.image](http://download.example.com/inhaus/Smart24P2/7510/FRITZ.Box_7510-08.10-124563-Inhaus.image)
-  - HWR 272: [FRITZ.Box_5590_Fiber-08.10-125394-Inhaus.image](http://download.example.com/inhaus/Smart24P2/5590Fiber/FRITZ.Box_5590_Fiber-08.10-125394-Inhaus.image)
+  - HWR 272: [FRITZ.Box_5590_Fiber-08.10-125568-Inhaus.image](http://download.example.com/inhaus/Smart24P2/5590Fiber/FRITZ.Box_5590_Fiber-08.10-125568-Inhaus.image)
   - HWR 275: [FRITZ.Powerline_1240_AX-08.10-124611-Inhaus.image](http://download.example.com/inhaus/Smart24P2/1240AX/FRITZ.Powerline_1240_AX-08.10-124611-Inhaus.image)
   - HWR 276: [FRITZ.Box_7520_B-08.10-123543-Inhaus.image](http://download.example.com/inhaus/Smart24P2/7520B/FRITZ.Box_7520_B-08.10-123543-Inhaus.image)
 
@@ -143,7 +144,7 @@ Content: [FOS-Release](#fos-release) - [FOS-Labor](#fos-labor) - [FOS-Inhaus](#f
   - MHW 08.03: [08.03.04.94.avm.de.upd](http://download.avm.de/dect/0803/move21/08.03.04.94.avm.de.upd)
   - MHW 08.04: [08.04.05.11.avm.de.upd](http://download.avm.de/dect/0804/smart24p1/08.04.05.11.avm.de.upd)
   - MHW 10.01: [34.10.16.16.015.avm.de.upd](http://download.avm.de/dect/1001/Release/34.10.16.16.015.avm.de.upd)
-  - MHW 12.01: [12.01.05.11.avm.de.upd](http://download.avm.de/dect/1201/initialrel/12.01.05.11.avm.de.upd)
+  - MHW 12.01: [12.01.05.12.avm.de.upd](http://download.avm.de/dect/1201/initialrel/12.01.05.12.avm.de.upd)
 
 ### Dect-Labor
   - MHW 06.04: [06.04.03.54.avm.de.upd](http://download.avm.de/dect/0604/p15/06.04.03.54.avm.de.upd)
