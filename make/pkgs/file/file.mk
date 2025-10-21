@@ -8,6 +8,8 @@ $(PKG)_SITE:=http://ftp.astron.com/pub/file,ftp://ftp.astron.com/pub/file
 ### CVSREPO:=https://github.com/file/file
 ### SUPPORT:=Ircama
 
+$(PKG)_CATEGORY:=Debug helpers
+
 $(PKG)_BINARY_BUILD := $($(PKG)_DIR)/src/file
 $(PKG)_BINARY_TARGET := $($(PKG)_DEST_DIR)/usr/bin/file
 
@@ -25,7 +27,7 @@ $(PKG_SOURCE_DOWNLOAD)
 $(PKG_UNPACKED)
 $(PKG_CONFIGURED_CONFIGURE)
 
-$($(PKG)_BINARY_BUILD): $($(PKG)_DIR)/.configured
+$($(PKG)_BINARY_BUILD) $($(PKG)_MAGIC_BUILD): $($(PKG)_DIR)/.configured
 	$(SUBMAKE) -C $(FILE_DIR)
 
 $($(PKG)_BINARY_TARGET): $($(PKG)_BINARY_BUILD)
@@ -45,6 +47,5 @@ $(pkg)-clean:
 $(pkg)-uninstall:
 	$(RM) $($(PKG)_BINARY_TARGET)
 	$(RM) $($(PKG)_MAGIC_TARGET)
-	$(RM) -r $($(PKG)_DEST_DIR)/usr/share/misc
 
 $(PKG_FINISH)
