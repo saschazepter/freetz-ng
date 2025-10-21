@@ -54,6 +54,7 @@ Latest changes
 
   - Host tools:
     * file 5.45
+    * precompiled host-tools 2025-10-21
     * python 3.13.8
 
   - AVM sources:
