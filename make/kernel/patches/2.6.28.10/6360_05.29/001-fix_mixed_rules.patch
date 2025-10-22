@@ -1,6 +1,6 @@
 --- linux-2.6.28/Makefile
 +++ linux-2.6.28/Makefile
-@@ -441,7 +441,10 @@
+@@ -470,7 +470,10 @@
  include $(srctree)/arch/$(SRCARCH)/Makefile
  export KBUILD_DEFCONFIG KBUILD_KCONFIG
  
@@ -12,7 +12,7 @@
  	$(Q)mkdir -p include/linux include/config
  	$(Q)$(MAKE) $(build)=scripts/kconfig $@
  
-@@ -1628,7 +1631,11 @@
+@@ -1670,7 +1673,11 @@
  	$(Q)$(MAKE) $(build)=$(build-dir) $(target-dir)$(notdir $@)
  
  # Modules
