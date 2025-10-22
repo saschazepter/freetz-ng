@@ -87,7 +87,7 @@ modpatch()
 	## skip patches marked by APPLY_PATCHES
 	if [ "$patch_file" != "${patch_file#-}" ]; then
 		echo2 "skipping patch file ${patch_file:1}"
-		[ "$is_verbose" == "y" ] && echo2 -- "----------------------------------------------------------------------"
+		[ "$is_verbose" == "y" ] && echo2 -- "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 		return
 	fi
 
