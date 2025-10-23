@@ -193,7 +193,7 @@ define APPLY_PATCHES
 	DUPLICATE=""; \
 	for other in "$(_dollar){PATCHES_OTHER[@]}"; do \
 	if [ "$(_dollar){first$(_hash)$(_hash)*/}" == "$(_dollar){other$(_hash)$(_hash)*/}" ]; then \
-	DUPLICATE="-"; \
+	DUPLICATE="SK1p-"; \
 	break; \
 	fi; \
 	done; \
