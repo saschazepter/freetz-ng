@@ -622,7 +622,7 @@ addTrailingSlash() {
 #
 # Dependencies: readlink, realpath, bash (uses bash specific functions).
 #
-symlinks-abs2rel() {
+symlinks_abs2rel() {
 	local USAGE="$(
 		echo -e "Usage:\t${FUNCNAME} [-v|-verbose] [-r|-recursive] TARGET_FS_ROOT DIR [MASK], where"
 		echo -e "\t\tTARGET_FS_ROOT is the directory pointing to the root directory of the target filesystem"
