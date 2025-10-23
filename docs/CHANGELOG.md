@@ -53,6 +53,7 @@ Latest changes
   - Build system:
 
   - Host tools:
+    * dos2unix 7.5.3
     * file 5.45
     * precompiled host-tools 2025-10-21
     * python 3.13.8
