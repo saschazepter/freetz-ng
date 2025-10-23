@@ -73,6 +73,7 @@ Latest changes
     * procps-ng 4.0.5
     * Stunnel 5.76
     * Tor 0.4.8.19
+    * Unbound 1.24.1
     * Whois 5.6.5
 
   - Libraries:
