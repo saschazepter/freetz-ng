@@ -192,7 +192,7 @@ define APPLY_PATCHES
 	for first in $$FILTER_FIRST; do \
 	DUPLICATE=""; \
 	for other in "$(_dollar){PATCHES_OTHER[@]}"; do \
-	if [ "$(_dollar){first##*/}" == "$(_dollar){other##*/}" ]; then \
+	if [ "$(_dollar){first$(_hash)$(_hash)*/}" == "{other$(_hash)$(_hash)*/}" ]; then \
 	DUPLICATE="-"; \
 	break; \
 	fi; \
