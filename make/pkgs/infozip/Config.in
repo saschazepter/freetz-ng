@@ -1,5 +1,5 @@
 config FREETZ_PACKAGE_INFOZIP
-	bool "Info-ZIP 3.0 (binary only)"
+	bool "Info-ZIP 3.0 (binary only) - DEPRECATED"
 	default n
 	help
 		Info-ZIP's purpose is to provide free, portable, high-quality versions
