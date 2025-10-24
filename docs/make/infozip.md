@@ -1,4 +1,4 @@
-# Info-ZIP 3.0 (binary only)
+# Info-ZIP 3.0 (binary only) - DEPRECATED
   - Homepage: [https://infozip.sourceforge.net/Zip.html](https://infozip.sourceforge.net/Zip.html)
   - Manpage: [https://infozip.sourceforge.net/FAQ.html](https://infozip.sourceforge.net/FAQ.html)
   - Changelog: [https://infozip.sourceforge.net/Zip.html#Release](https://infozip.sourceforge.net/Zip.html#Release)

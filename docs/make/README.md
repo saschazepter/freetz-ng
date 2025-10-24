@@ -296,7 +296,7 @@ Index: [A](#a) - [B](#b) - [C](#c) - [D](#d) - [E](#e) - [F](#f) - [G](#g) - [H]
   * **[Inetd 1.0](inetd.md)<a id='inetd'></a>**<br>
     'Virtual' inetd package. Provides configuration framework for inetd. Requires a compatible inetd binary. (at the moment, only busybox inetd is supported)
 
-  * **[infozip: Info-ZIP 3.0 (binary only)](infozip.md)<a id='infozip'></a>**<br>
+  * **[infozip: Info-ZIP 3.0 (binary only) - DEPRECATED](infozip.md)<a id='infozip'></a>**<br>
     Info-ZIP's purpose is to provide free, portable, high-quality versions of the Zip compressor-archiver utilities that are compatible with the the DOS-based PKZIP by PKWARE, Inc.
 
   * **[iodine 0.7.0 - DEPRECATED](iodine.md)<a id='iodine'></a>**<br>
