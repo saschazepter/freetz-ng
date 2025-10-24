@@ -1083,6 +1083,11 @@ Index: [A](#a) - [B](#b) - [C](#c) - [D](#d) - [E](#e) - [F](#f) - [G](#g) - [H]
   * **[XZ 5.6.4 (binary only)](../../docs/make/xz.md)<a id='xz'></a>**<br>
     XZ is the successor to the Lempel-Ziv/Markov-chain Algorithm compression format, which provides memory-hungry but powerful compression (often better than bzip2) and fast, easy decompression. This package provides the command line tools for working with XZ compression. They can also handle the older LZMA format, and if invoked via appropriate symlinks will emulate the behavior of the commands in the lzma package.
 
+### Z
+
+  * **[zip 3.0 (binary only)](../../docs/make/zip.md)<a id='zip'></a>**<br>
+    zip - package and compress (archive) files Zip is a compression and file packaging utility for Unix, VMS, MSDOS, OS/2, Windows 9x/NT/XP, Minix, Atari, Macintosh, Amiga, and Acorn RISC OS. It is analogous to a combination of the Unix commands tar(1) and compress(1) and is compatible with PKZIP (Phil Katz's ZIP for MSDOS systems). This utility is essential for creating compressed archives on the target system, especially useful for packaging files and reducing storage space. Can be externalized to save flash memory.
+
 # Debug helpers
 
   * **[file 5.45 (binary only)](../../docs/make/file.md)<a id='file'></a>**<br>
