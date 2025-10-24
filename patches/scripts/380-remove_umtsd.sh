@@ -11,7 +11,7 @@ rm_files \
 
 if [ "$FREETZ_AVM_VERSION_08_0X_MAX" == "y" ]; then
 	rm_files \
-	  "${FILESYSTEM_MOD_DIR}/usr/share/ctlmgr/libgsm.so" \
+	  "${FILESYSTEM_MOD_DIR}/usr/share/ctlmgr/libgsm.so"
 fi
 
 if [ "$FREETZ_AVM_VERSION_07_0X_MIN" == "y" ]; then
@@ -22,7 +22,7 @@ if [ "$FREETZ_AVM_VERSION_07_0X_MIN" == "y" ]; then
 	if [ "$FREETZ_AVM_VERSION_08_0X_MAX" == "y" ]; then
 		rm_files \
 		  "${FILESYSTEM_MOD_DIR}/usr/share/ctlmgr/libmobiled.so" \
-		  "${FILESYSTEM_MOD_DIR}/usr/share/configd/C20_mobiled.so" \
+		  "${FILESYSTEM_MOD_DIR}/usr/share/configd/C20_mobiled.so"
 	fi
 
 	if [ "$FREETZ_AVM_VERSION_07_2X_MIN" == "y" ]; then
