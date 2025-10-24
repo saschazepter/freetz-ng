@@ -70,6 +70,7 @@ Latest changes
   - Packages:
     * BIND 9.11.37/9.20.15
     * file 5.45
+    * Info-ZIP 3.0
     * OpenSSH 9.3p2/10.2p1
     * procps-ng 4.0.5
     * Stunnel 5.76
