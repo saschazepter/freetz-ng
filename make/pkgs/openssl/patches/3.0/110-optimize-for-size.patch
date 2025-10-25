@@ -1,6 +1,6 @@
 --- Configurations/10-main.conf
 +++ Configurations/10-main.conf
-@@ -1994,5 +1994,66 @@
+@@ -1994,5 +1994,69 @@
          inherit_from     => [ "vms-x86_64" ],
          cflags           => add("/POINTER_SIZE=64=ARGV"),
          pointer_size     => "64",
@@ -20,6 +20,9 @@
 +        shared_target    => "linux-shared",
 +        shared_cflag     => "-fPIC",
 +        shared_extension => ".so.\$(SHLIB_VERSION_NUMBER)",
++    },
++    "linux-freetz-armeb-asm" => {
++        inherit_from     => [ "linux-freetz-arm-asm" ],
 +    },
 +    "linux-freetz-i686-asm" => {
 +        inherit_from     => [ "linux-generic32" ],
