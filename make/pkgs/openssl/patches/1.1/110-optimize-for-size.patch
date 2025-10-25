@@ -1,10 +1,23 @@
 --- Configurations/10-main.conf
 +++ Configurations/10-main.conf
-@@ -1839,4 +1839,62 @@
+@@ -1839,4 +1839,72 @@
          pointer_size     => "64",
      },
  
 +    "linux-freetz-arm-asm" => {
++        inherit_from     => [ "linux-generic32", asm("armv4_asm") ],
++        CC               => "gcc",
++        CFLAGS           => "\$(FREETZ_MOD_OPTIMIZATION_FLAGS) -fomit-frame-pointer -Wall",
++        lib_cppflags     => add("-DL_ENDIAN"),
++        cppflags         => threads("-D_REENTRANT"),
++        ex_libs          => add("-ldl", threads("-pthread")),
++        bn_ops           => "BN_LLONG RC4_CHAR",
++        dso_scheme       => "dlfcn",
++        shared_target    => "linux-shared",
++        shared_cflag     => "-fPIC",
++        shared_extension => ".so.\$(SHLIB_VERSION_NUMBER)",
++    },
++    "linux-freetz-armeb-asm" => {
 +        inherit_from     => [ "linux-generic32", asm("armv4_asm") ],
 +        CC               => "gcc",
 +        CFLAGS           => "\$(FREETZ_MOD_OPTIMIZATION_FLAGS) -fomit-frame-pointer -Wall",
@@ -16,9 +29,6 @@
 +        shared_target    => "linux-shared",
 +        shared_cflag     => "-fPIC",
 +        shared_extension => ".so.\$(SHLIB_VERSION_NUMBER)",
-+    },
-+    "linux-freetz-armeb-asm" => {
-+        inherit_from     => [ "linux-freetz-arm-asm" ],
 +    },
 +    "linux-freetz-i686-asm" => {
 +        inherit_from     => [ "linux-generic32", asm("x86_elf_asm") ],
