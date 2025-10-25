@@ -10,7 +10,7 @@
 +        inherit_from     => [ "linux-generic32" ],
 +        CC               => "gcc",
 +        CFLAGS           => "\$(FREETZ_MOD_OPTIMIZATION_FLAGS) -fomit-frame-pointer -Wall",
-+        lib_cppflags     => add("-DL_ENDIAN"),
++        lib_cppflags     => add("-DB_ENDIAN"),
 +        cppflags         => threads("-D_REENTRANT"),
 +        ex_libs          => add("-ldl", threads("-pthread")),
 +        bn_ops           => "BN_LLONG RC4_CHAR",
