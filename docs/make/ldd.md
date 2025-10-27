@@ -1,8 +1,11 @@
-# ldd (List Dynamic Dependencies)
+# ldd 0.1/1.0.55 (binary only)
+  - Homepage: [https://uclibc-ng.org/](https://uclibc-ng.org/)
+  - Changelog: [https://cgit.uclibc-ng.org/cgi/cgit/uclibc-ng.git/log/utils/ldd.c](https://cgit.uclibc-ng.org/cgi/cgit/uclibc-ng.git/log/utils/ldd.c)
+  - Repository: [https://github.com/wbx-github/uclibc-ng](https://github.com/wbx-github/uclibc-ng)
   - Package: [master/make/pkgs/ldd/](https://github.com/Freetz-NG/freetz-ng/tree/master/make/pkgs/ldd/)
+  - Maintainer: -
   - Website: [uClibc-ng](https://uclibc-ng.org/)
   - Source: [uClibc-ng GitHub](https://github.com/uClibc-ng/uClibc-ng)
-  - Maintainer: -
 
 **ldd** steht für **L**ist **D**ynamic **D**ependencies. Es handelt sich
 hier um ein kleines Konsolen-Tool, mit dem sich herausfinden lässt, ob

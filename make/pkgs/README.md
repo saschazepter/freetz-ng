@@ -1103,10 +1103,8 @@ Index: [A](#a) - [B](#b) - [C](#c) - [D](#d) - [E](#e) - [F](#f) - [G](#g) - [H]
      - [Log-Datei regelmäßig konsolidieren, um Platz zu sparen](../../docs/make/inotify-tools.md#log-datei-regelmäßig-konsolidieren-um-platz-zu-sparen)
      - [Schlußwort](../../docs/make/inotify-tools.md#schlußwort)
 
-  * **[ldd (shared library dependencies lister)](../../docs/make/ldd.md)<a id='ldd'></a>**<br>
+  * **[ldd 0.1/1.0.55 (binary only)](../../docs/make/ldd.md)<a id='ldd'></a>**<br>
     ldd prints the shared libraries required by each program or shared library specified on the command line.
-     - [Version 0.1 (Legacy - for old devices)](../../docs/make/ldd.md#version-01-legacy---for-old-devices)
-     - [Version 1.0.55 (Modern - from uClibc-ng)](../../docs/make/ldd.md#version-1055-modern---from-uclibc-ng)
 
   * **[lsof 4.89 (binary only) - DEPRECATED](../../docs/make/lsof.md)<a id='lsof'></a>**<br>
     lsof (LiSt Open Files) The lsof tool lists information about files opened by processes.
