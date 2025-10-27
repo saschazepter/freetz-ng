@@ -64,6 +64,7 @@ Latest changes
 
   - Scripts:
     * ssh_firmware_update.py - utility for upgrading firmware and external over SSH
+    * make_progress_monitor.sh - monitor cross-compilation progress for make
 
   - Patches:
 

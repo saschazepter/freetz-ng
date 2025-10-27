@@ -1,9 +1,12 @@
-#!/bin/bash
+#! /usr/bin/env bash
+# Freetz-NG Build Progress Monitor
+# Monitor cross-compilation progress for Freetz-NG toolchain
+# Run this script (with "-w") while "make" in a 2nd terminal
+# by Ircama
+
 # Determine script and project root directories
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
-# Freetz-NG Build Progress Monitor
-# Monitor cross-compilation progress for Freetz-NG toolchain
 
 # Color definitions
 RED='\033[0;31m'
@@ -77,7 +80,7 @@ while [[ $# -gt 0 ]]; do
             SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
             ROOT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
             echo "Available architectures:"
-            for arch_dir in $(find "$ROOT_DIR/source" -maxdepth 1 -type d -name "target-*" | sort); do
+            for arch_dir in $(find "$ROOT_DIR/source" -maxdepth 1 -type d -name "target-*" 2>/dev/null | sort); do
                 arch=$(basename "$arch_dir")
                 timestamp=$(find "$arch_dir" -type f -printf '%T@\n' 2>/dev/null | sort -n | tail -1)
                 if [ -n "$timestamp" ]; then
