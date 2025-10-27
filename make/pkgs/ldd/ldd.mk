@@ -1,34 +1,23 @@
-# Version selection based on Kconfig
-$(call PKG_INIT_BIN, $(if $(FREETZ_LDD_VERSION_0_1),0.1,1.0.55))
-
-# Legacy version 0.1 (tarball from MIRROR, with patches)
-$(PKG)_SOURCE_0.1:=ldd-0.1.tar.bz2
-$(PKG)_HASH_0.1:=b0b2c4edee81ac65c9706f8982b15d3a798be7c2d3865d9a7abff1e493dfadb1
-$(PKG)_SITE_0.1:=@MIRROR/
-
-# Modern version 1.0.55 (tarball from MIRROR - TODO: switch to git when available)
-$(PKG)_SOURCE_1.0.55:=ldd-1.0.55.tar.bz2
-$(PKG)_HASH_1.0.55:=109b02d8f5d07d2836955248979aeee826d993adce5f2e5a3654b67d4dd23952
-$(PKG)_SITE_1.0.55:=@MIRROR/
-# Future git-based download (when MIRROR has the tarball, we can switch to this):
-# $(PKG)_SITE_1.0.55:=git@https://github.com/wbx-github/uclibc-ng.git
-
-# Select version-specific variables
-$(PKG)_SOURCE:=$($(PKG)_SOURCE_$($(PKG)_VERSION))
-$(PKG)_HASH:=$($(PKG)_HASH_$($(PKG)_VERSION))
-$(PKG)_SITE:=$($(PKG)_SITE_$($(PKG)_VERSION))
-
-# Select version-specific patches directory
-$(PKG)_CONDITIONAL_PATCHES+=$($(PKG)_VERSION)
-
+$(call PKG_INIT_BIN, $(if $(FREETZ_PACKAGE_LDD_VERSION_ABANDON),0.1,1.0.55))
+$(PKG)_SOURCE_ABANDON:=ldd-$($(PKG)_VERSION).tar.bz2
+$(PKG)_SOURCE_CURRENT:=uClibc-ng-$($(PKG)_VERSION).tar.xz
+$(PKG)_SOURCE:=$($(PKG)_SOURCE_$(if $(FREETZ_PACKAGE_LDD_VERSION_ABANDON),ABANDON,CURRENT))
+$(PKG)_HASH_ABANDON:=b0b2c4edee81ac65c9706f8982b15d3a798be7c2d3865d9a7abff1e493dfadb1
+$(PKG)_HASH_CURRENT:=5f7f3aafddb2ca08fb295be45561c0188407103d7446cfd264b9b822fed3ed2d
+$(PKG)_HASH:=$($(PKG)_HASH_$(if $(FREETZ_PACKAGE_LDD_VERSION_ABANDON),ABANDON,CURRENT))
+$(PKG)_SITE_ABANDON:=@MIRROR/
+$(PKG)_SITE_CURRENT:=https://downloads.uclibc-ng.org/releases/$($(PKG)_VERSION)
+$(PKG)_SITE:=$($(PKG)_SITE_$(if $(FREETZ_PACKAGE_LDD_VERSION_ABANDON),ABANDON,CURRENT))
 ### WEBSITE:=https://uclibc-ng.org/
 ### CHANGES:=https://cgit.uclibc-ng.org/cgi/cgit/uclibc-ng.git/log/utils/ldd.c
 ### CVSREPO:=https://github.com/wbx-github/uclibc-ng
 
-$(PKG)_SOURCE_FILE:=$($(PKG)_DIR)/ldd.c
+$(PKG)_SOURCE_FILE:=$($(PKG)_DIR)/$(if $(FREETZ_PACKAGE_LDD_VERSION_ABANDON),,utils/)ldd.c
 $(PKG)_BINARY:=$($(PKG)_DIR)/ldd
 $(PKG)_TARGET_BINARY:=$($(PKG)_DEST_DIR)/usr/bin/ldd
 $(PKG)_CATEGORY:=Debug helpers
+
+$(PKG)_CONDITIONAL_PATCHES+=$(if $(FREETZ_PACKAGE_LDD_VERSION_ABANDON),abandon,current)
 
 
 $(PKG_SOURCE_DOWNLOAD)
