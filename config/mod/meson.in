@@ -18,3 +18,8 @@ config FREETZ_TARGET_MESON_ENDIAN
 	default "little" if FREETZ_TARGET_ARCH_LE
 	default "big"    if FREETZ_TARGET_ARCH_BE
 
+config FREETZ_TARGET_MESON_ENDIAN_UPPER
+	string
+	default "LE"     if FREETZ_TARGET_ARCH_LE
+	default "BE"     if FREETZ_TARGET_ARCH_BE
+
