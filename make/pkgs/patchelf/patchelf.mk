@@ -1,6 +1,6 @@
 $(call PKG_INIT_BIN, 0.18.0)
 $(PKG)_SOURCE:=patchelf-$($(PKG)_VERSION).tar.bz2
-$(PKG)_HASH:=e9dc4d53c2db7a31fd2c0d0e4b0e6b89d2d87e3fb1ba92b001f8f32432bb3444
+$(PKG)_HASH:=1952b2a782ba576279c211ee942e341748fdb44997f704dd53def46cd055470b
 $(PKG)_SITE:=https://github.com/NixOS/patchelf/releases/download/$($(PKG)_VERSION)
 ### WEBSITE:=https://github.com/NixOS/patchelf
 ### MANPAGE:=https://github.com/NixOS/patchelf/blob/master/README.md
@@ -10,25 +10,17 @@ $(PKG)_SITE:=https://github.com/NixOS/patchelf/releases/download/$($(PKG)_VERSIO
 
 $(PKG)_CATEGORY:=Debug helpers
 
+$(PKG)_DEPENDS_ON += $(STDCXXLIB)
+
 $(PKG)_BINARY_BUILD := $($(PKG)_DIR)/src/patchelf
 $(PKG)_BINARY_TARGET := $($(PKG)_DEST_DIR)/usr/bin/patchelf
 
 
+ifneq ($($(PKG)_SOURCE),$(PATCHELF_HOST_SOURCE))
 $(PKG_SOURCE_DOWNLOAD)
+endif
 $(PKG_UNPACKED)
-
-# Patchelf configuration - bypass wrapper to use libstdc++ instead of uClibc++
-# Use dynamic linking with libstdc++ from /usr/lib/freetz (RPATH already configured in libstdcxx package)
-$($(PKG)_DIR)/.configured: $($(PKG)_DIR)/.unpacked | $(TARGET_TOOLCHAIN_STAGING_DIR)/usr/lib/libc.a
-	(cd $(PATCHELF_DIR); \
-		$(AUTORECONF) \
-		rm -f config.cache; \
-		$(TARGET_CONFIGURE_ENV) \
-		CXX="$(TARGET_CROSS)g++" \
-		./configure \
-		$(TARGET_CONFIGURE_OPTIONS) \
-	);
-	touch $@
+$(PKG_CONFIGURED_CONFIGURE)
 
 $($(PKG)_BINARY_BUILD): $($(PKG)_DIR)/.configured
 	$(SUBMAKE) -C $(PATCHELF_DIR)

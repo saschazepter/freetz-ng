@@ -76,6 +76,7 @@ Latest changes
     * Info-ZIP 3.0
     * ldd 0.1/1.0.55
     * OpenSSH 9.3p2/10.2p1
+    * PatchELF 0.18.0
     * procps-ng 4.0.5
     * Stunnel 5.76
     * Tor 0.4.8.19

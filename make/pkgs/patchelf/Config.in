@@ -1,5 +1,6 @@
 config FREETZ_PACKAGE_PATCHELF
-	bool "patchelf 0.18.0 - Modify ELF executables and libraries"
+	bool "PatchELF 0.18.0 (binary only)"
+	depends on FREETZ_TARGET_GCC_13_MIN  # in fact min gcc11 for C++17
 	select FREETZ_STDCXXLIB_FORCE_GNULIBSTDCXX
 	select FREETZ_LIB_STDCXXLIB
 	default n
@@ -9,8 +10,4 @@ config FREETZ_PACKAGE_PATCHELF
 		
 		Useful for modifying binaries to use different dynamic linker paths or
 		library search paths (RPATH/RUNPATH).
-		
-		Note: This tool requires GNU libstdc++ (will be automatically installed
-		to /usr/lib/freetz/)
-		
-		Homepage: https://github.com/NixOS/patchelf
+

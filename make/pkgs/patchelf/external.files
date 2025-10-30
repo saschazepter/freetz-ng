@@ -1,3 +1,1 @@
-if [ "$EXTERNAL_FREETZ_PACKAGE_PATCHELF" == "y" ] ; then
-	EXTERNAL_FILES+=" /usr/bin/patchelf"
-fi
+[ "$EXTERNAL_FREETZ_PACKAGE_PATCHELF" == "y" ] && EXTERNAL_FILES+=" /usr/bin/patchelf"
