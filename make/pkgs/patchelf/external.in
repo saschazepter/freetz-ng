@@ -4,5 +4,5 @@ config EXTERNAL_FREETZ_PACKAGE_PATCHELF
 	default n
 	help
 		externals the following file(s):
-		- /usr/bin/patchelf
+		 /usr/bin/patchelf
 
