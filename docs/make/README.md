@@ -819,8 +819,8 @@ Index: [A](#a) - [B](#b) - [C](#c) - [D](#d) - [E](#e) - [F](#f) - [G](#g) - [H]
 
 # Debug helpers
 
-  * **[binutils-tools: binutils 2.41 - Binary analysis and manipulation toolkit](binutils-tools.md)<a id='binutils-tools'></a>**<br>
-    Collection of essential tools for analyzing and manipulating ELF binaries. All tools are selected by default for convenience. Total size with all tools: ~1.5MB Can be externalized to save flash memory.
+  * **[binutils-tools: Binutils 2.45 (binary only)](binutils-tools.md)<a id='binutils-tools'></a>**<br>
+    Collection of essential tools for analyzing and manipulating ELF binaries. Total size with all tools: ~1.5MB
 
   * **[file 5.45 (binary only)](file.md)<a id='file'></a>**<br>
     file - determine file type The file command is used to identify a particular file according to the type of data contained by the file. File can identify many different file types, including ELF binaries, system libraries, RPM packages, and many different graphics formats. This utility is essential for analyzing binaries and file formats on the target system, especially useful for debugging cross-compilation issues.
