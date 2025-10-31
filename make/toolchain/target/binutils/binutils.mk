@@ -30,9 +30,11 @@ BINUTILS_ECHO_MAKE:=binutils
 
 binutils-source: $(DL_DIR)/$(BINUTILS_SOURCE)
 ifneq ($(strip $(DL_DIR)/$(BINUTILS_SOURCE)), $(strip $(DL_DIR)/$(BINUTILS_KERNEL_SOURCE)))
+ifneq ($(strip $(DL_DIR)/$(BINUTILS_SOURCE)), $(strip $(DL_DIR)/$(BINUTILS_TOOLS_SOURCE)))
 $(DL_DIR)/$(BINUTILS_SOURCE): | $(DL_DIR)
 	@$(call _ECHO,downloading,$(BINUTILS_ECHO_TYPE),$(BINUTILS_ECHO_MAKE))
 	$(DL_TOOL) $(DL_DIR) $(BINUTILS_SOURCE) $(BINUTILS_SITE) $(BINUTILS_HASH) $(SILENT)
+endif
 endif
 
 binutils-unpacked: $(BINUTILS_DIR)/.unpacked
