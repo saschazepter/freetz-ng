@@ -4,7 +4,7 @@ menuconfig FREETZ_PACKAGE_BINUTILS_TOOLS
 	help
 		Collection of essential tools for analyzing and
 		manipulating ELF binaries.
-		Total size with all tools: ~1.5MB
+		Size of all tools: ~14MB (not available shared: ~5MB)
 
 if FREETZ_PACKAGE_BINUTILS_TOOLS
 
