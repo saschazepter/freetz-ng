@@ -87,7 +87,7 @@ $(UCLIBC_DIR)/.unpacked: $(DL_DIR)/$(UCLIBC_SOURCE) $(DL_DIR)/$(UCLIBC_LOCALE_DA
 	$(call APPLY_PATCHES,$(UCLIBC_PATCHES_DIR)/avm $(UCLIBC_PATCHES_DIR),$(UCLIBC_DIR))
 ifeq ($(strip $(FREETZ_TARGET_UCLIBC_0)),y)
 	@echo "#fixing ncurses detection bug" $(SILENT); \
-	$(SED) 's/^main()/int &/' -i "$(UCLIBC_DIR)/extra/config/lxdialog/check-lxdialog.sh" || true
+	$(SED) 's/^main()/int &/' -i "$(UCLIBC_DIR)/extra/config/lxdialog/check-lxdialog.sh" 2>/dev/null || true
 endif
 ifeq ($(FREETZ_TARGET_UCLIBC_0_9_33),y)
 # "remove"-part of 980-nptl_remove_duplicate_vfork_in_libpthread
