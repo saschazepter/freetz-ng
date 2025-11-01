@@ -86,6 +86,7 @@ Latest changes
 
   - Libraries:
     * harfbuzz 12.1.0
+    * libdeflate 1.25
     * libxml2 2.15.1
     * libyaml 0.2.5
     * openjp2 2.5.4
