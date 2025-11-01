@@ -94,7 +94,6 @@ jobs:
             echo -n "$fos "; \
           done | \
           sed 's/^/args="/;s/$/"/' >> $GITHUB_OUTPUT
-
       - name: vars
         run: |
           echo "################################################################"
@@ -113,7 +112,7 @@ jobs:
           export LANG=en_US.utf8
           mkdir -p ~/.freetz-props/
           mkdir -p ~/.freetz-dl/fw/
-          wget -q "${{ secrets.ACTIONS_CUSTOM }}img" -O - 2>/dev/null > props.sh
+          wget -q "${{ secrets.ACTIONS_PROPGEN }}" -O - 2>/dev/null > props.sh
           [ -s props.sh ] || cp config/.img/generate.sh props.sh
           FREETZ_ENABLEG=true bash props.sh ${{ steps.parse.outputs.args }}
           rm -f props.sh ".wget-hsts" || true
