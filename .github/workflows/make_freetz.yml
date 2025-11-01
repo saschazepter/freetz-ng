@@ -5,7 +5,6 @@ on:
     branches: [ master ]
     paths:
       - '.github/workflows/make_freetz.yml'
-      - 'tools/make_progress_monitor.sh'
   schedule:
     - cron: '00 15 * * 6'
   workflow_dispatch:
@@ -122,9 +121,9 @@ jobs:
       - name: generate
         run: |
           make && rm -f images/latest.image
-      - name: progress
-        run: |
-          tools/make_progress_monitor.sh --no-legend
+#     - name: progress
+#       run: |
+#         tools/make_progress_monitor.sh --no-legend
       - name: result
         run: |
           echo "##########################################################"
