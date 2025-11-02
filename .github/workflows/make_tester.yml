@@ -159,7 +159,7 @@ jobs:
         uses: actions/upload-artifact@v4
         if: github.repository != 'freetz-ng/freetz-ng'
         with:
-          name: ${{ steps.vars.outputs.last }}.zip
+          name: ${{ steps.vars.outputs.last }}
           path: images/
           if-no-files-found: warn
           retention-days: 1
