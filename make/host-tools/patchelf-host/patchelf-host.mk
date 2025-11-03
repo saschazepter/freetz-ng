@@ -22,7 +22,6 @@ $(TOOLS_CONFIGURED_CONFIGURE)
 
 $($(PKG)_DIR)/src/patchelf: $($(PKG)_DIR)/.configured
 	$(TOOLS_SUBMAKE) -C $(PATCHELF_HOST_DIR) all
-	touch -c $@
 
 $(TOOLS_DIR)/patchelf: $($(PKG)_DIR)/src/patchelf
 	$(INSTALL_FILE)
