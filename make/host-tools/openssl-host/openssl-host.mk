@@ -41,9 +41,8 @@ $($(PKG)_DIR)/.installed: $($(PKG)_DIR)/.compiled
 
 define $(PKG)_FIXHARDCODED
 	@$(PATCHELF) --replace-needed $(1)libcrypto.so.$(OPENSSL_HOST_LIB_VERSION) $(OPENSSL_HOST_DESTDIR)/libcrypto.so.$(OPENSSL_HOST_LIB_VERSION) $(OPENSSL_HOST_DESTDIR)/libssl.so.$(OPENSSL_HOST_LIB_VERSION)
-	@for libfile in libcrypto libssl; do \
-	$(PATCHELF) --replace-needed $(1)$${libfile}.so.$(OPENSSL_HOST_LIB_VERSION) $(OPENSSL_HOST_DESTDIR)/$${libfile}.so.$(OPENSSL_HOST_LIB_VERSION) $(OPENSSL_HOST_TARGET_BINARY) ;\
-	done ;
+	@$(PATCHELF) --replace-needed $(1)libcrypto.so.$(OPENSSL_HOST_LIB_VERSION) $(OPENSSL_HOST_DESTDIR)/libcrypto.so.$(OPENSSL_HOST_LIB_VERSION) $(OPENSSL_HOST_TARGET_BINARY)
+	@$(PATCHELF) --replace-needed $(1)libssl.so.$(OPENSSL_HOST_LIB_VERSION)    $(OPENSSL_HOST_DESTDIR)/libssl.so.$(OPENSSL_HOST_LIB_VERSION)    $(OPENSSL_HOST_TARGET_BINARY)
 endef
 
 $(pkg)-fixhardcoded:
