@@ -53,8 +53,7 @@ aarch64
 sudo dnf -y update && sudo systemctl daemon-reload
 ```
 
-  - Fedora 42 64-Bit:
-    NOT recommended currently !!!
+  - Fedora 42/43 64-Bit:
 ```
 sudo dnf -y install %%Fedora42%%
 ```
