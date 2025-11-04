@@ -55,6 +55,7 @@ Latest changes
   - Host tools:
     * dos2unix 7.5.3
     * file 5.46
+    * gperf 3.3
     * patchelf 0.14.5/0.18.0-b49de1b33
     * precompiled host-tools 2025-10-21
     * python 3.14.0
