@@ -55,8 +55,7 @@ aarch64
 sudo dnf -y update && sudo systemctl daemon-reload
 ```
 
-  - Fedora 42 64-Bit:
-    NOT recommended currently !!!
+  - Fedora 42/43 64-Bit:
 ```
 sudo dnf -y install \
   bc binutils bison bzip2 ccache cmake curl ecj elfutils-libelf-devel flex gcc gcc-c++ gettext \
