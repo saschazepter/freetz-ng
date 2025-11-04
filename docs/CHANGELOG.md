@@ -57,6 +57,7 @@ Latest changes
     * file 5.46
     * gperf 3.3
     * patchelf 0.14.5/0.18.0-b49de1b33
+    * patchelf-target 0.14.5/0.15.0
     * python3 3.14.0
     * python3-attrs 25.4.0
     * python3-jsonschema 4.25.1

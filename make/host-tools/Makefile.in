@@ -60,6 +60,7 @@ TOOLS_CONDITIONAL+=ninja-host
 TOOLS_CONDITIONAL+=lzma1-host
 TOOLS_CONDITIONAL+=lzma2-host
 TOOLS_CONDITIONAL+=$(if $(or $(FREETZ_FWMOD_VALIDATE),$(FREETZ_FWMOD_SIGN)),openssl-host)
+TOOLS_CONDITIONAL+=patchelf-target-host
 TOOLS_CONDITIONAL+=python2-host
 TOOLS_CONDITIONAL+=python2-pip-host
 TOOLS_CONDITIONAL+=python2-setuptools-host
