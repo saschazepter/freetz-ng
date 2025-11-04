@@ -54,7 +54,7 @@ Latest changes
 
   - Host tools:
     * dos2unix 7.5.3
-    * file 5.45
+    * file 5.46
     * patchelf 0.14.5/0.18.0-b49de1b33
     * precompiled host-tools 2025-10-21
     * python 3.14.0
@@ -72,7 +72,7 @@ Latest changes
   - Packages:
     * BIND 9.11.37/9.20.15
     * Binutils 2.45
-    * file 5.45
+    * file 5.46
     * GNU Make 4.2.1/4.4.1
     * hostapd_cli 2.7/2.10/2.11
     * Info-ZIP 3.0
