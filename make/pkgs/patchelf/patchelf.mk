@@ -15,17 +15,13 @@ $(PKG)_DEPENDS_ON += $(STDCXXLIB)
 $(PKG)_BINARY_BUILD := $($(PKG)_DIR)/src/patchelf
 $(PKG)_BINARY_TARGET := $($(PKG)_DEST_DIR)/usr/bin/patchelf
 
+$(PKG)_CONFIGURE_ENV += CXXFLAGS="$(TARGET_CFLAGS) -fPIC"
+
 
 ifneq ($($(PKG)_SOURCE),$(PATCHELF_HOST_SOURCE))
 $(PKG_SOURCE_DOWNLOAD)
 endif
 $(PKG_UNPACKED)
-
-# Force CXX to real compiler to bypass ccache wrapper issues during cross-compilation
-$(PKG)_CONFIGURE_ENV += CXX="$(TARGET_CROSS)g++"
-# Fix i686 uClibc linking issue with pthread symbols (6591, 6660 devices)
-$(PKG)_CONFIGURE_ENV += $(if $(FREETZ_TARGET_ARCH_X86),CXXFLAGS="$(TARGET_CFLAGS) -fPIC")
-
 $(PKG_CONFIGURED_CONFIGURE)
 
 $($(PKG)_BINARY_BUILD): $($(PKG)_DIR)/.configured
