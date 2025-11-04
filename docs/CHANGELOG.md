@@ -57,7 +57,7 @@ Latest changes
     * file 5.45
     * patchelf 0.14.5/0.18.0-b49de1b33
     * precompiled host-tools 2025-10-21
-    * python 3.13.8
+    * python 3.14.0
 
   - AVM sources:
     * 7510     8.20 - 5.4.213
