@@ -12,23 +12,28 @@ $(PKG)_SITE:=$($(PKG)_SITE_$(if $(FREETZ_TOOLS_PATCHELF_VERSION_ABANDON),ABANDON
 ### CVSREPO:=https://github.com/NixOS/patchelf
 ### VERSION:=0.14.5/0.18.0-b49de1b33
 
+$(PKG)_SRC_BINARY := $($(PKG)_DIR)/src/patchelf
+$(PKG)_DST_BINARY := $(TOOLS_DIR)/patchelf
+
 $(PKG)_CONDITIONAL_PATCHES+=$(if $(FREETZ_TOOLS_PATCHELF_VERSION_ABANDON),abandon,current)
 $(PKG)_REBUILD_SUBOPTS += FREETZ_TOOLS_PATCHELF_VERSION_ABANDON
 
 $(PKG)_CONFIGURE_PRE_CMDS += $(AUTORECONF)
 
 
+#
 $(TOOLS_SOURCE_DOWNLOAD)
+#
 $(TOOLS_UNPACKED)
 $(TOOLS_CONFIGURED_CONFIGURE)
 
-$($(PKG)_DIR)/src/patchelf: $($(PKG)_DIR)/.configured
+$($(PKG)_SRC_BINARY): $($(PKG)_DIR)/.configured
 	$(TOOLS_SUBMAKE) -C $(PATCHELF_HOST_DIR) all
 
-$(TOOLS_DIR)/patchelf: $($(PKG)_DIR)/src/patchelf
+$($(PKG)_DST_BINARY): $($(PKG)_SRC_BINARY)
 	$(INSTALL_FILE)
 
-$(pkg)-precompiled: $(TOOLS_DIR)/patchelf
+$(pkg)-precompiled: $($(PKG)_DST_BINARY)
 
 
 $(pkg)-clean:
@@ -38,6 +43,6 @@ $(pkg)-dirclean:
 	$(RM) -r $(PATCHELF_HOST_DIR)
 
 $(pkg)-distclean: $(pkg)-dirclean
-	$(RM) $(TOOLS_DIR)/patchelf
+	$(RM) $(PATCHELF_HOST_DST_BINARY)
 
 $(TOOLS_FINISH)
