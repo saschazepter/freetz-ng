@@ -58,7 +58,7 @@ Latest changes
     * gperf 3.3
     * patchelf 0.14.5/0.18.0-b49de1b33
     * precompiled host-tools 2025-10-21
-    * python 3.14.0
+    * python3 3.14.0
     * python3-attrs 25.4.0
     * python3-jsonschema 4.25.1
     * python3-pip 25.3
