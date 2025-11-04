@@ -60,6 +60,7 @@ Latest changes
     * precompiled host-tools 2025-10-21
     * python 3.14.0
     * python3-attrs 25.4.0
+    * python3-jsonschema 4.25.1
 
   - AVM sources:
     * 7510     8.20 - 5.4.213
