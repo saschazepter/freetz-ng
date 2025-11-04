@@ -39,10 +39,14 @@ choice
 		select FREETZ_LIB_libssl
 
 	config FREETZ_LIB_libcurl_WITH_MBEDTLS
+		depends on FREETZ_LIB_libcurl_WITH_VERSION_ABANDON
 		bool "mbed TLS"
 		select FREETZ_LIB_libmbedcrypto
 		select FREETZ_LIB_libmbedtls
 		select FREETZ_LIB_libmbedx509
+		help
+			Curl 8.16.0 needs at least not available mbedtls 3.2.0
+
 endchoice
 
 config FREETZ_LIB_libcurl_WITH_SFTP
