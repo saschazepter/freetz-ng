@@ -100,6 +100,7 @@ GENERATE_IN_TOOL:=$(TOOLS_DIR)/genin
 TAR:=$(TOOLS_DIR)/tar-gnu
 SED:=sed
 PATCHELF:=patchelf
+PATCHELF_TARGET:=patchelf-target
 PYTHON3=python3
 MESON=meson
 CMAKE=cmake
