@@ -63,6 +63,7 @@ Latest changes
     * python3-jsonschema 4.25.1
     * python3-pip 25.3
     * python3-referencing 0.37.0
+    * uboot 2025.10
 
   - AVM sources:
     * 7510     8.20 - 5.4.213
