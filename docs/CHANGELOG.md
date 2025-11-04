@@ -53,6 +53,7 @@ Latest changes
   - Build system:
 
   - Host tools:
+    * ca-bundle 2025-11-04
     * dos2unix 7.5.3
     * file 5.46
     * gperf 3.3
@@ -79,6 +80,7 @@ Latest changes
   - Packages:
     * BIND 9.11.37/9.20.15
     * Binutils 2.45
+    * CA-bundle 2025-11-04
     * file 5.46
     * GNU Make 4.2.1/4.4.1
     * hostapd_cli 2.7/2.10/2.11
