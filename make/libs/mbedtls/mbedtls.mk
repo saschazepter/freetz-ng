@@ -15,6 +15,8 @@ $(PKG)_SITE:=https://github.com/Mbed-TLS/mbedtls/releases/download/mbedtls-$($(P
 
 $(PKG)_CONDITIONAL_PATCHES+=$($(PKG)_MAJOR_VERSION)
 
+$(PKG)_HEADER_DIRS         := mbedtls $(if $(FREETZ_MBEDTLS_VERSION_207),,psa)
+
 $(PKG)_LIBNAMES_SHORT      := crypto tls x509
 
 $(PKG)_LIBNAMES_SO         := $($(PKG)_LIBNAMES_SHORT:%=libmbed%.so.$($(PKG)_VERSION))
@@ -32,11 +34,13 @@ $(PKG)_REBUILD_SUBOPTS += FREETZ_LIB_libmbedcrypto_WITH_GENRSA
 # disable some features to reduce library size
 $(PKG)_FEATURES_TO_DISABLE += MBEDTLS_SELF_TEST
 $(PKG)_FEATURES_TO_DISABLE += MBEDTLS_CAMELLIA_C
-$(PKG)_FEATURES_TO_DISABLE += MBEDTLS_CERTS_C
 $(PKG)_FEATURES_TO_DISABLE += MBEDTLS_DEBUG_C
 $(PKG)_FEATURES_TO_DISABLE += MBEDTLS_PADLOCK_C
+ifeq ($(strip $(FREETZ_MBEDTLS_VERSION_228_MAX)),y)
+$(PKG)_FEATURES_TO_DISABLE += MBEDTLS_CERTS_C
 $(PKG)_FEATURES_TO_DISABLE += MBEDTLS_XTEA_C
 $(PKG)_FEATURES_TO_DISABLE += $(if $(FREETZ_LIB_libmbedcrypto_WITH_BLOWFISH),,MBEDTLS_BLOWFISH_C)
+endif
 $(PKG)_FEATURES_TO_DISABLE += $(if $(FREETZ_LIB_libmbedcrypto_WITH_GENRSA),,MBEDTLS_GENPRIME)
 
 $(PKG)_CONFIGH:=include/mbedtls/$(if $(filter $($(PKG)_MAJOR_VERSION),2.7 2.28),config.h,mbedtls_config.h)
@@ -65,8 +69,8 @@ $($(PKG)_LIBS_A_STAGING_DIR): $(TARGET_TOOLCHAIN_STAGING_DIR)/usr/lib/%: $($(PKG
 	$(INSTALL_FILE)
 
 $($(PKG)_DIR)/.headers: $($(PKG)_DIR)/.configured
-	mkdir -p $(TARGET_TOOLCHAIN_STAGING_DIR)/usr/include/mbedtls/
-	cp -a $(MBEDTLS_DIR)/include/mbedtls/* $(TARGET_TOOLCHAIN_STAGING_DIR)/usr/include/mbedtls/
+	@mkdir -p $(TARGET_TOOLCHAIN_STAGING_DIR)/usr/include/
+	for x in $(MBEDTLS_HEADER_DIRS); do cp -a -r $(MBEDTLS_DIR)/include/$${x}/ $(TARGET_TOOLCHAIN_STAGING_DIR)/usr/include/; done
 	@touch $@
 
 $($(PKG)_LIBS_SO_TARGET_DIR): $($(PKG)_TARGET_DIR)/%: $(TARGET_TOOLCHAIN_STAGING_DIR)/usr/lib/%
