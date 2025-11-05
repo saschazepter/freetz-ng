@@ -74,9 +74,9 @@ endif
 	fi;
 	@echo "#fixing hardcoded depmod path" $(SILENT); \
 	find $(KERNEL_SOURCE_DIR)/ -name Makefile | while read -r file; do \
-		grep -q '/sbin/depmod' "$file" || continue; \
-		echo "# - $file" $(SILENT); \
-		$(SED) 's,/sbin/depmod,depmod,g' -i "$file"; \
+		grep -q '/sbin/depmod' "$${file}" || continue; \
+		echo "# - $${file}" $(SILENT); \
+		$(SED) 's,/sbin/depmod,depmod,g' -i "$${file}"; \
 	done;
 	@echo "#applying patches" $(SILENT)
 	@echo "##kernel version specific patches dir: $(KERNEL_PATCHES_DIR)" $(SILENT)
