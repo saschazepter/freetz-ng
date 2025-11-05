@@ -102,6 +102,7 @@ Latest changes
     * OpenSSH 9.3p2/10.2p1
     * PatchELF 0.18.0
     * procps-ng 4.0.5
+    * Python 3.14.0
     * Stunnel 5.76
     * Tor 0.4.8.19
     * Unbound 1.24.1
