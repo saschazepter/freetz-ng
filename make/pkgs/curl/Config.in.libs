@@ -39,15 +39,17 @@ choice
 		select FREETZ_LIB_libssl
 
 	config FREETZ_LIB_libcurl_WITH_MBEDTLS
-		depends on FREETZ_LIB_libcurl_WITH_VERSION_ABANDON
-		bool "mbed TLS"
+		bool "MbedTLS"
 		select FREETZ_LIB_libmbedcrypto
 		select FREETZ_LIB_libmbedtls
 		select FREETZ_LIB_libmbedx509
-		help
-			Curl 8.16.0 needs at least not available mbedtls 3.2.0
 
 endchoice
+
+comment "WARNING: Before version 8.16 MbedTLS v2 is required"
+	depends on FREETZ_LIB_libcurl_WITH_VERSION_ABANDON && FREETZ_LIB_libcurl_WITH_MBEDTLS &&  FREETZ_MBEDTLS_VERSION_306_MIN
+comment "WARNING: Since version 8.16 MbedTLS v3 is required"
+	depends on FREETZ_LIB_libcurl_WITH_VERSION_CURRENT && FREETZ_LIB_libcurl_WITH_MBEDTLS && !FREETZ_MBEDTLS_VERSION_306_MIN
 
 config FREETZ_LIB_libcurl_WITH_SFTP
 	bool "build with sftp support" if FREETZ_LIB_libcurl || FREETZ_PACKAGE_CURL
