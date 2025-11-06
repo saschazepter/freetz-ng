@@ -5,3 +5,4 @@ config EXTERNAL_FREETZ_LIB_libatomic
 	help
 		externals the following file(s):
 		 ${FREETZ_LIBRARY_DIR}/libatomic.so.x.x.x
+
