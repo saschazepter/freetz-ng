@@ -109,6 +109,7 @@ Latest changes
     * Whois 5.6.5
 
   - Libraries:
+    * Bzip2 1.0.8
     * harfbuzz 12.1.0
     * libdeflate 1.25
     * libxml2 2.15.1
