@@ -258,8 +258,8 @@ Index: [A](#a) - [B](#b) - [C](#c) - [D](#d) - [E](#e) - [F](#f) - [G](#g) - [H]
   * **[hol: Halt-On-Lan 1.0 - DEPRECATED](hol.md)<a id='hol'></a>**<br>
     Halt-On-Lan is a package to run predefined actions on a remote host: shutdown, reboot, logoff, lock For successfull action poweroff.exe from http://users.telenet.be/jbosman/poweroff/poweroff.htm or similar compatible script or binary must be installed and run as service on the remote host. Moreover, in case of requested interaction this service should understand the syntax of poweroff.exe
 
-  * **[hostapd_cli 2.7/2.10/2.11 (binary only)](hostapd_cli.md)<a id='hostapd-cli'></a>**<br>
-    Command line client for hostapd control interface. Useful to send BSS Transition Management (802.11v) and Neighbor Report (802.11k) commands to the running daemon.
+  * **[hostapd_cli 2.7/2.10/2.11 (binary only) - DEVELOPER](hostapd_cli.md)<a id='hostapd-cli'></a>**<br>
+    Command line client for hostapd control interface. Useful to send BSS Transition Management (802.11v) and Neighbor Report (802.11k) commands to the running daemon. See https://github.com/Freetz-NG/freetz-ng/discussions/1295
 
   * **<u>html2text 1.3.2a (binary only) - DEPRECATED</u><a id='html2text'></a>**<br>
     html2text is a command line utility, written in C++, that converts HTML documents into plain text.
