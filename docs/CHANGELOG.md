@@ -92,6 +92,7 @@ Latest changes
   - Packages:
     * BIND 9.11.37/9.20.15
     * Binutils 2.45
+    * Bzip2 1.0.8
     * CA-bundle 2025-11-04
     * Curl 8.12.1/8.17.0
     * file 5.46
@@ -109,7 +110,6 @@ Latest changes
     * Whois 5.6.5
 
   - Libraries:
-    * Bzip2 1.0.8
     * harfbuzz 12.1.0
     * libdeflate 1.25
     * libxml2 2.15.1
