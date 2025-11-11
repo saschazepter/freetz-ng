@@ -1,4 +1,4 @@
-name: pr_bump
+name: make_pr
 
 on:
   pull_request:
