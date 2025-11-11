@@ -18,4 +18,5 @@ for x in "$PARENT/tools/.prerequisites/"*; do
 	done
 	sed -i "s!%%${x##*/}%%!${vals% }!" "$PREREQ/README.md"
 done
+exit 0
 

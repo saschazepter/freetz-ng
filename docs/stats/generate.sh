@@ -100,3 +100,5 @@ main() {
 }
 
 main > "$OUTFILE"
+exit 0
+
