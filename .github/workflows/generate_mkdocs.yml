@@ -31,6 +31,8 @@ jobs:
       MKDOCS_REQUIREMENTS_FILE: .github/mkdocs/requirements.txt
       MKDOCS_CONFIG_FILE: .github/mkdocs/mkdocs.yml
       MKDOCS_INPUT_PATH: .github/mkdocs/site
+    permissions:
+      contents: read
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -50,6 +52,8 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      pages: write
     runs-on: ubuntu-latest
     needs: build
     steps:
