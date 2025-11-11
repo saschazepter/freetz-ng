@@ -21,6 +21,7 @@ generate_info "Host-Tools"     "host-tools/generate.sh"
 generate_info "Wiki"           "wiki/generate.sh"
 generate_info "Screenshots"    "screenshots/generate.sh"
 generate_info "Prerequisites"  "PREREQUISITES/generate.sh"
+generate_info "Stats"          "stats/generate.sh"
 echo
 exit 0
 
