@@ -105,7 +105,7 @@ Latest changes
     * procps-ng 4.0.5
     * Python 3.14.0
     * Stunnel 5.76
-    * Tor 0.4.8.19
+    * Tor 0.4.8.20
     * Unbound 1.24.1
     * Whois 5.6.5
 
