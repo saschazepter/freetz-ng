@@ -97,8 +97,6 @@ jobs:
     runs-on: ubuntu-latest
 #   if: github.repository == 'freetz-ng/freetz-ng'
 
-    env:
-      CACHE_KEY: "make_freetz"
     steps:
 
 #     - name: update
@@ -147,8 +145,10 @@ jobs:
         with:
           path: |
             dl/*
-            !dl/fw/*
-          key: ${{ env.CACHE_KEY }}
+            !dl/linux-*.tar.xz
+            !dl/*-freetz-*-shared-glibc.tar.lzma
+          key: make_cache
+          restore-keys: make_cache
 
       - name: config
         run: |

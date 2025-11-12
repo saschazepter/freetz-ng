@@ -33,8 +33,6 @@ jobs:
     runs-on: ubuntu-latest
 #   if: github.repository == 'freetz-ng/freetz-ng'
 
-    env:
-      CACHE_KEY: "${{ github.workflow }}"
     steps:
 
 #     - name: update
@@ -83,10 +81,10 @@ jobs:
         with:
           path: |
             dl/*
-            dl/fw/*
-          key: ${{ env.CACHE_KEY }}-${{ github.run_id }}
-          restore-keys: |
-            ${{ env.CACHE_KEY }}
+            !dl/linux-*.tar.xz
+            !dl/*-freetz-*-shared-glibc.tar.lzma
+          key: make_cache-${{ github.run_id }}
+          restore-keys: make_cache
 
       - name: download
         run: |

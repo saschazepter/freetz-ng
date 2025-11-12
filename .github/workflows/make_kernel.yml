@@ -110,8 +110,6 @@ jobs:
     runs-on: ubuntu-latest
 #   if: github.repository == 'freetz-ng/freetz-ng'
 
-    env:
-      CACHE_KEY: "${{ github.workflow }}--${{ matrix.fritz.box }}"
     steps:
 
 #     - name: update
@@ -160,8 +158,10 @@ jobs:
         with:
           path: |
             dl/*
-            !dl/fw/*
-          key: ${{ env.CACHE_KEY }}
+            !dl/linux-*.tar.xz
+            !dl/*-freetz-*-shared-glibc.tar.lzma
+          key: make_cache
+          restore-keys: make_cache
 
       - name: config
         run: |
@@ -200,24 +200,22 @@ jobs:
           ls -l images/
           sha256sum images/*
 
-      - name: cache_clear
-        if: github.repository == 'freetz-ng/freetz-ng'
-        env:
-          ACTIONS_TOKEN: ${{ secrets.ACTIONS_TOKEN }}
-          CACHE_KEY: ${{ env.CACHE_KEY }}
-        run: |
-          ASSETS="$(curl -s  -H "Accept: application/vnd.github+json"  -H "Authorization: Bearer $ACTIONS_TOKEN"  -H "X-GitHub-Api-Version: 2022-11-28"  "https://api.github.com/repos/${{ github.repository }}/actions/caches")"
-          ASSID="$(echo "$ASSETS" | grep -B7 "\"key\": *\"${CACHE_KEY}\"" | sed -rn 's/ *"id": *([^,]*),*/\1/p')"
-          curl -sL -X DELETE -H "Accept: application/vnd.github+json"  -H "Authorization: Bearer $ACTIONS_TOKEN"  -H "X-GitHub-Api-Version: 2022-11-28"  "https://api.github.com/repos/${{ github.repository }}/actions/caches/$ASSID" && echo "Deleted ASSID=${ASSID:-null} ..." || true
-      - name: cache_save
-        uses: actions/cache/save@v4
-        if: always() && github.repository != 'freetz-ng/freetz-ng'
-        with:
-          path: |
-            dl/*
-            !dl/tools-*.tar.xz
-            !dl/linux-*.tar.xz
-            !dl/fw/*.zip
-          key: ${{ env.CACHE_KEY }}
+#     - name: cache_clear
+#       if: github.repository == 'freetz-ng/freetz-ng'
+#       env:
+#         ACTIONS_TOKEN: ${{ secrets.ACTIONS_TOKEN }}
+#         CACHE_KEY: ${{ github.workflow }}
+#       run: |
+#         ASSETS="$(curl -s  -H "Accept: application/vnd.github+json"  -H "Authorization: Bearer $ACTIONS_TOKEN"  -H "X-GitHub-Api-Version: 2022-11-28"  "https://api.github.com/repos/${{ github.repository }}/actions/caches")"
+#         ASSID="$(echo "$ASSETS" | grep -B7 "\"key\": *\"${CACHE_KEY}\"" | sed -rn 's/ *"id": *([^,]*),*/\1/p')"
+#         curl -sL -X DELETE -H "Accept: application/vnd.github+json"  -H "Authorization: Bearer $ACTIONS_TOKEN"  -H "X-GitHub-Api-Version: 2022-11-28"  "https://api.github.com/repos/${{ github.repository }}/actions/caches/$ASSID" && echo "Deleted ASSID=${ASSID:-null} ..." || true
+#     - name: cache_save
+#       uses: actions/cache/save@v4
+#       if: always() && github.repository != 'freetz-ng/freetz-ng'
+#       with:
+#         path: |
+#           dl/*
+#           !dl/linux-*.tar.xz
+#         key: ${{ github.workflow }}--${{ matrix.fritz.box }}
 
 
