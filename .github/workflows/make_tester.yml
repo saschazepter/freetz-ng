@@ -107,6 +107,8 @@ jobs:
           echo '# FREETZ_TOOLCHAIN_CCACHE is not set'                                                 >> .config
           sed '/FREETZ_USER_LEVEL_/d'                                                                 -i .config
           echo 'FREETZ_USER_LEVEL_DEVELOPER=y'                                                        >> .config
+          sed '/FREETZ_DL_IMAGE_AT_LAST/d'                                                            -i .config
+          echo '# FREETZ_DL_IMAGE_AT_LAST is not set'                                                 >> .config
           sed '/FREETZ_HOSTTOOLS_DOWNLOAD/d'                                                          -i .config
           echo 'FREETZ_HOSTTOOLS_DOWNLOAD=y'                                                          >> .config
           sed '/FREETZ_DOWNLOAD_TOOLCHAIN/d'                                                          -i .config
