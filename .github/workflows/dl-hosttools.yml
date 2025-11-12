@@ -58,11 +58,13 @@ jobs:
 
       - name: cache
         uses: actions/cache@v4
+        if: always()
         with:
           path: |
             dl/*
             !dl/tools-*.tar.xz
-          key: ${{ github.workflow }}
+          key: ${{ github.workflow }}-${{ github.run_id }}
+          restore-keys: ${{ github.workflow }}
 
       - name: version
         id: version
