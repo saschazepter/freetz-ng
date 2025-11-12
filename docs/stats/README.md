@@ -320,7 +320,7 @@
 <tr><td>FRITZ.Box_4040-07.14.image</td><td>FREETZ_TYPE_4040 &amp;&amp; FREETZ_TYPE_FIRMWARE_07_1X</td></tr>
 <tr><td>FRITZ.Box_4040-07.29.image</td><td>FREETZ_TYPE_4040 &amp;&amp; FREETZ_TYPE_FIRMWARE_07_2X</td></tr>
 <tr><td>FRITZ.Box_4040-07.59.image</td><td>FREETZ_TYPE_4040 &amp;&amp; FREETZ_TYPE_FIRMWARE_07_5X</td></tr>
-<tr><td>FRITZ.Box_4040-08.02.image</td><td>FREETZ_TYPE_4040 &amp;&amp; FREETZ_TYPE_FIRMWARE_08_0X</td></tr>
+<tr><td>FRITZ.Box_4040-08.03.image</td><td>FREETZ_TYPE_4040 &amp;&amp; FREETZ_TYPE_FIRMWARE_08_0X</td></tr>
 <tr><td>FRITZ.Box_4050-07.58.image</td><td>FREETZ_TYPE_4050 &amp;&amp; FREETZ_TYPE_FIRMWARE_07_5X</td></tr>
 <tr><td>FRITZ.Box_4050-08.02.image</td><td>FREETZ_TYPE_4050 &amp;&amp; FREETZ_TYPE_FIRMWARE_08_0X</td></tr>
 <tr><td>FRITZ.Box_4060-07.30.image</td><td>FREETZ_TYPE_4060 &amp;&amp; FREETZ_TYPE_FIRMWARE_07_2X</td></tr>
