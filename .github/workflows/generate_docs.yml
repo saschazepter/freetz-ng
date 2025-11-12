@@ -19,7 +19,6 @@ on:
       - 'docs/screenshots/*.png'
       - 'docs/screenshots/*.jpg'
       - 'docs/screenshots/*.gif'
-      - 'docs/PREREQUISITES/*.md'
       - 'tools/.prerequisites/*'
   workflow_dispatch:
 
