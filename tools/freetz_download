@@ -335,6 +335,12 @@ enumerate_mirrors_official() {
 				subpath=${url/@GNU\//}
 				sites[${#sites[@]}]=https://ftpmirror.gnu.org/$subpath # automatically chooses a nearby and up-to-date mirror
 				sites[${#sites[@]}]=https://ftp.gnu.org/gnu/$subpath
+			elif [ ${url:0:7} == "@DEBIAN" ]; then
+				subpath=debian/pool/main/${url:8:1}/${url/@DEBIAN\//}
+				sites[${#sites[@]}]=https://deb.debian.org/$subpath # automatically chooses a nearby and up-to-date mirror
+				sites[${#sites[@]}]=https://ftp.debian.org/$subpath
+				sites[${#sites[@]}]=https://ftp.de.debian.org/$subpath
+				sites[${#sites[@]}]=https://ftp2.de.debian.org/$subpath
 			elif [ ${url:0:7} == "@KERNEL" ]; then
 				subpath=${url/@KERNEL\//}
 				sites[${#sites[@]}]=https://cdn.kernel.org/pub/$subpath
