@@ -364,7 +364,11 @@ distclean: $(TOOLS_DISTCLEAN) common-distclean
 
 else
 
-step: image world tools firmware
+ifneq ($(strip $(FREETZ_DL_IMAGE_AT_LAST)),y)
+step: image  world tools firmware
+else
+step:        world tools firmware  image
+endif
 
 -include .config.cmd
 
