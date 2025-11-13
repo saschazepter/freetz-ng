@@ -15,6 +15,7 @@ jobs:
   build:
     permissions:
       contents: write
+      statuses: read
     container:
 #     image: ubuntu:20.04
 #     image: freetzng/generate
