@@ -107,7 +107,7 @@ Latest changes
     * PatchELF 0.18.0
     * procps-ng 4.0.5
     * Python 3.14.0
-    * sslh 2.3.0
+    * sslh 2.2.4/2.3.0
     * Stunnel 5.76
     * Tor 0.4.8.20
     * Unbound 1.24.1
