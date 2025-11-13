@@ -102,6 +102,7 @@ Latest changes
     * ldd 0.1/1.0.55
     * MTR 0.80/0.96
     * OpenSSH 9.3p2/10.2p1
+    * OpenVPN 2.4.12/2.5.11/2.6.15
     * PatchELF 0.18.0
     * procps-ng 4.0.5
     * Python 3.14.0
