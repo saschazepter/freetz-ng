@@ -100,6 +100,7 @@ Latest changes
     * hostapd_cli 2.7/2.10/2.11
     * Info-ZIP 3.0
     * ldd 0.1/1.0.55
+    * MTR 0.80/0.96
     * OpenSSH 9.3p2/10.2p1
     * PatchELF 0.18.0
     * procps-ng 4.0.5
