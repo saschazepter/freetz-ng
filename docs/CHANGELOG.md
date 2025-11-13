@@ -110,6 +110,7 @@ Latest changes
     * Stunnel 5.76
     * Tor 0.4.8.20
     * Unbound 1.24.1
+    * UnRAR 6.1.7/7.2.1
     * Whois 5.6.5
 
   - Libraries:
