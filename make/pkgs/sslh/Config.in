@@ -18,11 +18,11 @@ if FREETZ_PACKAGE_SSLH
 
 		config FREETZ_PACKAGE_SSLH_VERSION_ABANDON
 			bool "2.2.4"
-			depends on !FREETZ_AVM_GCC_5_MIN
+			depends on FREETZ_AVM_GCC_5_MAX
 
 		config FREETZ_PACKAGE_SSLH_VERSION_CURRENT
 			bool "2.3.0"
-			depends on FREETZ_AVM_GCC_5_MIN
+			depends on !FREETZ_AVM_GCC_5_MAX
 
 	endchoice
 
