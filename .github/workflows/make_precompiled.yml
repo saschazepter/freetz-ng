@@ -3,11 +3,10 @@ name: make_precompiled
 on:
   pull_request:
     branches: [ master ]
-    paths-ignore:
-      - '.github/**'
     paths:
       - 'make/pkgs/**'
       - 'make/libs/**'
+      - '!.github/**'
   push:
     branches: [ master ]
     paths:
