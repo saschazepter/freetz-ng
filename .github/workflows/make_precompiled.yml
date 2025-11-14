@@ -180,6 +180,8 @@ jobs:
           echo "##########################################################" && echo -n "Lines=" && wc -l .config
 
       - name: generate
+        env:
+          FREETZ_DLTOKEN: ${{ secrets.FREETZ_DLTOKEN }}
         id: generate
         if: matrix.fritz != 'skip'
         run: |

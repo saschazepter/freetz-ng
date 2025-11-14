@@ -121,6 +121,8 @@ jobs:
           echo "##########################################################" && echo -n "Lines=" && wc -l .config
 
       - name: generate
+        env:
+          FREETZ_DLTOKEN: ${{ secrets.FREETZ_DLTOKEN }}
         run: |
           make && rm -f images/latest.image
 #     - name: progress

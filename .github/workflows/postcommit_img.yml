@@ -108,7 +108,7 @@ jobs:
 
       - name: generate
         env:
-          ACTIONS_TOKEN: ${{ secrets.ACTIONS_TOKEN }}
+          FREETZ_DLTOKEN: ${{ secrets.FREETZ_DLTOKEN }}
           ACTIONS_IMAGE: ${{ secrets.ACTIONS_IMAGE }}
         run: |
           export LANG=en_US.utf8
