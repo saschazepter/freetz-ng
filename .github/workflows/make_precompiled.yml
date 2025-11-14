@@ -3,13 +3,15 @@ name: make_precompiled
 on:
   pull_request:
     branches: [ master ]
+    paths-ignore:
+      - '.github/**'
     paths:
-      - '.github/workflows/make_precompiled.yml'
       - 'make/pkgs/**'
       - 'make/libs/**'
   push:
     branches: [ master ]
     paths:
+      - '.github/workflows/make_precompiled.yml'
       - 'make/pkgs/**'
       - 'make/libs/**'
   workflow_dispatch:
