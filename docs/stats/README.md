@@ -23,7 +23,7 @@
 </tbody></table>
 </details>
 
-<details><summary>119 verschiedene Geräte</summary>
+<details><summary>120 verschiedene Geräte</summary>
 
 <table>
 <caption style='background-color:gray'>T-Com</caption>
@@ -189,7 +189,8 @@
 <tr><td>300E</td><td>FREETZ_TYPE_0300</td></tr>
 <tr><td>450E</td><td>FREETZ_TYPE_0450</td></tr>
 <tr><td>1200</td><td>FREETZ_TYPE_1200_W5</td></tr>
-<tr><td>1200 AX</td><td>FREETZ_TYPE_1200_W6_V1</td></tr>
+<tr><td>1200 AX v1</td><td>FREETZ_TYPE_1200_W6_V1</td></tr>
+<tr><td>1200 AX v2</td><td>FREETZ_TYPE_1200_W6_V2</td></tr>
 <tr><td>1700</td><td>FREETZ_TYPE_1700</td></tr>
 <tr><td>1750E</td><td>FREETZ_TYPE_1750</td></tr>
 <tr><td>2400</td><td>FREETZ_TYPE_2400_W5</td></tr>
@@ -206,7 +207,7 @@
 </tbody></table>
 </details>
 
-<details><summary>374 verschiedene Images</summary>
+<details><summary>375 verschiedene Images</summary>
 
 <table>
 <caption style='background-color:gray'>&nbsp;</caption>
@@ -247,6 +248,7 @@
 <tr><td>FRITZ.Repeater_1200-08.20.image</td><td>FREETZ_TYPE_1200_W5 &amp;&amp; FREETZ_TYPE_FIRMWARE_08_2X</td></tr>
 <tr><td>FRITZ.Repeater_1200_AX-07.31.image</td><td>FREETZ_TYPE_1200_W6_V1 &amp;&amp; FREETZ_TYPE_FIRMWARE_07_2X</td></tr>
 <tr><td>FRITZ.Repeater_1200_AX-07.58.image</td><td>FREETZ_TYPE_1200_W6_V1 &amp;&amp; FREETZ_TYPE_FIRMWARE_07_5X</td></tr>
+<tr><td>FRITZ.Repeater_1200_AX_v2-08.03.image</td><td>FREETZ_TYPE_1200_W6_V2 &amp;&amp; FREETZ_TYPE_FIRMWARE_08_0X</td></tr>
 <tr><td>FRITZ.Powerline_1240E.06.92.image</td><td>FREETZ_TYPE_1240_W5 &amp;&amp; FREETZ_TYPE_FIRMWARE_06_9X</td></tr>
 <tr><td>FRITZ.Powerline_1240E.150.07.01.image</td><td>FREETZ_TYPE_1240_W5 &amp;&amp; FREETZ_TYPE_FIRMWARE_07_0X</td></tr>
 <tr><td>FRITZ.Powerline_1240E.150.07.16.image</td><td>FREETZ_TYPE_1240_W5 &amp;&amp; FREETZ_TYPE_FIRMWARE_07_1X</td></tr>
