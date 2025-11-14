@@ -232,6 +232,9 @@ Content: [FritzBox](#fritzbox) - [FritzPowerline](#fritzpowerline) - [FritzSmart
     - deutschland: [FRITZ.Smart_Gateway-08.20-Release.image](https://download.avm.de/fritzsmart/fritzsmart-gateway/deutschland/fritz.os/FRITZ.Smart_Gateway-08.20-Release.image)
 
 ### FritzWlan
+  * fritzmesh-set-1600/
+    - deutschland: [FRITZ.Repeater_1200_AX_v2-08.03.image](https://download.avm.de/fritzwlan/fritzmesh-set-1600/deutschland/fritz.os/FRITZ.Repeater_1200_AX_v2-08.03.image)
+    - other: [FRITZ.Repeater_1200_AX_v2-08.03.image](https://download.avm.de/fritzwlan/fritzmesh-set-1600/other/fritz.os/FRITZ.Repeater_1200_AX_v2-08.03.image)
   * fritzmesh-set-4200/
     - other: [FRITZ.Repeater_3000_AX-08.03.image](https://download.avm.de/fritzwlan/fritzmesh-set-4200/other/fritz.os/FRITZ.Repeater_3000_AX-08.03.image)
   * fritzrepeater-1200/
