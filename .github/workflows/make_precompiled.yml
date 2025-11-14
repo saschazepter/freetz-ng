@@ -4,6 +4,7 @@ on:
   pull_request:
     branches: [ master ]
     paths:
+      - '.github/workflows/make_precompiled.yml'
       - 'make/pkgs/**'
       - 'make/libs/**'
   push:
