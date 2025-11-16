@@ -55,7 +55,7 @@ get_hw() {
 				table_head "Name" "Symbol"  "$(echo "$line"  | sed 's/^[^\t ]*[ \t]*"//;s/".*//')"
 			fi
 			[ "${line#config}"  != "$line" ] && echo "$line" | tr -d '\n'           | sed 's/^[^\t ]*[ \t]*/@ /g;s/$/ @ /g'
-			[ "${line#bool}"    != "$line" ] && echo "$line"                        | sed 's/^[^\t ]*[ \t]*"//g;s/"/ @/g' && echo >> "$TMPFILE.hw.head"
+			[ "${line#bool}"    != "$line" ] && echo "$line"                        | sed 's/^[^\t ]*[ \t]*"//g;s/ -.*/"/g;s/"/ @/g' && echo >> "$TMPFILE.hw.head"
 		done | sed 's/ - [^ ]*//g'
 	) > "$TMPFILE.hw.body"
 }
@@ -67,7 +67,7 @@ get_dl() {
 		table_head "Datei(/AVM)" "Symbole"
 		cat "$file" | grep "string \"${area}\"" -m1 -A9999 | grep "^config " -m1 -B9999 | sed 's/^[ \t]*//g' | grep -E "^(default) " | while read -r line; do
 			echo "$line" | tr -s ' ' | sed -r 's/.*"(.*)".* if (.*)/@ \2 @ \1 @/g' && echo >> "$TMPFILE.dl.head"
-		done | sed -r 's/_(inhaus|labor|plus)//gI' | grep -v "DETECT_IMAGE_NAME" | sed 's/&/\&amp;/g;s/|/\&vert;/g'
+		done | sed -r 's/_(inhaus|labor|plus)//gI' | grep -v "DETECT_IMAGE_NAME" | sed 's/&&/\&amp;\&amp;<br>/g;s/||/\&vert;\&vert;<br>/g'
 	) > "$TMPFILE.dl.body"
 }
 
@@ -124,6 +124,7 @@ main() {
 	spoiler_head "$TMPFILE.lg.head" "verschiedene Layouts"
 	spoiler_body "$TMPFILE.lg.body"
 	rm -f "$TMPFILE.lg."*
+
 
 }
 
