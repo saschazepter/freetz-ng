@@ -95,6 +95,35 @@ get_lg() {
 	) > "$TMPFILE.lg.body"
 }
 
+get_tc_int() {
+		table_head "Name" "Symbole" "$1 Toolchains"
+		cat "$PARENT/out.$2" | grep "^dl" | sort -u | while read -r file; do
+			cat "$PARENT/out.$2" | grep "^$file$" -m1 -A1 | while read -r line; do
+				if [ "${line#dl\/}" != "$line" ]; then
+					name="${line%-freetz-*}"
+				else
+					echo "@ ${line##* if } @ ${name:3} @"
+				fi
+			done
+		done | sed 's/  */ /g;s/&&/\&amp;\&amp;<br>/g;s/||/\&vert;\&vert;<br>/g'
+}
+get_tc() {
+#	file="tools/dl-toolchains_make"
+	(
+		"$PARENT/tools/dl-toolchains_eval" "" "stats"
+		table_head "Target" "Kernel" "Kombinierte Toolchains"
+		cat "$PARENT/out.kernel" | grep "^# " | while read -r comb; do
+			t="$(grep "^$comb$" -m1 -A1 "$PARENT/out.target" | sed -n 's|^dl/||p' | sed 's|-freetz-.*||')"
+			k="$(grep "^$comb$" -m1 -A1 "$PARENT/out.kernel" | sed -n 's|^dl/||p' | sed 's|-freetz-.*||')"
+			echo "@ $k @ $t  @"
+			echo >> "$TMPFILE.tc.head"
+		done | sort
+		get_tc_int "Target" "target"
+		get_tc_int "Kernel" "kernel"
+		rm -f "$PARENT/out.{raw,kernel,target}"
+	) > "$TMPFILE.tc.body"
+}
+
 
 main() {
 
@@ -125,6 +154,11 @@ main() {
 	spoiler_body "$TMPFILE.lg.body"
 	rm -f "$TMPFILE.lg."*
 
+	echo "toolchain" >&2
+	get_tc
+	spoiler_head "$TMPFILE.tc.head" "verschiedene Toolchains"
+	spoiler_body "$TMPFILE.tc.body"
+	rm -f "$TMPFILE.tc."*
 
 }
 
