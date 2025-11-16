@@ -14,6 +14,7 @@ on:
       - 'make/libs/*/*.mk'
       - 'config/ui/patches.in'
       - 'config/ui/firmware.in'
+      - 'docs/*/*.tpl'
       - 'docs/*/*.md'
       - 'docs/wiki/*/*.md'
       - 'docs/screenshots/*.png'
