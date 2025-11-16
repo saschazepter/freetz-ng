@@ -21,6 +21,7 @@ on:
       - 'docs/screenshots/*.jpg'
       - 'docs/screenshots/*.gif'
       - 'tools/.prerequisites/*'
+      - 'tools/layoutGens.sh'
   workflow_dispatch:
 
 concurrency:
