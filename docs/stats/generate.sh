@@ -96,13 +96,14 @@ get_lg() {
 }
 
 get_tc_int() {
-		table_head "Name" "Symbole" "$1 Toolchains"
+		table_head "Name" "Symbole" "$1 Toolchains (%%$3%%)"
 		cat "$PARENT/out.$2" | grep "^dl" | sort -u | while read -r file; do
 			cat "$PARENT/out.$2" | grep "^$file$" -m1 -A1 | while read -r line; do
 				if [ "${line#dl\/}" != "$line" ]; then
 					name="${line%-freetz-*}"
 				else
 					echo "@ ${line##* if } @ ${name:3} @"
+					echo >> "$TMPFILE.tc.head$3"
 				fi
 			done
 		done | sed 's/  */ /g;s/&&/\&amp;\&amp;<br>/g;s/||/\&vert;\&vert;<br>/g'
@@ -110,18 +111,21 @@ get_tc_int() {
 get_tc() {
 #	file="tools/dl-toolchains_make"
 	(
-		"$PARENT/tools/dl-toolchains_eval" "" "stats"
-		table_head "Target" "Kernel" "Kombinierte Toolchains"
+		"$PARENT/tools/dl-toolchains_eval" "" "stats" >/dev/null 2>&1
+		table_head "Target" "Kernel" "Kombinierte Toolchains (%%0%%)"
 		cat "$PARENT/out.kernel" | grep "^# " | while read -r comb; do
 			t="$(grep "^$comb$" -m1 -A1 "$PARENT/out.target" | sed -n 's|^dl/||p' | sed 's|-freetz-.*||')"
 			k="$(grep "^$comb$" -m1 -A1 "$PARENT/out.kernel" | sed -n 's|^dl/||p' | sed 's|-freetz-.*||')"
 			echo "@ $k @ $t  @"
 			echo >> "$TMPFILE.tc.head"
 		done | sort
-		get_tc_int "Target" "target"
-		get_tc_int "Kernel" "kernel"
-		rm -f "$PARENT/out.{raw,kernel,target}"
+		get_tc_int "Target" "target" "1"
+		get_tc_int "Kernel" "kernel" "2"
+		rm -f "$PARENT"/out.{raw,kernel,target}
 	) > "$TMPFILE.tc.body"
+	for idx in 0 1 2; do
+		sed "s/%%${idx}%%/$(cat "$TMPFILE.tc.head${idx/0}" | wc -l | tr -d '\n')/g" -i "$TMPFILE.tc.body"
+	done
 }
 
 
