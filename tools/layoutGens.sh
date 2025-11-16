@@ -3,6 +3,7 @@
 MYPWD="$(dirname $(realpath $0))"
 
 TWS="$(printf '\342\200\212')"
+[ -z "$1" ] && SORT="cat" || SORT="sort -t- -k2"
 for FWL in $(sed -rn 's/.* FREETZ_AVM_HAS_FWLAYOUT_//p' "$MYPWD/../config/.img/separate/"*.in | sort -u); do
 	echo "# Gen$FWL"
 	for IN in $(grep FREETZ_AVM_HAS_FWLAYOUT_$FWL "$MYPWD/../config/.img/separate/"*.in -l); do
@@ -12,12 +13,16 @@ for FWL in $(sed -rn 's/.* FREETZ_AVM_HAS_FWLAYOUT_//p' "$MYPWD/../config/.img/s
 			[ -z "$HWREV" ] && HWREV="$(grep " FREETZ_AVM_PROP_HWREV$" -A2 $INN | sed -rn 's/.* "(.*)"$/\1/p')"
 			[ -z "$HWREV" ] && echo "BAD: $INN" && continue
 			NAME="$(grep " FREETZ_AVM_PROP_NAME$" -A2 ${INN%.in}*.in | sed -rn 's/.* "(.*)"$/\1/p' | tail -n1)"
-			[ -n "$1" ] && SYMB="$(grep "^if " "${INN}" | sed -rn 's/^if \(*([^ ]*).*/\1/p')"
 			[ -z "$NAME" ] && echo "NON: $INN" && continue
-			echo "$HWREV -$SYMB- $NAME" | sed "s/$TWS/ /g"
+			if [ -z "$1" ]; then
+				echo "$HWREV - $NAME" | sed "s/$TWS/ /g"
+			else
+				SYMB="$(grep "^if " "${INN}" | sed -rn 's/^if \(*([^ ]*).*/\1/p')"
+				echo "$SYMB - $NAME" | sed "s/$TWS/ /g"
+			fi
 			break
 		done
-	done | sort -n | uniq |  tac|awk -F"[. ]" '!a[$1]++'|tac
+	done | sort -n | uniq |  tac|awk -F"[. ]" '!a[$1]++'|tac | $SORT
 done
 
 exit 0

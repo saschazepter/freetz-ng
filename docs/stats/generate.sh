@@ -89,7 +89,7 @@ get_lg() {
 				table_head "Name" "Symbol"  "${line##* }: $gen-boot"
 				echo >> "$TMPFILE.lg.head"
 			else
-				echo "$line" | sed -rn 's/.* -(.*)- (.*)/@ \1 @ \2 @/p'
+				echo "$line" | sed -rn 's/(.*) - (.*)/@ \1 @ \2 @/p'
 			fi
 		done | sed 's/ - [^ ]*//g'
 	) > "$TMPFILE.lg.body"
