@@ -46,18 +46,23 @@ get_fw() {
 get_hw() {
 	area='Hardware type'
 	file="config/ui/firmware.in"
+	last=0
 	(
 		first='y'
 		cat "$file" | grep "prompt \"${area}\"" -m1 -A9999 | grep "^endchoice" -m1 -B9999 | sed 's/^[ \t]*//g' | grep -E "^(comment|config|bool) " | while read -r line; do
 			if [ "${line#comment}" != "$line" ]; then
 				[ "$first" == "y" ] && first='n' || table_foot
-#				echo "$line"  | sed 's/^[^\t ]*[ \t]*"/<h3>/;s/".*/<\/h3>/'
-				table_head "Name" "Symbol"  "$(echo "$line"  | sed 's/^[^\t ]*[ \t]*"//;s/".*//')"
+				let last++
+				table_head "Name" "Symbol"  "$(echo "$line"  | sed 's/^[^\t ]*[ \t]*"//;s/".*//') (%%$last%%)"
 			fi
-			[ "${line#config}"  != "$line" ] && echo "$line" | tr -d '\n'           | sed 's/^[^\t ]*[ \t]*/@ /g;s/$/ @ /g'
+			[ "${line#config}"  != "$line" ] && echo "$line" | tr -d '\n'           | sed 's/^[^\t ]*[ \t]*/@ /g;s/$/ @ /g' && echo >> "$TMPFILE.hw.head$last"
 			[ "${line#bool}"    != "$line" ] && echo "$line"                        | sed 's/^[^\t ]*[ \t]*"//g;s/ -.*/"/g;s/"/ @/g' && echo >> "$TMPFILE.hw.head"
 		done | sed 's/ - [^ ]*//g'
 	) > "$TMPFILE.hw.body"
+	for idx in "$TMPFILE.hw.head"*; do
+		local kat="${idx#$TMPFILE.hw.head}"
+		[ -n "$kat" ] && sed "s/%%${kat}%%/$(cat "$TMPFILE.hw.head${kat}" | wc -l | tr -d '\n')/g" -i "$TMPFILE.hw.body"
+	done
 }
 
 get_dl() {
@@ -75,9 +80,11 @@ get_lg() {
 #	file="config/.img/separate/*.in"
 	(
 		first='y'
+		lastgen='x'
 		"$PARENT/tools/layoutGens.sh" "stats" | while read -r line; do
 			if [ "${line#\# }" != "$line" ]; then
 				[ "$first" == "y" ] && first='n' || table_foot
+				[ "$line" != "{line##*Gen}" ] && lastgen="${line: -1}"
 				case "${line##*Gen}" in
 					1) gen="single" ;;
 					2) gen="ram" ;;
@@ -86,13 +93,18 @@ get_lg() {
 					5) gen="fit" ;;
 					*) gen="undef" ;;
 				esac
-				table_head "Name" "Symbol"  "${line##* }: $gen-boot"
+				table_head "Name" "Symbol"  "${line##* }: $gen-boot (%%${line##*Gen}%%)"
 				echo >> "$TMPFILE.lg.head"
 			else
 				echo "$line" | sed -rn 's/(.*) - (.*)/@ \1 @ \2 @/p'
+				echo >> "$TMPFILE.lg.head$lastgen"
 			fi
 		done | sed 's/ - [^ ]*//g'
 	) > "$TMPFILE.lg.body"
+	for idx in "$TMPFILE.lg.head"*; do
+		local gen="${idx#$TMPFILE.lg.head}"
+		[ -n "$gen" ] && sed "s/%%${gen}%%/$(cat "$TMPFILE.lg.head${gen}" | wc -l | tr -d '\n')/g" -i "$TMPFILE.lg.body"
+	done
 }
 
 get_tc_int() {
