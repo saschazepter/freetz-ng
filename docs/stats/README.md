@@ -738,3 +738,41 @@
 </tbody></table>
 </details>
 
+<details><summary>1 verschiedene Toolchains</summary>
+
+Update FREETZ_TARGET_UCLIBC_* in config/mod/dl-toolchain.in!
+.................................
+
+# kernel:
+
+default "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"    if FREETZ_TARGET_ARCH_                          && FREETZ_KERNEL_GCC_
+
+# files:
+
+dl/_gcc--freetz-r27352-shared-glibc.tar.lzma
+
+# target:
+
+default "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"    if FREETZ_TARGET_ARCH_                          && FREETZ_TARGET_GCC_ && FREETZ_TARGET_UCLIBC___e_ne && FREETZ_KERNEL_VERSION_2
+
+# files:
+
+dl/_gcc-_uClibc-_kernel--freetz-r27352-shared-glibc.tar.lzma
+<table>
+<caption style='background-color:gray'>Kombinierte Toolchains</caption>
+<thead><tr><th style='width:450px'>Target</th><th style='width:300px'>Kernel</th></tr></thead>
+<tbody>
+<tr><td>_gcc-_uClibc-_kernel- </td><td>_gcc-</td></tr>
+<table>
+<caption style='background-color:gray'>Target Toolchains</caption>
+<thead><tr><th style='width:450px'>Name</th><th style='width:300px'>Symbole</th></tr></thead>
+<tbody>
+<tr><td>_gcc-_uClibc-_kernel-</td><td>FREETZ_TARGET_ARCH_ &amp;&amp;<br> FREETZ_TARGET_GCC_ &amp;&amp;<br> FREETZ_TARGET_UCLIBC___e_ne &amp;&amp;<br> FREETZ_KERNEL_VERSION_2</td></tr>
+<table>
+<caption style='background-color:gray'>Kernel Toolchains</caption>
+<thead><tr><th style='width:450px'>Name</th><th style='width:300px'>Symbole</th></tr></thead>
+<tbody>
+<tr><td>_gcc-</td><td>FREETZ_TARGET_ARCH_ &amp;&amp;<br> FREETZ_KERNEL_GCC_</td></tr>
+</tbody></table>
+</details>
+

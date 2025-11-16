@@ -1,0 +1,4 @@
+
+# FREETZ_TYPE_WLAN FREETZ_TYPE_FIRMWARE_04_XX
+dl/_gcc-_uClibc-_kernel--freetz-r27352-shared-glibc.tar.lzma
+default "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"    if FREETZ_TARGET_ARCH_                          && FREETZ_TARGET_GCC_ && FREETZ_TARGET_UCLIBC___e_ne && FREETZ_KERNEL_VERSION_2
