@@ -71,6 +71,31 @@ get_dl() {
 	) > "$TMPFILE.dl.body"
 }
 
+get_lg() {
+#	file="config/.img/separate/*.in"
+	(
+		first='y'
+		"$PARENT/tools/layoutGens.sh" "stats" | while read -r line; do
+			if [ "${line#\# }" != "$line" ]; then
+				[ "$first" == "y" ] && first='n' || table_foot
+				case "${line##*Gen}" in
+					1) gen="single" ;;
+					2) gen="ram" ;;
+					3) gen="dual" ;;
+					4) gen="uimg" ;;
+					5) gen="fit" ;;
+					*) gen="undef" ;;
+				esac
+				table_head "Name" "Symbol"  "${line##* }: $gen-boot"
+				echo >> "$TMPFILE.lg.head"
+			else
+				echo "$line" | sed -rn 's/.* -(.*)- (.*)/@ \1 @ \2 @/p'
+			fi
+		done | sed 's/ - [^ ]*//g'
+	) > "$TMPFILE.lg.body"
+}
+
+
 main() {
 
 	echo "# Statistiken rund um Freetz-NG"
@@ -93,6 +118,12 @@ main() {
 	spoiler_head "$TMPFILE.dl.head" "verschiedene Images"
 	spoiler_body "$TMPFILE.dl.body"
 	rm -f "$TMPFILE.dl."*
+
+	echo "layout" >&2
+	get_lg
+	spoiler_head "$TMPFILE.lg.head" "verschiedene Layouts"
+	spoiler_body "$TMPFILE.lg.body"
+	rm -f "$TMPFILE.lg."*
 
 }
 
