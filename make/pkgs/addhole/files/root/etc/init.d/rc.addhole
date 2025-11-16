@@ -65,7 +65,10 @@ config() {
 }
 
 status() {
-	echo "$(grep -v '^#' $HOSTS | wc -l | sed 's/[ \t].*//') (Bytes: $(du -sh $(realpath $HOSTS) | sed 's/[ \t].*//'))"
+	local bytes="$(du -sh $(realpath $HOSTS) | sed 's/[ \t].*//')"
+	local count="$(grep -v '^#' $HOSTS | wc -l | sed 's/[ \t].*//')"
+	[ "$count" -gt 0 ] 2>/dev/null && count="$(( ( $count + 1 ) / 2 ))"
+	echo "$count (Bytes: $bytes)"
 }
 
 case $1 in
