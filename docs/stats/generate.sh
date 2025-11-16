@@ -116,7 +116,7 @@ get_tc() {
 		cat "$PARENT/out.kernel" | grep "^# " | while read -r comb; do
 			t="$(grep "^$comb$" -m1 -A1 "$PARENT/out.target" | sed -n 's|^dl/||p' | sed 's|-freetz-.*||')"
 			k="$(grep "^$comb$" -m1 -A1 "$PARENT/out.kernel" | sed -n 's|^dl/||p' | sed 's|-freetz-.*||')"
-			echo "@ $k @ $t  @"
+			echo "@ $k @ $t @"
 			echo >> "$TMPFILE.tc.head"
 		done | sort
 		get_tc_int "Target" "target" "1"

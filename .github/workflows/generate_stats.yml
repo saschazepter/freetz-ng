@@ -11,6 +11,7 @@ on:
       - 'config/.img/**'
       - 'tools/layoutGens.sh'
       - 'tools/dl-toolchains_eval'
+      - 'tools/dl-toolchains_make'
       - 'config/mod/dl-toolchain.in'
       - 'config/ui/toolchain.in '
   workflow_dispatch:
