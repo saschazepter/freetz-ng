@@ -1,27 +1,18 @@
-name: generate_docs
+name: generate_stats
 
 on:
   push:
     branches: [ master ]
     paths:
-      - '.github/workflows/generate_docs.yml'
-      - 'docs/generate.sh'
-      - 'docs/*/generate.sh'
-      - '!docs/stats/generate.sh'
-      - 'make/host-tools/*/*.mk'
-      - 'make/pkgs/*/Config.in'
-      - 'make/pkgs/*/*.mk'
-      - 'make/libs/*/Config.in'
-      - 'make/libs/*/*.mk'
-      - 'config/ui/patches.in'
+      - '.github/workflows/generate_stats.yml'
+      - 'docs/stats/generate.sh'
       - 'config/ui/firmware.in'
-      - 'docs/*/*.tpl'
-      - 'docs/*/*.md'
-      - 'docs/wiki/*/*.md'
-      - 'docs/screenshots/*.png'
-      - 'docs/screenshots/*.jpg'
-      - 'docs/screenshots/*.gif'
-      - 'tools/.prerequisites/*'
+      - 'config/mod/dl-firmware.in'
+      - 'config/.img/**'
+      - 'tools/layoutGens.sh'
+      - 'tools/dl-toolchains_eval'
+      - 'config/mod/dl-toolchain.in'
+      - 'config/ui/toolchain.in '
   workflow_dispatch:
 
 concurrency:
@@ -34,8 +25,8 @@ jobs:
       contents: write
     container:
 #     image: ubuntu:20.04
-#     image: freetzng/generate
-      image: ghcr.io/freetz-ng/generate
+#     image: freetzng/dl-packs
+      image: ghcr.io/freetz-ng/dl-packs
       options: --user 1001:1001
     runs-on: ubuntu-latest
     if: github.repository == 'freetz-ng/freetz-ng'
@@ -48,7 +39,12 @@ jobs:
 #     - name: install
 #       run: |
 #         DEBIAN_FRONTEND=noninteractive apt-get -y install \
-#           git locales imagemagick
+#           locales bash \
+#           pv cpio rsync kmod imagemagick inkscape graphicsmagick subversion git bc unar wget sudo gcc g++ binutils autoconf automake \
+#           autopoint libtool-bin make bzip2 libncurses5-dev libreadline-dev zlib1g-dev flex bison patch texinfo tofrodos gettext pkg-config ecj \
+#           perl libstring-crc32-perl ruby ruby1.9 gawk libusb-dev unzip intltool libacl1-dev libcap-dev libc6-dev-i386 lib32ncurses5-dev \
+#           gcc-multilib bsdmainutils lib32stdc++6 libglib2.0-dev ccache cmake lib32z1-dev libsqlite3-dev sqlite3 libzstd-dev netcat curl \
+#           uuid-dev libssl-dev libgnutls28-dev u-boot-tools device-tree-compiler openssl build-essential libelf-dev
 #
 #     - name: locale
 #       run: locale-gen en_US.utf8 && locale-gen de_DE.UTF-8 && update-locale
@@ -68,7 +64,7 @@ jobs:
       - name: generate
         run: |
           export LANG=en_US.utf8
-          docs/generate.sh
+          docs/stats/generate.sh
 
       - name: commit
         env:
@@ -80,7 +76,7 @@ jobs:
           git status
           git config --local user.name github-actions[bot]
           git config --local user.email github-actions[bot]@users.noreply.github.com
-          git diff --cached --quiet && exit 0 || git commit -m "docs: automatic update"
+          git diff --cached --quiet && exit 0 || git commit -m "stats: automatic update"
           git config --local credential.helper '!x() { echo "password=$GITHUB_TOKEN"; };x'
           git push origin $GITHUB_REF_NAME
 
