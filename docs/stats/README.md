@@ -26,20 +26,20 @@
 <details><summary>120 verschiedene Geräte</summary>
 
 <table>
-<caption style='background-color:gray'>T-Com</caption>
+<caption style='background-color:gray'>T-Com (2)</caption>
 <thead><tr><th style='width:450px'>Name</th><th style='width:300px'>Symbol</th></tr></thead>
 <tbody>
 <tr><td>Eumex 300IP as Fon</td><td>FREETZ_TYPE_300IP</td></tr>
 <tr><td>Speedport W501V</td><td>FREETZ_TYPE_W501V</td></tr>
 </tbody></table>
 <table>
-<caption style='background-color:gray'>LAN</caption>
+<caption style='background-color:gray'>LAN (1)</caption>
 <thead><tr><th style='width:450px'>Name</th><th style='width:300px'>Symbol</th></tr></thead>
 <tbody>
 <tr><td>2170</td><td>FREETZ_TYPE_2170</td></tr>
 </tbody></table>
 <table>
-<caption style='background-color:gray'>WLAN</caption>
+<caption style='background-color:gray'>WLAN (11)</caption>
 <thead><tr><th style='width:450px'>Name</th><th style='width:300px'>Symbol</th></tr></thead>
 <tbody>
 <tr><td>3020 SL</td><td>FREETZ_TYPE_3020</td></tr>
@@ -55,7 +55,7 @@
 <tr><td>3490</td><td>FREETZ_TYPE_3490</td></tr>
 </tbody></table>
 <table>
-<caption style='background-color:gray'>WAN</caption>
+<caption style='background-color:gray'>WAN (5)</caption>
 <thead><tr><th style='width:450px'>Name</th><th style='width:300px'>Symbol</th></tr></thead>
 <tbody>
 <tr><td>4020</td><td>FREETZ_TYPE_4020</td></tr>
@@ -65,7 +65,7 @@
 <tr><td>4690</td><td>FREETZ_TYPE_4690</td></tr>
 </tbody></table>
 <table>
-<caption style='background-color:gray'>Fon</caption>
+<caption style='background-color:gray'>Fon (5)</caption>
 <thead><tr><th style='width:450px'>Name</th><th style='width:300px'>Symbol</th></tr></thead>
 <tbody>
 <tr><td>Fon</td><td>FREETZ_TYPE_FON</td></tr>
@@ -75,7 +75,7 @@
 <tr><td>5140</td><td>FREETZ_TYPE_5140</td></tr>
 </tbody></table>
 <table>
-<caption style='background-color:gray'>Fiber</caption>
+<caption style='background-color:gray'>Fiber (6)</caption>
 <thead><tr><th style='width:450px'>Name</th><th style='width:300px'>Symbol</th></tr></thead>
 <tbody>
 <tr><td>5490</td><td>FREETZ_TYPE_5490</td></tr>
@@ -86,7 +86,7 @@
 <tr><td>5690 Pro</td><td>FREETZ_TYPE_5690_PRO</td></tr>
 </tbody></table>
 <table>
-<caption style='background-color:gray'>Cable</caption>
+<caption style='background-color:gray'>Cable (9)</caption>
 <thead><tr><th style='width:450px'>Name</th><th style='width:300px'>Symbol</th></tr></thead>
 <tbody>
 <tr><td>6320</td><td>FREETZ_TYPE_6320</td></tr>
@@ -100,7 +100,7 @@
 <tr><td>6690</td><td>FREETZ_TYPE_6690</td></tr>
 </tbody></table>
 <table>
-<caption style='background-color:gray'>LTE</caption>
+<caption style='background-color:gray'>LTE (11)</caption>
 <thead><tr><th style='width:450px'>Name</th><th style='width:300px'>Symbol</th></tr></thead>
 <tbody>
 <tr><td>6810</td><td>FREETZ_TYPE_6810</td></tr>
@@ -116,7 +116,7 @@
 <tr><td>6890</td><td>FREETZ_TYPE_6890</td></tr>
 </tbody></table>
 <table>
-<caption style='background-color:gray'>Fon WLAN</caption>
+<caption style='background-color:gray'>Fon WLAN (44)</caption>
 <thead><tr><th style='width:450px'>Name</th><th style='width:300px'>Symbol</th></tr></thead>
 <tbody>
 <tr><td>Fon WLAN</td><td>FREETZ_TYPE_WLAN</td></tr>
@@ -165,7 +165,7 @@
 <tr><td>7690</td><td>FREETZ_TYPE_7690</td></tr>
 </tbody></table>
 <table>
-<caption style='background-color:gray'>Powerline</caption>
+<caption style='background-color:gray'>Powerline (6)</caption>
 <thead><tr><th style='width:450px'>Name</th><th style='width:300px'>Symbol</th></tr></thead>
 <tbody>
 <tr><td>540E</td><td>FREETZ_TYPE_0540</td></tr>
@@ -176,7 +176,7 @@
 <tr><td>1260 v2</td><td>FREETZ_TYPE_1260_V2</td></tr>
 </tbody></table>
 <table>
-<caption style='background-color:gray'>Repeater</caption>
+<caption style='background-color:gray'>Repeater (19)</caption>
 <thead><tr><th style='width:450px'>Name</th><th style='width:300px'>Symbol</th></tr></thead>
 <tbody>
 <tr><td>N/G</td><td>FREETZ_TYPE_WRNG</td></tr>
@@ -200,7 +200,7 @@
 <tr><td>6000</td><td>FREETZ_TYPE_6000</td></tr>
 </tbody></table>
 <table>
-<caption style='background-color:gray'>Smart</caption>
+<caption style='background-color:gray'>Smart (1)</caption>
 <thead><tr><th style='width:450px'>Name</th><th style='width:300px'>Symbol</th></tr></thead>
 <tbody>
 <tr><td>Gateway</td><td>FREETZ_TYPE_GATE</td></tr>
@@ -593,7 +593,7 @@
 <details><summary>5 verschiedene Layouts</summary>
 
 <table>
-<caption style='background-color:gray'>Gen1: single-boot</caption>
+<caption style='background-color:gray'>Gen1: single-boot (56)</caption>
 <thead><tr><th style='width:450px'>Name</th><th style='width:300px'>Symbol</th></tr></thead>
 <tbody>
 <tr><td>FRITZ!Box 2170</td><td>FREETZ_TYPE_2170</td></tr>
@@ -654,7 +654,7 @@
 <tr><td>Speedport W 501V</td><td>FREETZ_TYPE_W501V</td></tr>
 </tbody></table>
 <table>
-<caption style='background-color:gray'>Gen2: ram-boot</caption>
+<caption style='background-color:gray'>Gen2: ram-boot (35)</caption>
 <thead><tr><th style='width:450px'>Name</th><th style='width:300px'>Symbol</th></tr></thead>
 <tbody>
 <tr><td>FRITZ!Box 3272</td><td>FREETZ_TYPE_3272</td></tr>
@@ -694,7 +694,7 @@
 <tr><td>FRITZ!Repeater 600</td><td>FREETZ_TYPE_0600_V2</td></tr>
 </tbody></table>
 <table>
-<caption style='background-color:gray'>Gen3: dual-boot</caption>
+<caption style='background-color:gray'>Gen3: dual-boot (3)</caption>
 <thead><tr><th style='width:450px'>Name</th><th style='width:300px'>Symbol</th></tr></thead>
 <tbody>
 <tr><td>FRITZ!Box 6430 Cable</td><td>FREETZ_TYPE_6430</td></tr>
@@ -702,7 +702,7 @@
 <tr><td>FRITZ!Box 6590 Cable</td><td>FREETZ_TYPE_6590</td></tr>
 </tbody></table>
 <table>
-<caption style='background-color:gray'>Gen4: uimg-boot</caption>
+<caption style='background-color:gray'>Gen4: uimg-boot (4)</caption>
 <thead><tr><th style='width:450px'>Name</th><th style='width:300px'>Symbol</th></tr></thead>
 <tbody>
 <tr><td>FRITZ!Box 6591 Cable</td><td>FREETZ_TYPE_6591</td></tr>
@@ -711,7 +711,7 @@
 <tr><td>FRITZ!Box 6690 Cable</td><td>FREETZ_TYPE_6690</td></tr>
 </tbody></table>
 <table>
-<caption style='background-color:gray'>Gen5: fit-boot</caption>
+<caption style='background-color:gray'>Gen5: fit-boot (21)</caption>
 <thead><tr><th style='width:450px'>Name</th><th style='width:300px'>Symbol</th></tr></thead>
 <tbody>
 <tr><td>FRITZ!Box 4050</td><td>FREETZ_TYPE_4050</td></tr>
