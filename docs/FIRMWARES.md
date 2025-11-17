@@ -190,7 +190,7 @@ Currently supported devices and firmwares
     - 252.07.29 rev92037 {GER} [PSQ19P2NL4]
     - 252.07.57 rev107842 {GER} [MOVE21NL1]
     - 252.08.03 rev118554 {GER} [Smart24 P1 NL1]
-    - 252.08.20 rev123472 {GER} [Smart24 P2]
+    - 252.08.21 rev126329 {GER} [Smart24 P2]
   * __Fritz!Box 6670 Cable (UNTESTED)__
     - 284.07.63 rev113732 {GER} [FCS23]
     - 284.08.03 rev118552 {GER} [Smart24 P1 FCS]
