@@ -110,7 +110,7 @@ Latest changes
     * Python 3.14.0
     * sslh 2.2.4/2.3.0
     * Stunnel 5.76
-    * Tor 0.4.8.20
+    * Tor 0.4.8.21
     * Unbound 1.24.1
     * UnRAR 6.1.7/7.2.1
     * Whois 5.6.5
