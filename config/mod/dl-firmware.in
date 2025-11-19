@@ -35,6 +35,7 @@ config FREETZ_DL_SITE
 	default "@AVM/fritzpowerline/fritzpowerline-546e/{deutschland,other}/fritz.os"                                     if FREETZ_TYPE_0546
 	#
 	default "@AVM/fritzwlan/fritzrepeater-600/{deutschland,other}/fritz.os"                                            if FREETZ_TYPE_0600_V1
+	#
 	default "@AVM/fritzwlan/fritzrepeater-600v2/{deutschland,other}/fritz.os"                                          if FREETZ_TYPE_0600_V2
 	#
 	default "@AVM/fritzwlan/fritzwlan-repeater-1160/{deutschland,other}/fritz.os"                                      if FREETZ_TYPE_1160
@@ -330,6 +331,8 @@ config FREETZ_DL_SOURCE
 	default "FRITZ.Powerline_546E.118.07.15.image"                                                if FREETZ_TYPE_0546                              && FREETZ_TYPE_FIRMWARE_07_1X
 	#
 	default "FRITZ.Repeater_600-07.58.image"                                                      if FREETZ_TYPE_0600_V1                           && FREETZ_TYPE_FIRMWARE_07_5X
+	default "FRITZ.Repeater_600-08.20.image"                                                      if FREETZ_TYPE_0600_V1                           && FREETZ_TYPE_FIRMWARE_08_2X
+	#
 	default "FRITZ.Repeater_600v2-07.58.image"                                                    if FREETZ_TYPE_0600_V2                           && FREETZ_TYPE_FIRMWARE_07_5X
 	#
 	default "FRITZ.Box_WLAN_Repeater_1160-07.15.image"                                            if FREETZ_TYPE_1160                              && FREETZ_TYPE_FIRMWARE_07_1X
