@@ -12,6 +12,23 @@ config FREETZ_TARGET_ARCH_BE
 	default y
 	depends on FREETZ_AVM_PROP_ARCH_BE
 
+
+config FREETZ_TARGET_BITS_32
+	bool
+	default y
+	depends on !FREETZ_TARGET_BITS_64
+
+config FREETZ_TARGET_BITS_64
+	bool
+	default y
+	depends on FREETZ_AVM_PROP_BITS_64
+
+config FREETZ_TARGET_BITS
+	string
+	default "32"          if FREETZ_TARGET_BITS_32
+	default "64"          if FREETZ_TARGET_BITS_64
+
+
 config FREETZ_TARGET_ARCH_AARCH64
 	bool
 	default y
