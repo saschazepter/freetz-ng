@@ -1,6 +1,6 @@
 # Common values for all architectures
 
-# Types and sizes
+# Types
 ac_cv_type_pid_t=yes
 ac_cv_type_ptrdiff_t=yes
 ac_cv_type_struct_sockaddr_storage=yes
