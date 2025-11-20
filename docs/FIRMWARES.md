@@ -160,6 +160,8 @@ Currently supported devices and firmwares
   * __FRITZ!Box 5690 Pro__
     - 279.07.62 rev115017 {ALL} [FCS23]
     - 279.08.03 rev118508 {ALL} [Smart24 P1 FCS]
+  * __FRITZ!Box 5690 XGS (DEVELOPER)__
+    - 295.08.10 rev126177 {ALL} [Smart24 P2] (Inhaus)
 
 ### Fritz!Box Cable (64xx/65xx/66xx)
 
