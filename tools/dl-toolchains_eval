@@ -70,18 +70,24 @@ echo -n "default \"${SK%% *}\"    " >> out.kernel
 echo -n "default \"${ST%% *}\"    " >> out.target
 
 case "${line%%_*}" in
-	mipsel)  ARCH="MIPS" ;;
-	mips)    ARCH="MIPS" ;;
-	arm)     ARCH="ARM " ;;
-	armeb)   ARCH="ARM " ;;
-	i686)    ARCH="X86 " ;;
+	aarch64)    ARCH="AARCH64" ;;
+	aarch64_be) ARCH="AARCH64" ;;
+	arm)        ARCH="ARM    " ;;
+	armeb)      ARCH="ARM    " ;;
+	mips)       ARCH="MIPS   " ;;
+	mipsel)     ARCH="MIPS   " ;;
+	i686)       ARCH="X86    " ;;
 esac
 echo -n "if FREETZ_TARGET_ARCH_$ARCH" | tee -a out.kernel >> out.target
 
 case "${line%%_*}" in
-	mipsel)  ENDI="&& FREETZ_TARGET_ARCH_LE" ;;
-	mips)    ENDI="&& FREETZ_TARGET_ARCH_BE" ;;
-	*)       ENDI="                        " ;;
+	aarch64)    ENDI="&& FREETZ_TARGET_ARCH_LE" ;;
+	aarch64_be) ENDI="&& FREETZ_TARGET_ARCH_BE" ;;
+	arm)        ENDI="&& FREETZ_TARGET_ARCH_LE" ;;
+	armeb)      ENDI="&& FREETZ_TARGET_ARCH_BE" ;;
+	mips)       ENDI="&& FREETZ_TARGET_ARCH_BE" ;;
+	mipsel)     ENDI="&& FREETZ_TARGET_ARCH_LE" ;;
+	*)          ENDI="                        " ;;
 esac
 echo -n " $ENDI" | tee -a out.kernel >> out.target
 
