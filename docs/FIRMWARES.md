@@ -8,7 +8,7 @@ Currently supported devices and firmwares
   * [Fritz!Box WAN (4xxx)](#fritzbox-wan-4xxx)
   * [Fritz!Box Fon (50xx/51xx)](#fritzbox-fon-50xx51xx)
   * [Fritz!Box Fiber (54xx/55xx/56xx)](#fritzbox-fiber-54xx55xx56xx)
-  * [Fritz!Box Cable (64xx/65xx/66xx)](#fritzbox-cable-64xx65xx66xx)
+  * [Fritz!Box Cable (63xx/64xx/65xx/66xx)](#fritzbox-cable-63xx64xx65xx66xx)
   * [Fritz!Box LTE (68xx)](#fritzbox-lte-68xx)
   * [Fritz!Box Fon WLAN (70xx)](#fritzbox-fon-wlan-70xx)
   * [Fritz!Box Fon WLAN (71xx)](#fritzbox-fon-wlan-71xx)
@@ -163,7 +163,12 @@ Currently supported devices and firmwares
   * __FRITZ!Box 5690 XGS (DEVELOPER)__
     - 295.08.10 rev126177 {ALL} [Smart24 P2] (Inhaus)
 
-### Fritz!Box Cable (64xx/65xx/66xx)
+### Fritz!Box Cable (63xx/64xx/65xx/66xx)
+
+  * __FRITZ!Box 6320 Cable (UNTESTED)__
+    - 104.06.03 rev27377 {GER}
+  * __Fritz!Box 6360 Cable (UNTESTED)__
+    - 85.06.51 rev35033 {GER}
 
   * __Fritz!Box 6430 Cable__
     - 159.07.12 rev72224 {GER} [MESH18 NL2]
