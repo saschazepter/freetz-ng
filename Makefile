@@ -236,7 +236,7 @@ $(info You have an aarch64 CPU+OS and so you can not compile and run 32-bit code
 endif
 endif
 # check uutils coreutils
-ifeq ($(shell ls --version | grep -q uutils || echo y),y)
+ifeq ($(shell ls --version | grep -q uutils && echo y),y)
 DLCHG:=y
 $(warning You have buggy uutils-coreutils installed. Please remove it!)
 $(warning To uninstall run: apt remove --allow-remove-essential coreutils-from-uutils)
