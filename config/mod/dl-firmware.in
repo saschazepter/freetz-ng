@@ -8,7 +8,7 @@ config FREETZ_DL_OVERRIDE
 config FREETZ_DL_SITE
 	string "Firmware site"                                                                                             if FREETZ_DL_OVERRIDE && !FREETZ_TYPE_FIRMWARE_DETECT_LATEST
 	default "http://localhost"                                                                                         if FREETZ_TYPE_FIRMWARE_DETECT_LATEST
-	default ""                                                                                                         if !FREETZ_TYPE_FIRMWARE_FINAL
+	default "@AVM/."                                                                                                   if !FREETZ_TYPE_FIRMWARE_FINAL
 	#
 	default "@AVM/fritzbox.fon/firmware/deutsch"                                                                       if (FREETZ_TYPE_300IP || FREETZ_TYPE_FON) && FREETZ_TYPE_LANG_DE
 	default "@AVM/fritzbox.fon/firmware/english/annex_a"                                                               if (FREETZ_TYPE_300IP || FREETZ_TYPE_FON) && FREETZ_TYPE_LANG_EN && FREETZ_TYPE_ANNEX_A
