@@ -1094,7 +1094,7 @@ Index: [A](#a) - [B](#b) - [C](#c) - [D](#d) - [E](#e) - [F](#f) - [G](#g) - [H]
 
 # Debug helpers
 
-  * **[binutils-tools: Binutils 2.45 (binary only)](../../docs/make/binutils-tools.md)<a id='binutils-tools'></a>**<br>
+  * **[binutils-tools: Binutils 2.45.1 (binary only)](../../docs/make/binutils-tools.md)<a id='binutils-tools'></a>**<br>
     Collection of essential tools for analyzing and manipulating ELF binaries. Size of all binaries and libraries: ~1.5MB (uncompressed: ~4.5MB)
      - [Available Tools](../../docs/make/binutils-tools.md#available-tools)
      - [Inspecting Binaries](../../docs/make/binutils-tools.md#inspecting-binaries)
