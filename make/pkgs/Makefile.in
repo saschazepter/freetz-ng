@@ -57,6 +57,7 @@ MAKE_ENV+=FREETZ_LIBRARY_DIR="$(FREETZ_LIBRARY_DIR)"
 
 
 TARGET_CFLAGS_HW_CAPABILITIES :=
+#
 ifeq ($(strip $(FREETZ_TARGET_ARCH_ARM)),y)
 ifeq ($(strip $(FREETZ_CPU_MODEL_ARM_arm11)),y)
 TARGET_CFLAGS_HW_CAPABILITIES += $(if $(call qstrip,$(FREETZ_GCC_ARCH)),-march=$(call qstrip,$(FREETZ_GCC_ARCH)))
@@ -74,10 +75,6 @@ TARGET_CFLAGS_HW_CAPABILITIES += $(if $(call qstrip,$(FREETZ_GCC_CPU)),-march=$(
 TARGET_CFLAGS_HW_CAPABILITIES += $(if $(call qstrip,$(FREETZ_GCC_CPU)),-mtune=$(call qstrip,$(FREETZ_GCC_CPU)))
 endif
 #
-ifneq ($(strip $(FREETZ_SYSTEM_TYPE_BCM63138)),y)
-TARGET_CFLAGS_HW_CAPABILITIES += $(if $(call qstrip,$(FREETZ_GCC_FPU)),-mfpu=$(call qstrip,$(FREETZ_GCC_FPU)))
-endif
-#
 ifeq ($(strip $(FREETZ_TARGET_ARCH_ARM)),y)
 ifeq ($(strip $(FREETZ_CPU_MODEL_ARM_arm11)),y)
 # ARM 6 uses not like 7+8 common -m%
@@ -91,6 +88,7 @@ else
 TARGET_CFLAGS_HW_CAPABILITIES += $(if $(call qstrip,$(FREETZ_GCC_FLOAT_ABI)),-m$(call qstrip,$(FREETZ_GCC_FLOAT_ABI))-float)
 endif
 #
+TARGET_CFLAGS_HW_CAPABILITIES += $(if $(call qstrip,$(FREETZ_GCC_FPU)),-mfpu=$(call qstrip,$(FREETZ_GCC_FPU)))
 TARGET_CFLAGS_HW_CAPABILITIES += $(if $(call qstrip,$(FREETZ_GCC_MODE)),-m$(call qstrip,$(FREETZ_GCC_MODE)))
 
 # additional Freetz controlled and $(FREETZ_TARGET_ARCH) dependent flags

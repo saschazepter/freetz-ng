@@ -107,7 +107,7 @@ config FREETZ_GCC_CPU
 # -mfpu=%
 config FREETZ_GCC_FPU
 	string
-	default "neon"     if FREETZ_TARGET_ARCH_ARM  && FREETZ_CPU_MODEL_ARM_cortex
+	default "neon"     if FREETZ_TARGET_ARCH_ARM  && FREETZ_CPU_MODEL_ARM_cortex && !FREETZ_SYSTEM_TYPE_BCM63138
 
 # -mfloat-abi=% (ARM) / -m%-float (MIPS)
 config FREETZ_GCC_FLOAT_ABI
