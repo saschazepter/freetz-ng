@@ -31,9 +31,9 @@ $(PKG)_MODULES_ALL := \
 $(PKG)_MODULES_SELECTED := $(call PKG_SELECTED_SUBOPTIONS,$($(PKG)_MODULES_ALL),MOD)
 $(PKG)_MODULES_EXCLUDED := $(filter-out $($(PKG)_MODULES_SELECTED),$($(PKG)_MODULES_ALL))
 
-$(PKG)_EXCLUDED_FILES   := $(call newline2space,$(foreach mod,$($(PKG)_MODULES_EXCLUDED),$(PyMod/$(mod)/files)))
-$(PKG)_UNNECESSARY_DIRS := $(if $(FREETZ_PACKAGE_PYTHON3_COMPRESS_PYC),$(call newline2space,$(Python/unnecessary-if-compression-enabled/dirs)))
-$(PKG)_UNNECESSARY_DIRS += $(call newline2space,$(foreach mod,$($(PKG)_MODULES_EXCLUDED),$(PyMod/$(mod)/dirs)))
+$(PKG)_EXCLUDED_FILES   := $(call newline2space,$(foreach mod,$($(PKG)_MODULES_EXCLUDED),$(PyMod3/$(mod)/files)))
+$(PKG)_UNNECESSARY_DIRS := $(if $(FREETZ_PACKAGE_PYTHON3_COMPRESS_PYC),$(call newline2space,$(Python3/unnecessary-if-compression-enabled/dirs)))
+$(PKG)_UNNECESSARY_DIRS += $(call newline2space,$(foreach mod,$($(PKG)_MODULES_EXCLUDED),$(PyMod3/$(mod)/dirs)))
 
 $(PKG)_DEPENDS_ON += python3-host expat libffi zlib
 $(PKG)_DEPENDS_ON += $(if $(FREETZ_PACKAGE_PYTHON3_MOD_BSDDB),db)
@@ -91,7 +91,7 @@ $($(PKG)_DIR)/.installed: $($(PKG)_DIR)/.compiled
 		install
 	(cd $(FREETZ_BASE_DIR)/$(PYTHON3_LOCAL_INSTALL_DIR); \
 		chmod -R u+w usr; \
-		$(RM) -r $(call newline2space,$(Python/unnecessary/files)); \
+		$(RM) -r $(call newline2space,$(Python3/unnecessary/files)); \
 		\
 		find usr/lib/python$(PYTHON3_MAJOR_VERSION)/ -name "*.pyo" -delete; \
 		\
@@ -117,7 +117,7 @@ $($(PKG)_TARGET_BINARY): $($(PKG)_DIR)/.installed
 	(cd $(PYTHON3_DEST_DIR); \
 		echo -n > usr/lib/python$(PYTHON3_MAJOR_VERSION)/config-$(PYTHON3_MAJOR_VERSION)/Makefile; \
 		find usr/include/python$(PYTHON3_MAJOR_VERSION)/ -name "*.h" \! -name "pyconfig.h" \! -name "Python.h" -delete; \
-		$(RM) -r $(call newline2space,$(Python/development/files)); \
+		$(RM) -r $(call newline2space,$(Python3/development/files)); \
 	); \
 	touch -c $@
 
