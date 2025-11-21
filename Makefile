@@ -236,12 +236,10 @@ $(info You have an aarch64 CPU+OS and so you can not compile and run 32-bit code
 endif
 endif
 # check uutils coreutils
-ifeq ($(shell ls --version | grep -q uutils && echo y),y)
-ifeq ($(FREETZ_ROOTEMU_PSEUDO),y)
-DLCHG:=$(shell echo 'y' ; sed 's/^\# FREETZ_ROOTEMU_FAKEROOT .*/FREETZ_ROOTEMU_FAKEROOT=y/' -i $(TOPDIR)/.config)
-DLCHG:=$(shell echo 'y' ; sed 's/^FREETZ_ROOTEMU_PSEUDO=.*/\# FREETZ_ROOTEMU_PSEUDO is not set/' -i $(TOPDIR)/.config)
-$(info You have buggy uutils-coreutils installed, pseudo automatically disabled.)
-endif
+ifeq ($(shell ls --version | grep -q uutils || echo y),y)
+DLCHG:=y
+$(warning You have buggy uutils-coreutils installed. Please remove it!)
+$(warning To uninstall run: apt remove --allow-remove-essential coreutils-from-uutils)
 endif
 # check cpu for x86_64
 ifneq ($(shell uname -m),x86_64)
