@@ -1,10 +1,9 @@
 #! /usr/bin/env bash
 MYOWN="$(realpath $0)"
 TOOLS="$(dirname $(dirname $MYOWN))"
-MYMGC="$TOOLS/build/usr/share/misc/magic.mgc"
 
 file="$TOOLS/build/usr/bin/file"
-[ -x "$file" ] && exec "$file" -m $MYMGC "$@"
+[ -x "$file" ] && exec "$file" -m "$TOOLS/build/usr/share/misc/magic.mgc" "$@"
 
 file="$(which -a 'file' | grep -v "^$MYOWN$" | head -n1)"
 [ -x "$file" ] && exec "$file" "$@"
