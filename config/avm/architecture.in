@@ -52,17 +52,15 @@ config FREETZ_TARGET_ARCH_X86
 
 config FREETZ_KERNEL_ARCH
 	string
-	default "aarch64"     if FREETZ_TARGET_ARCH_AARCH64
+	default "arm64"       if FREETZ_TARGET_ARCH_AARCH64
 	default "arm"         if FREETZ_TARGET_ARCH_ARM
 	default "mips"        if FREETZ_TARGET_ARCH_MIPS
 	default "x86"         if FREETZ_TARGET_ARCH_X86
 
 config FREETZ_TARGET_ARCH
 	string
-	default "aarch64"     if FREETZ_TARGET_ARCH_AARCH64 && FREETZ_TARGET_ARCH_LE
-	default "aarch64_be"  if FREETZ_TARGET_ARCH_AARCH64 && FREETZ_TARGET_ARCH_BE
-	default "arm"         if FREETZ_TARGET_ARCH_ARM     && FREETZ_TARGET_ARCH_LE
-	default "armeb"       if FREETZ_TARGET_ARCH_ARM     && FREETZ_TARGET_ARCH_BE
+	default "aarch64"     if FREETZ_TARGET_ARCH_AARCH64
+	default "arm"         if FREETZ_TARGET_ARCH_ARM
 	default "mips"        if FREETZ_TARGET_ARCH_MIPS
 	default "i686"        if FREETZ_TARGET_ARCH_X86
 
