@@ -75,17 +75,17 @@ endif
 endif
 endif
 #
-ifeq ($(strip $(FREETZ_TARGET_ARCH_ARM)),y)
 ifeq ($(strip $(FREETZ_CPU_MODEL_ARM_arm11)),y)
 # ARM 6 uses not like 7+8 common -m%
 TARGET_CFLAGS_HW_CAPABILITIES += $(if $(call qstrip,$(FREETZ_GCC_FLOAT_ABI)),-m$(call qstrip,$(FREETZ_GCC_FLOAT_ABI))-float)
 else
+ifeq ($(strip $(FREETZ_TARGET_ARCH_ARM)),y)
 # ARM 7+8 is the only ARCH using -mfloat-abi=%
 TARGET_CFLAGS_HW_CAPABILITIES += $(if $(call qstrip,$(FREETZ_GCC_FLOAT_ABI)),-mfloat-abi=$(call qstrip,$(FREETZ_GCC_FLOAT_ABI)))
-endif
 else
 # all other ARCHs use -m%-float
 TARGET_CFLAGS_HW_CAPABILITIES += $(if $(call qstrip,$(FREETZ_GCC_FLOAT_ABI)),-m$(call qstrip,$(FREETZ_GCC_FLOAT_ABI))-float)
+endif
 endif
 #
 TARGET_CFLAGS_HW_CAPABILITIES += $(if $(call qstrip,$(FREETZ_GCC_FPU)),-mfpu=$(call qstrip,$(FREETZ_GCC_FPU)))
