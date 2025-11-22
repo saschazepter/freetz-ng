@@ -8,15 +8,16 @@
 
   * __[2025-11-21](#2025-11-21)__<a id='2025-11-21'></a><br>
     Warnung vor Ubuntu 25.10! Dieses wechselte von GNU-Coreutils zu uutils-Coreutils.<br>
-    Der Vorteil für Canonical ist der Wechsel der Lizenz von GNU zu MIT. Auserdem sind die uutils-Coreutils mit fancy Rust programmiert und haben einen zeitgemässen<br>
+    Der Vorteil für Canonical ist der Wechsel der Lizenz von GNU zu MIT. Auserdem sind die uutils-Coreutils mit fancy Rust programmiert und haben einen zeitgemässen
     Code-Of-Conduct. Das war's dann auch schon mit den Vorteilen.<br>
-    Die Nachteile sind Sicherheitslücken zB in sudo die das Passwort offenlegt. Oder dass keine unbeaufsichtigten Sicherheitsupdates anderer Komponenten mehr<br>
-    eingespielt werden, da uutils-Coreutils die Checksumme ganz individuell (falsch) berechnet. "Unschön" ist auch dass uutils-Coreutils alle Parameter<br>
-    akzeptiert die es in GNU-Coreutils gibt - die noch nicht implementiert sind werden stillschweigend ohne Fehlermeldung ignoriert, zB bei sort.<br>
-    Immerhin ist uutils-Coreutils laut Release-Notes schon ganze 85,80% kompatibel zu GNU-Coreutils! Da ist es schon fast ein Vorteil dass uutils-Coreutils bis zu<br>
-    17x langsamer als die GNU-Coreutils sind, man kann sich in der Zeit Gedanken über eine bessere Linux-Distribution (vielleicht Fedora?) machen.<br>
-    Es gibt weitere witzige Fehler in date, cp, mv, base64, du, sort, tail, ls, md5sum, dd, sudo die man beim schmökern in den über 400 offenen Issues auf Github<br>
-    findet. Falls man schon Ubuntu 25.10 benutzt hilft ein nachhaltiges `sudo apt-get remove --allow-remove-essential coreutils-from-uutils`<br>
+    Die Nachteile sind Sicherheitslücken zB in sudo die das Passwort offenlegt. Oder dass keine unbeaufsichtigten Sicherheitsupdates anderer Komponenten mehr
+    eingespielt werden, da uutils-Coreutils die Checksumme ganz individuell (falsch) berechnet. "Unschön" ist auch dass uutils-Coreutils alle Parameter
+    akzeptiert die es in GNU-Coreutils gibt - die noch nicht implementiert sind werden stillschweigend ohne Fehlermeldung ignoriert, zB bei sort.
+    Immerhin ist uutils-Coreutils laut Release-Notes schon ganze 85,80% kompatibel zu GNU-Coreutils! Da ist es schon fast ein Vorteil dass uutils-Coreutils bis zu
+    17x langsamer als die GNU-Coreutils sind, man kann sich in der Zeit Gedanken über eine bessere Linux-Distribution (vielleicht Fedora?) machen.
+    Es gibt weitere witzige Fehler in date, cp, mv, base64, du, sort, tail, ls, md5sum, dd, sudo die man beim schmökern in den über 400 offenen Issues auf Github
+    findet.<br>
+    Falls man schon Ubuntu 25.10 benutzt hilft ein nachhaltiges `sudo apt-get remove --allow-remove-essential coreutils-from-uutils`<br>
     Siehe<br>
     - https://github.com/advisories/GHSA-c978-wq47-pvvw
     - https://www.phoronix.com/news/sudo-rs-security-ubuntu-25.10
