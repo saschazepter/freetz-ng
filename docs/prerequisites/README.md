@@ -234,7 +234,7 @@ sudo apt-get -y dist-upgrade
   - uutil-Coreutils Problem ab Ubuntu 25.10:<br>
 Canonical Ltd. hat die GNU-Coreutils (GPL) durch uutil-Coreutils (MIT+Rust+Code-of-Conduct) ersetzt, was viele Probleme, unter anderem mit `pseudo-host` verursacht.
 Siehe [Carefully But Purposefully Oxidising Ubuntu](https://discourse.ubuntu.com/t/carefully-but-purposefully-oxidising-ubuntu/56995) und
-[Der Wechsel von Ubuntu 25.10 zu Rust Coreutils verursacht bei einigen ausführbaren Dateien erhebliche Probleme](https://www.reddit.com/r/linux/comments/1nr1bas/ubuntu_2510s_move_to_rust_coreutils_is_causing/?tl=de).
+[Der Wechsel von Ubuntu 25.10 zu Rust Coreutils verursacht bei einigen ausführbaren Dateien erhebliche Probleme](https://www.reddit.com/r/linux/comments/1nr1bas/ubuntu_2510s_move_to_rust_coreutils_is_causing/?tl=de).<br>
 Die Fehlermeldung lautet `couldn't allocate absolute path for 'null'`.<br>
 Grundsätzlich ist von uutil-Coreutils abzuraten da diese unausgereift und vielfältige [Fehler in allen möglichen tools](https://freetz-ng.github.io/freetz-ng/NEWS/#2025-11-21) wie date, cp, mv, base64, du, sort, tail, ls, md5sum, dd, sudo usw usf aso aufweisen.<br>
 Workaround: Deinstallation von uutil-Coreutils und gleichzeitige Installation von GNU-Coreutils mittels
