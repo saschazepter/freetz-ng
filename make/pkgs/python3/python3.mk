@@ -95,7 +95,7 @@ $($(PKG)_DIR)/.installed: $($(PKG)_DIR)/.compiled
 		\
 		find usr/lib/python$(PYTHON3_MAJOR_VERSION)/ -name "*.pyo" -delete; \
 		\
-		[ "$(FREETZ_SEPARATE_AVM_UCLIBC)" != "y" ] || $(PATCHELF_TARGET) --set-interpreter /usr/lib/freetz/ld-uClibc.so.1 usr/bin/python$(PYTHON3_MAJOR_VERSION); \
+		[ "$(FREETZ_SEPARATE_AVM_UCLIBC)" != "y" ] || $(PATCHELF_TARGET) --set-interpreter $(FREETZ_LIBRARY_DIR)/ld-uClibc.so.1 usr/bin/python$(PYTHON3_MAJOR_VERSION); \
 		\
 		$(TARGET_STRIP) \
 			usr/bin/python$(PYTHON3_MAJOR_VERSION) \
