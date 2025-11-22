@@ -1,5 +1,11 @@
 # Neuigkeiten
 
+  * __[2025-11-22](#2025-11-22)__<a id='2025-11-22'></a><br>
+    Die Fritzbox 5690xgs ist die erste mit einm 64-Bit `aarch64 (le)` Linux-Kernel. Da es sich um einen ARM-Prozessor handelt<br>
+    können keine 32-Bit Dateien mehr ausgeführt werden.<br>
+    Grundsätlich kann man aarch64 mit Freetz-NG compilieren, mangels [Sourcen von AVM](mailto:fritzbox_info@avm.de) fehlen noch Configs und evtl Patches.<br>
+    Ausserdem sind für Libraries wegen dem Pfad `lib64` noch Anpassungen notwendig, manches wird ganz inkompatibel sein.<br>
+
   * __[2025-09-30](#2025-09-30)__<a id='2025-09-30'></a><br>
     Es wurde ein neuer [Tag](https://github.com/Freetz-NG/freetz-ng/tags) `ng25090` erstellt.<br>
     Ein Tag sollte wie in der [README](https://github.com/Freetz-NG/freetz-ng#or-clone-a-single-tag) beschrieben mit git ausgecheckt werden.<br>
