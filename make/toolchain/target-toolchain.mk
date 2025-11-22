@@ -22,6 +22,7 @@ $(TARGET_TOOLCHAIN_DIR):
 $(TARGET_TOOLCHAIN_STAGING_DIR):
 	@mkdir -p $@ $@/bin $@/lib
 	@[ "$(FREETZ_SEPARATE_AVM_UCLIBC)" == "y" ] && ln -snf . $@/lib/freetz || true
+	@[ "$(FREETZ_TARGET_BITS_64)" != "y" ] || ln -snf lib $@/lib64
 	@ln -snf . $@/usr
 	@mkdir -p $@/usr/$(REAL_GNU_TARGET_NAME)
 	@ln -snf ../lib $@/usr/$(REAL_GNU_TARGET_NAME)/lib
