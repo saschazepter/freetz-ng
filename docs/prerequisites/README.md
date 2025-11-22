@@ -21,6 +21,7 @@ Es gibt folgende Möglichkeiten die benötigten Pakete (prerequisites) zu instal
 ### Problematische Distributionen
   - Gentoo
   - NixOS
+  - Ubuntu 25.10
   - WSL/WSL2
 
 ### Alle anderen Distributionen
@@ -223,21 +224,21 @@ sudo dpkg --add-architecture i386
 sudo apt-get -y update
 ```
 
-  - Coreutils(pseudo)-Problem:<br>
-Ab Ubuntu 25.10 hat Canonical Ltd. die GNU-Coreutils durch Rust-Coreutils ersetzt, was möglicherweise Probleme mit `pseudo-host` verursacht.<br>
-Siehe [Carefully But Purposefully Oxidising Ubuntu](https://discourse.ubuntu.com/t/carefully-but-purposefully-oxidising-ubuntu/56995) und [Der Wechsel von Ubuntu 25.10 zu Rust Coreutils verursacht bei einigen ausführbaren Dateien erhebliche Probleme.](https://www.reddit.com/r/linux/comments/1nr1bas/ubuntu_2510s_move_to_rust_coreutils_is_causing/?tl=de)<br>
-Die Fehlermeldung ist `couldn't allocate absolute path for 'null'.`<br>
-    - Workaround:
-```
-# Deinstallation von Rust-Coreutils und gleichzeitige Installation von GNU-Coreutils
-sudo apt-get remove --allow-remove-essential coreutils-from-uutils
-```
-
   - System aktualisieren:
 ```
 sudo apt-get -y update
 sudo apt-get -y upgrade
 sudo apt-get -y dist-upgrade
+```
+
+  - uutil-Coreutils Problem ab Ubuntu 25.10:<br>
+Canonical Ltd. hat die GNU-Coreutils (GPL) durch uutil-Coreutils (MIT+Rust+Code-of-Conduct) ersetzt, was viele Probleme, unter anderem mit `pseudo-host` verursacht.<br>
+Siehe [Carefully But Purposefully Oxidising Ubuntu](https://discourse.ubuntu.com/t/carefully-but-purposefully-oxidising-ubuntu/56995) und [Der Wechsel von Ubuntu 25.10 zu Rust Coreutils verursacht bei einigen ausführbaren Dateien erhebliche Probleme](https://www.reddit.com/r/linux/comments/1nr1bas/ubuntu_2510s_move_to_rust_coreutils_is_causing/?tl=de).<br>
+Die Fehlermeldung lautet `couldn't allocate absolute path for 'null'.`<br>
+Grundsätzlich ist von uutil-Coreutils abzuraten da diese unausgereift und vielfältige [Fehler in allen möglichen tools](https://freetz-ng.github.io/freetz-ng/NEWS/#2025-11-21) wie date, cp, mv, base64, du, sort, tail, ls, md5sum, dd, sudo usw usf aso aufweisen.<br>
+Workaround: Deinstallation von uutil-Coreutils und gleichzeitige Installation von GNU-Coreutils mittels
+```
+sudo apt-get remove --allow-remove-essential coreutils-from-uutils
 ```
 
   - Ubuntu 23/24/25 64-Bit:
