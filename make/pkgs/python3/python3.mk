@@ -1,5 +1,4 @@
 $(call PKG_INIT_BIN, 3.14.0)
-$(PKG)_MAJOR_VERSION:=$(call GET_MAJOR_VERSION,$($(PKG)_VERSION))
 $(PKG)_SOURCE:=Python-$($(PKG)_VERSION).tar.xz
 $(PKG)_HASH:=2299dae542d395ce3883aca00d3c910307cd68e0b2f7336098c8e7b7eee9f3e9
 $(PKG)_SITE:=https://www.python.org/ftp/python/$($(PKG)_VERSION)
@@ -11,6 +10,9 @@ $(PKG)_SITE:=https://www.python.org/ftp/python/$($(PKG)_VERSION)
 $(PKG)_DEPENDS_ON+=patchelf-target-host
 
 $(PKG)_LOCAL_INSTALL_DIR:=$($(PKG)_DIR)/_install
+
+$(PKG)_MAJOR_VERSION:=$(call GET_MAJOR_VERSION,$($(PKG)_VERSION))
+$(PKG)_MAJOR_VERSION_1:=$(call GET_MAJOR_VERSION,$($(PKG)_VERSION),1)
 
 $(PKG)_TARGET_BINARY:=$($(PKG)_DEST_DIR)/usr/bin/python$($(PKG)_MAJOR_VERSION).bin
 $(PKG)_LIB_PYTHON3_TARGET_DIR:=$($(PKG)_TARGET_LIBDIR)/libpython$($(PKG)_MAJOR_VERSION).so.1.0
