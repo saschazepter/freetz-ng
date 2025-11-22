@@ -19,20 +19,20 @@
     findet.<br>
     Falls man schon Ubuntu 25.10 benutzt hilft ein nachhaltiges `sudo apt-get remove --allow-remove-essential coreutils-from-uutils`<br>
     Siehe<br>
-    - https://github.com/advisories/GHSA-c978-wq47-pvvw
-    - https://www.phoronix.com/news/sudo-rs-security-ubuntu-25.10
-    - https://www.reddit.com/r/linux/comments/1ov5q57/sudors_affected_by_multiple_security/
-    - https://www.reddit.com/r/linux/comments/1oetmbo/ubuntu_2510_unattended_upgrades_broken_due_to/
-    - https://github.com/uutils/coreutils/issues/8573
-    - https://github.com/uutils/coreutils/releases
-    - https://askubuntu.com/questions/1309213/du-reports-wrong-folder-size
-    - https://askubuntu.com/questions/1557259/sort-command-ignores-locale-rules-for-capitalization-accentuation-and-special
-    - https://bugs.launchpad.net/ubuntu/+source/makeself/+bug/2125535
-    - https://www.phoronix.com/news/Ubuntu-Rust-Coreutils-Perf
-    - https://github.com/uutils/coreutils/pull/8750
-    - https://github.com/VirtualBox/virtualbox/issues/226
-    - https://www.webpronews.com/ubuntu-25-10-tests-rust-coreutils-checksum-errors-and-performance-challenges/
-    - https://www.phoronix.com/news/Ubuntu-25.10-Coreutils-Makeself
+    - [https://github.com/advisories/GHSA-c978-wq47-pvvw](https://github.com/advisories/GHSA-c978-wq47-pvvw)
+    - [https://www.phoronix.com/news/sudo-rs-security-ubuntu-25.10](https://www.phoronix.com/news/sudo-rs-security-ubuntu-25.10)
+    - [https://www.reddit.com/r/linux/comments/1ov5q57/sudors_affected_by_multiple_security/](https://www.reddit.com/r/linux/comments/1ov5q57/sudors_affected_by_multiple_security/)
+    - [https://www.reddit.com/r/linux/comments/1oetmbo/ubuntu_2510_unattended_upgrades_broken_due_to/](https://www.reddit.com/r/linux/comments/1oetmbo/ubuntu_2510_unattended_upgrades_broken_due_to/)
+    - [https://github.com/uutils/coreutils/issues/8573](https://github.com/uutils/coreutils/issues/8573)
+    - [https://github.com/uutils/coreutils/releases](https://github.com/uutils/coreutils/releases)
+    - [https://askubuntu.com/questions/1309213/du-reports-wrong-folder-size](https://askubuntu.com/questions/1309213/du-reports-wrong-folder-size)
+    - [https://askubuntu.com/questions/1557259/sort-command-ignores-locale-rules-for-capitalization-accentuation-and-special](https://askubuntu.com/questions/1557259/sort-command-ignores-locale-rules-for-capitalization-accentuation-and-special)
+    - [https://bugs.launchpad.net/ubuntu/+source/makeself/+bug/2125535](https://bugs.launchpad.net/ubuntu/+source/makeself/+bug/2125535)
+    - [https://www.phoronix.com/news/Ubuntu-Rust-Coreutils-Perf](https://www.phoronix.com/news/Ubuntu-Rust-Coreutils-Perf)
+    - [https://github.com/uutils/coreutils/pull/8750](https://github.com/uutils/coreutils/pull/8750)
+    - [https://github.com/VirtualBox/virtualbox/issues/226](https://github.com/VirtualBox/virtualbox/issues/226)
+    - [https://www.webpronews.com/ubuntu-25-10-tests-rust-coreutils-checksum-errors-and-performance-challenges/](https://www.webpronews.com/ubuntu-25-10-tests-rust-coreutils-checksum-errors-and-performance-challenges/)
+    - [https://www.phoronix.com/news/Ubuntu-25.10-Coreutils-Makeself](https://www.phoronix.com/news/Ubuntu-25.10-Coreutils-Makeself)
 
   * __[2025-09-30](#2025-09-30)__<a id='2025-09-30'></a><br>
     Es wurde ein neuer [Tag](https://github.com/Freetz-NG/freetz-ng/tags) `ng25090` erstellt.<br>
