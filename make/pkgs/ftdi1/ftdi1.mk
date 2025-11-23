@@ -64,7 +64,7 @@ $($(PKG)_LIB_TARGET_BINARY): $($(PKG)_LIB_STAGING_BINARY)
 
 $(pkg): $($(PKG)_LIB_STAGING_BINARY)
 
-$(pkg)-precompiled: $($(PKG)_TARGET_BINARY) $($(PKG)_LIB_TARGET_BINARY)
+$(pkg)-precompiled: $(if $(FREETZ_PACKAGE_FTDI1),$($(PKG)_TARGET_BINARY)) $($(PKG)_LIB_TARGET_BINARY)
 
 
 $(pkg)-clean:
