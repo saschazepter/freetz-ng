@@ -29,6 +29,8 @@ $(PKG)_CATEGORY:=Debug helpers
 
 $(PKG)_CONFIGURE_ENV += ac_cv_header_linux_netlink_h=yes
 
+$(PKG)_CONFIGURE_OPTIONS += --enable-mpers=check
+
 
 $(PKG_SOURCE_DOWNLOAD)
 $(PKG_UNPACKED)
