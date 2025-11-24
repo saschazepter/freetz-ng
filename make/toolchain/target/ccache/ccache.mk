@@ -1,8 +1,8 @@
-CCACHE_VERSION:=4.11.3
+CCACHE_VERSION:=4.12.1
 # Since version 4.12 is cmake 3.18 required, ubuntu 20lts has cmake 3.16.3
 # Since version 4.7 is cmake 3.15 required and a C++17 compiler (Gcc7, since Ubuntu18)
 CCACHE_SOURCE:=ccache-$(CCACHE_VERSION).tar.xz
-CCACHE_HASH:=d5a340e199977b7b1e89c0add794132c977fdc2ecc7ca5451e03d43627a1b1be
+CCACHE_HASH:=42e6c4b260cffd92dfa755e26390f45f5842e8c1a5f64f2b2e68adfbe82d1542
 CCACHE_SITE:=https://github.com/ccache/ccache/releases/download/v$(CCACHE_VERSION)
 ### WEBSITE:=https://ccache.dev/
 ### MANPAGE:=https://ccache.dev/documentation.html
