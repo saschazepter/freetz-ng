@@ -12,6 +12,8 @@ TOOLCHAIN_HOST_CFLAGS+=-fno-stack-protector
 endif
 
 
+# g++ -v --help 2>/dev/null | grep ' -std='
+
 TOOLCHAIN_HOST_KERNEL_CFLAGS:=$(TOOLCHAIN_HOST_CFLAGS)
 TOOLCHAIN_HOST_KERNEL_CXXFLAGS:=$(TOOLCHAIN_HOST_CFLAGS)
 
@@ -21,32 +23,19 @@ TOOLCHAIN_HOST_KERNEL_CFLAGS+=-Wno-error=incompatible-pointer-types
 TOOLCHAIN_HOST_KERNEL_CXXFLAGS+=-Wno-error=incompatible-pointer-types
 endif
 
-ifeq ($(strip $(FREETZ_KERNEL_GCC_4_MAX)),y)
-# gcc4 does not like be compiled by gcc15/C++03
-TOOLCHAIN_HOST_KERNEL_CFLAGS+=--std=gnu99
-TOOLCHAIN_HOST_KERNEL_CXXFLAGS+=--std=gnu99
-else
 ifeq ($(strip $(FREETZ_KERNEL_GCC_5_MAX)),y)
-# gcc5 does not like be compiled by gcc11/C++17
-TOOLCHAIN_HOST_KERNEL_CFLAGS+=--std=c++03
-TOOLCHAIN_HOST_KERNEL_CXXFLAGS+=--std=c++03
+# gcc 4+5 does not like be compiled by gcc11/C++17
+TOOLCHAIN_HOST_KERNEL_CFLAGS+=--std=gnu11
+TOOLCHAIN_HOST_KERNEL_CXXFLAGS+=--std=gnu++11
 endif
-endif
-
 
 TOOLCHAIN_HOST_TARGET_CFLAGS:=$(TOOLCHAIN_HOST_CFLAGS)
 TOOLCHAIN_HOST_TARGET_CXXFLAGS:=$(TOOLCHAIN_HOST_CFLAGS)
 
-ifeq ($(strip $(FREETZ_TARGET_GCC_4_MAX)),y)
-# gcc4 does not like be compiled by gcc15/C++03
-TOOLCHAIN_HOST_TARGET_CFLAGS+=--std=gnu99
-TOOLCHAIN_HOST_TARGET_CXXFLAGS+=--std=gnu99
-else
 ifeq ($(strip $(FREETZ_TARGET_GCC_5_MAX)),y)
-# gcc5 does not like be compiled by gcc11/C++17
-TOOLCHAIN_HOST_TARGET_CFLAGS+=--std=c++03
-TOOLCHAIN_HOST_TARGET_CXXFLAGS+=--std=c++03
-endif
+# gcc 4+5 does not like be compiled by gcc11/C++17
+TOOLCHAIN_HOST_TARGET_CFLAGS+=--std=gnu11
+TOOLCHAIN_HOST_TARGET_CXXFLAGS+=--std=gnu++11
 endif
 
 
