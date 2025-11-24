@@ -65,7 +65,12 @@ UCLIBC_COMMON_BUILD_FLAGS += V=1
 endif
 endif
 
-UCLIBC_HOST_CFLAGS:=$(TOOLCHAIN_HOST_TARGET_CFLAGS) -U_GNU_SOURCE -fno-strict-aliasing
+UCLIBC_HOST_CFLAGS:=$(TOOLCHAIN_HOST_CFLAGS)
+# g++ -v --help 2>/dev/null | grep ' -std='
+#ifeq ($(strip $(FREETZ_TARGET_GCC_5_MAX)),y)
+#UCLIBC_HOST_CFLAGS+=--std=gnu11
+#endif
+UCLIBC_HOST_CFLAGS+=-U_GNU_SOURCE -fno-strict-aliasing
 
 
 $(DL_DIR)/$(UCLIBC_LOCALE_DATA_FILENAME): | $(DL_DIR)
