@@ -18,10 +18,10 @@ BINUTILS_DIR:=$(TARGET_TOOLCHAIN_DIR)/binutils-$(BINUTILS_VERSION)
 BINUTILS_MAKE_DIR:=$(MAKE_DIR)/toolchain/target/binutils
 BINUTILS_DIR1:=$(BINUTILS_DIR)-build
 
-#
-#
-#
-#
+BINUTILS_CFLAGS := $(TOOLCHAIN_HOST_CFLAGS)
+ifeq ($(if $(filter $(BINUTILS_VERSION),2.18 2.22 2.23.2 2.24 2.25.1 2.26.1 2.31.1 2.36.1 2.42 2.43.1),y),y)
+BINUTILS_CFLAGS += --std=gnu11
+endif
 
 BINUTILS_EXTRA_MAKE_OPTIONS := MAKEINFO=true
 
@@ -54,7 +54,7 @@ $(BINUTILS_DIR1)/.configured: $(BINUTILS_DIR)/.unpacked
 	mkdir -p $(BINUTILS_DIR1)
 	(cd $(BINUTILS_DIR1); $(RM) config.cache; \
 		CC="$(TOOLCHAIN_HOSTCC)" \
-		CFLAGS="$(TOOLCHAIN_HOST_TARGET_CFLAGS)" \
+		CFLAGS="$(BINUTILS_CFLAGS)" \
 		$(BINUTILS_DIR)/configure \
 		--prefix=$(TARGET_TOOLCHAIN_PREFIX) \
 		--with-sysroot=$(TARGET_TOOLCHAIN_SYSROOT) \
@@ -110,7 +110,7 @@ $(BINUTILS_DIR2)/.configured: $(BINUTILS_DIR)/.unpacked
 	@$(call _ECHO,configuring,$(BINUTILS_ECHO_TYPE),$(BINUTILS_ECHO_MAKE),target)
 	mkdir -p $(BINUTILS_DIR2)
 	(cd $(BINUTILS_DIR2); $(RM) config.cache; \
-		CFLAGS_FOR_BUILD="-O2 $(TOOLCHAIN_HOST_TARGET_CFLAGS)" \
+		CFLAGS_FOR_BUILD="-O2 $(BINUTILS_CFLAGS)" \
 		$(TARGET_CONFIGURE_ENV) \
 		CONFIG_SITE=$(TARGET_SITE) \
 		$(BINUTILS_DIR)/configure \
