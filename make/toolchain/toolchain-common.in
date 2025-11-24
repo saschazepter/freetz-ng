@@ -12,33 +12,6 @@ TOOLCHAIN_HOST_CFLAGS+=-fno-stack-protector
 endif
 
 
-# g++ -v --help 2>/dev/null | grep ' -std='
-
-TOOLCHAIN_HOST_KERNEL_CFLAGS:=$(TOOLCHAIN_HOST_CFLAGS)
-TOOLCHAIN_HOST_KERNEL_CXXFLAGS:=$(TOOLCHAIN_HOST_CFLAGS)
-
-# gcc4 compatibility with gcc14
-ifeq ($(strip $(FREETZ_KERNEL_GCC_4_MAX)),y)
-TOOLCHAIN_HOST_KERNEL_CFLAGS+=-Wno-error=incompatible-pointer-types
-TOOLCHAIN_HOST_KERNEL_CXXFLAGS+=-Wno-error=incompatible-pointer-types
-endif
-
-ifeq ($(strip $(FREETZ_KERNEL_GCC_5_MAX)),y)
-# gcc 4+5 does not like be compiled by gcc11/C++17
-TOOLCHAIN_HOST_KERNEL_CFLAGS+=--std=gnu11
-TOOLCHAIN_HOST_KERNEL_CXXFLAGS+=--std=gnu++11
-endif
-
-TOOLCHAIN_HOST_TARGET_CFLAGS:=$(TOOLCHAIN_HOST_CFLAGS)
-TOOLCHAIN_HOST_TARGET_CXXFLAGS:=$(TOOLCHAIN_HOST_CFLAGS)
-
-ifeq ($(strip $(FREETZ_TARGET_GCC_5_MAX)),y)
-# gcc 4+5 does not like be compiled by gcc11/C++17
-TOOLCHAIN_HOST_TARGET_CFLAGS+=--std=gnu11
-TOOLCHAIN_HOST_TARGET_CXXFLAGS+=--std=gnu++11
-endif
-
-
 GCC_COMMON_CONFIGURE_OPTIONS_HW_CAPABILITIES:=
 #
 ifeq ($(findstring y, $(FREETZ_CPU_MODEL_ARM_arm11) $(FREETZ_SYSTEM_TYPE_BCM63138) $(FREETZ_TARGET_ARCH_AARCH64) ),y)
