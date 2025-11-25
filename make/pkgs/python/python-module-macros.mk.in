@@ -45,6 +45,7 @@ define Build/PyMod2/Generic
 		$(3) \
 		, \
 		./setup.py $(2) \
+		$(SILENT) \
 	)
 	$(if $(strip $(4)),find $(strip $(4)) -type f -name "*.so" -exec $(TARGET_STRIP) \{\} \+)
 endef
