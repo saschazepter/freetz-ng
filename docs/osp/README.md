@@ -77,6 +77,7 @@ Content: [FritzBox](#fritzbox) - [FritzDect](#fritzdect) - [FritzPowerline](#fri
     - [source-files-FRITZ.Box_4040-07.59.tar.gz](https://osp.avm.de/fritzbox/fritzbox-4040/source-files-FRITZ.Box_4040-07.59.tar.gz)
     - [source-files-FRITZ.Box_4040-08.00.tar.gz](https://osp.avm.de/fritzbox/fritzbox-4040/source-files-FRITZ.Box_4040-08.00.tar.gz)
   * fritzbox-4050/
+    - [source-files-FRITZ.Box_4050-07.58.tar.gz](https://osp.avm.de/fritzbox/fritzbox-4050/source-files-FRITZ.Box_4050-07.58.tar.gz)
     - [source-files-FRITZ.Box_4050-08.02.tar.gz](https://osp.avm.de/fritzbox/fritzbox-4050/source-files-FRITZ.Box_4050-08.02.tar.gz)
   * fritzbox-4060/
     - [source-files-FRITZ.Box_4060-07.29.tar.gz](https://osp.avm.de/fritzbox/fritzbox-4060/source-files-FRITZ.Box_4060-07.29.tar.gz)
@@ -278,7 +279,7 @@ Content: [FritzBox](#fritzbox) - [FritzDect](#fritzdect) - [FritzPowerline](#fri
   * fritzbox-6842-lte/
     - [fritz_box_6842_source_files.06.21.tar.gz](https://osp.avm.de/fritzbox/fritzbox-6842-lte/fritz_box_6842_source_files.06.21.tar.gz)
   * fritzbox-6850-5g/
-    - [source-files-FRITZ.Box_6850_5G-cortexa9-08.03.tar.gz](https://osp.avm.de/fritzbox/fritzbox-6850-5g/source-files-FRITZ.Box_6850_5G-cortexa9-08.03.tar.gz)
+    - [source-files-FRITZ.Box_6850_5G-cortexa9-08.20.tar.gz](https://osp.avm.de/fritzbox/fritzbox-6850-5g/source-files-FRITZ.Box_6850_5G-cortexa9-08.20.tar.gz)
   * fritzbox-6850-lte/
     - [source-files-FRITZ.Box_6850_LTE-cortexa9-08.03.tar.gz](https://osp.avm.de/fritzbox/fritzbox-6850-lte/source-files-FRITZ.Box_6850_LTE-cortexa9-08.03.tar.gz)
   * fritzbox-6860-5g/
@@ -451,6 +452,7 @@ Content: [FritzBox](#fritzbox) - [FritzDect](#fritzdect) - [FritzPowerline](#fri
     - [source-files-FRITZ.Box_7530_AX-brcma9-07.80.tar.gz](https://osp.avm.de/fritzbox/fritzbox-7530-ax/source-files-FRITZ.Box_7530_AX-brcma9-07.80.tar.gz)
     - [source-files-FRITZ.Box_7530_AX-brcma9-08.00.tar.gz](https://osp.avm.de/fritzbox/fritzbox-7530-ax/source-files-FRITZ.Box_7530_AX-brcma9-08.00.tar.gz)
     - [source-files-FRITZ.Box_7530_AX-brcma9-08.02.tar.gz](https://osp.avm.de/fritzbox/fritzbox-7530-ax/source-files-FRITZ.Box_7530_AX-brcma9-08.02.tar.gz)
+    - [source-files-FRITZ.Box_7530_AX_B-08.02.tar.gz](https://osp.avm.de/fritzbox/fritzbox-7530-ax/source-files-FRITZ.Box_7530_AX_B-08.02.tar.gz)
     - [source-files-FRITZ.Box_7590_AX-grx5-08.00.tar.gz](https://osp.avm.de/fritzbox/fritzbox-7530-ax/source-files-FRITZ.Box_7590_AX-grx5-08.00.tar.gz)
   * fritzbox-7560/
     - [source-files-FRITZ.Box_7560-07.12.tar.gz](https://osp.avm.de/fritzbox/fritzbox-7560/source-files-FRITZ.Box_7560-07.12.tar.gz)
