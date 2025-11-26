@@ -198,8 +198,6 @@ jobs:
           echo "pkg=$pkg" >> $GITHUB_OUTPUT
           TYPE=""
           for x in pkgs libs; do [ -d make/$x/$pkg ] && TYPE=$x; done
-          [ -z "$TYPE" ] && echo -n 'Waiting ' && for x in $(seq 60); do echo -n '.' && sleep 1; done && echo ' done.' && git pull
-          for x in pkgs libs; do [ -d make/$x/$pkg ] && TYPE=$x; done
           [ -z "$TYPE" ] && echo "No directory." && exit
           [ "$TYPE" = "pkgs" ] && sed "/[^ ]FREETZ_PACKAGE_${PKG}[ =]/d"                                                                              -i .config
           [ "$TYPE" = "pkgs" ] && echo     "FREETZ_PACKAGE_$PKG=y"                                                                                    >> .config
