@@ -43,6 +43,7 @@ libzstd-dev
 make
 netcat
 patch
+patchutils
 perl
 pkg-config
 pv
@@ -58,4 +59,3 @@ unzip
 uuid-dev
 wget
 zlib1g-dev
-patchutils

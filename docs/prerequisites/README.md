@@ -171,9 +171,9 @@ sudo apt -y install \
   gcc-multilib gettext git graphicsmagick imagemagick inkscape intltool java-wrappers kmod \
   lib32ncurses-dev lib32stdc++6 lib32z1-dev libacl1-dev libc6-dev-i386 libcap-dev libelf-dev \
   libglib2.0-dev libgnutls28-dev libncurses5-dev libreadline-dev libsqlite3-dev libssl-dev \
-  libstring-crc32-perl libtool-bin libusb-dev libxml2-dev libzstd-dev make netcat-traditional patch perl \
-  pkg-config pv rsync sharutils sqlite3 subversion sudo texinfo tofrodos unar unzip uuid-dev wget \
-  zlib1g-dev
+  libstring-crc32-perl libtool-bin libusb-dev libxml2-dev libzstd-dev make netcat-traditional patch patchutils \
+  perl pkg-config pv rsync sharutils sqlite3 subversion sudo texinfo tofrodos unar unzip uuid-dev \
+  wget zlib1g-dev
 ```
 
   - Debian 12 64-Bit:
@@ -183,9 +183,9 @@ sudo apt -y install \
   gcc-multilib gettext git graphicsmagick imagemagick inkscape intltool java-wrappers kmod \
   lib32ncurses5-dev lib32stdc++6 lib32z1-dev libacl1-dev libc6-dev-i386 libcap-dev libelf-dev \
   libglib2.0-dev libgnutls28-dev libncurses5-dev libreadline-dev libsqlite3-dev libssl-dev \
-  libstring-crc32-perl libtool-bin libusb-dev libxml2-dev libzstd-dev make netcat-traditional patch perl \
-  pkg-config pv rsync sharutils sqlite3 subversion sudo texinfo tofrodos unar unzip uuid-dev wget \
-  zlib1g-dev
+  libstring-crc32-perl libtool-bin libusb-dev libxml2-dev libzstd-dev make netcat-traditional patch patchutils \
+  perl pkg-config pv rsync sharutils sqlite3 subversion sudo texinfo tofrodos unar unzip uuid-dev \
+  wget zlib1g-dev
 ```
 
   - Debian 11 64-Bit:
@@ -195,8 +195,9 @@ sudo apt -y install \
   gcc-multilib gettext git graphicsmagick imagemagick inkscape intltool java-wrappers kmod \
   lib32ncurses5-dev lib32stdc++6 lib32z1-dev libacl1-dev libc6-dev-i386 libcap-dev libelf-dev \
   libglib2.0-dev libgnutls28-dev libncurses5-dev libreadline-dev libsqlite3-dev libssl-dev \
-  libstring-crc32-perl libtool-bin libusb-dev libxml2-dev libzstd-dev make netcat patch perl pkg-config pv rsync \
-  sharutils sqlite3 subversion sudo texinfo tofrodos unar unzip uuid-dev wget zlib1g-dev
+  libstring-crc32-perl libtool-bin libusb-dev libxml2-dev libzstd-dev make netcat patch patchutils perl \
+  pkg-config pv rsync sharutils sqlite3 subversion sudo texinfo tofrodos unar unzip uuid-dev wget \
+  zlib1g-dev
 ```
 
 
