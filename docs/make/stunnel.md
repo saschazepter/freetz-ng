@@ -36,8 +36,15 @@ Homepage](http://www.stunnel.org/examples/).
     → Stunnel: "Certificate Chain" (host.cert) und "Private Key"
     (host.key) einfügen.
 
-3.  Die gewünschten Services hinzufügen. Zum Beispiel:
+3.  Die gewünschten Services hinzufügen.
 
+    Die Angabe des Pfads zum Zertifikat und zum Schlüssel sind optional.
+    Ohne ausdrückliche Angabe wird das Zertifikat
+    `/tmp/flash/stunnel/certs.pem` und der Schlüssel
+    `/tmp/flash/stunnel/key.pem` verwendet, welche vom Webinterface aus
+    verwaltet werden (Punkt 2).
+
+    Zum Beispiel:
 ```
     [freetz https Web-Interface]
     client = no
@@ -46,13 +53,6 @@ Homepage](http://www.stunnel.org/examples/).
     accept = 4433
     connect = 81
 ```
-
-    Die Angabe des Pfads zum Zertifikat und zum Schlüssel sind optional.
-    Ohne ausdrückliche Angabe wird das Zertifikat
-    */tmp/flash/stunnel/certs.pem* und der Schlüssel
-    */tmp/flash/stunnel/key.pem* verwendet, welche vom Webinterface aus
-    verwaltet werden (Punkt 2).
-
 
 4.  Zugriff (intern) über
     [https://fritz.box:4433](https://fritz.box:4433).
