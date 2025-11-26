@@ -58,6 +58,6 @@ texinfo
 unar
 util-linux
 wget
+which
 xz
 zlib-ng-devel
-which

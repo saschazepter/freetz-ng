@@ -65,7 +65,7 @@ sudo dnf -y install \
   libtool libuuid-devel libxml2-devel libzstd-devel make ncurses ncurses-devel ncurses-term \
   netcat net-tools openssl openssl-devel openssl-devel-engine patch patchutils perl \
   perl-String-CRC32 pkgconfig pv qt5-qtbase-devel readline-devel rpcgen rsync sharutils sqlite sqlite-devel \
-  subversion texinfo unar util-linux wget xz zlib-ng-devel
+  subversion texinfo unar util-linux wget which xz zlib-ng-devel
 ```
 
   - Fedora 41 64-Bit:
@@ -77,7 +77,7 @@ sudo dnf -y install \
   libuuid-devel libxml2-devel libzstd-devel make ncurses ncurses-devel ncurses-term netcat net-tools \
   openssl openssl-devel openssl-devel-engine patch patchutils perl perl-String-CRC32 pkgconfig pv \
   qt5-qtbase-devel readline-devel rpcgen rsync sharutils sqlite sqlite-devel subversion texinfo unar \
-  util-linux wget xz zlib-ng-devel
+  util-linux wget which xz zlib-ng-devel
 ```
 
   - Fedora 40 64-Bit:
