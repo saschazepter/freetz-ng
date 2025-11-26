@@ -123,7 +123,7 @@ Latest changes
     * Stunnel 5.76
     * tmux 3.6
     * Tor 0.4.8.21
-    * Unbound 1.24.1
+    * Unbound 1.24.2
     * UnRAR 6.1.7/7.2.1
     * Whois 5.6.5
 
