@@ -77,6 +77,7 @@ Latest changes
     * dos2unix 7.5.3
     * file 5.46
     * gperf 3.3
+    * ninja 1.13.2
     * patchelf 0.14.5/0.18.0-b49de1b33
     * patchelf-target 0.14.5/0.15.0
     * pseudo 1.9.2
