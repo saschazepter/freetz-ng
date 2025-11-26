@@ -60,3 +60,4 @@ util-linux
 wget
 xz
 zlib-ng-devel
+which
