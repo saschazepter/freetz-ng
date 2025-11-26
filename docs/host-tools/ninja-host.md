@@ -1,4 +1,4 @@
-# ninja 1.13.1
+# ninja 1.13.2
   - Homepage: [https://ninja-build.org/](https://ninja-build.org/)
   - Manpage: [https://github.com/ninja-build/ninja/wiki](https://github.com/ninja-build/ninja/wiki)
   - Changelog: [https://github.com/ninja-build/ninja/releases](https://github.com/ninja-build/ninja/releases)

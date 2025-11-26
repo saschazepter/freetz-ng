@@ -90,7 +90,7 @@ Index: [A](#a) - [B](#b) - [C](#c) - [D](#d) - [E](#e) - [F](#f) - [G](#g) - [H]
 
   * **[netkit-ftp 0.17-35](netkit-ftp-host.md)<a id='netkit-ftp-host'></a>**<br>
 
-  * **[ninja 1.13.1](ninja-host.md)<a id='ninja-host'></a>**<br>
+  * **[ninja 1.13.2](ninja-host.md)<a id='ninja-host'></a>**<br>
 
 ### O
 
