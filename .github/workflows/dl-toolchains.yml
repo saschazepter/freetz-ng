@@ -27,6 +27,7 @@ jobs:
     runs-on: ubuntu-latest
 
     outputs:
+      gitsha: ${{ steps.parse.outputs.gitsha }}
       matrix: ${{ steps.parse.outputs.matrix }}
 
     steps:
@@ -46,6 +47,7 @@ jobs:
       - name: parse
         id: parse
         run: |
+          echo "gitsha=\"${{ github.sha }}\"" >> $GITHUB_OUTPUT
           sed -rn 's/.* && dltc "(.*)".*/\1/p' tools/dl-toolchains_make | \
           while read -r line; do \
           name="$(echo "$line" | sed -r 's/^FREETZ_TYPE_([^ ]*) *FREETZ_TYPE_FIRMWARE_([^ ]*).*/\1 - \2/g')"; \
@@ -56,6 +58,7 @@ jobs:
       - name: vars
         run: |
           echo "################################################################"
+          echo "gitsha=${{ steps.parse.outputs.gitsha }}"
           echo "matrix=${{ steps.parse.outputs.matrix }}" | sed 's/\[{/\[\n{/;s/},{/},\n{/g;s/},\]/},\n\]/'
 
   build:
@@ -106,7 +109,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           set-safe-directory: true
           repository: ${{ github.repository }}
-          ref: ${{ github.ref_name }}
+          ref: ${{ fromJson(needs.matrizifizieren.outputs.gitsha) }}
           path: ${{ github.workspace }}
           fetch-depth: 0
           clean: false

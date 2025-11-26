@@ -54,6 +54,7 @@ jobs:
     runs-on: ubuntu-latest
 
     outputs:
+      gitsha: ${{ steps.parse.outputs.gitsha }}
       matrix: ${{ steps.parse.outputs.matrix }}
 
     steps:
@@ -79,6 +80,7 @@ jobs:
           [ "$FOS" = "freetz_org" ] && FOS="$(sed -rn "s/^config FREETZ_AVM_HAS_FIRMWARE_(0[456])/\1/p" config/avm/availability.in) 07_0X 07_1X"
           [ "$FOS" = "freetz-ng" ] && FOS="07_2X 07_5X $(sed -rn "s/^config FREETZ_AVM_HAS_FIRMWARE_(0[89])/\1/p" config/avm/availability.in)"
           [ "$FOS" != "${FOS#Fos}" ] && FOS="$(sed -rn "s/^config FREETZ_AVM_HAS_FIRMWARE_(${FOS#Fos})/\1/p" config/avm/availability.in)"
+          echo "gitsha=\"${{ github.sha }}\"" >> $GITHUB_OUTPUT
           for fos in $FOS; do \
             cat config/avm/availability.in | \
               grep -A999 -m1 "^config FREETZ_AVM_HAS_FIRMWARE_$fos$" | grep -B999 -m2 "^config FREETZ_AVM_HAS_" | \
@@ -90,6 +92,7 @@ jobs:
       - name: vars
         run: |
           echo "##########################################################"
+          echo "gitsha=${{ steps.parse.outputs.gitsha }}"
           echo "matrix=${{ steps.parse.outputs.matrix }}" | sed 's/\[{/\[\n{/;s/},{/},\n{/g;s/},\]/},\n\]/'
 
   build:
@@ -146,7 +149,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           set-safe-directory: true
           repository: ${{ github.repository }}
-          ref: ${{ github.ref_name }}
+          ref: ${{ fromJson(needs.matrizifizieren.outputs.gitsha) }}
           path: ${{ github.workspace }}
           fetch-depth: 0
           clean: false
