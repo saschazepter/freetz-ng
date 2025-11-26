@@ -36,8 +36,6 @@ Homepage](http://www.stunnel.org/examples/).
     → Stunnel: "Certificate Chain" (host.cert) und "Private Key"
     (host.key) einfügen.
 
-<!-- -->
-
 3.  Die gewünschten Services hinzufügen. Zum Beispiel:
 
     ``` 
@@ -55,10 +53,19 @@ Homepage](http://www.stunnel.org/examples/).
     */tmp/flash/stunnel/key.pem* verwendet, welche vom Webinterface aus
     verwaltet werden (Punkt 2).
 
+
+4.  Zugriff (intern) über
+    [https://fritz.box:4433](https://fritz.box:4433).
+    Für den externen Zugriff muss noch eine Port-Freigabe eingetragen
+    werden.
+
+### Erweitert
+
     Die Standardeinstellungen von Freetz können mit der Zeile `#EXCLUSIVE#` deaktiviert werden.
     Dies ermöglicht, globale Einstellungen außerhalb der `[<section>]` vorzunehmen.
     Zum Beispiel:
-    ```
+
+```
     #EXCLUSIVE#
     
     TIMEOUTclose = 0
@@ -75,14 +82,7 @@ Homepage](http://www.stunnel.org/examples/).
     [avm https Web-Interface]
     accept = 4434
     connect = 80
-    ```
-
-<!-- -->
-
-4.  Zugriff (intern) über
-    [https://fritz.box:4433](https://fritz.box:4433).
-    Für den externen Zugriff muss noch eine Port-Freigabe eingetragen
-    werden.
+```
 
 ### Weiterführende Links
 
