@@ -416,7 +416,7 @@
 <tr><td>FRITZ.Box_6850_5G-08.03.image</td><td>FREETZ_TYPE_6850_5G &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_0X</td></tr>
 <tr><td>FRITZ.Box_6850_5G-08.20.image</td><td>FREETZ_TYPE_6850_5G &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_2X</td></tr>
 <tr><td>FRITZ.Box_6860_5G-08.03.image</td><td>FREETZ_TYPE_6860 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_0X</td></tr>
-<tr><td>FRITZ.Box_6860_5G-08.10-122256-LabBETA.image</td><td>FREETZ_TYPE_6860 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_2X</td></tr>
+<tr><td>FRITZ.Box_6860_5G-08.20.image</td><td>FREETZ_TYPE_6860 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_2X</td></tr>
 <tr><td>FRITZ.Box_6890_LTE.en-de-es-it-fr-pl-nl.162.06.87.image</td><td>FREETZ_TYPE_6890 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_06_8X</td></tr>
 <tr><td>FRITZ.Box_6890_LTE.en-de-es-it-fr-pl-nl.162.07.03.image</td><td>FREETZ_TYPE_6890 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_07_0X</td></tr>
 <tr><td>FRITZ.Box_6890_LTE-en-de-es-it-fr-pl-nl-07.13.image</td><td>FREETZ_TYPE_6890 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_07_1X</td></tr>
