@@ -27,10 +27,10 @@ Homepage](http://www.stunnel.org/examples/).
 
 1.  Erzeugen der Keys auf dem PC (unter Linux):
 
-    ``` 
+```
     openssl genrsa 1024 > host.key
     openssl req -new -x509 -nodes -sha1 -days 365 -key host.key > host.cert
-    ```
+```
 
 2.  Das Zertifikat und den Schlüssel im Webinterface unter Einstellungen
     → Stunnel: "Certificate Chain" (host.cert) und "Private Key"
@@ -38,14 +38,14 @@ Homepage](http://www.stunnel.org/examples/).
 
 3.  Die gewünschten Services hinzufügen. Zum Beispiel:
 
-    ``` 
+```
     [freetz https Web-Interface]
     client = no
     cert = /tmp/flash/stunnel/certs.pem
     key = /tmp/flash/stunnel/key.pem
     accept = 4433
     connect = 81
-    ```
+```
 
     Die Angabe des Pfads zum Zertifikat und zum Schlüssel sind optional.
     Ohne ausdrückliche Angabe wird das Zertifikat
@@ -61,9 +61,9 @@ Homepage](http://www.stunnel.org/examples/).
 
 ### Erweitert
 
-    Die Standardeinstellungen von Freetz können mit der Zeile `#EXCLUSIVE#` deaktiviert werden.
-    Dies ermöglicht, globale Einstellungen außerhalb der `[<section>]` vorzunehmen.
-    Zum Beispiel:
+Die Standardeinstellungen von Freetz können mit der Zeile `#EXCLUSIVE#` deaktiviert werden.
+Dies ermöglicht, globale Einstellungen außerhalb der `[<section>]` vorzunehmen.
+Zum Beispiel:
 
 ```
     #EXCLUSIVE#
