@@ -165,7 +165,7 @@ Currently supported devices and firmwares
 
 ### Fritz!Box Cable (63xx/64xx/65xx/66xx)
 
-  * __Fritz!Box 6320 Cable (UNTESTED)__
+  * __Fritz!Box 6320 v1 Cable (UNTESTED)__
     - 104.06.03 rev27377 {GER}
   * __Fritz!Box 6360 Cable (UNTESTED)__
     - 85.06.04 rev27374 {GER}
