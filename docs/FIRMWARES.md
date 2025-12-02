@@ -208,7 +208,7 @@ Currently supported devices and firmwares
     - 267.07.29 rev92355 {GER} [PSQ19P2NL4]
     - 267.07.57 rev109915 {GER} [MOVE21NL1]
     - 267.08.03 rev118555 {GER} [Smart24 P1 NL1]
-    - 267.08.10 rev121896 {GER} [Smart24 P2] (Labor)
+    - 267.08.21 rev127011 {GER} [Smart24 P2]
 
 ### Fritz!Box LTE (68xx)
 
