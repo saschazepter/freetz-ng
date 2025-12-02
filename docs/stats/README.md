@@ -538,7 +538,7 @@
 <tr><td>FRITZ.Box_7530-07.29.image</td><td>(FREETZ_TYPE_7530_W5 &vert;&vert;<br> FREETZ_TYPE_7520_V1_7530_W5) &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_07_2X</td></tr>
 <tr><td>FRITZ.Box_7530-07.59.image</td><td>(FREETZ_TYPE_7530_W5 &vert;&vert;<br> FREETZ_TYPE_7520_V1_7530_W5) &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_07_5X</td></tr>
 <tr><td>FRITZ.Box_7530-08.02.image</td><td>(FREETZ_TYPE_7530_W5 &vert;&vert;<br> FREETZ_TYPE_7520_V1_7530_W5) &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_0X</td></tr>
-<tr><td>FRITZ.Box_7530-08.10-121911-LabBETA.image</td><td>(FREETZ_TYPE_7530_W5 &vert;&vert;<br> FREETZ_TYPE_7520_V1_7530_W5) &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_2X</td></tr>
+<tr><td>FRITZ.Box_7530-08.20.image</td><td>(FREETZ_TYPE_7530_W5 &vert;&vert;<br> FREETZ_TYPE_7520_V1_7530_W5) &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_2X</td></tr>
 <tr><td>FRITZ.Box_7530_AX-07.31.image</td><td>FREETZ_TYPE_7530_W6_V1 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_07_2X</td></tr>
 <tr><td>FRITZ.Box_7530_AX-07.57-V2.image/FRITZ.Box_7530_AX-07.57.image</td><td>FREETZ_TYPE_7530_W6_V1 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_07_5X</td></tr>
 <tr><td>FRITZ.Box_7530_AX-08.02.image</td><td>FREETZ_TYPE_7530_W6_V1 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_0X</td></tr>
