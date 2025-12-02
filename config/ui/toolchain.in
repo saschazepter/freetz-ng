@@ -519,6 +519,15 @@ config FREETZ_KERNEL_GCC_VERSION
 
 comment "Target toolchain options ----------------------------------------"
 
+config FREETZ_TARGET_UNSUPPORTED_VERSIONS
+	bool "Show unsupported versions"
+	depends on FREETZ_SHOW_EXPERT
+	depends on FREETZ_BUILD_TOOLCHAIN
+	default n
+	help
+		Shows versions which are not supported.
+		Fix errors by yourself or disable this option.
+
 config FREETZ_SEPARATE_AVM_UCLIBC_FORCE
 	bool
 	depends on FREETZ_AVM_PROP_UCLIBC_SEPARATE
@@ -532,15 +541,6 @@ config FREETZ_SEPARATE_AVM_UCLIBC
 	help
 		Puts uClibc of Freetz into /usr/lib/freetz/,
 		needs about 1 MB (uncompressed).
-
-config FREETZ_TARGET_UNSUPPORTED_VERSIONS
-	bool "Show unsupported versions"
-	depends on FREETZ_SHOW_EXPERT
-	depends on FREETZ_BUILD_TOOLCHAIN
-	default n
-	help
-		Shows versions which are not supported.
-		Fix errors by yourself or disable this option.
 
 choice
 	prompt "Target libc"
