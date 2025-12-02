@@ -600,13 +600,12 @@
 <details><summary>5 verschiedene Layouts</summary>
 
 <table>
-<caption style='background-color:gray'>Gen1: single-boot (56)</caption>
+<caption style='background-color:gray'>Gen1: single-boot (55)</caption>
 <thead><tr><th style='width:450px'>Name</th><th style='width:300px'>Symbol</th></tr></thead>
 <tbody>
 <tr><td>FRITZ!Box 2170</td><td>FREETZ_TYPE_2170</td></tr>
 <tr><td>FRITZ!Box 4020</td><td>FREETZ_TYPE_4020</td></tr>
 <tr><td>FRITZ!Box 4040</td><td>FREETZ_TYPE_4040</td></tr>
-<tr><td>FRITZ!Box 6320 Cable</td><td>FREETZ_TYPE_6320</td></tr>
 <tr><td>FRITZ!Box 6360 Cable</td><td>FREETZ_TYPE_6360</td></tr>
 <tr><td>FRITZ!Box 6810 LTE</td><td>FREETZ_TYPE_6810</td></tr>
 <tr><td>FRITZ!Box 6842 LTE</td><td>FREETZ_TYPE_6842</td></tr>
