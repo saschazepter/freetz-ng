@@ -4,8 +4,24 @@ KERNEL_PATCHES_DIR:=$(KERNEL_MAKE_DIR)/patches/$(KERNEL_VERSION)$(SYSTEM_TYPE_CO
 KERNEL_DEPENDS_ON += lzma1-host
 KERNEL_DEPENDS_ON += lzma2eva-host
 
+ifeq ($(strip $(FREETZ_VERBOSITY_LEVEL)),2)
 KERNEL_MAKE_TARGET:=vmlinux.eva_pad
-KERNEL_IMAGE_FILE:=$(if $(FREETZ_KERNEL_VERSION_3_10_MIN),/arch/$(KERNEL_ARCH)/boot)/vmlinux.eva_pad
+KERNEL_IMAGE_FILE:=vmlinux.eva_pad
+else
+ifeq ($(strip $(FREETZ_VERBOSITY_LEVEL)),3)
+KERNEL_MAKE_TARGET:=vmlinux.eva_pad
+KERNEL_IMAGE_FILE:=/arch/$(KERNEL_ARCH)/boot/vmlinux.eva_pad
+else
+ifeq ($(strip $(FREETZ_VERBOSITY_LEVEL)),4)
+#TODO!
+KERNEL_MAKE_TARGET:=vmlinux.eva_pad
+KERNEL_IMAGE_FILE:=/arch/$(KERNEL_ARCH)/boot/vmlinux.eva_pad
+else
+KERNEL_MAKE_TARGET:=vmlinux.eva_pad
+KERNEL_IMAGE_FILE:=/arch/$(KERNEL_ARCH)/boot/vmlinux.eva_pad
+endif
+endif
+endif
 KERNEL_TARGET_BINARY:=kernel-$(KERNEL_ID).bin
 KERNEL_CONFIG_FILE:=$(KERNEL_MAKE_DIR)/configs/freetz/config-$(KERNEL_ID)
 
