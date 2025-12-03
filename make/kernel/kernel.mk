@@ -17,8 +17,8 @@ ifeq ($(strip $(FREETZ_VERBOSITY_LEVEL)),4)
 KERNEL_MAKE_TARGET:=vmlinux.eva_pad
 KERNEL_IMAGE_FILE:=/arch/$(KERNEL_ARCH)/boot/vmlinux.eva_pad
 else
-KERNEL_MAKE_TARGET:=vmlinux.eva_pad
-KERNEL_IMAGE_FILE:=/arch/$(KERNEL_ARCH)/boot/vmlinux.eva_pad
+KERNEL_MAKE_TARGET:=vmlinux.lzma
+KERNEL_IMAGE_FILE:=vmlinux.lzma
 endif
 endif
 endif
