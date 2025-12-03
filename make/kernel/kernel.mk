@@ -4,15 +4,15 @@ KERNEL_PATCHES_DIR:=$(KERNEL_MAKE_DIR)/patches/$(KERNEL_VERSION)$(SYSTEM_TYPE_CO
 KERNEL_DEPENDS_ON += lzma1-host
 KERNEL_DEPENDS_ON += lzma2eva-host
 
-ifeq ($(strip $(FREETZ_VERBOSITY_LEVEL)),2)
+ifeq ($(strip $(FREETZ_KERNEL_VERSION_2)),y)
 KERNEL_MAKE_TARGET:=vmlinux.eva_pad
 KERNEL_IMAGE_FILE:=vmlinux.eva_pad
 else
-ifeq ($(strip $(FREETZ_VERBOSITY_LEVEL)),3)
+ifeq ($(strip $(FREETZ_KERNEL_VERSION_3)),y)
 KERNEL_MAKE_TARGET:=vmlinux.eva_pad
 KERNEL_IMAGE_FILE:=/arch/$(KERNEL_ARCH)/boot/vmlinux.eva_pad
 else
-ifeq ($(strip $(FREETZ_VERBOSITY_LEVEL)),4)
+ifeq ($(strip $(FREETZ_KERNEL_VERSION_4)),y)
 #TODO!
 KERNEL_MAKE_TARGET:=vmlinux.eva_pad
 KERNEL_IMAGE_FILE:=/arch/$(KERNEL_ARCH)/boot/vmlinux.eva_pad
