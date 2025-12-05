@@ -1,5 +1,5 @@
-# PHP 5.6.40 (binary only) - DEPRECATED
-  - Package: [master/make/pkgs/php/](https://github.com/Freetz-NG/freetz-ng/tree/master/make/pkgs/php/)
+# PHP5 5.6.40 (binary only) - DEPRECATED
+  - Package: [master/make/pkgs/php5/](https://github.com/Freetz-NG/freetz-ng/tree/master/make/pkgs/php5/)
   - Maintainer: -
 
 "*PHP is a widely-used general-purpose scripting language that is
