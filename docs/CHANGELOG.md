@@ -106,7 +106,7 @@ Latest changes
   - Packages:
     * ACME.sh 3.1.2
     * Apache2 2.4.66
-    * BIND 9.11.37/9.20.15
+    * BIND 9.11.37/9.20.16
     * Binutils 2.45.1
     * Bzip2 1.0.8
     * CA-bundle 2025-12-02
