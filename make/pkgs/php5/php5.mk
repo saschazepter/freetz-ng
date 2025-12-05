@@ -1,4 +1,5 @@
 $(call PKG_INIT_BIN, 5.6.40)
+$(PKG)_SOURCE:=php-$($(PKG)_VERSION).tar.xz
 $(PKG)_HASH:=1369a51eee3995d7fbd1c5342e5cc917760e276d561595b6052b21ace2656d1c
 $(PKG)_SITE:=https://www.php.net/distributions,https://de.php.net/distributions,https://de2.php.net/distributions
 
@@ -194,6 +195,7 @@ $(PKG)_CONFIGURE_OPTIONS += --with-config-file-path=/tmp/flash
 $(PKG)_CONFIGURE_OPTIONS += --with-config-file-scan-dir=/tmp/flash/php
 $(PKG)_CONFIGURE_OPTIONS += --without-pear
 
+
 $(PKG_SOURCE_DOWNLOAD)
 $(PKG_UNPACKED)
 $(PKG_CONFIGURED_CONFIGURE)
@@ -216,6 +218,7 @@ $($(PKG)_APXS2_TARGET_BINARY): $($(PKG)_APXS2_BINARY)
 $(pkg):
 
 $(pkg)-precompiled: $($(PKG)_TARGET_BINARY) $($(PKG)_CLI_TARGET_BINARY) $(if $(FREETZ_PACKAGE_PHP5_apxs2),$($(PKG)_APXS2_TARGET_BINARY))
+
 
 $(pkg)-clean:
 	-$(SUBMAKE) -C $(PHP_DIR) clean
