@@ -7,8 +7,6 @@ $(PKG)_SITE:=https://www.php.net/distributions,https://de.php.net/distributions,
 ### CHANGES:=https://github.com/php/php-src/releases
 ### CVSREPO:=https://github.com/php/php-src
 
-$(PKG)_CATEGORY:=Unstable
-
 $(PKG)_BINARY              := $($(PKG)_DIR)/sapi/cgi/php-cgi
 $(PKG)_TARGET_BINARY       := $($(PKG)_DEST_DIR)/usr/bin/php-cgi
 
