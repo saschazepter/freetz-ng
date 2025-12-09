@@ -27,6 +27,9 @@ $(PKG)_LIBRARIES_BUILD_DIR:=$(join $($(PKG)_LIBRARIES_DIR:%=$($(PKG)_DIR)/%/.lib
 $(PKG)_LIBRARIES_TARGET_DIR:=$($(PKG)_LIBRARIES_NAME:%=$($(PKG)_TARGET_LIBDIR)/%)
 $(PKG)_LIBRARIES_STAGING_DIR:=$($(PKG)_LIBRARIES_NAME:%=$(TARGET_TOOLCHAIN_STAGING_DIR)/usr/lib/%)
 
+$(PKG)_CONFIGURE_PRE_CMDS += $(call PKG_PREVENT_RPATH_HARDCODING,config.rpath)
+$(PKG)_CONFIGURE_PRE_CMDS += $(call PKG_PREVENT_RPATH_HARDCODING,libctf/configure)
+
 $(PKG)_CONFIGURE_OPTIONS += --target=$(REAL_GNU_TARGET_NAME)
 $(PKG)_CONFIGURE_OPTIONS += --enable-shared
 $(PKG)_CONFIGURE_OPTIONS += --enable-static
@@ -34,6 +37,7 @@ $(PKG)_CONFIGURE_OPTIONS += --disable-multilib
 $(PKG)_CONFIGURE_OPTIONS += --disable-werror
 $(PKG)_CONFIGURE_OPTIONS += --disable-sim
 $(PKG)_CONFIGURE_OPTIONS += --disable-gdb
+$(PKG)_CONFIGURE_OPTIONS += --without-zstd
 $(PKG)_CONFIGURE_OPTIONS += --without-included-gettext
 $(PKG)_CONFIGURE_OPTIONS += --enable-deterministic-archives
 # Disable gprofng (requires glibc-only features: dlvsym, Dl_serinfo, RTLD_DI_SERINFOSIZE)

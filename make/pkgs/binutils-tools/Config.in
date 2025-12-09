@@ -1,6 +1,5 @@
 menuconfig FREETZ_PACKAGE_BINUTILS_TOOLS
-	bool "Binutils 2.45.1 (binary only) - DEVELOPER"
-	depends on FREETZ_SHOW_DEVELOPER
+	bool "Binutils 2.45.1 (binary only)"
 	default n
 	select FREETZ_LIB_libsframe
 	select FREETZ_PACKAGE_BINUTILS_TOOLS_READELF if \
