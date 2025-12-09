@@ -73,7 +73,7 @@ Latest changes
   - Host tools:
     * ca-bundle 2025-12-02
     * config a2287c3
-    * cmake 4.2.0
+    * cmake 4.2.1
     * dos2unix 7.5.3
     * file 5.46
     * gperf 3.3
