@@ -133,6 +133,7 @@ Latest changes
     * Tor 0.4.8.21
     * Unbound 1.24.2
     * UnRAR 6.1.7/7.2.1
+    * Vim 9.1.1952
     * Whois 5.6.5
 
   - Libraries:
