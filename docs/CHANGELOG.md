@@ -126,6 +126,7 @@ Latest changes
     * procps-ng 4.0.5
     * Python 3.14.0
     * sslh 2.2.4/2.3.0
+    * strace 4.9/5.0/6.18
     * Stunnel 5.76
     * tmux 3.6a
     * Tor 0.4.8.21
