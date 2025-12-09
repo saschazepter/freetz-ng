@@ -125,7 +125,7 @@ Latest changes
     * OpenVPN 2.4.12/2.5.11/2.6.17
     * PatchELF 0.18.0
     * procps-ng 4.0.5
-    * Python 3.14.0
+    * Python 3.14.2
     * sslh 2.2.4/2.3.0
     * strace 4.9/5.0/6.18
     * Stunnel 5.76
