@@ -71,6 +71,7 @@ Latest changes
     * new architecture: armeb
 
   - Host tools:
+    * automake 1.18.1
     * ca-bundle 2025-12-02
     * config a2287c3
     * cmake 4.2.1
