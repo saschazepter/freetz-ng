@@ -182,15 +182,15 @@
 <caption style='background-color:gray'>Repeater (19)</caption>
 <thead><tr><th style='width:450px'>Name</th><th style='width:300px'>Symbol</th></tr></thead>
 <tbody>
+<tr><td>DVB-C</td><td>FREETZ_TYPE_1759</td></tr>
 <tr><td>N/G</td><td>FREETZ_TYPE_WRNG</td></tr>
+<tr><td>300E</td><td>FREETZ_TYPE_0300</td></tr>
 <tr><td>310a</td><td>FREETZ_TYPE_0310_V1</td></tr>
 <tr><td>310b</td><td>FREETZ_TYPE_0310_V2</td></tr>
+<tr><td>450E</td><td>FREETZ_TYPE_0450</td></tr>
 <tr><td>600 v1</td><td>FREETZ_TYPE_0600_V1</td></tr>
 <tr><td>600 v2</td><td>FREETZ_TYPE_0600_V2</td></tr>
 <tr><td>1160</td><td>FREETZ_TYPE_1160</td></tr>
-<tr><td>DVB-C</td><td>FREETZ_TYPE_1759</td></tr>
-<tr><td>300E</td><td>FREETZ_TYPE_0300</td></tr>
-<tr><td>450E</td><td>FREETZ_TYPE_0450</td></tr>
 <tr><td>1200</td><td>FREETZ_TYPE_1200_W5</td></tr>
 <tr><td>1200 AX v1</td><td>FREETZ_TYPE_1200_W6_V1</td></tr>
 <tr><td>1200 AX v2</td><td>FREETZ_TYPE_1200_W6_V2</td></tr>
