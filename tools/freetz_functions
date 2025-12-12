@@ -88,7 +88,7 @@ menulua_remove() {
 		# the  ["show"] line is either one or two lines before
 		modsed -r \
 		  "$((${matchLine}-2)),$((${matchLine}-1))"' {
-		      s!^(\["show"\] = ).+,$!\1false,!
+		      s/^( *\["show"\] = ).+,$/\1false,/
 		  }' \
 		  "$file"
 	else
