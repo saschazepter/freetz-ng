@@ -547,6 +547,7 @@ Currently supported devices and firmwares
   * __Fritz!Powerline 1260 v2 (UNTESTED)__
     - 249.07.29 rev93271 {ALL} [PSQ19P2NL4]
     - 249.07.58 rev113256 {ALL} [MOVE21NL1]
+    - 249.08.20 rev126999 {ALL} [Smart24 P2]
 
 ### Fritz!Repeater
 
