@@ -69,6 +69,17 @@ quickstart_remove() {
 	done
 }
 
+#htmltab_remove <file> <href>
+#removes a html-tab with destination href in file
+htmltab_remove() {
+	local file="$HTML_LANG_MOD_DIR$1"
+	local HREF="href=\\\"#${2//\//\\\/}\\\""
+	local TAG="a"
+	local TAG_S="<$TAG "
+	local TAG_E="<\/$TAG>"
+	modsed '/'"$TAG_S"'/{:x;N;/'"$TAG_E"'/!bx};/'"$HREF"'/d' "$file"
+}
+
 #modern_remove <menu-item>
 #removes liks within menu_data.lua (left menu, responsive)
 modern_remove() {
