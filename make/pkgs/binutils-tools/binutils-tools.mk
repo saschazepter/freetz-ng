@@ -27,8 +27,11 @@ $(PKG)_LIBRARIES_BUILD_DIR:=$(join $($(PKG)_LIBRARIES_DIR:%=$($(PKG)_DIR)/%/.lib
 $(PKG)_LIBRARIES_TARGET_DIR:=$($(PKG)_LIBRARIES_NAME:%=$($(PKG)_TARGET_LIBDIR)/%)
 $(PKG)_LIBRARIES_STAGING_DIR:=$($(PKG)_LIBRARIES_NAME:%=$(TARGET_TOOLCHAIN_STAGING_DIR)/usr/lib/%)
 
+$(PKG)_CONFIGURE_FILES := $(wildcard $($(PKG)_DIR)/configure $($(PKG)_DIR)/*/configure)
+
 $(PKG)_CONFIGURE_PRE_CMDS += $(call PKG_PREVENT_RPATH_HARDCODING,config.rpath)
-$(PKG)_CONFIGURE_PRE_CMDS += $(call PKG_PREVENT_RPATH_HARDCODING,libctf/configure)
+# prevent rpath in all configures in all subdirs
+$(PKG)_CONFIGURE_PRE_CMDS += $(foreach confige,$(BINUTILS_TOOLS_CONFIGURE_FILES:$(BINUTILS_TOOLS_DIR)/%=%),$(call PKG_PREVENT_RPATH_HARDCODING,$(confige)))
 # dont install in subdir with target triplet
 $(PKG)_CONFIGURE_PRE_CMDS += $(SED) 's,/$$$$(host_noncanonical)/$$$$(target_noncanonical)/,/,g' -i */configure;
 
