@@ -16,6 +16,18 @@ supervisor_delete_service() {
 	supervisor_remove_dependency "${service}"
 }
 
+# replace file of supervisor service "$1.service" with a dummy & remove dependencies
+supervisor_replace_service() {
+	local service="${1%.service}.service"
+cat > "${FILESYSTEM_MOD_DIR}/lib/systemd/system/${service}" <<'EOX'
+[Unit]
+ExecStart=/bin/true
+Type=oneshot
+DefaultDependencies=no
+EOX
+	supervisor_remove_dependency "${service}"
+}
+
 
 # removes a div by id name in all cock pits (since fos8)
 cockpit_pruner() {
