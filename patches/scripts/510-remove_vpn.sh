@@ -20,9 +20,9 @@ for files in $(grep -rsl '<? setvariable var:showVpn 1 ?>' ${HTML_SPEC_MOD_DIR})
 	modsed 's/<? setvariable var:showVpn 1 ?>//' "$files"
 done
 
-# patcht Internet > Filter > Kindersicherung
-htmltab_remove "/js3/views/internet/access/access.html" "/access/vpn"
 # patcht Internet > Freigaben > VPN (IPSec)
+htmltab_remove "/js3/views/internet/access/access.html" "/access/vpn"
+# patcht Internet > Freigaben > VPN (WireGuard)
 htmltab_remove "/js3/views/internet/access/access.html" "/access/wireguard"
 
 # patcht System > FRITZ!Box-Benutzer > edit > Berechtigungen > VPN
