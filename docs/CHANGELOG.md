@@ -105,6 +105,7 @@ Latest changes
     * ssh_firmware_update.py - utility for upgrading firmware and external over SSH
 
   - Patches:
+    * Various Fritzos 8.2 related changes
 
   - Packages:
     * ACME.sh 3.1.2
