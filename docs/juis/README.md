@@ -83,8 +83,10 @@ Content: [FOS-Release](#fos-release) - [FOS-Labor](#fos-labor) - [FOS-Inhaus](#f
 
 ### FOS-Labor
   - HWR 226: [FRITZ.Box_7590-08.24-127389-LabBETA.image](http://download.example.com/labor/Smart24P2NL1/7590/FRITZ.Box_7590-08.24-127389-LabBETA.image)
+  - HWR 233: [FRITZ.Box_6591_Cable-08.24-127407-LabBETA.image](http://download.example.com/labor/Smart24P2NL1/6591Cable/FRITZ.Box_6591_Cable-08.24-127407-LabBETA.image)
   - HWR 239: [FRITZ.Box_7583-07.39-103075-LabBETA.image](http://download.example.com/labor/MOVE21/7583/FRITZ.Box_7583-07.39-103075-LabBETA.image)
   - HWR 247: [FRITZ.Box_7520-08.10-125985-LabBETA.image](http://download.example.com/labor/Smart24P2/7520/FRITZ.Box_7520-08.10-125985-LabBETA.image)
+  - HWR 252: [FRITZ.Box_6660_Cable-08.24-127408-LabBETA.image](http://download.example.com/labor/Smart24P2NL1/6660Cable/FRITZ.Box_6660_Cable-08.24-127408-LabBETA.image)
   - HWR 253: [FRITZ.Repeater_6000-08.10-127326-LabBETA.image](http://download.example.com/labor/Smart24P2/6000/FRITZ.Repeater_6000-08.10-127326-LabBETA.image)
   - HWR 258: [FRITZ.Box_6850_5G-08.10-124812-LabBETA.image](http://download.example.com/labor/Smart24P2/68505G/FRITZ.Box_6850_5G-08.10-124812-LabBETA.image)
   - HWR 259: [FRITZ.Box_7590_AX-08.24-127390-LabBETA.image](http://download.example.com/labor/Smart24P2NL1/7590AX/FRITZ.Box_7590_AX-08.24-127390-LabBETA.image)
@@ -157,4 +159,4 @@ Content: [FOS-Release](#fos-release) - [FOS-Labor](#fos-labor) - [FOS-Inhaus](#f
 ### Dect-Inhaus
 
 ### BPjM
-  - CRC 86f2ba52: [bpjm.data](http://download.avm.de/bpjm/290332/bpjm.data)
+  - CRC 9b2977e0: [bpjm.data](http://download.avm.de/bpjm/293533/bpjm.data)
