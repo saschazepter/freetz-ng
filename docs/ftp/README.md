@@ -199,8 +199,8 @@ Content: [FritzBox](#fritzbox) - [FritzPowerline](#fritzpowerline) - [FritzSmart
     - deutschland: [fritz.powerline_1220E_cm9_2130_02_tr069_38.image](https://download.avm.de/fritzpowerline/fritzpowerline-1220e/deutschland/fritz.os/fritz.powerline_1220E_cm9_2130_02_tr069_38.image)
     - other: [fritz.powerline_1220E_cm9_2130_02_tr069_38.image](https://download.avm.de/fritzpowerline/fritzpowerline-1220e/other/fritz.os/fritz.powerline_1220E_cm9_2130_02_tr069_38.image)
   * fritzpowerline-1240-ax/
-    - deutschland: [FRITZ.Powerline_1240_AX.275.07.58.image](https://download.avm.de/fritzpowerline/fritzpowerline-1240-ax/deutschland/fritz.os/FRITZ.Powerline_1240_AX.275.07.58.image)
-    - other: [FRITZ.Powerline_1240_AX.275.07.58.image](https://download.avm.de/fritzpowerline/fritzpowerline-1240-ax/other/fritz.os/FRITZ.Powerline_1240_AX.275.07.58.image)
+    - deutschland: [FRITZ.Powerline_1240_AX.275.08.20.image](https://download.avm.de/fritzpowerline/fritzpowerline-1240-ax/deutschland/fritz.os/FRITZ.Powerline_1240_AX.275.08.20.image)
+    - other: [FRITZ.Powerline_1240_AX.275.08.20.image](https://download.avm.de/fritzpowerline/fritzpowerline-1240-ax/other/fritz.os/FRITZ.Powerline_1240_AX.275.08.20.image)
   * fritzpowerline-1240e/
     - deutschland: [FRITZ.Powerline_1240E.150.07.16.image](https://download.avm.de/fritzpowerline/fritzpowerline-1240e/deutschland/fritz.os/FRITZ.Powerline_1240E.150.07.16.image)
     - other: [FRITZ.Powerline_1240E.150.07.16.image](https://download.avm.de/fritzpowerline/fritzpowerline-1240e/other/fritz.os/FRITZ.Powerline_1240E.150.07.16.image)
@@ -229,7 +229,7 @@ Content: [FritzBox](#fritzbox) - [FritzPowerline](#fritzpowerline) - [FritzSmart
 
 ### FritzSmart
   * fritzsmart-gateway/
-    - deutschland: [FRITZ.Smart_Gateway-08.20-Release.image](https://download.avm.de/fritzsmart/fritzsmart-gateway/deutschland/fritz.os/FRITZ.Smart_Gateway-08.20-Release.image)
+    - deutschland: [FRITZ.Smart_Gateway-08.24-Release.image](https://download.avm.de/fritzsmart/fritzsmart-gateway/deutschland/fritz.os/FRITZ.Smart_Gateway-08.24-Release.image)
 
 ### FritzWlan
   * fritzmesh-set-1600/
