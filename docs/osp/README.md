@@ -281,8 +281,10 @@ Content: [FritzBox](#fritzbox) - [FritzDect](#fritzdect) - [FritzPowerline](#fri
   * fritzbox-6842-lte/
     - [fritz_box_6842_source_files.06.21.tar.gz](https://osp.avm.de/fritzbox/fritzbox-6842-lte/fritz_box_6842_source_files.06.21.tar.gz)
   * fritzbox-6850-5g/
+    - [source-files-FRITZ.Box_6850_5G-cortexa9-07.59.tar.gz](https://osp.avm.de/fritzbox/fritzbox-6850-5g/source-files-FRITZ.Box_6850_5G-cortexa9-07.59.tar.gz)
     - [source-files-FRITZ.Box_6850_5G-cortexa9-08.20.tar.gz](https://osp.avm.de/fritzbox/fritzbox-6850-5g/source-files-FRITZ.Box_6850_5G-cortexa9-08.20.tar.gz)
   * fritzbox-6850-lte/
+    - [source-files-FRITZ.Box_6850_LTE-cortexa9-07.59.tar.gz](https://osp.avm.de/fritzbox/fritzbox-6850-lte/source-files-FRITZ.Box_6850_LTE-cortexa9-07.59.tar.gz)
     - [source-files-FRITZ.Box_6850_LTE-cortexa9-08.20.tar.gz](https://osp.avm.de/fritzbox/fritzbox-6850-lte/source-files-FRITZ.Box_6850_LTE-cortexa9-08.20.tar.gz)
   * fritzbox-6860-5g/
     - [source-files-FRITZ.Box_6860_5G-maple-08.20.tar.gz](https://osp.avm.de/fritzbox/fritzbox-6860-5g/source-files-FRITZ.Box_6860_5G-maple-08.20.tar.gz)
@@ -437,10 +439,14 @@ Content: [FritzBox](#fritzbox) - [FritzDect](#fritzdect) - [FritzPowerline](#fri
     - [source-files-FRITZ.Box_scrpn_7490-07.19.tar.gz](https://osp.avm.de/fritzbox/fritzbox-7490/source-files-FRITZ.Box_scrpn_7490-07.19.tar.gz)
     - [source-files-FRITZ.Box_scrpn_7490-07.21.tar.gz](https://osp.avm.de/fritzbox/fritzbox-7490/source-files-FRITZ.Box_scrpn_7490-07.21.tar.gz)
   * fritzbox-7510/
+    - [source-files-FRITZ.Box_7510-maple-07.59.tar.gz](https://osp.avm.de/fritzbox/fritzbox-7510/source-files-FRITZ.Box_7510-maple-07.59.tar.gz)
+    - [source-files-FRITZ.Box_7510-maple-08.02.tar.gz](https://osp.avm.de/fritzbox/fritzbox-7510/source-files-FRITZ.Box_7510-maple-08.02.tar.gz)
     - [source-files-FRITZ.Box_7510-maple-08.20.tar.gz](https://osp.avm.de/fritzbox/fritzbox-7510/source-files-FRITZ.Box_7510-maple-08.20.tar.gz)
   * fritzbox-7520/
+    - [source-files-FRITZ.Box_7520-cortexa9-07.59.tar.gz](https://osp.avm.de/fritzbox/fritzbox-7520/source-files-FRITZ.Box_7520-cortexa9-07.59.tar.gz)
     - [source-files-FRITZ.Box_7520-cortexa9-08.21.tar.gz](https://osp.avm.de/fritzbox/fritzbox-7520/source-files-FRITZ.Box_7520-cortexa9-08.21.tar.gz)
   * fritzbox-7520-B/
+    - [source-files-FRITZ.Box_7520_B-cortexa9-07.59.tar.gz](https://osp.avm.de/fritzbox/fritzbox-7520-B/source-files-FRITZ.Box_7520_B-cortexa9-07.59.tar.gz)
     - [source-files-FRITZ.Box_7520_B-cortexa9-08.21.tar.gz](https://osp.avm.de/fritzbox/fritzbox-7520-B/source-files-FRITZ.Box_7520_B-cortexa9-08.21.tar.gz)
   * fritzbox-7530/
     - [source-files-FRITZ.Box_7530-cortexa9-07.59.tar.gz](https://osp.avm.de/fritzbox/fritzbox-7530/source-files-FRITZ.Box_7530-cortexa9-07.59.tar.gz)
