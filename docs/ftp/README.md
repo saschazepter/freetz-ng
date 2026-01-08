@@ -131,9 +131,9 @@ Content: [FritzBox](#fritzbox) - [FritzPowerline](#fritzpowerline) - [FritzSmart
     - deutschland: [FRITZ.Box_7430-07.31.image](https://download.avm.de/fritzbox/fritzbox-7430/deutschland/fritz.os/FRITZ.Box_7430-07.31.image)
     - other: [FRITZ.Box_7430-07.31.image](https://download.avm.de/fritzbox/fritzbox-7430/other/fritz.os/FRITZ.Box_7430-07.31.image)
   * fritzbox-7490/
-    - belgium: [FRITZ.Box_7490-07.60.image](https://download.avm.de/fritzbox/fritzbox-7490/belgium/fritz.os/FRITZ.Box_7490-07.60.image)
-    - deutschland: [FRITZ.Box_7490-07.60.image](https://download.avm.de/fritzbox/fritzbox-7490/deutschland/fritz.os/FRITZ.Box_7490-07.60.image)
-    - other: [FRITZ.Box_7490-07.60.image](https://download.avm.de/fritzbox/fritzbox-7490/other/fritz.os/FRITZ.Box_7490-07.60.image)
+    - belgium: [FRITZ.Box_7490-07.62.image](https://download.avm.de/fritzbox/fritzbox-7490/belgium/fritz.os/FRITZ.Box_7490-07.62.image)
+    - deutschland: [FRITZ.Box_7490-07.62.image](https://download.avm.de/fritzbox/fritzbox-7490/deutschland/fritz.os/FRITZ.Box_7490-07.62.image)
+    - other: [FRITZ.Box_7490-07.62.image](https://download.avm.de/fritzbox/fritzbox-7490/other/fritz.os/FRITZ.Box_7490-07.62.image)
   * fritzbox-7510/
     - deutschland: [FRITZ.Box_7510-08.20.image](https://download.avm.de/fritzbox/fritzbox-7510/deutschland/fritz.os/FRITZ.Box_7510-08.20.image)
     - other: [FRITZ.Box_7510-08.20.image](https://download.avm.de/fritzbox/fritzbox-7510/other/fritz.os/FRITZ.Box_7510-08.20.image)
