@@ -139,7 +139,7 @@ Content: [FOS-Release](#fos-release) - [FOS-Labor](#fos-labor) - [FOS-Inhaus](#f
   - MHW 06.10: [06.10.04.90.avm.de.upd](http://download.avm.de/dect/0610/06.10.04.90.avm.de.upd)
   - MHW 06.12: [06.12.05.44.avm.de.upd](http://download.avm.de/dect/0612/Smart24P2/06.12.05.44.avm.de.upd)
   - MHW 06.13: [06.13.03.58.avm.de.upd](http://download.avm.de/dect/0613/Smart24/06.13.03.58.avm.de.upd)
-  - MHW 06.14: [06.14.03.72.avm.de.upd](http://download.avm.de/dect/0614/Release/06.14.03.72.avm.de.upd)
+  - MHW 06.14: [06.14.03.73.avm.de.upd](http://download.avm.de/dect/0614/Release/06.14.03.73.avm.de.upd)
   - MHW 07.01: [07.01.04.25.avm.de.upd](http://download.avm.de/dect/0701/07.01.04.25.avm.de.upd)
   - MHW 07.02: [07.02.04.27.avm.de.upd](http://download.avm.de/dect/0702/smart24/07.02.04.27.avm.de.upd)
   - MHW 07.03: [07.03.04.25.avm.de.upd](http://download.avm.de/dect/0703/move21/07.03.04.25.avm.de.upd)
