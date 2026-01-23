@@ -137,6 +137,7 @@ Latest changes
     * sslh 2.2.4/2.3.0
     * strace 4.9/5.0/6.18
     * Stunnel 5.76
+    * tcpdump 4.1.1/4.99.6
     * tmux 3.6a
     * Tor 0.4.8.21
     * Unbound 1.24.2
