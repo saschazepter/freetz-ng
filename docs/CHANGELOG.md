@@ -90,7 +90,7 @@ Latest changes
     * python3-pip 25.3
     * python3-referencing 0.37.0
     * tools 2025-12-09
-    * uboot 2025.10
+    * uboot 2026.01
 
   - AVM sources:
     * 600      8.20 - 4.4.271
