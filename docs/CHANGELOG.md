@@ -132,6 +132,7 @@ Latest changes
     * OpenSSH 9.3p2/10.2p1
     * OpenVPN 2.4.12/2.5.11/2.6.17
     * PatchELF 0.18.0
+    * Privoxy 4.1.0
     * procps-ng 4.0.5
     * Python 3.14.2
     * socat 1.8.1.0
