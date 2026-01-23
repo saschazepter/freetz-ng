@@ -82,6 +82,7 @@ if FREETZ_PACKAGE_BIND
 	config FREETZ_PACKAGE_BIND_DIG
 		bool "dig (binary only)"
 		default n
+		select FREETZ_LIB_libns              if !FREETZ_PACKAGE_BIND_VERSION_ABANDON
 		help
 			dig is a flexible tool for interrogating DNS name servers.
 			This file needs about 2,8 MB uncompressed.
