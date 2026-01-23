@@ -134,6 +134,7 @@ Latest changes
     * PatchELF 0.18.0
     * Privoxy 4.1.0
     * procps-ng 4.0.5
+    * pyLoad 0.4.x
     * Python 3.14.2
     * socat 1.8.1.0
     * sslh 2.2.4/2.3.0
