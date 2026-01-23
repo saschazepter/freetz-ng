@@ -593,7 +593,7 @@ Currently supported devices and firmwares
     - 169.07.58 rev111615 {ALL} [MOVE21NL1]
     - 169.08.20 rev125176 {ALL} [Smart24 P2]
   * __Fritz!Repeater 2700 (UNTESTED)__
-    - 301.08.06 rev123890 {ALL} [Smart24 P1 FCS]
+    - 301.08.07 rev128070 {ALL} [Smart24 P1 FCS]
   * __Fritz!Repeater 3000__
     - 174.07.04 rev66458 {ALL}
     - 174.07.14 rev73940 {ALL} [MESH18 NL4]
