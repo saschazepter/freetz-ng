@@ -4,7 +4,6 @@ config FREETZ_PACKAGE_BIND
 	select FREETZ_LIB_libisc             if !FREETZ_PACKAGE_BIND_VERSION_ABANDON
 	select FREETZ_LIB_libisccfg          if !FREETZ_PACKAGE_BIND_VERSION_ABANDON
 	select FREETZ_LIB_libpthread         if FREETZ_TARGET_UCLIBC_HAS_multiple_libs
-	select FREETZ_LIB_libatomic          if !FREETZ_PACKAGE_BIND_VERSION_ABANDON
 	select FREETZ_LIB_liburcu            if !FREETZ_PACKAGE_BIND_VERSION_ABANDON
 	select FREETZ_LIB_liburcu_cds        if !FREETZ_PACKAGE_BIND_VERSION_ABANDON
 	select FREETZ_LIB_liburcu_common     if !FREETZ_PACKAGE_BIND_VERSION_ABANDON
@@ -44,6 +43,7 @@ if FREETZ_PACKAGE_BIND
 		select FREETZ_LIB_libcrypto_WITH_EC  if !FREETZ_PACKAGE_BIND_VERSION_ABANDON
 		select FREETZ_LIB_libssl             if !FREETZ_PACKAGE_BIND_VERSION_ABANDON
 		select FREETZ_LIB_libuv              if !FREETZ_PACKAGE_BIND_VERSION_ABANDON
+		select FREETZ_LIB_libatomic          if !FREETZ_PACKAGE_BIND_VERSION_ABANDON
 		help
 			named is a DNS server, part of the BIND 9 distribution.
 			You have to provide the config and needed zone files yourself.
