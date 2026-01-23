@@ -81,6 +81,7 @@ Latest changes
     * gperf 3.3
     * kconfig 6.18
     * meson 1.10.1
+    * ncurses 6.6
     * ninja 1.13.2
     * patchelf 0.14.5/0.18.0-b49de1b33
     * patchelf-target 0.14.5/0.15.0
@@ -157,6 +158,8 @@ Latest changes
     * libxml2 2.15.1
     * libyaml 0.2.5
     * MbedTLS 2.7.19/2.28.10/3.6.5
+    * ncurses 6.6
+    * ncursesw 6.6
     * openjp2 2.5.4
     * pcre2 10.47
 
