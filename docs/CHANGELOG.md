@@ -123,7 +123,7 @@ Latest changes
     * file 5.46
     * GNU Make 4.2.1/4.4.1
     * hostapd_cli 2.7/2.10/2.11
-    * ImageMagick 7.1.0-62/7.1.2-9
+    * ImageMagick 7.1.0-62/7.1.2-12
     * Info-ZIP 3.0
     * iPerf3 3.3/3.20
     * ldd 0.1/1.0.56
