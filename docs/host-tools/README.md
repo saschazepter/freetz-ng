@@ -86,7 +86,7 @@ Index: [A](#a) - [B](#b) - [C](#c) - [D](#d) - [E](#e) - [F](#f) - [G](#g) - [H]
 
   * **[ncftp 3.3.0](ncftp-host.md)<a id='ncftp-host'></a>**<br>
 
-  * **[ncurses 6.5-20250419](ncurses-host.md)<a id='ncurses-host'></a>**<br>
+  * **[ncurses 6.6](ncurses-host.md)<a id='ncurses-host'></a>**<br>
 
   * **[netkit-ftp 0.17-35](netkit-ftp-host.md)<a id='netkit-ftp-host'></a>**<br>
 
