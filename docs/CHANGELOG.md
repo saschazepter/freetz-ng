@@ -76,6 +76,7 @@ Latest changes
     * config a2287c3
     * cmake 4.2.1
     * dos2unix 7.5.3
+    * fakeroot 1.37.2
     * file 5.46
     * gperf 3.3
     * kconfig 6.18
