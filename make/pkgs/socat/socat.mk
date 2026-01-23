@@ -23,6 +23,7 @@ $(PKG)_CONFIGURE_OPTIONS += --with-ssl="$(TARGET_TOOLCHAIN_STAGING_DIR)/usr"
 $(PKG)_CONFIGURE_OPTIONS += --enable-ssl
 $(PKG)_CONFIGURE_OPTIONS += --disable-libwrap
 $(PKG)_CONFIGURE_OPTIONS += --disable-readline
+$(PKG)_CONFIGURE_OPTIONS += $(if $(FREETZ_SEPARATE_AVM_UCLIBC),,--disable-vsock)
 
 $(PKG)_CONFIGURE_OPTIONS += sc_cv_sys_crdly_shift=9
 $(PKG)_CONFIGURE_OPTIONS += sc_cv_sys_tabdly_shift=11
