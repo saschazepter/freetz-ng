@@ -2,8 +2,10 @@
 
   * __[2026-01-24](#2026-01-24)__<a id='2026-01-24'></a><br>
     Kurzer Überblick über den aktuellen Stand von Freetz-NG:<br>
-     - FritzOS 8.2 funktioniert soweit, es sind aber noch nicht alle Remove-Patches getestet
-     - Die neue Architektur "armeb" für Docsis 63xx Fritzboxen wurde hinzugefügt, bootet aber aus unbekanntem grund noch nicht auf Hardware
+     - FritzOS 8.2 funktioniert soweit, es sind aber noch nicht alle Remove-Patches getestet (die die ich selbst nicht verwende).
+     - Es gibt momentan recht viel Pull-Requests für die teilweise noch einiges an Nacharbeit nötig ist. Dazu habe ich wenig bis keine Zeit.
+     - Die neue Architektur "armeb" für Cable 63xx Fritzboxen wurde hinzugefügt, bootet aber aus unbekanntem Grund noch nicht auf Hardware.
+       Bei diesen alten Fritzboxen wird die uClibc von AVM noch wegen kleinem Flashspeicher von Freetz ersetzt.
      - Die neue Architektur "aarch64" für momentan nur 5690xgs wurde hinzugefügt, aber mangels Hardware nicht getestet und es gibt noch keine Sourcen von AVM.
 
   * __[2025-11-22](#2025-11-22)__<a id='2025-11-22'></a><br>
