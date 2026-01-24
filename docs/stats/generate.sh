@@ -48,9 +48,9 @@ get_fw() {
 get_hr() {
 #	file="config/.img/separate/*.in"
 	(
-		table_head "HWR" "Name"
+		table_head "Name" "HWR"
 		"$PARENT/tools/layoutGens.sh" "" | grep -v '^#' | sort -n | while read -r line; do
-			echo "$line" | sed -rn 's/(.*) - (.*)/@ \2 @ \1 @/p'
+			echo "$line" | sed -rn 's/(.*) - (.*)/@ \1 @ \2 @/p'
 			echo >> "$TMPFILE.hr.head"
 		done
 	) > "$TMPFILE.hr.body"
