@@ -45,6 +45,17 @@ get_fw() {
 	) > "$TMPFILE.fw.body"
 }
 
+get_hr() {
+#	file="config/.img/separate/*.in"
+	(
+		table_head "HWR" "Name"
+		"$PARENT/tools/layoutGens.sh" "" | grep -v '^#' | sort -n | while read -r line; do
+			echo "$line" | sed -rn 's/(.*) - (.*)/@ \2 @ \1 @/p'
+			echo >> "$TMPFILE.hr.head"
+		done
+	) > "$TMPFILE.hr.body"
+}
+
 get_hw() {
 	area='Hardware type'
 	file="config/ui/firmware.in"
@@ -153,6 +164,12 @@ main() {
 	spoiler_head "$TMPFILE.fw.head" "verschiedene FRITZ!OS"
 	spoiler_body "$TMPFILE.fw.body"
 	[ "$DEBUG_DEL" ] && rm -f "$TMPFILE.fw."*
+
+	echo "hwrev" >&2
+	[ "$DEBUG_GET" ] && get_hr
+	spoiler_head "$TMPFILE.hr.head" "verschiedene HWR"
+	spoiler_body "$TMPFILE.hr.body"
+	[ "$DEBUG_DEL" ] && rm -f "$TMPFILE.hr."*
 
 	echo "hardware" >&2
 	[ "$DEBUG_GET" ] && get_hw
