@@ -27,134 +27,134 @@
 
 <table>
 <caption style='background-color:gray'>&nbsp;</caption>
-<thead><tr><th style='width:450px'>HWR</th><th style='width:300px'>Name</th></tr></thead>
+<thead><tr><th style='width:450px'>Name</th><th style='width:300px'>HWR</th></tr></thead>
 <tbody>
-<tr><td>58</td><td>FRITZ!Box Fon</td></tr>
-<tr><td>60</td><td>FRITZ!Box SL WLAN</td></tr>
-<tr><td>61</td><td>FRITZ!Box Fon WLAN</td></tr>
-<tr><td>71</td><td>FRITZ!Box Fon Annex A</td></tr>
-<tr><td>72</td><td>FRITZ!Box Fon 5050</td></tr>
-<tr><td>73</td><td>FRITZ!Box Fon WLAN Annex A</td></tr>
-<tr><td>76</td><td>FRITZ!Box Fon WLAN 7050</td></tr>
-<tr><td>85</td><td>FRITZ!Box WLAN 3030</td></tr>
-<tr><td>93</td><td>Speedport W 501V</td></tr>
-<tr><td>94</td><td>FRITZ!Box Fon WLAN 7170</td></tr>
-<tr><td>95</td><td>FRITZ!Box Fon WLAN 7140</td></tr>
-<tr><td>106</td><td>FRITZ!Fon 7150</td></tr>
-<tr><td>107</td><td>FRITZ!Box Fon WLAN 7140 Annex A</td></tr>
-<tr><td>108</td><td>FRITZ!Box Fon WLAN 7141</td></tr>
-<tr><td>111</td><td>FRITZ!Box Fon 5140</td></tr>
-<tr><td>112</td><td>FRITZ!Box WLAN 3130</td></tr>
-<tr><td>116</td><td>FRITZ!Box Fon 5010 Annex A</td></tr>
-<tr><td>117</td><td>FRITZ!Box WLAN 3170</td></tr>
-<tr><td>118</td><td>FRITZ!Box WLAN 3131</td></tr>
-<tr><td>119</td><td>FRITZ!Box 2170</td></tr>
-<tr><td>122</td><td>FRITZ!Box Fon WLAN 7270 v2</td></tr>
-<tr><td>125</td><td>FRITZ!Box Fon 5124</td></tr>
-<tr><td>126</td><td>FRITZ!Box Fon 5124 Annex A</td></tr>
-<tr><td>127</td><td>FRITZ!Box Fon WLAN 7170 Annex A</td></tr>
-<tr><td>129</td><td>FRITZ!Box Fon WLAN 7113</td></tr>
-<tr><td>137</td><td>FRITZ!Box WLAN 3270</td></tr>
-<tr><td>139</td><td>FRITZ!WLAN Repeater N/G</td></tr>
-<tr><td>144</td><td>FRITZ!Box Fon WLAN 7240</td></tr>
-<tr><td>145</td><td>FRITZ!Box Fon WLAN 7270 v3</td></tr>
-<tr><td>146</td><td>FRITZ!Box Fon WLAN 7570 vDSL</td></tr>
-<tr><td>156</td><td>FRITZ!Box Fon WLAN 7390</td></tr>
-<tr><td>157</td><td>FRITZ!Box 6360 Cable</td></tr>
-<tr><td>159</td><td>FRITZ!Box Fon WLAN 7112</td></tr>
-<tr><td>162</td><td>FRITZ!Box Fon WLAN 7113 Annex A</td></tr>
-<tr><td>168</td><td>FRITZ!Box WLAN 3270 v3</td></tr>
-<tr><td>171</td><td>FRITZ!Box Fon WLAN 7340</td></tr>
-<tr><td>172</td><td>FRITZ!Box Fon WLAN 7320</td></tr>
-<tr><td>173</td><td>FRITZ!WLAN Repeater 300E</td></tr>
-<tr><td>175</td><td>FRITZ!Box WLAN 3370</td></tr>
-<tr><td>176</td><td>FRITZ!Box 6320 Cable</td></tr>
-<tr><td>177</td><td>FRITZ!Box 6840 LTE</td></tr>
-<tr><td>179</td><td>FRITZ!Box 7330</td></tr>
-<tr><td>180</td><td>FRITZ!Box 6810 LTE</td></tr>
-<tr><td>181</td><td>FRITZ!Box Fon WLAN 7360 SL</td></tr>
-<tr><td>182</td><td>FRITZ!Box 6320 v2 Cable</td></tr>
-<tr><td>183</td><td>FRITZ!Box Fon WLAN 7360</td></tr>
-<tr><td>185</td><td>FRITZ!Box 7490</td></tr>
-<tr><td>187</td><td>FRITZ!Box 6340 Cable</td></tr>
-<tr><td>188</td><td>FRITZ!Box 7330 SL</td></tr>
-<tr><td>189</td><td>FRITZ!Box 7312</td></tr>
-<tr><td>190</td><td>FRITZ!Powerline 546E</td></tr>
-<tr><td>191</td><td>FRITZ!Box 7369</td></tr>
-<tr><td>192</td><td>FRITZ!Box 7272</td></tr>
-<tr><td>193</td><td>FRITZ!Box 3390</td></tr>
-<tr><td>194</td><td>FRITZ!WLAN Repeater 310</td></tr>
-<tr><td>195</td><td>FRITZ!Box 6842 LTE</td></tr>
-<tr><td>196</td><td>FRITZ!Box Fon WLAN 7360</td></tr>
-<tr><td>197</td><td>FRITZ!Box WLAN 3270 v3 Edition Italia</td></tr>
-<tr><td>198</td><td>FRITZ!Box 3272</td></tr>
-<tr><td>200</td><td>FRITZ!WLAN Repeater 450E</td></tr>
-<tr><td>201</td><td>FRITZ!Powerline 540E</td></tr>
-<tr><td>203</td><td>FRITZ!Box 7362 SL</td></tr>
-<tr><td>205</td><td>FRITZ!WLAN Repeater DVB-C</td></tr>
-<tr><td>206</td><td>FRITZ!WLAN Repeater 1750E</td></tr>
-<tr><td>209</td><td>FRITZ!Box 7412</td></tr>
-<tr><td>212</td><td>FRITZ!Box 3490</td></tr>
-<tr><td>213</td><td>FRITZ!Box 6490 Cable</td></tr>
-<tr><td>214</td><td>FRITZ!Box 6820 LTE</td></tr>
-<tr><td>215</td><td>FRITZ!WLAN Repeater 310</td></tr>
-<tr><td>216</td><td>FRITZ!WLAN Repeater 1160</td></tr>
-<tr><td>218</td><td>FRITZ!Box 7430</td></tr>
-<tr><td>219</td><td>FRITZ!Box 4020</td></tr>
-<tr><td>220</td><td>FRITZ!Box 6590 Cable</td></tr>
-<tr><td>221</td><td>FRITZ!Box 7560</td></tr>
-<tr><td>222</td><td>FRITZ!Powerline 1240E</td></tr>
-<tr><td>223</td><td>FRITZ!Box 5490</td></tr>
-<tr><td>224</td><td>FRITZ!Box 7581</td></tr>
-<tr><td>225</td><td>FRITZ!Box 7580</td></tr>
-<tr><td>226</td><td>FRITZ!Box 7590</td></tr>
-<tr><td>227</td><td>FRITZ!Box 4040</td></tr>
-<tr><td>228</td><td>FRITZ!Box 7582</td></tr>
-<tr><td>229</td><td>FRITZ!Powerline 1260E</td></tr>
-<tr><td>231</td><td>FRITZ!Box 6430 Cable</td></tr>
-<tr><td>233</td><td>FRITZ!Box 6591 Cable</td></tr>
-<tr><td>234</td><td>FRITZ!Box 6890 LTE</td></tr>
-<tr><td>236</td><td>FRITZ!Box 7530</td></tr>
-<tr><td>239</td><td>FRITZ!Box 7583</td></tr>
-<tr><td>240</td><td>FRITZ!Repeater 600</td></tr>
-<tr><td>241</td><td>FRITZ!Repeater 2400</td></tr>
-<tr><td>243</td><td>FRITZ!Box 5491</td></tr>
-<tr><td>244</td><td>FRITZ!Repeater 1200</td></tr>
-<tr><td>246</td><td>FRITZ!Repeater 3000</td></tr>
-<tr><td>247</td><td>FRITZ!Box 7520</td></tr>
-<tr><td>249</td><td>FRITZ!Powerline 1260</td></tr>
-<tr><td>252</td><td>FRITZ!Box 6660 Cable</td></tr>
-<tr><td>253</td><td>FRITZ!Repeater 6000</td></tr>
-<tr><td>254</td><td>FRITZ!Box 6820v3 LTE</td></tr>
-<tr><td>256</td><td>FRITZ!Box 7530 AX</td></tr>
-<tr><td>257</td><td>FRITZ!Box 5530 Fiber</td></tr>
-<tr><td>258</td><td>FRITZ!Box 6850 5G</td></tr>
-<tr><td>259</td><td>FRITZ!Box 7590 AX</td></tr>
-<tr><td>260</td><td>FRITZ!Box 7583 VDSL</td></tr>
-<tr><td>261</td><td>FRITZ!Box 4060</td></tr>
-<tr><td>262</td><td>FRITZ!Box 6850 LTE</td></tr>
-<tr><td>263</td><td>FRITZ!Repeater 600</td></tr>
-<tr><td>265</td><td>FRITZ!Smart Gateway</td></tr>
-<tr><td>267</td><td>FRITZ!Box 6690 Cable</td></tr>
-<tr><td>268</td><td>FRITZ!Repeater 1200 AX</td></tr>
-<tr><td>270</td><td>FRITZ!Repeater 3000 AX</td></tr>
-<tr><td>271</td><td>FRITZ!Box 7510</td></tr>
-<tr><td>272</td><td>FRITZ!Box 5590 Fiber</td></tr>
-<tr><td>275</td><td>FRITZ!Powerline 1240 AX</td></tr>
-<tr><td>276</td><td>FRITZ!Box 7520</td></tr>
-<tr><td>277</td><td>FRITZ!Box 6860 5G</td></tr>
-<tr><td>278</td><td>FRITZ!Box 7530 AX</td></tr>
-<tr><td>279</td><td>FRITZ!Box 5690 Pro</td></tr>
-<tr><td>284</td><td>FRITZ!Box 6670 Cable</td></tr>
-<tr><td>285</td><td>FRITZ!Box 7690</td></tr>
-<tr><td>286</td><td>FRITZ!Box 7682</td></tr>
-<tr><td>287</td><td>FRITZ!Box 4050</td></tr>
-<tr><td>290</td><td>FRITZ!Repeater 1700</td></tr>
-<tr><td>291</td><td>FRITZ!Box 4690</td></tr>
-<tr><td>295</td><td>FRITZ!Box 5690 XGS</td></tr>
-<tr><td>296</td><td>FRITZ!Repeater 1200 AX v2</td></tr>
-<tr><td>298</td><td>FRITZ!Box 5690</td></tr>
-<tr><td>301</td><td>FRITZ!Repeater 2700</td></tr>
+<tr><td>FRITZ!Box Fon</td><td>58</td></tr>
+<tr><td>FRITZ!Box SL WLAN</td><td>60</td></tr>
+<tr><td>FRITZ!Box Fon WLAN</td><td>61</td></tr>
+<tr><td>FRITZ!Box Fon Annex A</td><td>71</td></tr>
+<tr><td>FRITZ!Box Fon 5050</td><td>72</td></tr>
+<tr><td>FRITZ!Box Fon WLAN Annex A</td><td>73</td></tr>
+<tr><td>FRITZ!Box Fon WLAN 7050</td><td>76</td></tr>
+<tr><td>FRITZ!Box WLAN 3030</td><td>85</td></tr>
+<tr><td>Speedport W 501V</td><td>93</td></tr>
+<tr><td>FRITZ!Box Fon WLAN 7170</td><td>94</td></tr>
+<tr><td>FRITZ!Box Fon WLAN 7140</td><td>95</td></tr>
+<tr><td>FRITZ!Fon 7150</td><td>106</td></tr>
+<tr><td>FRITZ!Box Fon WLAN 7140 Annex A</td><td>107</td></tr>
+<tr><td>FRITZ!Box Fon WLAN 7141</td><td>108</td></tr>
+<tr><td>FRITZ!Box Fon 5140</td><td>111</td></tr>
+<tr><td>FRITZ!Box WLAN 3130</td><td>112</td></tr>
+<tr><td>FRITZ!Box Fon 5010 Annex A</td><td>116</td></tr>
+<tr><td>FRITZ!Box WLAN 3170</td><td>117</td></tr>
+<tr><td>FRITZ!Box WLAN 3131</td><td>118</td></tr>
+<tr><td>FRITZ!Box 2170</td><td>119</td></tr>
+<tr><td>FRITZ!Box Fon WLAN 7270 v2</td><td>122</td></tr>
+<tr><td>FRITZ!Box Fon 5124</td><td>125</td></tr>
+<tr><td>FRITZ!Box Fon 5124 Annex A</td><td>126</td></tr>
+<tr><td>FRITZ!Box Fon WLAN 7170 Annex A</td><td>127</td></tr>
+<tr><td>FRITZ!Box Fon WLAN 7113</td><td>129</td></tr>
+<tr><td>FRITZ!Box WLAN 3270</td><td>137</td></tr>
+<tr><td>FRITZ!WLAN Repeater N/G</td><td>139</td></tr>
+<tr><td>FRITZ!Box Fon WLAN 7240</td><td>144</td></tr>
+<tr><td>FRITZ!Box Fon WLAN 7270 v3</td><td>145</td></tr>
+<tr><td>FRITZ!Box Fon WLAN 7570 vDSL</td><td>146</td></tr>
+<tr><td>FRITZ!Box Fon WLAN 7390</td><td>156</td></tr>
+<tr><td>FRITZ!Box 6360 Cable</td><td>157</td></tr>
+<tr><td>FRITZ!Box Fon WLAN 7112</td><td>159</td></tr>
+<tr><td>FRITZ!Box Fon WLAN 7113 Annex A</td><td>162</td></tr>
+<tr><td>FRITZ!Box WLAN 3270 v3</td><td>168</td></tr>
+<tr><td>FRITZ!Box Fon WLAN 7340</td><td>171</td></tr>
+<tr><td>FRITZ!Box Fon WLAN 7320</td><td>172</td></tr>
+<tr><td>FRITZ!WLAN Repeater 300E</td><td>173</td></tr>
+<tr><td>FRITZ!Box WLAN 3370</td><td>175</td></tr>
+<tr><td>FRITZ!Box 6320 Cable</td><td>176</td></tr>
+<tr><td>FRITZ!Box 6840 LTE</td><td>177</td></tr>
+<tr><td>FRITZ!Box 7330</td><td>179</td></tr>
+<tr><td>FRITZ!Box 6810 LTE</td><td>180</td></tr>
+<tr><td>FRITZ!Box Fon WLAN 7360 SL</td><td>181</td></tr>
+<tr><td>FRITZ!Box 6320 v2 Cable</td><td>182</td></tr>
+<tr><td>FRITZ!Box Fon WLAN 7360</td><td>183</td></tr>
+<tr><td>FRITZ!Box 7490</td><td>185</td></tr>
+<tr><td>FRITZ!Box 6340 Cable</td><td>187</td></tr>
+<tr><td>FRITZ!Box 7330 SL</td><td>188</td></tr>
+<tr><td>FRITZ!Box 7312</td><td>189</td></tr>
+<tr><td>FRITZ!Powerline 546E</td><td>190</td></tr>
+<tr><td>FRITZ!Box 7369</td><td>191</td></tr>
+<tr><td>FRITZ!Box 7272</td><td>192</td></tr>
+<tr><td>FRITZ!Box 3390</td><td>193</td></tr>
+<tr><td>FRITZ!WLAN Repeater 310</td><td>194</td></tr>
+<tr><td>FRITZ!Box 6842 LTE</td><td>195</td></tr>
+<tr><td>FRITZ!Box Fon WLAN 7360</td><td>196</td></tr>
+<tr><td>FRITZ!Box WLAN 3270 v3 Edition Italia</td><td>197</td></tr>
+<tr><td>FRITZ!Box 3272</td><td>198</td></tr>
+<tr><td>FRITZ!WLAN Repeater 450E</td><td>200</td></tr>
+<tr><td>FRITZ!Powerline 540E</td><td>201</td></tr>
+<tr><td>FRITZ!Box 7362 SL</td><td>203</td></tr>
+<tr><td>FRITZ!WLAN Repeater DVB-C</td><td>205</td></tr>
+<tr><td>FRITZ!WLAN Repeater 1750E</td><td>206</td></tr>
+<tr><td>FRITZ!Box 7412</td><td>209</td></tr>
+<tr><td>FRITZ!Box 3490</td><td>212</td></tr>
+<tr><td>FRITZ!Box 6490 Cable</td><td>213</td></tr>
+<tr><td>FRITZ!Box 6820 LTE</td><td>214</td></tr>
+<tr><td>FRITZ!WLAN Repeater 310</td><td>215</td></tr>
+<tr><td>FRITZ!WLAN Repeater 1160</td><td>216</td></tr>
+<tr><td>FRITZ!Box 7430</td><td>218</td></tr>
+<tr><td>FRITZ!Box 4020</td><td>219</td></tr>
+<tr><td>FRITZ!Box 6590 Cable</td><td>220</td></tr>
+<tr><td>FRITZ!Box 7560</td><td>221</td></tr>
+<tr><td>FRITZ!Powerline 1240E</td><td>222</td></tr>
+<tr><td>FRITZ!Box 5490</td><td>223</td></tr>
+<tr><td>FRITZ!Box 7581</td><td>224</td></tr>
+<tr><td>FRITZ!Box 7580</td><td>225</td></tr>
+<tr><td>FRITZ!Box 7590</td><td>226</td></tr>
+<tr><td>FRITZ!Box 4040</td><td>227</td></tr>
+<tr><td>FRITZ!Box 7582</td><td>228</td></tr>
+<tr><td>FRITZ!Powerline 1260E</td><td>229</td></tr>
+<tr><td>FRITZ!Box 6430 Cable</td><td>231</td></tr>
+<tr><td>FRITZ!Box 6591 Cable</td><td>233</td></tr>
+<tr><td>FRITZ!Box 6890 LTE</td><td>234</td></tr>
+<tr><td>FRITZ!Box 7530</td><td>236</td></tr>
+<tr><td>FRITZ!Box 7583</td><td>239</td></tr>
+<tr><td>FRITZ!Repeater 600</td><td>240</td></tr>
+<tr><td>FRITZ!Repeater 2400</td><td>241</td></tr>
+<tr><td>FRITZ!Box 5491</td><td>243</td></tr>
+<tr><td>FRITZ!Repeater 1200</td><td>244</td></tr>
+<tr><td>FRITZ!Repeater 3000</td><td>246</td></tr>
+<tr><td>FRITZ!Box 7520</td><td>247</td></tr>
+<tr><td>FRITZ!Powerline 1260</td><td>249</td></tr>
+<tr><td>FRITZ!Box 6660 Cable</td><td>252</td></tr>
+<tr><td>FRITZ!Repeater 6000</td><td>253</td></tr>
+<tr><td>FRITZ!Box 6820v3 LTE</td><td>254</td></tr>
+<tr><td>FRITZ!Box 7530 AX</td><td>256</td></tr>
+<tr><td>FRITZ!Box 5530 Fiber</td><td>257</td></tr>
+<tr><td>FRITZ!Box 6850 5G</td><td>258</td></tr>
+<tr><td>FRITZ!Box 7590 AX</td><td>259</td></tr>
+<tr><td>FRITZ!Box 7583 VDSL</td><td>260</td></tr>
+<tr><td>FRITZ!Box 4060</td><td>261</td></tr>
+<tr><td>FRITZ!Box 6850 LTE</td><td>262</td></tr>
+<tr><td>FRITZ!Repeater 600</td><td>263</td></tr>
+<tr><td>FRITZ!Smart Gateway</td><td>265</td></tr>
+<tr><td>FRITZ!Box 6690 Cable</td><td>267</td></tr>
+<tr><td>FRITZ!Repeater 1200 AX</td><td>268</td></tr>
+<tr><td>FRITZ!Repeater 3000 AX</td><td>270</td></tr>
+<tr><td>FRITZ!Box 7510</td><td>271</td></tr>
+<tr><td>FRITZ!Box 5590 Fiber</td><td>272</td></tr>
+<tr><td>FRITZ!Powerline 1240 AX</td><td>275</td></tr>
+<tr><td>FRITZ!Box 7520</td><td>276</td></tr>
+<tr><td>FRITZ!Box 6860 5G</td><td>277</td></tr>
+<tr><td>FRITZ!Box 7530 AX</td><td>278</td></tr>
+<tr><td>FRITZ!Box 5690 Pro</td><td>279</td></tr>
+<tr><td>FRITZ!Box 6670 Cable</td><td>284</td></tr>
+<tr><td>FRITZ!Box 7690</td><td>285</td></tr>
+<tr><td>FRITZ!Box 7682</td><td>286</td></tr>
+<tr><td>FRITZ!Box 4050</td><td>287</td></tr>
+<tr><td>FRITZ!Repeater 1700</td><td>290</td></tr>
+<tr><td>FRITZ!Box 4690</td><td>291</td></tr>
+<tr><td>FRITZ!Box 5690 XGS</td><td>295</td></tr>
+<tr><td>FRITZ!Repeater 1200 AX v2</td><td>296</td></tr>
+<tr><td>FRITZ!Box 5690</td><td>298</td></tr>
+<tr><td>FRITZ!Repeater 2700</td><td>301</td></tr>
 </tbody></table>
 </details>
 
