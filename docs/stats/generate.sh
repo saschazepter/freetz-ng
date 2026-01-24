@@ -4,7 +4,9 @@ SCRIPT="$(readlink -f $0)"
 PARENT="$(dirname $(dirname ${SCRIPT%/*}))"
 OUTFILE="$PARENT/docs/stats/README.md"
 TMPFILE="$PARENT/.stats"
-rm -f "$TMPFILE".??.*
+DEBUG_GET='y'
+DEBUG_DEL='y'
+[ "$DEBUG_DEL" ] && rm -f "$TMPFILE".??.*
 
 
 table_head() {
@@ -147,34 +149,34 @@ main() {
 	echo
 
 	echo "firmware" >&2
-	get_fw
+	[ "$DEBUG_GET" ] && get_fw
 	spoiler_head "$TMPFILE.fw.head" "verschiedene FRITZ!OS"
 	spoiler_body "$TMPFILE.fw.body"
-	rm -f "$TMPFILE.fw."*
+	[ "$DEBUG_DEL" ] && rm -f "$TMPFILE.fw."*
 
 	echo "hardware" >&2
-	get_hw
+	[ "$DEBUG_GET" ] && get_hw
 	spoiler_head "$TMPFILE.hw.head" "verschiedene Geräte"
 	spoiler_body "$TMPFILE.hw.body"
-	rm -f "$TMPFILE.hw."*
+	[ "$DEBUG_DEL" ] && rm -f "$TMPFILE.hw."*
 
 	echo "image" >&2
-	get_dl
+	[ "$DEBUG_GET" ] && get_dl
 	spoiler_head "$TMPFILE.dl.head" "verschiedene Images"
 	spoiler_body "$TMPFILE.dl.body"
-	rm -f "$TMPFILE.dl."*
+	[ "$DEBUG_DEL" ] && rm -f "$TMPFILE.dl."*
 
 	echo "layout" >&2
-	get_lg
+	[ "$DEBUG_GET" ] && get_lg
 	spoiler_head "$TMPFILE.lg.head" "verschiedene Layouts"
 	spoiler_body "$TMPFILE.lg.body"
-	rm -f "$TMPFILE.lg."*
+	[ "$DEBUG_DEL" ] && rm -f "$TMPFILE.lg."*
 
 	echo "toolchain" >&2
-	get_tc
+	[ "$DEBUG_GET" ] && get_tc
 	spoiler_head "$TMPFILE.tc.head" "verschiedene Toolchains"
 	spoiler_body "$TMPFILE.tc.body"
-	rm -f "$TMPFILE.tc."*
+	[ "$DEBUG_DEL" ] && rm -f "$TMPFILE.tc."*
 
 }
 
