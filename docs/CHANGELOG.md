@@ -131,6 +131,7 @@ Latest changes
     * iPerf3 3.3/3.20
     * ldd 0.1/1.0.56
     * MTR 0.80/0.96
+    * Net-SNMP 5.9.5.2
     * Nmap 4.76/5.51/7.98
     * OpenSSH 9.3p2/10.2p1
     * OpenVPN 2.4.12/2.5.11/2.6.17
