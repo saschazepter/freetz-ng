@@ -76,7 +76,7 @@ Latest changes
     * automake 1.18.1
     * ca-bundle 2025-12-02
     * config a2287c3
-    * cmake 4.2.2
+    * cmake 4.2.3
     * dos2unix 7.5.3
     * fakeroot 1.37.2
     * file 5.46
