@@ -85,6 +85,7 @@ Latest changes
     * meson 1.10.1
     * ncurses 6.6
     * ninja 1.13.2
+    * openssl 3.5.5
     * patchelf 0.14.5/0.18.0-b49de1b33
     * patchelf-target 0.14.5/0.15.0
     * pseudo 1.9.2
@@ -136,6 +137,7 @@ Latest changes
     * Net-SNMP 5.9.5.2
     * Nmap 4.76/5.51/7.98
     * OpenSSH 9.3p2/10.2p1
+    * OpenSSL 0.9.8zh/1.0.2u/1.1.1w/3.0.19/3.5.5
     * OpenVPN 2.4.12/2.5.11/2.6.17
     * PatchELF 0.18.0
     * Privoxy 4.1.0
