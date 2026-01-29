@@ -150,7 +150,7 @@ Latest changes
     * Stunnel 5.76
     * tcpdump 4.1.1/4.99.6
     * tmux 3.6a
-    * Tor 0.4.8.21
+    * Tor 0.4.8.22
     * Transmission 3.00/4.1.0
     * Unbound 1.24.2
     * UnRAR 6.1.7/7.2.1
