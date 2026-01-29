@@ -495,6 +495,7 @@ config FREETZ_DL_SOURCE
 	default "FRITZ.Box_5590_Fiber-08.02.image"                                                    if FREETZ_TYPE_5590                              && FREETZ_TYPE_FIRMWARE_08_0X
 	#
 	default "FRITZ.Box_5690-08.04.image"                                                          if FREETZ_TYPE_5690_NIX                          && FREETZ_TYPE_FIRMWARE_08_0X
+	default "FRITZ.Box_5690-08.20.image"                                                          if FREETZ_TYPE_5690_NIX                          && FREETZ_TYPE_FIRMWARE_08_2X
 	#
 	default "FRITZ.Box_5690_Pro-07.62.image"                                                      if FREETZ_TYPE_5690_PRO                          && FREETZ_TYPE_FIRMWARE_07_5X
 	default "FRITZ.Box_5690_Pro-08.03.image"                                                      if FREETZ_TYPE_5690_PRO                          && FREETZ_TYPE_FIRMWARE_08_0X
