@@ -51,10 +51,10 @@ ifeq ($(strip $(FREETZ_PACKAGE_TRANSMISSION_WITH_FINISHDIR)),y)
 $(PKG)_CONDITIONAL_PATCHES+=$(if $(FREETZ_PACKAGE_TRANSMISSION_VERSION_ABANDON),abandon,current)/finishdir
 endif
 
-$(PKG)_PATCH_POST_CMDS += rmdir third-party/miniupnpc; ln -s miniupnp/miniupnpc third-party/miniupnpc;
-
 ifeq ($(strip $(FREETZ_PACKAGE_TRANSMISSION_VERSION_ABANDON)),y)
 ## OLD v3
+
+$(PKG)_PATCH_POST_CMDS += rmdir third-party/miniupnpc; ln -s miniupnp/miniupnpc third-party/miniupnpc;
 
 $(PKG)_CONFIGURE_PRE_CMDS += $(call PKG_PREVENT_RPATH_HARDCODING,./configure)
 # remove some optimization/debug/warning flags
