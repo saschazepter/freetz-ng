@@ -24,6 +24,7 @@ config FREETZ_TYPE_PREFIX
 	default "1240_AX"           if FREETZ_TYPE_1240_W6
 	default "1260E"             if FREETZ_TYPE_1260_V1
 	default "1260_v2"           if FREETZ_TYPE_1260_V2
+	default "1610"              if FREETZ_TYPE_1610
 	default "1700"              if FREETZ_TYPE_1700
 	default "1750E"             if FREETZ_TYPE_1750
 	default "DVB-C"             if FREETZ_TYPE_1759
