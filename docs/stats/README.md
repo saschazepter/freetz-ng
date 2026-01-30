@@ -23,7 +23,7 @@
 </tbody></table>
 </details>
 
-<details><summary>127 verschiedene HWR</summary>
+<details><summary>128 verschiedene HWR</summary>
 
 <table>
 <caption style='background-color:gray'>&nbsp;</caption>
@@ -155,6 +155,7 @@
 <tr><td>FRITZ!Repeater 1200 AX v2</td><td>296</td></tr>
 <tr><td>FRITZ!Box 5690</td><td>298</td></tr>
 <tr><td>FRITZ!Repeater 2700</td><td>301</td></tr>
+<tr><td>FRITZ!Repeater 1610 Outdoor</td><td>305</td></tr>
 <tr><td>FRITZ!Box 4630</td><td>307</td></tr>
 </tbody></table>
 </details>
@@ -874,7 +875,7 @@
 <tr><td>FRITZ!Box 6690 Cable</td><td>FREETZ_TYPE_6690</td></tr>
 </tbody></table>
 <table>
-<caption style='background-color:gray'>Gen5: fit-boot (23)</caption>
+<caption style='background-color:gray'>Gen5: fit-boot (24)</caption>
 <thead><tr><th style='width:450px'>Name</th><th style='width:300px'>Symbol</th></tr></thead>
 <tbody>
 <tr><td>FRITZ!Box 4050</td><td>FREETZ_TYPE_4050</td></tr>
@@ -895,6 +896,7 @@
 <tr><td>FRITZ!Powerline 1240 AX</td><td>FREETZ_TYPE_1240_W6</td></tr>
 <tr><td>FRITZ!Repeater 1200 AX</td><td>FREETZ_TYPE_1200_W6_V1</td></tr>
 <tr><td>FRITZ!Repeater 1200 AX v2</td><td>FREETZ_TYPE_1200_W6_V2</td></tr>
+<tr><td>FRITZ!Repeater 1610 Outdoor</td><td>FREETZ_TYPE_1610</td></tr>
 <tr><td>FRITZ!Repeater 1700</td><td>FREETZ_TYPE_1700</td></tr>
 <tr><td>FRITZ!Repeater 2700</td><td>FREETZ_TYPE_2700</td></tr>
 <tr><td>FRITZ!Repeater 3000 AX</td><td>FREETZ_TYPE_3000_W6</td></tr>
