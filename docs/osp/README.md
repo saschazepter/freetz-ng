@@ -520,6 +520,7 @@ Content: [FritzBox](#fritzbox) - [FritzDect](#fritzdect) - [FritzPowerline](#fri
     - [source-files-FRITZ.Box_7690-miami-07.62.tar.gz](https://osp.avm.de/fritzbox/fritzbox-7690/source-files-FRITZ.Box_7690-miami-07.62.tar.gz)
     - [source-files-FRITZ.Box_7690-miami-08.01.tar.gz](https://osp.avm.de/fritzbox/fritzbox-7690/source-files-FRITZ.Box_7690-miami-08.01.tar.gz)
     - [source-files-FRITZ.Box_7690-miami-08.02.tar.gz](https://osp.avm.de/fritzbox/fritzbox-7690/source-files-FRITZ.Box_7690-miami-08.02.tar.gz)
+    - [source-files-FRITZ.Box_7690-miami-08.20.tar.gz](https://osp.avm.de/fritzbox/fritzbox-7690/source-files-FRITZ.Box_7690-miami-08.20.tar.gz)
 
 ### FritzDect
   * fritzsmart-gateway/
