@@ -23,7 +23,7 @@
 </tbody></table>
 </details>
 
-<details><summary>126 verschiedene HWR</summary>
+<details><summary>127 verschiedene HWR</summary>
 
 <table>
 <caption style='background-color:gray'>&nbsp;</caption>
@@ -155,6 +155,7 @@
 <tr><td>FRITZ!Repeater 1200 AX v2</td><td>296</td></tr>
 <tr><td>FRITZ!Box 5690</td><td>298</td></tr>
 <tr><td>FRITZ!Repeater 2700</td><td>301</td></tr>
+<tr><td>FRITZ!Box 4630</td><td>307</td></tr>
 </tbody></table>
 </details>
 
@@ -871,11 +872,12 @@
 <tr><td>FRITZ!Box 6690 Cable</td><td>FREETZ_TYPE_6690</td></tr>
 </tbody></table>
 <table>
-<caption style='background-color:gray'>Gen5: fit-boot (22)</caption>
+<caption style='background-color:gray'>Gen5: fit-boot (23)</caption>
 <thead><tr><th style='width:450px'>Name</th><th style='width:300px'>Symbol</th></tr></thead>
 <tbody>
 <tr><td>FRITZ!Box 4050</td><td>FREETZ_TYPE_4050</td></tr>
 <tr><td>FRITZ!Box 4060</td><td>FREETZ_TYPE_4060</td></tr>
+<tr><td>FRITZ!Box 4630</td><td>FREETZ_TYPE_4630</td></tr>
 <tr><td>FRITZ!Box 4690</td><td>FREETZ_TYPE_4690</td></tr>
 <tr><td>FRITZ!Box 5530 Fiber</td><td>FREETZ_TYPE_5530</td></tr>
 <tr><td>FRITZ!Box 5590 Fiber</td><td>FREETZ_TYPE_5590</td></tr>
