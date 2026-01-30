@@ -115,6 +115,8 @@ Currently supported devices and firmwares
     - 261.07.30 rev95826 {ALL} [PSQ19P2NL4]
     - 261.07.59 rev113614 {ALL} [MOVE21NL2]
     - 261.08.02 rev118033 {ALL} [Smart24 P1 NL1]
+  * __Fritz!Box 4630__
+    - 307.08.21 rev128315 {ALL} [Smart24 P2]
   * __Fritz!Box 4690 (UNTESTED)__
     - 291.08.03 rev118786 {ALL} [Smart24 P1 FCS]
 
