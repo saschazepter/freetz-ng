@@ -20,8 +20,8 @@ Content: [FritzBox](#fritzbox) - [FritzPowerline](#fritzpowerline) - [FritzSmart
     - deutschland: [FRITZ.Box_4040-08.03.image](https://download.avm.de/fritzbox/fritzbox-4040/deutschland/fritz.os/FRITZ.Box_4040-08.03.image)
     - other: [FRITZ.Box_4040-08.03.image](https://download.avm.de/fritzbox/fritzbox-4040/other/fritz.os/FRITZ.Box_4040-08.03.image)
   * fritzbox-4050/
-    - deutschland: [FRITZ.Box_4050-08.02.image](https://download.avm.de/fritzbox/fritzbox-4050/deutschland/fritz.os/FRITZ.Box_4050-08.02.image)
-    - other: [FRITZ.Box_4050-08.02.image](https://download.avm.de/fritzbox/fritzbox-4050/other/fritz.os/FRITZ.Box_4050-08.02.image)
+    - deutschland: [FRITZ.Box_4050-08.21.image](https://download.avm.de/fritzbox/fritzbox-4050/deutschland/fritz.os/FRITZ.Box_4050-08.21.image)
+    - other: [FRITZ.Box_4050-08.21.image](https://download.avm.de/fritzbox/fritzbox-4050/other/fritz.os/FRITZ.Box_4050-08.21.image)
   * fritzbox-4060/
     - deutschland: [FRITZ.Box_4060-08.02.image](https://download.avm.de/fritzbox/fritzbox-4060/deutschland/fritz.os/FRITZ.Box_4060-08.02.image)
     - other: [FRITZ.Box_4060-08.02.image](https://download.avm.de/fritzbox/fritzbox-4060/other/fritz.os/FRITZ.Box_4060-08.02.image)
@@ -29,8 +29,8 @@ Content: [FritzBox](#fritzbox) - [FritzPowerline](#fritzpowerline) - [FritzSmart
     - deutschland: [FRITZ.Box_4630-08.21.image](https://download.avm.de/fritzbox/fritzbox-4630/deutschland/fritz.os/FRITZ.Box_4630-08.21.image)
     - other: [FRITZ.Box_4630-08.21.image](https://download.avm.de/fritzbox/fritzbox-4630/other/fritz.os/FRITZ.Box_4630-08.21.image)
   * fritzbox-4690/
-    - deutschland: [FRITZ.Box_4690-08.03.image](https://download.avm.de/fritzbox/fritzbox-4690/deutschland/fritz.os/FRITZ.Box_4690-08.03.image)
-    - other: [FRITZ.Box_4690-08.03.image](https://download.avm.de/fritzbox/fritzbox-4690/other/fritz.os/FRITZ.Box_4690-08.03.image)
+    - deutschland: [FRITZ.Box_4690-08.21.image](https://download.avm.de/fritzbox/fritzbox-4690/deutschland/fritz.os/FRITZ.Box_4690-08.21.image)
+    - other: [FRITZ.Box_4690-08.21.image](https://download.avm.de/fritzbox/fritzbox-4690/other/fritz.os/FRITZ.Box_4690-08.21.image)
   * fritzbox-5490/
     - deutschland: [FRITZ.Box_5490-07.31.image](https://download.avm.de/fritzbox/fritzbox-5490/deutschland/fritz.os/FRITZ.Box_5490-07.31.image)
     - other: [FRITZ.Box_5490-07.31.image](https://download.avm.de/fritzbox/fritzbox-5490/other/fritz.os/FRITZ.Box_5490-07.31.image)
