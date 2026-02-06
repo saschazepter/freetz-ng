@@ -165,6 +165,7 @@ Currently supported devices and firmwares
   * __Fritz!Box 5690 Pro__
     - 279.07.62 rev115017 {ALL} [FCS23]
     - 279.08.03 rev118508 {ALL} [Smart24 P1 FCS]
+    - 279.08.20 rev128342 {ALL} [Smart24 P2]
   * __Fritz!Box 5690 XGS (DEVELOPER)__
     - 295.08.20 rev128699 {ALL} [Smart24 P2]
 
