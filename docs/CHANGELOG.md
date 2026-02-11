@@ -81,7 +81,7 @@ Latest changes
     * fakeroot 1.37.2
     * file 5.46
     * gperf 3.3
-    * kconfig 6.18
+    * kconfig 6.19
     * meson 1.10.1
     * ncurses 6.6
     * ninja 1.13.2
