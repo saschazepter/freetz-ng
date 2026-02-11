@@ -520,6 +520,8 @@ Currently supported devices and firmwares
 
 ### Fritz!Box Fon WLAN (76xx)
 
+  * __Fritz!Box 7632 (UNTESTED)__
+    - 303.08.24 rev129095 {ALL} [Smart24 P2 NL1] (Inhaus)
   * __Fritz!Box 7682 (UNTESTED)__
     - 286.08.03 rev118255 {ALL} [Smart24 P1 FCS]
   * __Fritz!Box 7690__
