@@ -23,7 +23,7 @@
 </tbody></table>
 </details>
 
-<details><summary>128 verschiedene HWR</summary>
+<details><summary>129 verschiedene HWR</summary>
 
 <table>
 <caption style='background-color:gray'>&nbsp;</caption>
@@ -155,6 +155,7 @@
 <tr><td>FRITZ!Repeater 1200 AX v2</td><td>296</td></tr>
 <tr><td>FRITZ!Box 5690</td><td>298</td></tr>
 <tr><td>FRITZ!Repeater 2700</td><td>301</td></tr>
+<tr><td>FRITZ!Box 7632</td><td>303</td></tr>
 <tr><td>FRITZ!Repeater 1610 Outdoor</td><td>305</td></tr>
 <tr><td>FRITZ!Box 4630</td><td>307</td></tr>
 </tbody></table>
@@ -409,7 +410,7 @@
 <tr><td>FRITZ.Powerline_1260.249.07.29-Release.image</td><td>FREETZ_TYPE_1260_V2 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_07_2X</td></tr>
 <tr><td>FRITZ.Powerline_1260.249.07.58.image</td><td>FREETZ_TYPE_1260_V2 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_07_5X</td></tr>
 <tr><td>FRITZ.Powerline_1260.249.08.20.image</td><td>FREETZ_TYPE_1260_V2 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_2X</td></tr>
-<tr><td>FRITZ.Repeater_1610_Outdoor-08.10-127920-Inhaus.image</td><td>FREETZ_TYPE_1610 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_2X</td></tr>
+<tr><td>FRITZ.Repeater_1610_Outdoor-08.20.image</td><td>FREETZ_TYPE_1610 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_2X</td></tr>
 <tr><td>FRITZ.Repeater_1700-08.07.image</td><td>FREETZ_TYPE_1700 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_0X</td></tr>
 <tr><td>FRITZ.Box_WLAN_Repeater_1750E.134.06.32.image</td><td>(FREETZ_TYPE_1750 &vert;&vert;<br> FREETZ_TYPE_1759_1750) &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_06_2X</td></tr>
 <tr><td>FRITZ.Box_WLAN_Repeater_1750E.134.06.50.image</td><td>(FREETZ_TYPE_1750 &vert;&vert;<br> FREETZ_TYPE_1759_1750) &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_06_5X</td></tr>
@@ -880,7 +881,7 @@
 <tr><td>FRITZ!Box 6690 Cable</td><td>FREETZ_TYPE_6690</td></tr>
 </tbody></table>
 <table>
-<caption style='background-color:gray'>Gen5: fit-boot (24)</caption>
+<caption style='background-color:gray'>Gen5: fit-boot (25)</caption>
 <thead><tr><th style='width:450px'>Name</th><th style='width:300px'>Symbol</th></tr></thead>
 <tbody>
 <tr><td>FRITZ!Box 4050</td><td>FREETZ_TYPE_4050</td></tr>
@@ -896,6 +897,7 @@
 <tr><td>FRITZ!Box 7510</td><td>FREETZ_TYPE_7510</td></tr>
 <tr><td>FRITZ!Box 7530 AX</td><td>FREETZ_TYPE_7530_W6_V1</td></tr>
 <tr><td>FRITZ!Box 7530 AX</td><td>FREETZ_TYPE_7530_W6_V2</td></tr>
+<tr><td>FRITZ!Box 7632</td><td>FREETZ_TYPE_7632</td></tr>
 <tr><td>FRITZ!Box 7682</td><td>FREETZ_TYPE_7682</td></tr>
 <tr><td>FRITZ!Box 7690</td><td>FREETZ_TYPE_7690</td></tr>
 <tr><td>FRITZ!Powerline 1240 AX</td><td>FREETZ_TYPE_1240_W6</td></tr>
