@@ -138,6 +138,7 @@ Latest changes
     * iPerf3 3.3/3.20
     * ldd 0.1/1.0.56
     * MTR 0.80/0.96
+    * Nano 8.7.1
     * Net-SNMP 5.9.5.2
     * Nmap 4.76/5.51/7.98
     * OpenSSH 9.3p2/10.2p1
