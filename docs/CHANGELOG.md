@@ -169,7 +169,7 @@ Latest changes
     * libdeflate 1.25
     * libpcap 1.1.1/1.10.6
     * libpng 1.6.55
-    * liburcu 0.15.4
+    * liburcu 0.15.6
     * libxml2 2.15.1
     * libyaml 0.2.5
     * MbedTLS 2.7.19/2.28.10/3.6.5
