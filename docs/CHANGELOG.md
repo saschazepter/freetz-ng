@@ -159,7 +159,7 @@ Latest changes
     * Transmission 3.00/4.1.0
     * Unbound 1.24.2
     * UnRAR 6.1.7/7.2.1
-    * Vim 9.2.0
+    * Vim 9.2.0000
     * Whois 5.6.5
 
   - Libraries:
