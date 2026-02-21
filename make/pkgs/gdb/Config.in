@@ -1,11 +1,11 @@
 config FREETZ_PACKAGE_GDB
-	bool "gdb GNU debugger 6.8/7.9.1/17.1 (binary only)"
+	bool "gdb 6.8/7.9.1/17.1 (binary only)"
 
 if FREETZ_PACKAGE_GDB
 
 	choice
 		prompt "version"
-		default FREETZ_GDB_VERSION_7_9
+		default FREETZ_GDB_VERSION_17_1
 		help
 			Select the version of gdb you wish to use.
 

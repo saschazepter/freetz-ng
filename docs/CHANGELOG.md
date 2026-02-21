@@ -134,6 +134,7 @@ Latest changes
     * Dnsmasq 2.80/2.92
     * Dropbear 2025.89
     * file 5.46
+    * gdb 6.8/7.9.1/17.1
     * GNU Make 4.2.1/4.4.1
     * hostapd_cli 2.7/2.10/2.11
     * ImageMagick 7.1.0-62/7.1.2-12
