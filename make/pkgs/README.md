@@ -1119,7 +1119,7 @@ Index: [A](#a) - [B](#b) - [C](#c) - [D](#d) - [E](#e) - [F](#f) - [G](#g) - [H]
   * **[file 5.46 (binary only)](../../docs/make/file.md)<a id='file'></a>**<br>
     file - determine file type The file command is used to identify a particular file according to the type of data contained by the file. File can identify many different file types, including ELF binaries, system libraries, RPM packages, and many different graphics formats. This utility is essential for analyzing binaries and file formats on the target system, especially useful for debugging cross-compilation issues.
 
-  * **<u>gdb GNU debugger 6.8/7.9.1 (binary only) - DEPRECATED</u><a id='gdb'></a>**<br>
+  * **<u>gdb GNU debugger 6.8/7.9.1/17.1 (binary only)</u><a id='gdb'></a>**<br>
     Select the version of gdb you wish to use.
 
   * **[inotify-tools 3.14 (binary only) - DEPRECATED](../../docs/make/inotify-tools.md)<a id='inotify-tools'></a>**<br>
