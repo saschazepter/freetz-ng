@@ -22,6 +22,7 @@ for PKG_DIR in $(find -L $PKGDIR -mindepth 2 -maxdepth 2 -type f -name Config.in
 
 	# extract CATEGORY from the .mk file
 	CAT=$(sed -r -n -e 's,^[ \t]*\$\(PKG\)_CATEGORY[ \t]*:?=[ \t]*(.*),\1,p' ${PKG_DIR}/${PKG}.mk 2>/dev/null)
+	[ "${#CAT}" == "1" ] && CAT="$CATMARK$CAT"
 	if [ -z "$CATMARK" ]; then
 		[ -z "$CAT" ] && CAT=Packages
 	else
