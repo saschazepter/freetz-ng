@@ -17,9 +17,6 @@ NONHIDDEN="#"
 for PKG_DIR in $(find -L $PKGDIR -mindepth 2 -maxdepth 2 -type f -name Config.in -printf "%h\n" | sort); do
 	PKG="${PKG_DIR#$PKGDIR/}"
 
-	# ignore libs
-	[ "$PKG" == "libs" ] && continue
-
 	c=$((c+1))
 	[ "$((c%3))" == "0" ] && echo -n "."
 
