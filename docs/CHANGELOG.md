@@ -152,7 +152,7 @@ Latest changes
     * procps-ng 4.0.5
     * pyLoad 0.4.x
     * Python 3.14.2
-    * socat 1.8.1.0
+    * socat 1.8.1.1
     * sslh 2.2.4/2.3.0
     * strace 4.9/5.0/6.19
     * Stunnel 5.77
