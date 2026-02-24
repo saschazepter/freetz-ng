@@ -23,7 +23,7 @@
 </tbody></table>
 </details>
 
-<details><summary>129 verschiedene HWR</summary>
+<details><summary>130 verschiedene HWR</summary>
 
 <table>
 <caption style='background-color:gray'>&nbsp;</caption>
@@ -153,6 +153,7 @@
 <tr><td>FRITZ!Box 4690</td><td>291</td></tr>
 <tr><td>FRITZ!Box 5690 XGS</td><td>295</td></tr>
 <tr><td>FRITZ!Repeater 1200 AX v2</td><td>296</td></tr>
+<tr><td>FRITZ!Box 6850 4G</td><td>297</td></tr>
 <tr><td>FRITZ!Box 5690</td><td>298</td></tr>
 <tr><td>FRITZ!Repeater 2700</td><td>301</td></tr>
 <tr><td>FRITZ!Box 7632</td><td>303</td></tr>
@@ -161,7 +162,7 @@
 </tbody></table>
 </details>
 
-<details><summary>130 verschiedene Produkte</summary>
+<details><summary>131 verschiedene Produkte</summary>
 
 <table>
 <caption style='background-color:gray'>&nbsp;</caption>
@@ -285,6 +286,7 @@
 <tr><td>FRITZ!Box 4690</td><td>Fritz_Box_HW291</td></tr>
 <tr><td>FRITZ!Box 5690 XGS</td><td>Fritz_Box_HW295</td></tr>
 <tr><td>FRITZ!Repeater 1200 AX v2</td><td>Fritz_Box_HW296</td></tr>
+<tr><td>FRITZ!Box 6850 4G</td><td>Fritz_Box_HW297</td></tr>
 <tr><td>FRITZ!Box 5690</td><td>Fritz_Box_HW298</td></tr>
 <tr><td>FRITZ!Repeater 2700</td><td>Fritz_Box_HW301</td></tr>
 <tr><td>FRITZ!Box 7632</td><td>Fritz_Box_HW303</td></tr>
@@ -966,7 +968,7 @@
 <tr><td>Speedport W 501V</td><td>FREETZ_TYPE_W501V</td></tr>
 </tbody></table>
 <table>
-<caption style='background-color:gray'>Gen2: ram-boot (36)</caption>
+<caption style='background-color:gray'>Gen2: ram-boot (37)</caption>
 <thead><tr><th style='width:450px'>Name</th><th style='width:300px'>Symbol</th></tr></thead>
 <tbody>
 <tr><td>FRITZ!Box 3272</td><td>FREETZ_TYPE_3272</td></tr>
@@ -979,6 +981,7 @@
 <tr><td>FRITZ!Box 6820 LTE</td><td>FREETZ_TYPE_6820_V4</td></tr>
 <tr><td>FRITZ!Box 6820v3 LTE</td><td>FREETZ_TYPE_6820_V3</td></tr>
 <tr><td>FRITZ!Box 6840 LTE</td><td>FREETZ_TYPE_6840</td></tr>
+<tr><td>FRITZ!Box 6850 4G</td><td>FREETZ_TYPE_6850_4G_V2</td></tr>
 <tr><td>FRITZ!Box 6850 5G</td><td>FREETZ_TYPE_6850_5G</td></tr>
 <tr><td>FRITZ!Box 6850 LTE</td><td>FREETZ_TYPE_6850_4G</td></tr>
 <tr><td>FRITZ!Box 6850 LTE</td><td>FREETZ_TYPE_6850_4G_V1</td></tr>
