@@ -8,7 +8,7 @@ Wie kann ich Freetz-NG unterstützen?
    Im ```menuconfig``` und in [FIRMWARES](FIRMWARES.md) sind verschieden Geräte als ```UNTESTED``` markiert.<br>
    Mangels Hardware konnte auf diesen nicht ausprobiert werden ob Freetz-NG funktioniert.<br>
    Falls jemand so ein Gerät erfolgreich mit Freetz-NG betreibt, bitte Rückmeldung geben.<br>
-   Am besten gleich mit einem Screenshot von ```Box-Info```.<br>
+   Am besten gleich mit einem Screenshot von ```Box-Info``` und ```Flashspeicher```.<br>
  * __[Quellcode](#quellcode)__<a id='quellcode'></a><br>
    Um ein modifiziertes Image zu erstellen, ist von AVM der passende Quellcode notwendig.<br>
    Da AVM Software nutzt die zB unter der GPL steht, muss dieser Sourcecode herausgegeben<br>
