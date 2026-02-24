@@ -183,6 +183,8 @@ config FREETZ_DL_SITE
 	#
 	default "@AVM/fritzbox-6850-lte/{deutschland,other}/fritz.os,@AVM/6850LTE"                                         if FREETZ_TYPE_6850_4G_V1
 	#
+	default "@AVM/fritzbox-6850-4g/{deutschland,other}/fritz.os,@AVM/68504G"                                           if FREETZ_TYPE_6850_4G_V2
+	#
 	default "@AVM/fritzbox-6850-5g/{deutschland,other}/fritz.os,@AVM/68505G"                                           if FREETZ_TYPE_6850_5G
 	#
 	default "@AVM/fritzbox-6860-5g/{deutschland,other}/fritz.os,@AVM/68605G"                                           if FREETZ_TYPE_6860
@@ -596,6 +598,8 @@ config FREETZ_DL_SOURCE
 	default "FRITZ.Box_6850_LTE-07.59.image"                                                      if FREETZ_TYPE_6850_4G_V1                        && FREETZ_TYPE_FIRMWARE_07_5X
 	default "FRITZ.Box_6850_LTE-08.03.image"                                                      if FREETZ_TYPE_6850_4G_V1                        && FREETZ_TYPE_FIRMWARE_08_0X
 	default "FRITZ.Box_6850_LTE-08.20.image"                                                      if FREETZ_TYPE_6850_4G_V1                        && FREETZ_TYPE_FIRMWARE_08_2X
+	#
+	default "FRITZ.Box_6850_4G-08.20.image"                                                       if FREETZ_TYPE_6850_4G_V2                        && FREETZ_TYPE_FIRMWARE_08_2X
 	#
 	default "FRITZ.Box_6850_5G-07.30.image"                                                       if FREETZ_TYPE_6850_5G                           && FREETZ_TYPE_FIRMWARE_07_2X
 	default "FRITZ.Box_6850_5G-07.59.image"                                                       if FREETZ_TYPE_6850_5G                           && FREETZ_TYPE_FIRMWARE_07_5X
