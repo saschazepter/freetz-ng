@@ -94,6 +94,9 @@ Content: [FritzBox](#fritzbox) - [FritzPowerline](#fritzpowerline) - [FritzSmart
     - other: [FRITZ.Box_6840_LTE.en-de-es-it-fr-pl.105.06.88.image](https://download.avm.de/fritzbox/fritzbox-6840-lte/other/fritz.os/FRITZ.Box_6840_LTE.en-de-es-it-fr-pl.105.06.88.image)
   * fritzbox-6842-lte/
     - deutschland: [FRITZ.Box_6842_LTE.123.06.35.image](https://download.avm.de/fritzbox/fritzbox-6842-lte/deutschland/fritz.os/FRITZ.Box_6842_LTE.123.06.35.image)
+  * fritzbox-6850-4g/
+    - deutschland: [FRITZ.Box_6850_4G-08.20.image](https://download.avm.de/fritzbox/fritzbox-6850-4g/deutschland/fritz.os/FRITZ.Box_6850_4G-08.20.image)
+    - other: [FRITZ.Box_6850_4G-08.20.image](https://download.avm.de/fritzbox/fritzbox-6850-4g/other/fritz.os/FRITZ.Box_6850_4G-08.20.image)
   * fritzbox-6850-5g/
     - deutschland: [FRITZ.Box_6850_5G-08.20.image](https://download.avm.de/fritzbox/fritzbox-6850-5g/deutschland/fritz.os/FRITZ.Box_6850_5G-08.20.image)
     - other: [FRITZ.Box_6850_5G-08.20.image](https://download.avm.de/fritzbox/fritzbox-6850-5g/other/fritz.os/FRITZ.Box_6850_5G-08.20.image)
