@@ -300,7 +300,7 @@
 </tbody></table>
 </details>
 
-<details><summary>126 verschiedene Geräte</summary>
+<details><summary>127 verschiedene Geräte</summary>
 
 <table>
 <caption style='background-color:gray'>T-Com (2)</caption>
@@ -381,7 +381,7 @@
 <tr><td>6690</td><td>FREETZ_TYPE_6690</td></tr>
 </tbody></table>
 <table>
-<caption style='background-color:gray'>LTE (11)</caption>
+<caption style='background-color:gray'>LTE (12)</caption>
 <thead><tr><th style='width:450px'>Name</th><th style='width:300px'>Symbol</th></tr></thead>
 <tbody>
 <tr><td>6810</td><td>FREETZ_TYPE_6810</td></tr>
@@ -391,7 +391,8 @@
 <tr><td>6820 v4</td><td>FREETZ_TYPE_6820_V4</td></tr>
 <tr><td>6840</td><td>FREETZ_TYPE_6840</td></tr>
 <tr><td>6842</td><td>FREETZ_TYPE_6842</td></tr>
-<tr><td>6850 4G</td><td>FREETZ_TYPE_6850_4G_V1</td></tr>
+<tr><td>6850 LTE</td><td>FREETZ_TYPE_6850_4G_V1</td></tr>
+<tr><td>6850 4G</td><td>FREETZ_TYPE_6850_4G_V2</td></tr>
 <tr><td>6850 5G</td><td>FREETZ_TYPE_6850_5G</td></tr>
 <tr><td>6860 5G</td><td>FREETZ_TYPE_6860</td></tr>
 <tr><td>6890</td><td>FREETZ_TYPE_6890</td></tr>
@@ -490,7 +491,7 @@
 </tbody></table>
 </details>
 
-<details><summary>399 verschiedene Images</summary>
+<details><summary>400 verschiedene Images</summary>
 
 <table>
 <caption style='background-color:gray'>&nbsp;</caption>
@@ -710,6 +711,7 @@
 <tr><td>FRITZ.Box_6850_LTE-07.59.image</td><td>FREETZ_TYPE_6850_4G_V1 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_07_5X</td></tr>
 <tr><td>FRITZ.Box_6850_LTE-08.03.image</td><td>FREETZ_TYPE_6850_4G_V1 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_0X</td></tr>
 <tr><td>FRITZ.Box_6850_LTE-08.20.image</td><td>FREETZ_TYPE_6850_4G_V1 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_2X</td></tr>
+<tr><td>FRITZ.Box_6850_4G-08.20.image</td><td>FREETZ_TYPE_6850_4G_V2 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_2X</td></tr>
 <tr><td>FRITZ.Box_6850_5G-07.30.image</td><td>FREETZ_TYPE_6850_5G &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_07_2X</td></tr>
 <tr><td>FRITZ.Box_6850_5G-07.59.image</td><td>FREETZ_TYPE_6850_5G &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_07_5X</td></tr>
 <tr><td>FRITZ.Box_6850_5G-08.03.image</td><td>FREETZ_TYPE_6850_5G &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_0X</td></tr>
@@ -964,7 +966,7 @@
 <tr><td>Speedport W 501V</td><td>FREETZ_TYPE_W501V</td></tr>
 </tbody></table>
 <table>
-<caption style='background-color:gray'>Gen2: ram-boot (35)</caption>
+<caption style='background-color:gray'>Gen2: ram-boot (36)</caption>
 <thead><tr><th style='width:450px'>Name</th><th style='width:300px'>Symbol</th></tr></thead>
 <tbody>
 <tr><td>FRITZ!Box 3272</td><td>FREETZ_TYPE_3272</td></tr>
@@ -979,6 +981,7 @@
 <tr><td>FRITZ!Box 6840 LTE</td><td>FREETZ_TYPE_6840</td></tr>
 <tr><td>FRITZ!Box 6850 5G</td><td>FREETZ_TYPE_6850_5G</td></tr>
 <tr><td>FRITZ!Box 6850 LTE</td><td>FREETZ_TYPE_6850_4G</td></tr>
+<tr><td>FRITZ!Box 6850 LTE</td><td>FREETZ_TYPE_6850_4G_V1</td></tr>
 <tr><td>FRITZ!Box 6890 LTE</td><td>FREETZ_TYPE_6890</td></tr>
 <tr><td>FRITZ!Box 7272</td><td>FREETZ_TYPE_7272</td></tr>
 <tr><td>FRITZ!Box 7362 SL</td><td>FREETZ_TYPE_7362</td></tr>
