@@ -167,5 +167,8 @@ config FREETZ_AVM_PROP_UCLIBC_0_9_33
 config FREETZ_AVM_PROP_UCLIBC_XLOCALE
 	def_bool y
 
+config FREETZ_AVM_PROP_UCLIBC_NPTL
+	def_bool y
+
 endif
 
