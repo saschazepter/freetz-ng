@@ -1059,7 +1059,7 @@
 <thead><tr><th style='width:450px'>Target</th><th style='width:300px'>Kernel</th></tr></thead>
 <tbody>
 <tr><td>aarch64_gcc-13.4.0_uClibc-1.0.56-nptl_kernel-5.4</td><td>aarch64_gcc-10.5.0</td></tr>
-<tr><td>armeb_gcc-4.7.4_uClibc-0.9.32.1</td><td>armeb_gcc-4.7.4</td></tr>
+<tr><td>armeb_gcc-4.7.4_uClibc-0.9.32.1-nptl</td><td>armeb_gcc-4.7.4</td></tr>
 <tr><td>arm_gcc-13.4.0_uClibc-1.0.56-nptl_kernel-4.19</td><td>arm_gcc-10.5.0</td></tr>
 <tr><td>arm_gcc-13.4.0_uClibc-1.0.56-nptl_kernel-4.1</td><td>arm_gcc-5.5.0</td></tr>
 <tr><td>arm_gcc-13.4.0_uClibc-1.0.56-nptl_kernel-4.4</td><td>arm_gcc-5.5.0</td></tr>
@@ -1097,7 +1097,7 @@
 <thead><tr><th style='width:450px'>Name</th><th style='width:300px'>Symbole</th></tr></thead>
 <tbody>
 <tr><td>aarch64_gcc-13.4.0_uClibc-1.0.56-nptl_kernel-5.4</td><td>FREETZ_TARGET_ARCH_AARCH64 &amp;&amp;<br> FREETZ_TARGET_ARCH_LE &amp;&amp;<br> FREETZ_TARGET_GCC_13_4 &amp;&amp;<br> FREETZ_TARGET_UCLIBC_1_0_56 &amp;&amp;<br> FREETZ_KERNEL_VERSION_5_4</td></tr>
-<tr><td>armeb_gcc-4.7.4_uClibc-0.9.32.1</td><td>FREETZ_TARGET_ARCH_ARM &amp;&amp;<br> FREETZ_TARGET_ARCH_BE &amp;&amp;<br> FREETZ_TARGET_GCC_4_7 &amp;&amp;<br> FREETZ_TARGET_UCLIBC_0_9_32 &amp;&amp;<br> FREETZ_KERNEL_VERSION_2</td></tr>
+<tr><td>armeb_gcc-4.7.4_uClibc-0.9.32.1-nptl</td><td>FREETZ_TARGET_ARCH_ARM &amp;&amp;<br> FREETZ_TARGET_ARCH_BE &amp;&amp;<br> FREETZ_TARGET_GCC_4_7 &amp;&amp;<br> FREETZ_TARGET_UCLIBC_0_9_32 &amp;&amp;<br> FREETZ_KERNEL_VERSION_2</td></tr>
 <tr><td>arm_gcc-13.4.0-bcm_uClibc-1.0.56-nptl_kernel-4.1</td><td>FREETZ_TARGET_ARCH_ARM &amp;&amp;<br> FREETZ_TARGET_ARCH_LE &amp;&amp;<br> FREETZ_TARGET_GCC_13_4 &amp;&amp;<br> FREETZ_TARGET_UCLIBC_1_0_56 &amp;&amp;<br> FREETZ_KERNEL_VERSION_4_1 &amp;&amp;<br> FREETZ_SYSTEM_TYPE_BCM63138</td></tr>
 <tr><td>arm_gcc-13.4.0_uClibc-1.0.56-nptl_kernel-4.19</td><td>FREETZ_TARGET_ARCH_ARM &amp;&amp;<br> FREETZ_TARGET_ARCH_LE &amp;&amp;<br> FREETZ_TARGET_GCC_13_4 &amp;&amp;<br> FREETZ_TARGET_UCLIBC_1_0_56 &amp;&amp;<br> FREETZ_KERNEL_VERSION_4_19</td></tr>
 <tr><td>arm_gcc-13.4.0_uClibc-1.0.56-nptl_kernel-4.1</td><td>FREETZ_TARGET_ARCH_ARM &amp;&amp;<br> FREETZ_TARGET_ARCH_LE &amp;&amp;<br> FREETZ_TARGET_GCC_13_4 &amp;&amp;<br> FREETZ_TARGET_UCLIBC_1_0_56 &amp;&amp;<br> FREETZ_KERNEL_VERSION_4_1</td></tr>
