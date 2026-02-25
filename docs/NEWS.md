@@ -1,5 +1,10 @@
 # Neuigkeiten
 
+  * __[2026-02-25](#2026-02-25)__<a id='2026-02-25'></a><br>
+    Die Updateprüfung Juis liefert für Geräte ab HWR277 keine Ergebnisse mehr. Vermutlich hat AVM etwas<br>
+    an der Abfrage verändert. Jemand mit so einem Gerät müsste diese Abfrage mit tcpdump mitschneiden!<br>
+    Siehe [Discussions](https://github.com/orgs/Freetz-NG/discussions/1415)<br>
+
   * __[2026-02-24](#2026-02-24)__<a id='2026-02-24'></a><br>
     Die Architektur "armeb" funktioniert und wurde mit verschiedenen Cable 63xx Fritzboxen getestet.<br>
     Von der 6340 fehlt noch eine Firmware mit Fritzos 6, zum Beispiel 115.06.04, 115.06.05 oder 115.06.31.<br>
