@@ -1,5 +1,10 @@
 # Neuigkeiten
 
+  * __[2026-02-26](#2026-02-26)__<a id='2026-02-26'></a><br>
+    Es wurde ein neuer [Tag](https://github.com/Freetz-NG/freetz-ng/tags) `ng26020` erstellt.<br>
+    Ein Tag sollte wie in der [README](https://github.com/Freetz-NG/freetz-ng#or-clone-a-single-tag) beschrieben mit git ausgecheckt werden.<br>
+    Siehe [ng26020](https://github.com/Freetz-NG/freetz-ng/releases/tag/ng26020)<br>
+
   * __[2026-02-25](#2026-02-25)__<a id='2026-02-25'></a><br>
     Die Updateprüfung Juis liefert für Geräte ab HWR277 keine Ergebnisse mehr. Vermutlich hat AVM etwas<br>
     an der Abfrage verändert. Jemand mit so einem Gerät müsste diese Abfrage mit tcpdump mitschneiden!<br>

@@ -4,6 +4,7 @@ Latest changes
 
   - Freetz-NG
     * [devel](#devel)
+    * [ng26020](#ng26020)
     * [ng25090](#ng25090)
     * [ng25030](#ng25030)
     * [ng24080](#ng24080)
@@ -61,6 +62,11 @@ Latest changes
 <br>
 
 ### devel
+
+  - Firmware updates:
+    * Please see [FIRMWARES](FIRMWARES.md) for the list of currently supported devices and firmwares.
+
+### ng26020
 
   - Build system:
     * binutils (kernel) 2.18/2.22/2.23.2/2.24/2.25.1/2.26.1/2.31.1/2.36.1/2.42/2.45.1
@@ -183,7 +189,7 @@ Latest changes
     * zlib 1.3.2
 
   - Firmware updates:
-    * Please see [FIRMWARES](FIRMWARES.md) for the list of currently supported devices and firmwares.
+    * Please see [FIRMWARES](https://github.com/Freetz-NG/freetz-ng/blob/ng26020/docs/FIRMWARES.md) for the list of supported devices and firmwares.
 
 ### ng25090
 
