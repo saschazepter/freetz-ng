@@ -1,5 +1,9 @@
 # Neuigkeiten
 
+  * __[2026-02-24](#2026-02-24)__<a id='2026-02-24'></a><br>
+    Die Architektur "armeb" funktioniert und wurde mit verschiedenen Cable 63xx Fritzboxen getestet.<br>
+    Von der 6340 fehlt noch eine Firmware mit Fritzos 6, zum Beispiel 115.06.04, 115.06.05 oder 115.06.31.<br>
+
   * __[2026-01-24](#2026-01-24)__<a id='2026-01-24'></a><br>
     Kurzer Überblick über den aktuellen Stand von Freetz-NG:<br>
      - FritzOS 8.2 funktioniert soweit, es sind aber noch nicht alle Remove-Patches getestet (die die ich selbst nicht verwende).
