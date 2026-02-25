@@ -968,7 +968,7 @@
 <tr><td>Speedport W 501V</td><td>FREETZ_TYPE_W501V</td></tr>
 </tbody></table>
 <table>
-<caption style='background-color:gray'>Gen2: ram-boot (37)</caption>
+<caption style='background-color:gray'>Gen2: ram-boot (36)</caption>
 <thead><tr><th style='width:450px'>Name</th><th style='width:300px'>Symbol</th></tr></thead>
 <tbody>
 <tr><td>FRITZ!Box 3272</td><td>FREETZ_TYPE_3272</td></tr>
@@ -983,7 +983,6 @@
 <tr><td>FRITZ!Box 6840 LTE</td><td>FREETZ_TYPE_6840</td></tr>
 <tr><td>FRITZ!Box 6850 4G</td><td>FREETZ_TYPE_6850_4G_V2</td></tr>
 <tr><td>FRITZ!Box 6850 5G</td><td>FREETZ_TYPE_6850_5G</td></tr>
-<tr><td>FRITZ!Box 6850 LTE</td><td>FREETZ_TYPE_6850_4G</td></tr>
 <tr><td>FRITZ!Box 6850 LTE</td><td>FREETZ_TYPE_6850_4G_V1</td></tr>
 <tr><td>FRITZ!Box 6890 LTE</td><td>FREETZ_TYPE_6890</td></tr>
 <tr><td>FRITZ!Box 7272</td><td>FREETZ_TYPE_7272</td></tr>
