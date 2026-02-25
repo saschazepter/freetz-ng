@@ -63,6 +63,16 @@ Latest changes
 
 ### devel
 
+  - Build system:
+
+  - Host tools:
+
+  - AVM sources:
+
+  - Packages:
+
+  - Libraries:
+
   - Firmware updates:
     * Please see [FIRMWARES](FIRMWARES.md) for the list of currently supported devices and firmwares.
 
