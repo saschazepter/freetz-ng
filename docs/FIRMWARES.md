@@ -120,7 +120,7 @@ Currently supported devices and firmwares
     - 307.08.21 rev128315 {ALL} [Smart24 P2]
   * __Fritz!Box 4690 (UNTESTED)__
     - 291.08.03 rev118786 {ALL} [Smart24 P1 FCS]
-    - 291.08.21 rev128527 {ALL} [Smart24 P2]
+    - 291.08.22 rev129540 {ALL} [Smart24 P2]
 
 ### Fritz!Box Fon (50xx/51xx)
 
@@ -162,11 +162,11 @@ Currently supported devices and firmwares
     - 272.08.20 rev129227 {ALL} [Smart24 P2]
   * __Fritz!Box 5690 (UNTESTED)__
     - 298.08.04 rev119423 {ALL} [Smart24 P1 FCS]
-    - 298.08.20 rev128375 {ALL} [Smart24 P2]
+    - 298.08.22 rev129543 {ALL} [Smart24 P2]
   * __Fritz!Box 5690 Pro__
     - 279.07.62 rev115017 {ALL} [FCS23]
     - 279.08.03 rev118508 {ALL} [Smart24 P1 FCS]
-    - 279.08.20 rev128342 {ALL} [Smart24 P2]
+    - 279.08.22 rev129541 {ALL} [Smart24 P2]
   * __Fritz!Box 5690 XGS (UNTESTED)__
     - 295.08.20 rev128699 {ALL} [Smart24 P2]
 
@@ -530,7 +530,7 @@ Currently supported devices and firmwares
   * __Fritz!Box 7690__
     - 285.07.62 rev115134 {ALL} [FCS23]
     - 285.08.02 rev117971 {ALL} [Smart24 P1 FCS]
-    - 285.08.20 rev128259 {ALL} [Smart24 P2]
+    - 285.08.22 rev129542 {ALL} [Smart24 P2]
 
 ### Fritz!Powerline
 
