@@ -97,7 +97,7 @@ jobs:
 
   build:
     permissions:
-      contents: read
+      contents: write
     container:
 #     image: ubuntu:20.04
 #     image: freetzng/firmware
@@ -204,6 +204,20 @@ jobs:
           echo "##########################################################"
           ls -l images/
           sha256sum images/*
+
+      - name: commit
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --global --add safe.directory $GITHUB_WORKSPACE
+          git pull || exit
+          git add make/kernel/configs/symvers/
+          git status
+          git config --local user.name github-actions[bot]
+          git config --local user.email github-actions[bot]@users.noreply.github.com
+          git diff --cached --quiet && exit 0 || git commit -m "symvers: automatic update"
+          git config --local credential.helper '!x() { echo "password=$GITHUB_TOKEN"; };x'
+          git push origin $GITHUB_REF_NAME
 
 #     - name: cache_clear
 #       if: github.repository == 'freetz-ng/freetz-ng'
