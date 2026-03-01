@@ -89,7 +89,7 @@ jobs:
       options: --user 1001:1001
     needs: matrizifizieren
     strategy:
-      max-parallel: 12
+      max-parallel: 18
       fail-fast: false
       matrix:
         fritz: ${{ fromJson(needs.matrizifizieren.outputs.matrix) }}
@@ -179,13 +179,29 @@ jobs:
           grep -q '^FREETZ_TYPE_FIRMWARE_' .config || echo "FREETZ_TYPE_FIRMWARE_$FOS=y"              >> .config
           echo "##########################################################" && echo -n "Lines=" && wc -l .config
 
+      - name: check
+        id: check
+        run: |
+          make olddefconfig >/dev/null
+          FREETZ_SYSTEM_TYPE="$(sed -rn 's/^FREETZ_SYSTEM_TYPE=//p' .config)"
+          FREETZ_SYSTEM_TYPE_CORE_SUFFIX="$(sed -rn 's/^FREETZ_SYSTEM_TYPE_CORE_SUFFIX=//p' .config)"
+          FREETZ_AVM_SOURCE_ID="$(sed -rn 's/^FREETZ_AVM_SOURCE_ID=//p' .config)"
+          KERNEL_ID="${FREETZ_SYSTEM_TYPE}${FREETZ_SYSTEM_TYPE_CORE_SUFFIX}-${FREETZ_AVM_SOURCE_ID}"
+          KERNEL_ID="$(echo "${KERNEL_ID}" | sed 's/\"//g')"
+          KERNEL_CONFIG="make/kernel/configs/freetz/config-${KERNEL_ID}"
+          KERNEL_SYMVERS="make/kernel/configs/symvers/symvers-${KERNEL_ID}"
+          ! grep -q '^CONFIG_MODVERSIONS=y' "${KERNEL_CONFIG}" && echo "No kernel modversions enabled, abort." && echo 'skip=skip' >> $GITHUB_OUTPUT || true
+          test -s "${KERNEL_SYMVERS}" && echo "Kernel symvers already exists, abort." && echo 'skip=skip' >> $GITHUB_OUTPUT || true
+
       - name: generate
         env:
           FREETZ_DLTOKEN: ${{ secrets.FREETZ_DLTOKEN }}
+        if: ${{ steps.check.outputs.skip != 'skip' }}
         run: |
           make && rm -f images/latest.image
 
       - name: result
+        if: ${{ steps.check.outputs.skip != 'skip' }}
         run: |
           echo "##########################################################"
           ls -l images/
