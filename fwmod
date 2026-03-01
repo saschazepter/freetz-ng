@@ -1446,12 +1446,20 @@ if [ "$DO_MOD" -gt 0 ]; then
 			[ "$FREETZ_MODULES_TEST" == "y" ] && error 1 "Unresolved symbols detected."
 			warn "Unresolved symbols detected, not all AVM-features may work.\nApropriate sources by AVM not used or not available? Error in kernel's .config? Ask fritzbox_info@avm.de for sources!"
 		fi
-		if grep -q "disagrees about version of symbol" "$DEPMOD_TEMP"; then
-			DEPMOD_DISAGREES="$(grep "disagrees about version of symbol" "$DEPMOD_TEMP" | wc -l)"
-			[ "$FREETZ_MODULES_TEST" == "y" ] && error 1 "$DEPMOD_DISAGREES disagrees about version of symbol."
-			error 1 "$DEPMOD_DISAGREES disagrees about version of symbol. Modules will not load. The system will not boot."
-		else
-			[ -n "$DEPMOD_SYMVERS" ] && cp -f "${DEPMOD_SYMVERS}" "${BASE_DIR}/make/kernel/configs/symvers/symvers-${KERNEL_ID}"
+		if [ -n "$DEPMOD_SYMVERS" ]; then
+			if grep -q "disagrees about version of symbol" "$DEPMOD_TEMP"; then
+				DEPMOD_DISAGREES="$(grep "disagrees about version of symbol" "$DEPMOD_TEMP" | wc -l)"
+				if [ "$FREETZ_MODULES_TEST" != "y" ]; then
+					grep "disagrees about version of symbol" "$DEPMOD_TEMP" | sed "s@ ${ABS_BASE_DIR}/@ @g"
+					error 1 "$DEPMOD_DISAGREES disagrees about version of symbol. Modules will not load. The system will not boot."
+				else
+					[ "$DEPMOD_DISAGREES" -le 99 ] && grep "disagrees about version of symbol" "$DEPMOD_TEMP" | sed "s@ ${ABS_BASE_DIR}/@ @g"
+					warn "$DEPMOD_DISAGREES disagrees about version of symbol."
+				fi
+				
+			else
+				cp -f "${DEPMOD_SYMVERS}" "${BASE_DIR}/make/kernel/configs/symvers/symvers-${KERNEL_ID}"
+			fi
 		fi
 		rm -f "$DEPMOD_TEMP"
 		# add plugin kernel modules for 7270v1 if plugins are not enabled
