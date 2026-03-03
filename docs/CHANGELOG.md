@@ -70,6 +70,7 @@ Latest changes
   - AVM sources:
 
   - Packages:
+    * Iptables 1.4.11.1/1.4.21/1.6.2/1.8.12
 
   - Libraries:
 
