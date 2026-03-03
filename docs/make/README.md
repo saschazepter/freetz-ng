@@ -48,7 +48,7 @@ Index: [A](#a) - [B](#b) - [C](#c) - [D](#d) - [E](#e) - [F](#f) - [G](#g) - [H]
   * **<u>bfusb: AVM BlueFRITZ! USB stick support (binary only)</u><a id='bfusb'></a>**<br>
     This package adds support for the AVM BlueFRITZ! USB stick.
 
-  * **[BIND 9.11.37/9.20.17](bind.md)<a id='bind'></a>**<br>
+  * **[BIND 9.11.37/9.20.20](bind.md)<a id='bind'></a>**<br>
     BIND is a suite of software for interacting with the Domain Name System (DNS). The name BIND stands for "Berkeley Internet Name Daemon".
 
   * **[Bip 0.9.2 - DEPRECATED](bip.md)<a id='bip'></a>**<br>
@@ -107,7 +107,7 @@ Index: [A](#a) - [B](#b) - [C](#c) - [D](#d) - [E](#e) - [F](#f) - [G](#g) - [H]
   * **[Cpmaccfg 0.6 (binary only)](cpmaccfg.md)<a id='cpmaccfg'></a>**<br>
     With a patched kernel and this tool it is possible to configure the ADM6996L switch (at least FB 7170, maybe other FBs with 4 LAN ports work too) to support VLANs and/or to split the LAN ports into different subnets. It is also possible to view or set each ports power configuration and to disable auto media detection and to force a given media type for each port (10/100 Mbit, Half-/Full-Duplex). Some features are only available when Replace Kernel is selected. Since version 0.6 cpmaccfg detects the tantos switches used i.e. in F!B 7270. However, since there is not enough documentation (freely) available yet, it is not yet possible to configure this chipset.
 
-  * **[cpulimit 0.2](cpulimit.md)<a id='cpulimit'></a>**<br>
+  * **[cpulimit 0.2 - DEPRECATED](cpulimit.md)<a id='cpulimit'></a>**<br>
     cpulimit is a tool which limits the CPU usage of a process (expressed in percentage, not in CPU time). It is useful to control batch jobs, when you don't want them to eat too many CPU cycles. The goal is to prevent a process from running for more than a specified time ratio. It does not change the nice value or other scheduling priority settings, but the real CPU usage. Also, it is able to adapt itself to the overall system load, dynamically and quickly. The control of the used CPU amount is done sending SIGSTOP and SIGCONT POSIX signals to processes. All the children processes and threads of the specified process will share the same percentage of CPU.
 
   * **<u>cryptsetup 1.7.5 (binary only) - DEPRECATED</u><a id='cryptsetup'></a>**<br>
