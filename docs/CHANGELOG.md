@@ -75,6 +75,7 @@ Latest changes
     * Iptables 1.4.11.1/1.4.21/1.6.2/1.8.12
 
   - Libraries:
+    * harfbuzz 13.0.0
     * libmaxminddb 1.13.2
     * neon 0.30.2/0.37.0
 
