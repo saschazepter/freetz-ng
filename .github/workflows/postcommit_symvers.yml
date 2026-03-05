@@ -191,6 +191,7 @@ jobs:
           KERNEL_ID="$(echo "${KERNEL_ID}" | sed 's/\"//g')"
           KERNEL_CONFIG="make/kernel/configs/freetz/config-${KERNEL_ID}"
           KERNEL_SYMVERS="make/kernel/configs/symvers/symvers-${KERNEL_ID}"
+          mkdir -p make/kernel/configs/symvers/
           ! test -s "${KERNEL_CONFIG}"                          && echo "No kernel .config available, abort."    && echo 'skip=skip' >> $GITHUB_OUTPUT && exit || true
           ! grep -q '^FREETZ_REPLACE_KERNEL=y' ".config"        && echo "No replace-kernel enabled, abort."      && echo 'skip=skip' >> $GITHUB_OUTPUT && exit || true
           ! grep -q '^CONFIG_MODVERSIONS=y' "${KERNEL_CONFIG}"  && echo "No kernel modversions enabled, abort."  && echo 'skip=skip' >> $GITHUB_OUTPUT && exit || true
