@@ -74,6 +74,7 @@ Latest changes
     * Iptables 1.4.11.1/1.4.21/1.6.2/1.8.12
 
   - Libraries:
+    * libmaxminddb 1.13.2
     * neon 0.30.2/0.37.0
 
   - Firmware updates:
@@ -454,7 +455,7 @@ Latest changes
     * libdeflate 1.23
     * libexif 0.6.25
     * libffi 3.4.7
-    * libmaxminddb-1.12.2
+    * libmaxminddb 1.12.2
     * libnettle 3.10.1
     * libpng 1.6.46
     * libssh2 1.11.1
