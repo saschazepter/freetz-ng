@@ -68,6 +68,7 @@ Latest changes
   - Host tools:
     * file 5.47
     * pseudo 1.9.3
+    * python3 3.14.3
 
   - AVM sources:
 
@@ -75,6 +76,7 @@ Latest changes
     * BIND 9.11.37/9.20.20
     * ImageMagick 7.1.0-62/7.1.2-15
     * Iptables 1.4.11.1/1.4.21/1.6.2/1.8.12
+    * Python 3.14.3
 
   - Libraries:
     * file 5.47
