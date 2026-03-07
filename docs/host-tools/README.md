@@ -40,7 +40,7 @@ Index: [A](#a) - [B](#b) - [C](#c) - [D](#d) - [E](#e) - [F](#f) - [G](#g) - [H]
 
   * **[fastjar 0.98](fastjar-host.md)<a id='fastjar-host'></a>**<br>
 
-  * **[file 5.46](file-host.md)<a id='file-host'></a>**<br>
+  * **[file 5.47](file-host.md)<a id='file-host'></a>**<br>
 
   * **[find-squashfs 1.0](find-squashfs-host.md)<a id='find-squashfs-host'></a>**<br>
 
