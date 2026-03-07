@@ -66,6 +66,7 @@ Latest changes
   - Build system:
 
   - Host tools:
+    * file 5.47
     * pseudo 1.9.3
 
   - AVM sources:
@@ -76,6 +77,7 @@ Latest changes
     * Iptables 1.4.11.1/1.4.21/1.6.2/1.8.12
 
   - Libraries:
+    * file 5.47
     * harfbuzz 13.0.0
     * libmaxminddb 1.13.3
     * libuv 1.44.2/1.52.1
