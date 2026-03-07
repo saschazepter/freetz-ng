@@ -80,7 +80,7 @@ Latest changes
 
   - Libraries:
     * file 5.47
-    * harfbuzz 13.0.0
+    * harfbuzz 13.0.1
     * libmaxminddb 1.13.3
     * libuv 1.44.2/1.52.1
     * neon 0.30.2/0.37.0
