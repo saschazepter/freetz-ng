@@ -70,7 +70,6 @@ Latest changes
     * file 5.47
     * pseudo 1.9.3
     * python3 3.14.3
-    * tools 2026-03-07
 
   - AVM sources:
 
