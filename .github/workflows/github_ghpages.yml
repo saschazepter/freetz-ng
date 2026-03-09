@@ -9,10 +9,7 @@ on:
 #   branches: [ master ]
 #   paths:
 #     - '.github/workflows/github_ghpages.yml'
-#     - 'docs/**/*.md'
-#     - 'docs/**/*.jpg'
-#     - 'docs/**/*.png'
-#     - 'docs/**/*.gif'
+#     - 'docs/*.md'
   workflow_dispatch:
 
 concurrency:
