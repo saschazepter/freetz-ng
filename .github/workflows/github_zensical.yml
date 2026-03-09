@@ -10,6 +10,7 @@ on:
     paths:
       - '.github/workflows/github_zensical.yml'
       - '.github/zensical/*'
+      - 'docs/extra.css'
       - 'docs/**/*.md'
       - 'docs/**/*.jpg'
       - 'docs/**/*.png'
