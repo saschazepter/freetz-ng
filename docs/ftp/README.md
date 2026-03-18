@@ -187,16 +187,16 @@ Content: [FritzBox](#fritzbox) - [FritzPowerline](#fritzpowerline) - [FritzSmart
 
 ### FritzPowerline
   * fritzpowerline-1000e/
-    - deutschland: [fritz.powerline_1000E_2130_02_tr069_43.image](https://download.avm.de/fritzpowerline/fritzpowerline-1000e/deutschland/fritz.os/fritz.powerline_1000E_2130_02_tr069_43.image)
+    - deutschland: [fritz.powerline_1000E_3_00_00_tr069_43.image](https://download.avm.de/fritzpowerline/fritzpowerline-1000e/deutschland/fritz.os/fritz.powerline_1000E_3_00_00_tr069_43.image)
     - deutschland-recover: [fritz.powerline_1000E_200_03_200.image](https://download.avm.de/fritzpowerline/fritzpowerline-1000e/deutschland/recover/fritz.powerline_1000E_200_03_200.image)
-    - other: [fritz.powerline_1000E_2130_02_tr069_43.image](https://download.avm.de/fritzpowerline/fritzpowerline-1000e/other/fritz.os/fritz.powerline_1000E_2130_02_tr069_43.image)
+    - other: [fritz.powerline_1000E_3_00_00_tr069_43.image](https://download.avm.de/fritzpowerline/fritzpowerline-1000e/other/fritz.os/fritz.powerline_1000E_3_00_00_tr069_43.image)
     - other-recover: [fritz.powerline_1000E_200_03_200.image](https://download.avm.de/fritzpowerline/fritzpowerline-1000e/other/recover/fritz.powerline_1000E_200_03_200.image)
   * fritzpowerline-1000e-t/
     - deutschland: [fritz.powerline_1000ET_01_05.image](https://download.avm.de/fritzpowerline/fritzpowerline-1000e-t/deutschland/fritz.os/fritz.powerline_1000ET_01_05.image)
     - other: [fritz.powerline_1000ET_01_05.image](https://download.avm.de/fritzpowerline/fritzpowerline-1000e-t/other/fritz.os/fritz.powerline_1000ET_01_05.image)
   * fritzpowerline-1000e-v2/
-    - deutschland: [fritz.powerline_1000E_v2_2130_02_tr069_3.image](https://download.avm.de/fritzpowerline/fritzpowerline-1000e-v2/deutschland/fritz.os/fritz.powerline_1000E_v2_2130_02_tr069_3.image)
-    - other: [fritz.powerline_1000E_v2_2130_02_tr069_3.image](https://download.avm.de/fritzpowerline/fritzpowerline-1000e-v2/other/fritz.os/fritz.powerline_1000E_v2_2130_02_tr069_3.image)
+    - deutschland: [fritz.powerline_1000E_v2_3_00_00_tr069_3.image](https://download.avm.de/fritzpowerline/fritzpowerline-1000e-v2/deutschland/fritz.os/fritz.powerline_1000E_v2_3_00_00_tr069_3.image)
+    - other: [fritz.powerline_1000E_v2_3_00_00_tr069_3.image](https://download.avm.de/fritzpowerline/fritzpowerline-1000e-v2/other/fritz.os/fritz.powerline_1000E_v2_3_00_00_tr069_3.image)
   * fritzpowerline-1210/
     - deutschland: [fritz.powerline_1210_cm9_2130_02_tr069_1.image](https://download.avm.de/fritzpowerline/fritzpowerline-1210/deutschland/fritz.os/fritz.powerline_1210_cm9_2130_02_tr069_1.image)
     - other: [fritz.powerline_1210_cm9_2130_02_tr069_1.image](https://download.avm.de/fritzpowerline/fritzpowerline-1210/other/fritz.os/fritz.powerline_1210_cm9_2130_02_tr069_1.image)
