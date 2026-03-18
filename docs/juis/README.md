@@ -83,14 +83,14 @@ Content: [FOS-Release](#fos-release) - [FOS-Labor](#fos-labor) - [FOS-Inhaus](#f
 
 ### FOS-Labor
   - HWR 226: [FRITZ.Box_7590-08.24-130204-LabBETA.image](http://download.example.com/labor/Smart24P2NL1/7590/FRITZ.Box_7590-08.24-130204-LabBETA.image)
-  - HWR 233: [FRITZ.Box_6591_Cable-08.24-130207-LabBETA.image](http://download.example.com/labor/Smart24P2NL1/6591Cable/FRITZ.Box_6591_Cable-08.24-130207-LabBETA.image)
+  - HWR 233: [FRITZ.Box_6591_Cable-08.24-130621-LabBETA.image](http://download.example.com/labor/Smart24P2NL1/6591Cable/FRITZ.Box_6591_Cable-08.24-130621-LabBETA.image)
   - HWR 236: [FRITZ.Box_7530-08.24-130238-LabBETA.image](http://download.example.com/labor/Smart24P2NL1/7530/FRITZ.Box_7530-08.24-130238-LabBETA.image)
   - HWR 239: [FRITZ.Box_7583-07.39-103075-LabBETA.image](http://download.example.com/labor/MOVE21/7583/FRITZ.Box_7583-07.39-103075-LabBETA.image)
   - HWR 241: [FRITZ.Repeater_2400-08.24-130061-LabBETA.image](http://download.example.com/labor/Smart24P2NL1/2400/FRITZ.Repeater_2400-08.24-130061-LabBETA.image)
   - HWR 244: [FRITZ.Repeater_1200-08.24-130062-LabBETA.image](http://download.example.com/labor/Smart24P2NL1/1200/FRITZ.Repeater_1200-08.24-130062-LabBETA.image)
   - HWR 246: [FRITZ.Repeater_3000-08.24-130063-LabBETA.image](http://download.example.com/labor/Smart24P2NL1/3000/FRITZ.Repeater_3000-08.24-130063-LabBETA.image)
   - HWR 247: [FRITZ.Box_7520-08.24-130232-LabBETA.image](http://download.example.com/labor/Smart24P2NL1/7520/FRITZ.Box_7520-08.24-130232-LabBETA.image)
-  - HWR 252: [FRITZ.Box_6660_Cable-08.24-130241-LabBETA.image](http://download.example.com/labor/Smart24P2NL1/6660Cable/FRITZ.Box_6660_Cable-08.24-130241-LabBETA.image)
+  - HWR 252: [FRITZ.Box_6660_Cable-08.24-130622-LabBETA.image](http://download.example.com/labor/Smart24P2NL1/6660Cable/FRITZ.Box_6660_Cable-08.24-130622-LabBETA.image)
   - HWR 253: [FRITZ.Repeater_6000-08.10-127326-LabBETA.image](http://download.example.com/labor/Smart24P2/6000/FRITZ.Repeater_6000-08.10-127326-LabBETA.image)
   - HWR 257: [FRITZ.Box_5530_Fiber-08.24-130003-LabBETA.image](http://download.example.com/labor/Smart24P2NL1/5530Fiber/FRITZ.Box_5530_Fiber-08.24-130003-LabBETA.image)
   - HWR 258: [FRITZ.Box_6850_5G-08.24-130256-LabBETA.image](http://download.example.com/labor/Smart24P2NL1/68505G/FRITZ.Box_6850_5G-08.24-130256-LabBETA.image)
