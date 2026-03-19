@@ -68,6 +68,7 @@ Latest changes
     * uClibc 0.9.28/0.9.29/0.9.32.1/0.9.33.2/1.0.14/1.0.57
 
   - Host tools:
+    * cmake 4.3.0
     * file 5.47
     * meson 1.10.2
     * pseudo 1.9.3
