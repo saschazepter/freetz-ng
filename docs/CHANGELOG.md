@@ -69,6 +69,7 @@ Latest changes
 
   - Host tools:
     * file 5.47
+    * meson 1.10.2
     * pseudo 1.9.3
     * python3 3.14.3
 
