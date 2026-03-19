@@ -93,6 +93,7 @@ Latest changes
     * Whois 5.6.6
 
   - Libraries:
+    * expat 2.7.5
     * file 5.47
     * FreeType 2.14.2
     * harfbuzz 13.1.1
