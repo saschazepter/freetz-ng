@@ -89,6 +89,7 @@ Latest changes
     * Curl 8.12.1/8.19.0
     * ImageMagick 7.1.0-62/7.1.2-16
     * Iptables 1.4.11.1/1.4.21/1.6.2/1.8.12
+    * OpenVPN 2.4.12/2.5.11/2.6.19/2.7.0
     * Python 3.14.3
     * sslh 2.2.4/2.3.1
     * Tinyproxy 1.11.3
