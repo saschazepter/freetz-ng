@@ -74,6 +74,9 @@ endif
 $(PKG)_CONFIGURE_PRE_CMDS += $(call PKG_ADD_EXTRA_FLAGS,(C|LD)FLAGS|LIBS)
 
 $(PKG)_EXTRA_CFLAGS  += -ffunction-sections -fdata-sections
+ifneq ($(filter y, $(strip $(FREETZ_PACKAGE_OPENVPN_VERSION_24)) $(strip $(FREETZ_PACKAGE_OPENVPN_VERSION_25)) $(strip $(FREETZ_PACKAGE_OPENVPN_VERSION_26)) ),y)
+$(PKG)_EXTRA_CFLAGS  += -D_STRUCT_TIMESPEC
+endif
 $(PKG)_EXTRA_LDFLAGS += -Wl,--gc-sections
 $(PKG)_EXTRA_LDFLAGS += $(if $(FREETZ_PACKAGE_OPENVPN_STATIC),-all-static)
 
