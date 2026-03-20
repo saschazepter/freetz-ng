@@ -68,6 +68,7 @@ Latest changes
     * uClibc 0.9.28/0.9.29/0.9.32.1/0.9.33.2/1.0.14/1.0.57
 
   - Host tools:
+    * ca-bundle 2026-03-19
     * cmake 4.3.0
     * file 5.47
     * meson 1.10.2
@@ -84,6 +85,7 @@ Latest changes
 
   - Packages:
     * BIND 9.11.37/9.20.20
+    * CA-bundle 2026-03-19
     * Curl 8.12.1/8.19.0
     * ImageMagick 7.1.0-62/7.1.2-16
     * Iptables 1.4.11.1/1.4.21/1.6.2/1.8.12
