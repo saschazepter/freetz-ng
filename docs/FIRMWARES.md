@@ -598,7 +598,7 @@ Currently supported devices and firmwares
 
   * __FRITZ!Repeater 600 v1 (DEVELOPER)__
     - 168.07.58 rev111613 {ALL} [MOVE21NL1]
-    - 168.08.20 rev125902 {ALL} [Smart24 P2]
+    - 168.08.25 rev130615 {ALL} [Smart24 P2 NL1]
   * __FRITZ!Repeater 600 v2 (DEVELOPER)__
     - 263.07.58 rev111614 {ALL} [MOVE21NL1]
     - 263.08.20 rev125903 {ALL} [Smart24 P2]
