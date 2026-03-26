@@ -519,7 +519,7 @@ Currently supported devices and firmwares
     - 259.07.31 rev94867 {ALL} [PSQ19P2NL4]
     - 259.07.57 rev107809 {ALL} [MOVE21NL1]
     - 259.08.02 rev117984 {ALL} [Smart24 P1 NL1]
-    - 259.08.20 rev123850 {ALL} [Smart24 P2]
+    - 259.08.25 rev130857 {ALL} [Smart24 P2 NL1]
 
 ### Fritz!Box Fon WLAN (76xx)
 
