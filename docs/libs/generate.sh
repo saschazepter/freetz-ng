@@ -24,13 +24,13 @@ for dir in $(find "$INPWD" -maxdepth 1 -mindepth 1 -type d | sort); do
 	sed "1c# $itm" -i "$MDPWD/$lib.md"
 
 	sed "/^  - Maintainer: .*$/d" -i "$MDPWD/$lib.md"
-	lnk="$(sed -n "s/^### SUPPORT:= *//p" $dir/*.mk)"
+	lnk="$(sed -n "s/^### STEWARD:= *//p" $dir/*.mk)"
 	case "$lnk" in
 		X)	lnk="" ;;
 		"")	lnk="-" ;;
 		*)	[ "$lnk" != "${lnk/:\/\//}" ] && lnk="\[$lnk\]($lnk)" || lnk="\[@$lnk\](https://github.com/$lnk)" ;; #"
 	esac
-	[ -n "$lnk" ] && sed "2i\  - Maintainer: $lnk" -i "$MDPWD/$lib.md"
+	[ -n "$lnk" ] && sed "2i\  - Steward: $lnk" -i "$MDPWD/$lib.md"
 
 	lnk="https://github.com/Freetz-NG/freetz-ng/tree/master/make/libs/$lib/"
 	sed "/^  - Library: \[.*)$/d" -i "$MDPWD/$lib.md"
