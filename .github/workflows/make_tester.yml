@@ -22,7 +22,7 @@ jobs:
       packages: read
       contents: read
     container:
-      image: ghcr.io/freetz-ng/firmware
+      image: ghcr.io/freetz-ng/internal/firmware
       credentials:
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}

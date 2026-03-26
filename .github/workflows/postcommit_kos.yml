@@ -19,7 +19,7 @@ jobs:
       packages: read
       contents: write
     container:
-      image: ghcr.io/freetz-ng/generate
+      image: ghcr.io/freetz-ng/internal/generate
       credentials:
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}

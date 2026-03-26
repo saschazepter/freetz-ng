@@ -31,7 +31,7 @@ jobs:
       packages: read
       contents: read
     container:
-      image: ghcr.io/freetz-ng/generate
+      image: ghcr.io/freetz-ng/internal/generate
       credentials:
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
@@ -100,7 +100,7 @@ jobs:
       packages: read
       contents: read
     container:
-      image: ghcr.io/freetz-ng/firmware
+      image: ghcr.io/freetz-ng/internal/firmware
       credentials:
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
