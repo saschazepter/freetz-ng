@@ -33,13 +33,11 @@ jobs:
         run: |
           OWNER="$(echo ${{ github.repository_owner }} | tr '[:upper:]' '[:lower:]')"
           [ -z "$OWNER" ] && OWNER="$(echo ${{ github.actor }} | tr '[:upper:]' '[:lower:]')"
-          [ -n "$OWNER" ] || exit 1
+          [ -n "$OWNER" ] && echo "owner=$OWNER" >> $GITHUB_OUTPUT || exit 1
           IMAGE="$(echo "${{ github.workflow }}" | sed 's/.*_//')"
-          [ -n "$IMAGE" ] || exit 1
-          URI="ghcr.io/$OWNER/internal/$IMAGE"
-          echo "uri=$URI" >> $GITHUB_OUTPUT
+          [ -n "$IMAGE" ] && echo "image=$IMAGE" >> $GITHUB_OUTPUT || exit 1
           for x in Dockerfile entrypoint.sh; do ln -s .github/docker/$IMAGE/$x; done
-          echo "################################################################" && echo "URI=$uri"
+          echo "################################################################" && echo "URI=$OWNER/$IMAGE"
 
       - name: login
         if: github.event_name != 'pull_request'
@@ -47,13 +45,13 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
-          password: ${{ secrets.FREETZ_DLTOKEN }}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: docker
         uses: docker/build-push-action@v7
         with:
           context: .
           push: ${{ github.event_name != 'pull_request' }}
-          tags: ${{ steps.prepare.outputs.uri }}:latest
+          tags: ghcr.io/${{ steps.prepare.outputs.owner }}/internal/${{ steps.prepare.outputs.image }}:latest
 
 
