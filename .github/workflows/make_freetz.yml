@@ -18,9 +18,10 @@ jobs:
     permissions:
       contents: write
     container:
-#     image: ubuntu:20.04
-#     image: freetzng/firmware
       image: ghcr.io/freetz-ng/firmware
+      credentials:
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
       options: --user 1001:1001
 #   strategy:
 #     fail-fast: false
