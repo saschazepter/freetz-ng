@@ -52,6 +52,6 @@ jobs:
         with:
           context: .
           push: ${{ github.event_name != 'pull_request' }}
-          tags: ghcr.io/${{ steps.prepare.outputs.owner }}/${{ steps.prepare.outputs.image }}:latest
+          tags: ghcr.io/${{ steps.prepare.outputs.owner }}/internal/${{ steps.prepare.outputs.image }}:latest
 
 
