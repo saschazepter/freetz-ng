@@ -22,7 +22,7 @@ for dir in $(find "$INPWD" -maxdepth 1 -mindepth 1 -type d | sort); do
 	while [ "0$(awk 'END{print NR}' "$MDPWD/$tool.md" 2>/dev/null)" -lt 2 ]; do echo >> "$MDPWD/$tool.md"; done
 	sed "1c# $itm" -i "$MDPWD/$tool.md"
 
-	sed "/^  - Maintainer: .*$/d" -i "$MDPWD/$tool.md"
+	sed "/^  - Steward: .*$/d" -i "$MDPWD/$tool.md"
 	lnk="$(sed -n "s/^### STEWARD:= *//p" $dir/*.mk)"
 	case "$lnk" in
 		X)	lnk="" ;;

@@ -32,7 +32,7 @@ echo "$PKGS" | sed 's/##.*//g' | uniq | while read cat; do
 			while [ "$(awk 'END{print NR}' "$MDPWD/$pkg.md")" -lt 2 ]; do echo >> "$MDPWD/$pkg.md"; done
 			sed "1c# $dsc" -i "$MDPWD/$pkg.md"
 
-			sed "/^  - Maintainer: .*$/d" -i "$MDPWD/$pkg.md"
+			sed "/^  - Steward: .*$/d" -i "$MDPWD/$pkg.md"
 			lnk="$(sed -n "s/^### STEWARD:= *//p" "$INPWD/$pkg/$pkg.mk")"
 			case "$lnk" in
 				X)	lnk="" ;;
