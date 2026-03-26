@@ -16,6 +16,7 @@ concurrency:
 jobs:
   build:
     permissions:
+      packages: read
       contents: write
     container:
       image: ghcr.io/freetz-ng/generate

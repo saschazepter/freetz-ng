@@ -18,6 +18,7 @@ jobs:
 
   matrizifizieren:
     permissions:
+      packages: read
       contents: read
     container:
       image: ghcr.io/freetz-ng/generate
@@ -65,6 +66,7 @@ jobs:
 
   build:
     permissions:
+      packages: read
       contents: write
     container:
       image: ghcr.io/freetz-ng/firmware
