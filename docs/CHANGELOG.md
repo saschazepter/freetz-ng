@@ -70,7 +70,7 @@ Latest changes
   - Host tools:
     * autoconf 2.73
     * ca-bundle 2026-03-19
-    * cmake 4.3.0
+    * cmake 4.3.1
     * file 5.47
     * meson 1.10.2
     * pseudo 1.9.3
