@@ -4,7 +4,7 @@ Index: [A](#a) - [B](#b) - [C](#c) - [D](#d) - [E](#e) - [F](#f) - [G](#g) - [H]
 
 ### A
 
-  * **[autoconf 2.72](autoconf-host.md)<a id='autoconf-host'></a>**<br>
+  * **[autoconf 2.73](autoconf-host.md)<a id='autoconf-host'></a>**<br>
 
   * **[automake 1.18.1](automake-host.md)<a id='automake-host'></a>**<br>
 
