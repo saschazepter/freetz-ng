@@ -85,7 +85,6 @@ Latest changes
     * Still are some patches for Fritzos 8.2 not adapted for Fritzos 8.2x
 
   - Packages:
-    * Atop 2.12.1
     * BIND 9.11.37/9.20.21
     * CA-bundle 2026-03-19
     * Curl 8.12.1/8.19.0
