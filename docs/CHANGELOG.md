@@ -85,7 +85,7 @@ Latest changes
 
   - Packages:
     * Atop 2.12.1
-    * BIND 9.11.37/9.20.20
+    * BIND 9.11.37/9.20.21
     * CA-bundle 2026-03-19
     * Curl 8.12.1/8.19.0
     * ImageMagick 7.1.0-62/7.1.2-16
