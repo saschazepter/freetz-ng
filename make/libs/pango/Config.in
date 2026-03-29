@@ -2,7 +2,7 @@ menu "pango"
 	depends on FREETZ_SEPARATE_AVM_UCLIBC
 
 	config FREETZ_LIB_libpango_1
-		bool "Pango (libpango-1.0.so) - DEPRECATED"
+		bool "Pango (libpango-1.0.so)"
 		select FREETZ_LIB_libglib_2
 		select FREETZ_LIB_libgio_2
 		select FREETZ_LIB_libgobject_2
@@ -17,7 +17,7 @@ menu "pango"
 			and font handling for GTK.
 
 	config FREETZ_LIB_libpangoft2_1
-		bool "PangoFT2 (libpangoft2-1.0.so) - DEPRECATED"
+		bool "PangoFT2 (libpangoft2-1.0.so)"
 		select FREETZ_LIB_libpango_1
 		select FREETZ_LIB_libglib_2
 		select FREETZ_LIB_libgio_2
@@ -34,7 +34,7 @@ menu "pango"
 			and font handling for GTK.
 
 	config FREETZ_LIB_libpangocairo_1
-		bool "PangoCairo (libpangocairo-1.0.so) - DEPRECATED"
+		bool "PangoCairo (libpangocairo-1.0.so)"
 		select FREETZ_LIB_libpango_1
 		select FREETZ_LIB_libpangoft2_1
 		select FREETZ_LIB_libglib_2

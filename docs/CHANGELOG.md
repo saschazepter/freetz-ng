@@ -112,6 +112,7 @@ Latest changes
     * libuv 1.44.2/1.52.1
     * libxml2 2.15.2
     * neon 0.30.2/0.37.0
+    * pango 1.57.1
 
   - Firmware updates:
     * Please see [FIRMWARES](FIRMWARES.md) for the list of currently supported devices and firmwares.
