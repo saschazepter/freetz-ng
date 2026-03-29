@@ -105,6 +105,7 @@ Latest changes
     * file 5.47
     * FreeType 2.14.3
     * gettext 1.0
+    * GLib2 2.32.4/2.88.0
     * harfbuzz 13.2.1
     * libmaxminddb 1.13.3
     * libpng 1.6.56
