@@ -34,7 +34,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r "${{ env.ZENSICAL_REQUIREMENTS_FILE }}"
       - name: Setup Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
       - name: Build with Zensical
         run: zensical build --config-file "${{ env.ZENSICAL_CONFIG_FILE }}"
       - name: Upload artifact
