@@ -100,6 +100,7 @@ Latest changes
     * Tor 0.4.8.23
     * UnRAR 6.1.7/7.2.5
     * Whois 5.6.6
+    * XZ 5.8.3
 
   - Libraries:
     * expat 2.7.5
