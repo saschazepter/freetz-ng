@@ -73,6 +73,7 @@ Latest changes
     * cmake 4.3.1
     * file 5.47
     * meson 1.10.2
+    * openssl 3.5.6
     * pseudo 1.9.3-414ce2d
     * python3 3.14.3
 
@@ -93,6 +94,7 @@ Latest changes
     * Iptables 1.4.11.1/1.4.21/1.6.2/1.8.12
     * ldd 0.1/1.0.57
     * Nmap 4.76/5.51/7.99
+    * OpenSSL 0.9.8zh/1.0.2u/1.1.1w/3.0.20/3.5.6
     * OpenVPN 2.4.12/2.5.11/2.6.19/2.7.1
     * Python 3.14.3
     * sslh 2.2.4/2.3.1
