@@ -75,7 +75,7 @@ Latest changes
     * meson 1.10.2
     * openssl 3.5.6
     * pseudo 1.9.3-414ce2d
-    * python3 3.14.3
+    * python3 3.14.4
 
   - AVM sources:
 
