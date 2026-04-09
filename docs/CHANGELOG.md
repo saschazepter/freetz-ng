@@ -93,6 +93,7 @@ Latest changes
     * ImageMagick 7.1.0-62/7.1.2-16
     * Iptables 1.4.11.1/1.4.21/1.6.2/1.8.12
     * ldd 0.1/1.0.57
+    * Nano 9.0
     * Nmap 4.76/5.51/7.99
     * OpenSSH 9.3p2/10.3p1
     * OpenSSL 0.9.8zh/1.0.2u/1.1.1w/3.0.20/3.5.6
