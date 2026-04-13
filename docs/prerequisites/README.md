@@ -253,6 +253,7 @@ sudo apt-get -y install \
   libstring-crc32-perl libtool-bin libusb-dev libxml2-dev libzstd-dev make ncftp netcat-openbsd net-tools patch \
   patchutils perl pkg-config pv rsync sharutils sqlite3 subversion sudo texinfo tofrodos unar unzip \
   uuid-dev wget zip zlib1g-dev
+```
 
   - Ubuntu 23/24/25 64-Bit:
 ```
