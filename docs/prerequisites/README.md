@@ -19,6 +19,7 @@ Es gibt folgende Möglichkeiten die benötigten Pakete (prerequisites) zu instal
   - sonst keine
 
 ### Problematische Distributionen
+  - Alle AArch64/ARM64
   - Gentoo
   - NixOS
   - Ubuntu 25.10
