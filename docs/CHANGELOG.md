@@ -85,7 +85,7 @@ Latest changes
     * zensical_httpserver.sh - run local zensical http server to develop docs
 
   - Patches:
-    * Still are some patches for Fritzos 8.2 not adapted for Fritzos 8.2x
+    * Still are some patches not yet adapted for Fritzos 8.2x
 
   - Packages:
     * Atop 2.12.1
