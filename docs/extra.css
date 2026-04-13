@@ -1,10 +1,13 @@
+
 /* Disable secondary navigation */
+/*
 .md-nav--secondary {
     display: none;
 }
 .md-sidebar--secondary.md-sidebar {
     display: none;
 }
+*/
 
 /* General styles for navigation and typeset */
 .md-nav {
@@ -26,13 +29,18 @@
     color: var(--code-color);
 }
 
-.text-center {
-    text-align: center !important;
-}
-
 .md-typeset table:not([class]) th {
     color: var(--table-foreground);
     background-color: var(--table-background);
+}
+
+.md-grid {
+/*  max-width: 1440px; */
+    max-width: 1680px;
+}
+
+.text-center {
+    text-align: center !important;
 }
 
 [data-md-color-scheme="default"] {
