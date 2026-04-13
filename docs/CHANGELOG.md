@@ -108,6 +108,7 @@ Latest changes
     * Tinyproxy 1.11.3
     * Tor 0.4.8.23
     * UnRAR 6.1.7/7.2.5
+    * wireguard-tools 1.0.20260223
     * Whois 5.6.6
     * XZ 5.8.3
 
