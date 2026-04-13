@@ -22,7 +22,7 @@ Es gibt folgende Möglichkeiten die benötigten Pakete (prerequisites) zu instal
   - Alle AArch64/ARM64
   - Gentoo
   - NixOS
-  - Ubuntu 25.10
+  - Ubuntu 25.10+26.04
   - WSL/WSL2
 
 ### Alle anderen Distributionen
