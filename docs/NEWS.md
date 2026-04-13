@@ -108,7 +108,7 @@ Siehe<br>
   - [GCC 15 Release Series](https://gcc.gnu.org/gcc-15/changes.html)<br>
   - [Fedora 42 GNU Toolchain](https://fedoraproject.org/wiki/Changes/GNUToolchainF42)<br>
 
-### 2025-06-03
+### 2025-03-06
 Es wurde ein neuer [Tag](https://github.com/Freetz-NG/freetz-ng/tags) `ng25030` erstellt.<br>
 Ein Tag sollte wie in der [README](https://github.com/Freetz-NG/freetz-ng#or-clone-a-single-tag) beschrieben mit git ausgecheckt werden.<br>
 
