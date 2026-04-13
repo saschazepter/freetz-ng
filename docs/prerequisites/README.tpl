@@ -17,10 +17,10 @@ Es gibt folgende Möglichkeiten die benötigten Pakete (prerequisites) zu instal
   - sonst keine
 
 ### Problematische Distributionen
-  - Alle AArch64/ARM64
+  - Alle AArch64/ARM64 (yf-akcarea-host bitness)
   - Gentoo
   - NixOS
-  - Ubuntu 25.10+26.04
+  - Ubuntu 25.10+26.04 (uutils-coreutils clone)
   - WSL/WSL2
 
 ### Alle anderen Distributionen
