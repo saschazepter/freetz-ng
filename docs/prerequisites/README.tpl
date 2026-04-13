@@ -57,37 +57,37 @@ sudo dnf -y update && sudo systemctl daemon-reload
 
   - Fedora 42/43 64-Bit:
 ```
-sudo dnf -y install %%Fedora42%%
+sudo dnf -y install %%Fedora-42%%
 ```
 
   - Fedora 41 64-Bit:
 ```
-sudo dnf -y install %%Fedora41%%
+sudo dnf -y install %%Fedora-41%%
 ```
 
   - Fedora 40 64-Bit:
 ```
-sudo dnf -y install %%Fedora40%%
+sudo dnf -y install %%Fedora-40%%
 ```
 
   - Fedora 37/38/39 64-Bit:
 ```
-sudo dnf -y install %%Fedora37%%
+sudo dnf -y install %%Fedora-37%%
 ```
 
   - Fedora 36 64-Bit:
 ```
-sudo dnf -y install %%Fedora36%%
+sudo dnf -y install %%Fedora-36%%
 ```
 
   - Fedora 35 64-Bit:
 ```
-sudo dnf -y install %%Fedora35%%
+sudo dnf -y install %%Fedora-35%%
 ```
 
   - Fedora 33/34 64-Bit:
 ```
-sudo dnf -y install %%Fedora33%%
+sudo dnf -y install %%Fedora-33%%
 ```
 
   - Falls auf dem folgenden System ein 64-Bit Linux installiert ist wird zusätzlich benötigt:
@@ -97,7 +97,7 @@ sudo yum -y install ncurses-devel.i686 glibc-devel.i686 libgcc.i686
 
   - Fedora ~20 32-Bit:
 ```
-sudo yum -y install %%Fedora20%%
+sudo yum -y install %%Fedora-20%%
 ```
 
 ### Debian
@@ -111,17 +111,17 @@ sudo apt -y dist-upgrade
 
   - Debian 13 64-Bit:
 ```
-sudo apt -y install %%Debian13%%
+sudo apt -y install %%Debian-13%%
 ```
 
   - Debian 12 64-Bit:
 ```
-sudo apt -y install %%Debian12%%
+sudo apt -y install %%Debian-12%%
 ```
 
   - Debian 11 64-Bit:
 ```
-sudo apt -y install %%Debian11%%
+sudo apt -y install %%Debian-11%%
 ```
 
 
@@ -169,17 +169,17 @@ sudo apt-get remove --allow-remove-essential coreutils-from-uutils
 
   - Ubuntu 23/24/25/26 64-Bit:
 ```
-sudo apt-get -y install %%Ubuntu23%%
+sudo apt-get -y install %%Ubuntu-23%%
 ```
 
   - Ubuntu 22 64-Bit:
 ```
-sudo apt-get -y install %%Ubuntu22%%
+sudo apt-get -y install %%Ubuntu-22%%
 ```
 
   - Ubuntu 20/21 64-Bit:
 ```
-sudo apt-get -y install %%Ubuntu20%%
+sudo apt-get -y install %%Ubuntu-20%%
 # sqlite-32bit lässt sich mit apt nicht installieren, aber mit apt-get schon. Siehe auch:
 # https://developpaper.com/ubuntu-solves-the-problem-of-libsqlite3-0-dependency-recommended/
 sudo apt -y install libzstd-dev:i386 sqlite3:i386
@@ -187,17 +187,17 @@ sudo apt -y install libzstd-dev:i386 sqlite3:i386
 
   - Ubuntu 18/19 64-Bit:
 ```
-sudo apt-get -y install %%Ubuntu18%%
+sudo apt-get -y install %%Ubuntu-18%%
 ```
 
   - Ubuntu 15/16/17 64-Bit:
 ```
-sudo apt-get -y install %%Ubuntu15%%
+sudo apt-get -y install %%Ubuntu-15%%
 ```
 
   - Ubuntu 14 64-Bit:
 ```
-sudo apt-get -y install %%Ubuntu14%%
+sudo apt-get -y install %%Ubuntu-14%%
 ```
 Zusätzlich muss manuell installiert werden:
 ```
@@ -228,17 +228,17 @@ sudo apt-get -y install libtool-bin
 
   - Ubuntu 13/14 32-Bit:
 ```
-sudo apt-get -y install %%Ubuntu13%%
+sudo apt-get -y install %%Ubuntu-13%%
 ```
 
   - Ubuntu 10/11/12 32-Bit:
 ```
-sudo apt-get -y install %%Ubuntu10%%
+sudo apt-get -y install %%Ubuntu-10%%
 ```
 
   - Ubuntu 9.04 32-Bit (kein automake 1.8, "ecj" statt "ecj-bootstrap"):
 ```
-sudo apt-get -y install %%Ubuntu09%%
+sudo apt-get -y install %%Ubuntu-09%%
 ```
 
 ### Mint
