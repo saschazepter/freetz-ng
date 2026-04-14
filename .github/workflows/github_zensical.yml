@@ -38,7 +38,7 @@ jobs:
       - name: Build with Zensical
         run: zensical build --config-file "${{ env.ZENSICAL_CONFIG_FILE }}"
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v5
         with:
           path: "${{ env.ZENSICAL_INPUT_PATH }}"
 
