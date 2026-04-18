@@ -11,18 +11,3 @@
  AC_CHECK_HEADERS(linux/vm_sockets_diag.h, [], [])
  AC_CHECK_HEADERS(pthread.h,
  	[AC_SEARCH_LIBS(pthread_atfork, pthread)],
-@@ -166,10 +166,10 @@
- build_netcap_advanced=yes
- netcap_advanced_missing=""
- for netcap_hdr in \
--	linux/inet_diag.h:$ac_cv_header_linux_inet_diag_h \
--	linux/netlink.h:$ac_cv_header_linux_netlink_h \
--	linux/sock_diag.h:$ac_cv_header_linux_sock_diag_h \
--	linux/vm_sockets.h:$ac_cv_header_linux_vm_sockets_h; do
-+  linux/inet_diag.h:$ac_cv_header_linux_inet_diag_h \
-+  linux/netlink.h:$ac_cv_header_linux_netlink_h \
-+  linux/sock_diag.h:$ac_cv_header_linux_sock_diag_h \
-+  linux/vm_sockets.h:$ac_cv_header_linux_vm_sockets_h; do
- 	netcap_name=${netcap_hdr%%:*}
- 	netcap_have=${netcap_hdr#*:}
- 	AS_IF([test "x$netcap_have" != xyes], [
