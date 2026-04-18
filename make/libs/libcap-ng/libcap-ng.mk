@@ -18,7 +18,6 @@ $(PKG)_LA_STAGING_DIR   := $($(PKG)_LIBNAMES_SHORT:%=$(TARGET_TOOLCHAIN_STAGING_
 $(PKG)_CONFIGURE_PRE_CMDS += $(AUTORECONF)
 
 $(PKG)_CONFIGURE_ENV += ac_cv_header_pthread_h=no
-$(PKG)_CONFIGURE_ENV += ac_cv_header_linux_vm_sockets_h=no
 
 $(PKG)_CONFIGURE_OPTIONS += --enable-shared
 $(PKG)_CONFIGURE_OPTIONS += --enable-static
