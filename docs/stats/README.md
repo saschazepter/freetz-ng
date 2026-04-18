@@ -845,7 +845,7 @@
 <tr><td>FRITZ.Box_7530_AX-07.31.image</td><td>FREETZ_TYPE_7530_W6_V1 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_07_2X</td></tr>
 <tr><td>FRITZ.Box_7530_AX-07.57-V2.image/FRITZ.Box_7530_AX-07.57.image</td><td>FREETZ_TYPE_7530_W6_V1 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_07_5X</td></tr>
 <tr><td>FRITZ.Box_7530_AX-08.02.image</td><td>FREETZ_TYPE_7530_W6_V1 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_0X</td></tr>
-<tr><td>FRITZ.Box_7530_AX-08.20.image</td><td>FREETZ_TYPE_7530_W6_V1 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_2X</td></tr>
+<tr><td>FRITZ.Box_7530_AX-08.25.image</td><td>FREETZ_TYPE_7530_W6_V1 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_2X</td></tr>
 <tr><td>FRITZ.Box_7530_AX_B-08.02-119131-Release.image</td><td>FREETZ_TYPE_7530_W6_V2 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_0X</td></tr>
 <tr><td>FRITZ.Box_7560.en-de-es-it-fr-pl.149.06.83.image</td><td>FREETZ_TYPE_7560 &amp;&amp;<br> FREETZ_TYPE_LANG_EN &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_06_8X</td></tr>
 <tr><td>FRITZ.Box_7560.en-de-es-it-fr-pl.149.07.01.image</td><td>FREETZ_TYPE_7560 &amp;&amp;<br> FREETZ_TYPE_LANG_EN &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_07_0X</td></tr>
