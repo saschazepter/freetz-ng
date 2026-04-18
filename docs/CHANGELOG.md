@@ -89,7 +89,7 @@ Latest changes
 
   - Packages:
     * Atop 2.12.1
-    * BIND 9.11.37/9.20.21
+    * BIND 9.11.37/9.20.22
     * CA-bundle 2026-03-19
     * Curl 8.12.1/8.19.0
     * htop 1.0.3/3.5.0
