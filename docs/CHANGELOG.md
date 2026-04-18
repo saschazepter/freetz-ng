@@ -121,6 +121,7 @@ Latest changes
     * GLib2 2.32.4/2.88.0
     * harfbuzz 14.1.0
     * libcap 2.49/2.78
+    * libcap-ng 0.9.3
     * libexif 0.6.26
     * libmaxminddb 1.13.3
     * libpng 1.6.57
