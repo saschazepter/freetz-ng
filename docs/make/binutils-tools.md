@@ -6,33 +6,6 @@
   - Package: [master/make/pkgs/binutils-tools/](https://github.com/Freetz-NG/freetz-ng/tree/master/make/pkgs/binutils-tools/)
   - Steward: [@Ircama](https://github.com/Ircama)
 
-## Overview
-
-Binary analysis and manipulation utilities from GNU Binutils package plus patchelf. Essential for debugging, inspecting, and analyzing ELF binaries.
-
-## Installation
-
-Select in menuconfig:
-```
-Debug helpers ---> binary-tools
-```
-
-### Available Tools
-
-All tools operate on ELF (Executable and Linkable Format) binaries:
-
-- **`readelf`** - Display information about ELF files (headers, sections, symbols)
-- **`objdump`** - Display object file information (disassembly, sections)
-- **`objcopy`** - Copy and translate object files
-- **`nm`** - List symbols from object files
-- **`strings`** - Print printable strings from binary files
-- **`ar`** - Create, modify, and extract from archives (.a files)
-- **`ranlib`** - Generate index for archive contents
-- **`strip`** - Discard symbols and debug information from binaries
-- **`addr2line`** - Convert addresses to file/line numbers (debugging)
-- **`size`** - List section sizes and total size of binaries
-- **`patchelf`** - Modify ELF dynamic linker and RPATH (runtime library paths)
-
 ## Usage Examples
 
 ### Inspecting Binaries
@@ -159,45 +132,6 @@ strip --strip-debug mybinary
 
 # After (smaller)
 size mybinary
-```
-
-## Integration with GCC Toolchain
-
-Binary-tools is automatically selected when installing the full GCC toolchain:
-
-```
-Debug helpers ---> GCC (Native Compiler for On-Device Compilation)
-  [ ] Minimal installation (GCC + essential tools only)
-```
-
-**Minimal installation**: Includes only `ld`, `as`, `ar`, `ranlib` (essential for compilation)
-**Full installation**: Includes all binary-tools utilities
-
-## Troubleshooting
-
-### "command not found"
-
-Binary-tools must be externalized to USB storage:
-
-```bash
-# Check if tools are externalized
-ls -la /var/media/ftp/uStor01/freetz-external/binary-tools/
-
-# If not, run externalization
-modsave flash
-```
-
-### Wrong Architecture Binaries
-
-Binary-tools are MIPS binaries that run on the router. They analyze **any** architecture's ELF files, but they themselves must run on MIPS.
-
-```bash
-# This works (MIPS binary analyzing x86 file)
-readelf -h /tmp/x86_binary.elf
-
-# This won't work (trying to run x86 binary on MIPS router)
-./x86_binary
-# bash: ./x86_binary: cannot execute binary file
 ```
 
 ## Performance Considerations
