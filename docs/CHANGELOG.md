@@ -74,7 +74,7 @@ Latest changes
     * dos2unix 7.5.5
     * file 5.47
     * kconfig 7.0
-    * meson 1.10.2
+    * meson 1.11.0
     * openssl 3.5.6
     * pseudo 1.9.3-414ce2d
     * python3 3.14.4
