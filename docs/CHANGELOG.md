@@ -93,7 +93,7 @@ Latest changes
     * CA-bundle 2026-03-19
     * Curl 8.12.1/8.19.0
     * htop 1.0.3/3.5.0
-    * ImageMagick 7.1.0-62/7.1.2-16
+    * ImageMagick 7.1.0-62/7.1.2-19
     * iPerf3 3.3/3.21
     * Iptables 1.4.11.1/1.4.21/1.6.2/1.8.13
     * ldd 0.1/1.0.57
