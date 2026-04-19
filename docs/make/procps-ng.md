@@ -1,10 +1,10 @@
-# procps-ng 4.0.5 (binaries only)
+# procps-ng 4.0.6 (binaries only)
   - Homepage: [https://gitlab.com/procps-ng/procps](https://gitlab.com/procps-ng/procps)
   - Manpage: [https://linux.die.net/man/1/ps](https://linux.die.net/man/1/ps)
   - Changelog: [https://gitlab.com/procps-ng/procps/-/tags](https://gitlab.com/procps-ng/procps/-/tags)
   - Repository: [https://gitlab.com/procps-ng/procps](https://gitlab.com/procps-ng/procps)
   - Package: [master/make/pkgs/procps-ng/](https://github.com/Freetz-NG/freetz-ng/tree/master/make/pkgs/procps-ng/)
-  - Steward: [@Ircama](https://github.com/Ircama)
+  - Steward: [@fda77](https://github.com/fda77)
 
 ## Overview
 
