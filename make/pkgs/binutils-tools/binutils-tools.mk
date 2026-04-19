@@ -1,5 +1,5 @@
 $(call PKG_INIT_BIN, 2.46.0)
-$(PKG)_LIB_VERSION:=$($(PKG)_VERSION)
+$(PKG)_LIB_VERSION:=2.46.0.20260210
 $(PKG)_SOURCE:=binutils-$($(PKG)_VERSION).tar.xz
 $(PKG)_HASH:=d75a94f4d73e7a4086f7513e67e439e8fcdcbb726ffe63f4661744e6256b2cf2
 $(PKG)_SITE:=@GNU/binutils
@@ -21,7 +21,7 @@ $(PKG)_SEL_DIR:=$($(PKG)_SEL_BIN:%=$($(PKG)_DEST_DIR)/usr/bin/%)
 $(PKG)_EXCLUDED:=$(filter-out $($(PKG)_SEL_DIR),$($(PKG)_DST_DIR))
 
 $(PKG)_LIBRARIES_SHORT := libbfd                           libctf           libctf-nobfd           libsframe           libopcodes
-$(PKG)_LIBRARIES_NAME  := libbfd-$($(PKG)_LIB_VERSION).so  libctf.so.0.0.0  libctf-nobfd.so.0.0.0  libsframe.so.2.0.0  libopcodes-$($(PKG)_LIB_VERSION).so
+$(PKG)_LIBRARIES_NAME  := libbfd-$($(PKG)_LIB_VERSION).so  libctf.so.0.0.0  libctf-nobfd.so.0.0.0  libsframe.so.3.0.0  libopcodes-$($(PKG)_LIB_VERSION).so
 $(PKG)_LIBRARIES_DIR   := bfd                              libctf           libctf                 libsframe           opcodes
 $(PKG)_LIBRARIES_BUILD_DIR:=$(join $($(PKG)_LIBRARIES_DIR:%=$($(PKG)_DIR)/%/.libs/),$($(PKG)_LIBRARIES_NAME))
 $(PKG)_LIBRARIES_TARGET_DIR:=$($(PKG)_LIBRARIES_NAME:%=$($(PKG)_TARGET_LIBDIR)/%)
