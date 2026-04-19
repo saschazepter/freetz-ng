@@ -106,6 +106,7 @@ Latest changes
     * Python 3.14.3
     * sslh 2.2.4/2.3.1
     * Stunnel 5.78
+    * tinc 1.0.37/1.1pre18
     * Tinyproxy 1.11.3
     * Tor 0.4.8.23
     * UnRAR 6.1.7/7.2.5
