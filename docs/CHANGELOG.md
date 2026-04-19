@@ -111,6 +111,7 @@ Latest changes
     * tinc 1.0.37/1.1pre18
     * Tinyproxy 1.11.3
     * Tor 0.4.8.23
+    * Tree 1.8.0/2.3.2
     * UnRAR 6.1.7/7.2.5
     * wireguard-tools 1.0.20260223
     * Whois 5.6.6
