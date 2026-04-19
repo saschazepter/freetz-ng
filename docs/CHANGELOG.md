@@ -116,6 +116,7 @@ Latest changes
     * UnRAR 6.1.7/7.2.5
     * wireguard-tools 1.0.20260223
     * Whois 5.6.6
+    * xsltproc 1.1.45
     * XZ 5.8.3
 
   - Libraries:
