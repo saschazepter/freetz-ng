@@ -1,10 +1,10 @@
-# Binutils 2.45.1 (binary only)
+# Binutils 2.46.0 (binary only)
   - Homepage: [https://www.gnu.org/software/binutils/](https://www.gnu.org/software/binutils/)
   - Manpage: [https://sourceware.org/binutils/docs/](https://sourceware.org/binutils/docs/)
   - Changelog: [https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;a=blob_plain;f=binutils/NEWS](https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;a=blob_plain;f=binutils/NEWS)
   - Repository: [https://sourceware.org/git/binutils-gdb.git](https://sourceware.org/git/binutils-gdb.git)
   - Package: [master/make/pkgs/binutils-tools/](https://github.com/Freetz-NG/freetz-ng/tree/master/make/pkgs/binutils-tools/)
-  - Steward: [@Ircama](https://github.com/Ircama)
+  - Steward: [@fda77](https://github.com/fda77)
 
 ## Usage Examples
 
