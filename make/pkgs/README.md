@@ -447,7 +447,7 @@ Index: [A](#a) - [B](#b) - [C](#c) - [D](#d) - [E](#e) - [F](#f) - [G](#g) - [H]
 
 ### L
 
-  * **[LCD4linux eadf4603](../../docs/make/lcd4linux.md)<a id='lcd4linux'></a>**<br>
+  * **[LCD4linux 63fffafb](../../docs/make/lcd4linux.md)<a id='lcd4linux'></a>**<br>
     LCD4Linux is a small program that grabs information from the kernel and some subsystems and displays it on an external liquid crystal display.
 
   * **<u>lftp 4.8.4 (binary only) - DEPRECATED</u><a id='lftp'></a>**<br>
