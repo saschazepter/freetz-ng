@@ -1104,7 +1104,6 @@ Index: [A](#a) - [B](#b) - [C](#c) - [D](#d) - [E](#e) - [F](#f) - [G](#g) - [H]
 
   * **[binutils-tools: Binutils 2.45.1 (binary only)](../../docs/make/binutils-tools.md)<a id='binutils-tools'></a>**<br>
     Collection of essential tools for analyzing and manipulating ELF binaries. Size of all binaries and libraries: ~1.5MB (uncompressed: ~4.5MB)
-     - [Available Tools](../../docs/make/binutils-tools.md#available-tools)
      - [Inspecting Binaries](../../docs/make/binutils-tools.md#inspecting-binaries)
      - [Debugging](../../docs/make/binutils-tools.md#debugging)
      - [Binary Manipulation](../../docs/make/binutils-tools.md#binary-manipulation)
@@ -1113,8 +1112,6 @@ Index: [A](#a) - [B](#b) - [C](#c) - [D](#d) - [E](#e) - [F](#f) - [G](#g) - [H]
      - [3. Fixing Dynamic Linker Issues](../../docs/make/binutils-tools.md#3-fixing-dynamic-linker-issues)
      - [4. Reverse Engineering](../../docs/make/binutils-tools.md#4-reverse-engineering)
      - [4. Reducing Binary Size](../../docs/make/binutils-tools.md#4-reducing-binary-size)
-     - ["command not found"](../../docs/make/binutils-tools.md#command-not-found)
-     - [Wrong Architecture Binaries](../../docs/make/binutils-tools.md#wrong-architecture-binaries)
 
   * **[file 5.47 (binary only)](../../docs/make/file.md)<a id='file'></a>**<br>
     file - determine file type The file command is used to identify a particular file according to the type of data contained by the file. File can identify many different file types, including ELF binaries, system libraries, RPM packages, and many different graphics formats. This utility is essential for analyzing binaries and file formats on the target system, especially useful for debugging cross-compilation issues.
