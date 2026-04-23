@@ -1,4 +1,6 @@
-Virtualip NG Freetz package
+# Virtualip NG
+  - Package: [master/make/pkgs/virtualip-ng/](https://github.com/Freetz-NG/freetz-ng/tree/master/make/pkgs/virtualip-ng/)
+  - Steward: -
 
 Copyright (C) 2006 Daniel Eiband <eiband@online.de>
 
