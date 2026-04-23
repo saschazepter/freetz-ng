@@ -1,7 +1,6 @@
 config FREETZ_PACKAGE_VIRTUALIP_NG
 	bool "Virtualip-NG"
 	depends on FREETZ_SHOW_EXPERT
-	depends on FREETZ_AVM_HAS_WLAN
 	default n
 	help
 		Creates one or more virtual IPv4/IPv6 addresses on selected interfaces.

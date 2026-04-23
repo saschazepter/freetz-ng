@@ -1,4 +1,10 @@
 [ "$FREETZ_PACKAGE_VIRTUALIP_NG" == "y" ] || return 0
+
+if [ "$FREETZ_AVM_HAS_WLAN" != "y" ] || [ "$FREETZ_REMOVE_WLAN" == "y" ]; then
+	echo2 "skipping virtualip-ng wlan hook: device has no WLAN"
+	return 0
+fi
+
 echo1 "hooking virtualip-ng into rc.wlan"
 
 found=0
