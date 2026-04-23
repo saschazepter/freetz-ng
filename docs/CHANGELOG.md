@@ -70,7 +70,7 @@ Latest changes
   - Host tools:
     * autoconf 2.73
     * ca-bundle 2026-03-19
-    * cmake 4.3.1
+    * cmake 4.3.2
     * dos2unix 7.5.5
     * file 5.47
     * kconfig 7.0
