@@ -117,6 +117,7 @@ Latest changes
     * Tor 0.4.8.23
     * Tree 1.8.0/2.3.2
     * UnRAR 6.1.7/7.2.5
+    * Virtualip-NG 1.0
     * wireguard-tools 1.0.20260223
     * Whois 5.6.6
     * xsltproc 1.1.45
