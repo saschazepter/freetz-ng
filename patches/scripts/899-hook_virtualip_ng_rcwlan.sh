@@ -1,17 +1,10 @@
 [ "$FREETZ_PACKAGE_VIRTUALIP_NG" == "y" ] || return 0
-
-if [ -r "$FILESYSTEM_MOD_DIR/etc/init.d/rc.conf" ] && \
-	grep -Eq '^CONFIG_WLAN="?n"?$' "$FILESYSTEM_MOD_DIR/etc/init.d/rc.conf"; then
-	echo2 "skipping virtualip-ng wlan hook: device has no WLAN"
-	return 0
-fi
-
 echo1 "hooking virtualip-ng into rc.wlan"
 
 found=0
 for file in \
-	"$FILESYSTEM_MOD_DIR/etc/init.d/rc.wlan" \
-	"$VARTAR_MOD_DIR/etc/init.d/rc.wlan"; do
+  "$FILESYSTEM_MOD_DIR/etc/init.d/rc.wlan" \
+  "$VARTAR_MOD_DIR/etc/init.d/rc.wlan"; do
 	[ -e "$file" ] || continue
 	found=1
 	echo2 "patching $file"
