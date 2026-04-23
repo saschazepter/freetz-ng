@@ -76,7 +76,7 @@ Latest changes
     * kconfig 7.0
     * meson 1.11.0
     * openssl 3.5.6
-    * pseudo 1.9.3-414ce2d
+    * pseudo 1.9.5
     * python3 3.14.4
 
   - AVM sources:
