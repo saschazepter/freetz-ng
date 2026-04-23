@@ -1244,8 +1244,16 @@ Index: [A](#a) - [B](#b) - [C](#c) - [D](#d) - [E](#e) - [F](#f) - [G](#g) - [H]
      - [Probleme mit IPTV](../../docs/make/virtualip-cgi.md#probleme-mit-iptv)
      - [Probleme mit dem SIP-Registrar Modus](../../docs/make/virtualip-cgi.md#probleme-mit-dem-sip-registrar-modus)
 
-  * **[Virtualip NG](../../docs/make/virtualip-ng.md)<a id='virtualip-ng'></a>**<br>
+  * **[Virtualip-NG](../../docs/make/virtualip-ng.md)<a id='virtualip-ng'></a>**<br>
     Creates one or more virtual IPv4/IPv6 addresses on selected interfaces. This package is a maintained NG variant derived from the former virtualip-cgi module and provides a web configuration page for interface, IP/netmask-or-prefix entries, autostart and timing controls. See docs/make/virtualip-ng.md for more hints.
+     - [Overview](../../docs/make/virtualip-ng.md#overview)
+     - [What it does](../../docs/make/virtualip-ng.md#what-it-does)
+     - [IPv6 support](../../docs/make/virtualip-ng.md#ipv6-support)
+     - [Capabilities](../../docs/make/virtualip-ng.md#capabilities)
+     - [Configuration format](../../docs/make/virtualip-ng.md#configuration-format)
+     - [Notes](../../docs/make/virtualip-ng.md#notes)
+     - [WebUI notes](../../docs/make/virtualip-ng.md#webui-notes)
+     - [Operational notes](../../docs/make/virtualip-ng.md#operational-notes)
 
   * **<u>Zabbix 2.4.6 (binary only) - DEPRECATED</u><a id='zabbix'></a>**<br>
     Zabbix is an enterprise-class open source distributed monitoring solution. Zabbix is software that monitors numerous parameters of a network and the health and integrity of servers. Zabbix uses a flexible notification mechanism that allows users to configure e-mail based alerts for virtually any event. This allows a fast reaction to server problems. Zabbix offers excellent reporting and data visualisation features based on the stored data. This makes Zabbix ideal for capacity planning. Zabbix supports both polling and trapping. All Zabbix reports and statistics, as well as configuration parameters, are accessed through a web-based front end. A web-based front end ensures that the status of your network and the health of your servers can be assessed from any location. Properly configured, Zabbix can play an important role in monitoring IT infrastructure. This is equally true for small organisations with a few servers and for large companies with a multitude of servers. Zabbix is free of cost. Zabbix is written and distributed under the GPL General Public License version 2. It means that its source code is freely distributed and available for the general public.

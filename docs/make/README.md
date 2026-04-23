@@ -919,7 +919,7 @@ Index: [A](#a) - [B](#b) - [C](#c) - [D](#d) - [E](#e) - [F](#f) - [G](#g) - [H]
   * **[virtualip-cgi: Virtual IP CGI - DEPRECATED](virtualip-cgi.md)<a id='virtualip'></a>**<br>
     Creates a virtual network interface. In former times this was used to comfortably open server ports on the Fritz!Box itself via AVM web interface. Nowadays the avm-firewall package is used for this task. The package is also equipped with a configuration interface for the Freetz web configurator which lets you choose the IP address and net mask of the virtual interface as well as toggle auto-start.
 
-  * **[Virtualip NG](virtualip-ng.md)<a id='virtualip-ng'></a>**<br>
+  * **[Virtualip-NG](virtualip-ng.md)<a id='virtualip-ng'></a>**<br>
     Creates one or more virtual IPv4/IPv6 addresses on selected interfaces. This package is a maintained NG variant derived from the former virtualip-cgi module and provides a web configuration page for interface, IP/netmask-or-prefix entries, autostart and timing controls. See docs/make/virtualip-ng.md for more hints.
 
   * **<u>Zabbix 2.4.6 (binary only) - DEPRECATED</u><a id='zabbix'></a>**<br>
