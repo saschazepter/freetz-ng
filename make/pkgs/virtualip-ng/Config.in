@@ -1,5 +1,5 @@
 config FREETZ_PACKAGE_VIRTUALIP_NG
-	bool "Virtualip-NG"
+	bool "Virtualip-NG - EXPERIMENTAL"
 	depends on FREETZ_SHOW_EXPERT
 	default n
 	help
