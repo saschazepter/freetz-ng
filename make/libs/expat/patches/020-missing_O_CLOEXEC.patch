@@ -1,0 +1,15 @@
+--- lib/random_dev_urandom.c
++++ lib/random_dev_urandom.c
+@@ -47,7 +47,12 @@
+   int success = false; /* full count bytes written? */
+   size_t bytesWrittenTotal = 0;
+ 
++#ifdef O_CLOEXEC
+   const int fd = open("/dev/urandom", O_RDONLY | O_CLOEXEC);
++#else
++  const int fd = open("/dev/urandom", O_RDONLY);
++#endif
++
+   if (fd < 0) {
+     return 0;
+   }
