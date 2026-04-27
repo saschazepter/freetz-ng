@@ -5,6 +5,7 @@ $(PKG)_HASH_ABANDON:=1032dfef4ff17f70464827daa28369b20f6584d108bc36f17ab1676e1ed
 $(PKG)_HASH_CURRENT:=a37bfae0aa9775bd8521ebd85dc456d486f0ff31138f6c91fd902ea732624542
 $(PKG)_HASH:=$($(PKG)_HASH_$(if $(FREETZ_LIB_libexpat_VERSION_ABANDON),ABANDON,CURRENT))
 $(PKG)_SITE:=@SF/expat,https://github.com/libexpat/libexpat/releases/download/R_$(subst .,_,$($(PKG)_VERSION))
+### VERSION:=2.7.5/2.8.0
 ### WEBSITE:=https://libexpat.github.io/
 ### MANPAGE:=https://libexpat.github.io/doc/
 ### CHANGES:=https://github.com/libexpat/libexpat/blob/master/expat/Changes
