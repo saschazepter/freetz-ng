@@ -15,17 +15,32 @@ if FREETZ_LIB_libexpat
 
 	choice
 		prompt "Version"
-			default FREETZ_LIB_libexpat_VERSION_CURRENT
+			default FREETZ_PACKAGE_EXPAT_WITH_VERSION_CURRENT
 
-		config FREETZ_LIB_libexpat_VERSION_ABANDON
+		config FREETZ_PACKAGE_EXPAT_WITH_VERSION_ABANDON
 			bool "2.7.5"
-			depends on !FREETZ_TARGET_GCC_8_MIN
+			depends on FREETZ_LIB_libexpat_VERSION_ABANDON
 
-		config FREETZ_LIB_libexpat_VERSION_CURRENT
+		config FREETZ_PACKAGE_EXPAT_WITH_VERSION_CURRENT
 			bool "2.8.0"
-			depends on FREETZ_TARGET_GCC_8_MIN
+			depends on FREETZ_LIB_libexpat_VERSION_CURRENT
 
 	endchoice
 
 endif # FREETZ_LIB_libexpat
+
+
+choice
+	prompt "Version" if FALSE
+		default FREETZ_LIB_libexpat_VERSION_CURRENT
+
+	config FREETZ_LIB_libexpat_VERSION_ABANDON
+		bool "2.7.5"
+		depends on FREETZ_TARGET_GCC_5_MAX
+
+	config FREETZ_LIB_libexpat_VERSION_CURRENT
+		bool "2.8.0"
+		depends on !FREETZ_TARGET_GCC_5_MAX
+
+endchoice
 
