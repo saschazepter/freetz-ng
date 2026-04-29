@@ -23,7 +23,7 @@
 </tbody></table>
 </details>
 
-<details><summary>130 verschiedene HWR</summary>
+<details><summary>131 verschiedene HWR</summary>
 
 <table>
 <caption style='background-color:gray'>&nbsp;</caption>
@@ -159,10 +159,11 @@
 <tr><td>FRITZ!Box 7632</td><td>303</td></tr>
 <tr><td>FRITZ!Repeater 1610 Outdoor</td><td>305</td></tr>
 <tr><td>FRITZ!Box 4630</td><td>307</td></tr>
+<tr><td>FRITZ!Box 6690 Pro</td><td>308</td></tr>
 </tbody></table>
 </details>
 
-<details><summary>131 verschiedene Produkte</summary>
+<details><summary>132 verschiedene Produkte</summary>
 
 <table>
 <caption style='background-color:gray'>&nbsp;</caption>
@@ -292,6 +293,7 @@
 <tr><td>FRITZ!Box 7632</td><td>Fritz_Box_HW303</td></tr>
 <tr><td>FRITZ!Repeater 1610 Outdoor</td><td>Fritz_Box_HW305</td></tr>
 <tr><td>FRITZ!Box 4630</td><td>Fritz_Box_HW307</td></tr>
+<tr><td>FRITZ!Box 6690 Pro</td><td>Fritz_Box_HW308</td></tr>
 <tr><td>FRITZ!WLAN Repeater 300E</td><td>Fritz_Box_Neon</td></tr>
 <tr><td>FRITZ!Box 6360 Cable</td><td>Fritz_Box_Puma</td></tr>
 <tr><td>FRITZ!Box SL WLAN</td><td>Fritz_Box_SL_WLAN</td></tr>
@@ -1019,13 +1021,14 @@
 <tr><td>FRITZ!Box 6590 Cable</td><td>FREETZ_TYPE_6590</td></tr>
 </tbody></table>
 <table>
-<caption style='background-color:gray'>Gen4: uimg-boot (4)</caption>
+<caption style='background-color:gray'>Gen4: uimg-boot (5)</caption>
 <thead><tr><th style='width:450px'>Name</th><th style='width:300px'>Symbol</th></tr></thead>
 <tbody>
 <tr><td>FRITZ!Box 6591 Cable</td><td>FREETZ_TYPE_6591</td></tr>
 <tr><td>FRITZ!Box 6660 Cable</td><td>FREETZ_TYPE_6660</td></tr>
 <tr><td>FRITZ!Box 6670 Cable</td><td>FREETZ_TYPE_6670</td></tr>
 <tr><td>FRITZ!Box 6690 Cable</td><td>FREETZ_TYPE_6690_NIX</td></tr>
+<tr><td>FRITZ!Box 6690 Pro</td><td>FREETZ_TYPE_6690_PRO</td></tr>
 </tbody></table>
 <table>
 <caption style='background-color:gray'>Gen5: fit-boot (25)</caption>
