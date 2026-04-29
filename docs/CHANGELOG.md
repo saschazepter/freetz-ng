@@ -94,7 +94,7 @@ Latest changes
     * BIND 9.11.37/9.20.22
     * Binutils 2.46.0
     * CA-bundle 2026-03-19
-    * Curl 8.12.1/8.19.0
+    * Curl 8.12.1/8.20.0
     * Git 2.26.2/2.53.0
     * htop 1.0.3/3.5.1
     * ImageMagick 7.1.0-62/7.1.2-21
