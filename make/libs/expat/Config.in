@@ -19,11 +19,11 @@ if FREETZ_LIB_libexpat
 
 		config FREETZ_LIB_libexpat_VERSION_ABANDON
 			bool "2.7.5"
-			depends on FREETZ_TARGET_GCC_5_MAX
+			depends on !FREETZ_TARGET_GCC_8_MIN
 
 		config FREETZ_LIB_libexpat_VERSION_CURRENT
 			bool "2.8.0"
-			depends on !FREETZ_TARGET_GCC_5_MAX
+			depends on FREETZ_TARGET_GCC_8_MIN
 
 	endchoice
 
