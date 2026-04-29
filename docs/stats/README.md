@@ -302,7 +302,7 @@
 </tbody></table>
 </details>
 
-<details><summary>127 verschiedene Geräte</summary>
+<details><summary>128 verschiedene Geräte</summary>
 
 <table>
 <caption style='background-color:gray'>T-Com (2)</caption>
@@ -367,7 +367,7 @@
 <tr><td>5690 XGS</td><td>FREETZ_TYPE_5690_XGS</td></tr>
 </tbody></table>
 <table>
-<caption style='background-color:gray'>Cable (11)</caption>
+<caption style='background-color:gray'>Cable (12)</caption>
 <thead><tr><th style='width:450px'>Name</th><th style='width:300px'>Symbol</th></tr></thead>
 <tbody>
 <tr><td>6320 v1</td><td>FREETZ_TYPE_6320_V1</td></tr>
@@ -380,7 +380,8 @@
 <tr><td>6591</td><td>FREETZ_TYPE_6591</td></tr>
 <tr><td>6660</td><td>FREETZ_TYPE_6660</td></tr>
 <tr><td>6670</td><td>FREETZ_TYPE_6670</td></tr>
-<tr><td>6690</td><td>FREETZ_TYPE_6690</td></tr>
+<tr><td>6690</td><td>FREETZ_TYPE_6690_NIX</td></tr>
+<tr><td>6690 Pro</td><td>FREETZ_TYPE_6690_PRO</td></tr>
 </tbody></table>
 <table>
 <caption style='background-color:gray'>LTE (12)</caption>
@@ -493,7 +494,7 @@
 </tbody></table>
 </details>
 
-<details><summary>400 verschiedene Images</summary>
+<details><summary>401 verschiedene Images</summary>
 
 <table>
 <caption style='background-color:gray'>&nbsp;</caption>
@@ -686,10 +687,11 @@
 <tr><td>FRITZ.Box_6670_Cable-07.63.image</td><td>FREETZ_TYPE_6670 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_07_5X</td></tr>
 <tr><td>FRITZ.Box_6670_Cable-08.03.image</td><td>FREETZ_TYPE_6670 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_0X</td></tr>
 <tr><td>FRITZ.Box_6670_Cable-08.21.image</td><td>FREETZ_TYPE_6670 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_2X</td></tr>
-<tr><td>FRITZ.Box_6690_Cable-07.29.image</td><td>FREETZ_TYPE_6690 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_07_2X</td></tr>
-<tr><td>FRITZ.Box_6690_Cable-07.57-V2.image/FRITZ.Box_6690_Cable-07.57.image</td><td>FREETZ_TYPE_6690 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_07_5X</td></tr>
-<tr><td>FRITZ.Box_6690_Cable-08.03.image</td><td>FREETZ_TYPE_6690 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_0X</td></tr>
-<tr><td>FRITZ.Box_6690_Cable-08.21.image</td><td>FREETZ_TYPE_6690 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_2X</td></tr>
+<tr><td>FRITZ.Box_6690_Cable-07.29.image</td><td>FREETZ_TYPE_6690_NIX &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_07_2X</td></tr>
+<tr><td>FRITZ.Box_6690_Cable-07.57-V2.image/FRITZ.Box_6690_Cable-07.57.image</td><td>FREETZ_TYPE_6690_NIX &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_07_5X</td></tr>
+<tr><td>FRITZ.Box_6690_Cable-08.03.image</td><td>FREETZ_TYPE_6690_NIX &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_0X</td></tr>
+<tr><td>FRITZ.Box_6690_Cable-08.21.image</td><td>FREETZ_TYPE_6690_NIX &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_2X</td></tr>
+<tr><td>FRITZ.Box_6690_Pro-08.24-130508-Inhaus.image</td><td>FREETZ_TYPE_6690_PRO &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_2X</td></tr>
 <tr><td>FRITZ.Box_6810_LTE.108.06.35.image</td><td>FREETZ_TYPE_6810 &amp;&amp;<br> FREETZ_TYPE_LANG_DE &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_06_2X</td></tr>
 <tr><td>FRITZ.Box_6810_LTE.en-de-es-it-fr.108.06.35.image</td><td>FREETZ_TYPE_6810 &amp;&amp;<br> FREETZ_TYPE_LANG_EN &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_06_2X</td></tr>
 <tr><td>FRITZ.Box_6820_LTE.en-de-es-it-fr-pl.142.06.83.image</td><td>FREETZ_TYPE_6820_V1 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_06_8X</td></tr>
@@ -1023,7 +1025,7 @@
 <tr><td>FRITZ!Box 6591 Cable</td><td>FREETZ_TYPE_6591</td></tr>
 <tr><td>FRITZ!Box 6660 Cable</td><td>FREETZ_TYPE_6660</td></tr>
 <tr><td>FRITZ!Box 6670 Cable</td><td>FREETZ_TYPE_6670</td></tr>
-<tr><td>FRITZ!Box 6690 Cable</td><td>FREETZ_TYPE_6690</td></tr>
+<tr><td>FRITZ!Box 6690 Cable</td><td>FREETZ_TYPE_6690_NIX</td></tr>
 </tbody></table>
 <table>
 <caption style='background-color:gray'>Gen5: fit-boot (25)</caption>
