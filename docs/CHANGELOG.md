@@ -110,6 +110,7 @@ Latest changes
     * OpenVPN 2.4.12/2.5.11/2.6.20/2.7.3
     * procps-ng 4.0.6
     * Python 3.14.3
+    * rsync 3.4.2
     * sslh 2.2.4/2.3.1
     * Stunnel 5.78
     * SQLite 3.40.1/3.53.0
