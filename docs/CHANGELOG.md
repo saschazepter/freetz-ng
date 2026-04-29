@@ -88,6 +88,7 @@ Latest changes
     * Still are some patches not yet adapted for Fritzos 8.2x
 
   - Packages:
+    * ACME.sh 3.1.3
     * Atop 2.12.1
     * Bftpd 6.6
     * BIND 9.11.37/9.20.22
