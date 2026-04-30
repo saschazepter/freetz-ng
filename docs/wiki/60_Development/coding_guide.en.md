@@ -1,4 +1,4 @@
-# Freetz-NG Package Development Guide
+# Package Development Guide
 
 This guide provides best practices and step-by-step instructions for developing packages in Freetz-NG.
 
