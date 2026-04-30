@@ -1298,6 +1298,7 @@ Index: [A](#a) - [B](#b) - [C](#c) - [D](#d) - [E](#e) - [F](#f) - [G](#g) - [H]
 
   * **[Iptables-NG - EXPERIMENTAL](../../docs/make/iptables-ng.md)<a id='iptables-ng'></a>**<br>
     Advanced iptables/ip6tables management page with dynamic table and module capability detection, plus save/restore controls. Runtime status (started/stopped) is independent from startup mode (automatic/manual). Startup mode only controls boot behavior. See docs/make/iptables-ng.md for more hints. This package forces removing of dsld if available!
+     - [Warning](../../docs/make/iptables-ng.md#warning)
      - [This package provides an advanced web interface for iptables/ip6tables](../../docs/make/iptables-ng.md#this-package-provides-an-advanced-web-interface-for-iptablesip6tables)
      - [Behavior notes](../../docs/make/iptables-ng.md#behavior-notes)
      - [Dependencies and constraints](../../docs/make/iptables-ng.md#dependencies-and-constraints)
