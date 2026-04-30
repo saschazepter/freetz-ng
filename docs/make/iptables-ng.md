@@ -57,6 +57,3 @@ This resulted in a PR and the merge of https://github.com/Freetz-NG/freetz-ng/co
 Now its possible to use the full power of iptables on the fritzbox.
 All the drama about the "AVM Firwall sometime became a unsolvable iptables breaker" was simply the still running kernel module.
 
-
-* virtualip-ng is PRed with #1503.
-
