@@ -52,7 +52,7 @@ Index: [A](#a) - [B](#b) - [C](#c) - [D](#d) - [E](#e) - [F](#f) - [G](#g) - [H]
   * **[gettext (libintl.so) 1.0](gettext.md)<a id='gettext'></a>**<br>
     GNU Internationalization library
 
-  * **[GLib2 libglib (libglib-2.0.so) 2.32.4/2.88.0](glib2.md)<a id='glib2'></a>**<br>
+  * **[glib2: libglib (libglib-2.0.so) 2.32.4/2.88.0](glib2.md)<a id='glib2'></a>**<br>
     GLib is a library containing many useful C routines for things such as trees, hashes, and lists.
 
   * **[gmp: GNU MP Bignum Library (libgmp.so) 6.3.0](gmp.md)<a id='gmp'></a>**<br>
@@ -348,7 +348,7 @@ Index: [A](#a) - [B](#b) - [C](#c) - [D](#d) - [E](#e) - [F](#f) - [G](#g) - [H]
 
 ### U
 
-  * **[uClibc (ld-uClibc-x.y.z.so) 0.9.28/0.9.29/0.9.32.1/0.9.33.2/1.0.14/1.0.57](uclibc.md)<a id='uclibc'></a>**<br>
+  * **[uclibc-0.9.28 0.9.28/0.9.29/0.9.32.1/0.9.33.2/1.0.14/1.0.57](uclibc.md)<a id='uclibc'></a>**<br>
     uClibc is a small C standard library intended for embedded Linux systems. uClibc was created to support uClinux, a version of Linux not requiring a memory management unit and thus suited for microcontrollers (hence the "uC" in the name - "u" is a replacement for the Greek character "miu" often used as an abbreviation for the prefix "micro"). uClibc is much smaller than GNU C Library (glibc), the C library normally used with Linux distributions. While glibc is intended to fully support all relevant C standards across a wide range of platforms, uClibc is specifically focused on embedded Linux. Features can be enabled or disabled according to space requirements.
 
   * **[uclibcxx: uClibc++ (libuClibc++.so.0.2.6) 6687fc9276fa52defaf8592f2001c19b826aec93](uclibcxx.md)<a id='uclibcxx'></a>**<br>
