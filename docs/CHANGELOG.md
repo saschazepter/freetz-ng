@@ -225,6 +225,7 @@ Latest changes
     * ImageMagick 7.1.0-62/7.1.2-12
     * Info-ZIP 3.0
     * iPerf3 3.3/3.20
+    * Iptables-NG 1.0
     * ldd 0.1/1.0.56
     * Make 4.2.1/4.4.1
     * MTR 0.80/0.96
