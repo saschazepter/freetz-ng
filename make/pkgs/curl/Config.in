@@ -34,7 +34,7 @@ if FREETZ_PACKAGE_CURL
 			bool "Select CA-bundle"
 			depends on FREETZ_PACKAGE_CURL_SELECT_SSL
 			default y
-			select FREETZ_PACKAGE_CA_BUNDLE
+			select FREETZ_LIB_libcurl_WITH_CA_BUNDLE
 
 	config FREETZ_PACKAGE_CURL_SELECT_SFTP
 		bool "Select sftp support"
