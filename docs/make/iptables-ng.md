@@ -2,6 +2,11 @@
   - Package: [master/make/pkgs/iptables-ng/](https://github.com/Freetz-NG/freetz-ng/tree/master/make/pkgs/iptables-ng/)
   - Steward: [@ThomasToka](https://github.com/ThomasToka)
 
+### Warning
+  - This package works only with remove dsld. Without this, routing, pppoe, dns etc are no longer working as intended by AVM.
+  - Only IP-client ("Internet mitbenutzen") still works.
+  - If you want to know the reason for random reboots with iptables and state/conntrack read the [FAQ](../wiki/00_FAQ/FAQ.de)!
+
 ### This package provides an advanced web interface for iptables/ip6tables
   - table and chain discovery (IPv4 + IPv6)
   - module capability hints per table
@@ -53,7 +58,9 @@ This package has been created by Thomas Toka (https://www.github.com/ThomasToka)
 Motivation for this package:
 When you use the box in ip-client mode, the guestlan has no dhcp. As i have my internet fiber router on another network i need to forward and encapsulate my traffic from the fritzbox to my router and back.
 
+~~.
 This resulted in a PR and the merge of https://github.com/Freetz-NG/freetz-ng/commit/b51f5d82b25da3e63df27df4cc3b3a021d9cd69a allowing to disable dsld -which controls the AVM-Firewall kernel module (kdsldmod)- on newer boxes as the nameing changed some years ago and so the remove dsld patch was broken.
 Now its possible to use the full power of iptables on the fritzbox.
 All the drama about the "AVM Firwall sometime became a unsolvable iptables breaker" was simply the still running kernel module.
+.~~
 
