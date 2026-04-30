@@ -59,7 +59,6 @@
   - [Benutzerverwaltung](50_Security/user_management.md)
 
 ### [Development](60_Development/README.md)
-  - [Package Development Guide [EN]](60_Development/coding_guide.en.md)
   - [Eigene Programme kompilieren](60_Development/compile_own_progs.md)
   - [Cross-Compiler / Toolchain erstellen](60_Development/create_cross-compiler_toolchain.md)
   - [Device Table](60_Development/device_table.md)
@@ -79,6 +78,7 @@
   - [Erstellen einer GUI für Pakete in Freetz](60_Development/package_development_webcreate.md)
   - [Web-interface HTTPTunnel [EN]](60_Development/package_development_webexample.en.md)
   - [Aufbau eines Patches](60_Development/patch.md)
+  - [Sammelsurium: Development [EN]](60_Development/sammelsurium_development.en.md)
   - [Shell Language [EN]](60_Development/shell_coding_conventions.en.md)
   - [SquashFS 4 (BE) [EN]](60_Development/squashfs4-be.en.md)
   - [STARTLEVEL of packages [EN]](60_Development/startlevel_of_packages.en.md)
