@@ -2,7 +2,7 @@ config FREETZ_PACKAGE_IPTABLES_NG
 	bool "Iptables NG"
 	depends on FREETZ_TARGET_IPV6_SUPPORT
 	depends on FREETZ_PACKAGE_IPTABLES
-	depends on FREETZ_REMOVE_DSLD
+	select FREETZ_REMOVE_DSLD if FREETZ_AVM_HAS_DSLD
 	select FREETZ_PACKAGE_IPTABLES_SAVE_RESTORE
 	default n
 	help
@@ -14,5 +14,5 @@ config FREETZ_PACKAGE_IPTABLES_NG
 
 		See docs/make/iptables-ng.md for more hints.
 
-		This package requires dsld to be removed
-		(FREETZ_REMOVE_DSLD=y).
+		This package forces removing of dsld if available!
+
