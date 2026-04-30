@@ -2,6 +2,10 @@
 
 This guide provides best practices and step-by-step instructions for developing packages in Freetz-NG.
 
+**Warning:**
+Many parts are outdated or just wrong!
+Also infomations are copied instead linked to original sources with correct/updated content.
+
 ## Table of Contents
 
 1. [General Principles](#general-principles)
