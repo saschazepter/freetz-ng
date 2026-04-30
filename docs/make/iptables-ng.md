@@ -1,6 +1,6 @@
 # Iptables-NG - EXPERIMENTAL
   - Package: [master/make/pkgs/iptables-ng/](https://github.com/Freetz-NG/freetz-ng/tree/master/make/pkgs/iptables-ng/)
-  - Steward: -
+  - Steward: [@ThomasToka](https://github.com/ThomasToka)
 
 This package provides an advanced web interface for iptables/ip6tables:
 - table and chain discovery (IPv4 + IPv6)
