@@ -1,4 +1,4 @@
-# Package Development Guide
+# Sammelsurium: Development
 
 This guide provides best practices and step-by-step instructions for developing packages in Freetz-NG.
 
