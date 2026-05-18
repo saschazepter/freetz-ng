@@ -155,6 +155,7 @@ Latest changes
     * libexif 0.6.26
     * libmaxminddb 1.13.3
     * libpng 1.6.58
+    * libusb(-compat) 0.1.12/0.1.9
     * libusb1 1.0.23/1.0.30
     * libuv 1.44.2/1.52.1
     * libxml2 2.15.3
