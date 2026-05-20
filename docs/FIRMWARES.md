@@ -218,7 +218,7 @@ Currently supported devices and firmwares
     - 267.07.29 rev92355 {GER} [PSQ19P2NL4]
     - 267.07.57 rev109915 {GER} [MOVE21NL1]
     - 267.08.03 rev118555 {GER} [Smart24 P1 NL1]
-    - 267.08.21 rev127011 {GER} [Smart24 P2]
+    - 267.08.25 rev132475 {GER} [Smart24 P2 NL1]
   * __Fritz!Box 6690 PRO (UNTESTED)__
     - 308.08.24 rev130508 {GER} [Smart24 P2 NL1] (Inhaus)
 
