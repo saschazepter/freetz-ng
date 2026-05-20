@@ -1686,9 +1686,11 @@ if [ "$DO_MOD" -gt 0 ]; then
 	strings "${FILESYSTEM_DIR}/lib/libcmapi.so.1.0.0" | grep -q '^/cgi-bin/tr064cgi$' || VUL_tr064cgi='bug'
 	fi
 	[ "$FREETZ_AVM_VERSION_06_2X_MIN" == "y" ] || VUL_tr064cgi='old'
+	[ "$FREETZ_AVM_VERSION_08_0X_MIN" == "y" ] && VUL_tr064cgi='new'
 	case "$VUL_tr064cgi" in
 	#	old)	echo "This firmware is not yet vulnerable for tr064cgi-bug!" ;;
 	#	fix)	echo "This firmware is fixed for tr064cgi-bug vulnerability!" ;;
+	#	new)	echo "Should be fixed meanwhile ... maybe!" ;;
 		bug)
 			warn "============================================="
 			warn "This firmware is VULNERABLE for tr064cgi-bug!"
