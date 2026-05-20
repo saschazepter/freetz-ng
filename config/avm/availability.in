@@ -601,7 +601,7 @@ config FREETZ_AVM_HAS_FIRMWARE_08_2X_PLUS
 		))
 
 
-config FREETZ_AVM_HAS_FIRMWARE_08_4X_INHAUS
+config FREETZ_AVM_HAS_FIRMWARE_08_5X_INHAUS
 	bool
 	default y
 	depends on \
@@ -609,7 +609,7 @@ config FREETZ_AVM_HAS_FIRMWARE_08_4X_INHAUS
 			FREETZ_TYPE_xxxx \
 		))
 
-config FREETZ_AVM_HAS_FIRMWARE_08_4X_LABOR
+config FREETZ_AVM_HAS_FIRMWARE_08_5X_LABOR
 	bool
 	default y
 	depends on \
@@ -617,7 +617,7 @@ config FREETZ_AVM_HAS_FIRMWARE_08_4X_LABOR
 			FREETZ_TYPE_xxxx \
 		))
 
-config FREETZ_AVM_HAS_FIRMWARE_08_4X
+config FREETZ_AVM_HAS_FIRMWARE_08_5X
 	bool
 	default y
 	depends on \
@@ -629,7 +629,7 @@ config FREETZ_AVM_HAS_FIRMWARE_08_4X
 			FREETZ_TYPE_xxxx \
 		))
 
-config FREETZ_AVM_HAS_FIRMWARE_08_4X_PLUS
+config FREETZ_AVM_HAS_FIRMWARE_08_5X_PLUS
 	bool
 	default y
 	depends on \
