@@ -135,6 +135,7 @@ Latest changes
     * SQLite 3.40.1/3.53.1
     * tinc 1.0.37/1.1pre18
     * Tinyproxy 1.11.3
+    * tmux 3.6b
     * Tor 0.4.8.25
     * Tree 1.8.0/2.3.2
     * Unbound 1.25.0
