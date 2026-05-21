@@ -503,7 +503,7 @@ Currently supported devices and firmwares
     - 260.07.31 rev95688 {ALL} [PSQ19P2NL4]
     - 260.07.59 rev113700 {ALL} [MOVE21NL2]
     - 260.08.03 rev118396 {ALL} [Smart24 P1 NL1]
-    - 260.08.20 rev123656 {ALL} [Smart24 P2]
+    - 260.08.25 rev132477 {ALL} [Smart24 P2 NL1]
 
   * __Fritz!Box Fon WLAN 7590__
     - 154.06.86 rev45533 {GER}
