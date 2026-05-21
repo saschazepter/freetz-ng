@@ -1,6 +1,6 @@
 # Statistiken rund um Freetz-NG
 
-<details><summary>21 verschiedene FRITZ!OS</summary>
+<details><summary>15 verschiedene FRITZ!OS</summary>
 
 <table>
 <caption style='background-color:gray'>&nbsp;</caption>
