@@ -129,7 +129,7 @@ Latest changes
     * procps-ng 4.0.6
     * Python 3.14.3
     * RRDtool 1.2.30/1.10.2
-    * rsync 3.4.3
+    * rsync 3.4.2/3.4.3
     * sslh 2.2.4/2.3.1
     * Stunnel 5.78
     * SQLite 3.40.1/3.53.1
