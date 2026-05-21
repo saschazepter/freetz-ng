@@ -73,7 +73,7 @@ Latest changes
     * ca-bundle 2026-05-14
     * cmake 4.3.2
     * dos2unix 7.5.5
-    * fakeroot 1.38
+    * fakeroot 1.38.1
     * file 5.47
     * kconfig 7.0
     * meson 1.11.1
