@@ -522,7 +522,7 @@ Currently supported devices and firmwares
     - 259.07.57 rev107809 {ALL} [MOVE21NL1]
     - 259.08.02 rev117984 {ALL} [Smart24 P1 NL1]
     - 259.08.25 rev130857 {ALL} [Smart24 P2 NL1]
-    - 259.08.40 rev132516 {ALL} [MyFRITZOS P1] (Inhaus)
+    - 259.08.40 rev132802 {ALL} [MyFRITZOS P1] (Labor)
 
 ### Fritz!Box Fon WLAN (76xx)
 
