@@ -10,7 +10,7 @@ $(PKG)_DEPENDS_ON += libusb0
 
 $(PKG)_CONFIGURE_OPTIONS += $(if $(FREETZ_SISPMCTL_WEB),--with-webdir=/usr/share/sispmctl,--enable-webless)
 
-$(PKG)_REBUILD_SUBOPTS += $(LIBUSB_REBUILD_SUBOPTS)
+$(PKG)_REBUILD_SUBOPTS += $(LIBUSB0_REBUILD_SUBOPTS)
 $(PKG)_REBUILD_SUBOPTS += FREETZ_SISPMCTL_WEB
 
 $(PKG)_EXCLUDED += $(if $(FREETZ_SISPMCTL_CGI),,usr/lib/cgi-bin/sispmctl.cgi etc/init.d/rc.sispmctl etc/default.sispmctl/sispmctl.cfg etc/default.sispmctl)
