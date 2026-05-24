@@ -34,10 +34,10 @@ $(PKG_UNPACKED)
 $(PKG_CONFIGURED_CONFIGURE)
 
 $($(PKG)_BINARY): $($(PKG)_DIR)/.configured
-	$(SUBMAKE) -C $(LIBUSB_DIR)
+	$(SUBMAKE) -C $(LIBUSB0_DIR)
 
 $($(PKG)_STAGING_BINARY): $($(PKG)_BINARY)
-	$(SUBMAKE) -C $(LIBUSB_DIR) \
+	$(SUBMAKE) -C $(LIBUSB0_DIR) \
 		DESTDIR="$(TARGET_TOOLCHAIN_STAGING_DIR)" \
 		install
 	$(PKG_FIX_LIBTOOL_LA) \
@@ -54,15 +54,15 @@ $(pkg)-precompiled: $($(PKG)_TARGET_BINARY)
 
 
 $(pkg)-clean:
-	-$(SUBMAKE) -C $(LIBUSB_DIR) clean
+	-$(SUBMAKE) -C $(LIBUSB0_DIR) clean
 	$(RM) \
 		$(TARGET_TOOLCHAIN_STAGING_DIR)/bin/libusb-config \
 		$(TARGET_TOOLCHAIN_STAGING_DIR)/include/usb.h \
-		$(TARGET_TOOLCHAIN_STAGING_DIR)/lib/libusb-$(LIBUSB_SHORT_VERSION)* \
+		$(TARGET_TOOLCHAIN_STAGING_DIR)/lib/libusb-$(LIBUSB0_SHORT_VERSION)* \
 		$(TARGET_TOOLCHAIN_STAGING_DIR)/lib/libusb.{a,la,so} \
 		$(TARGET_TOOLCHAIN_STAGING_DIR)/lib/pkgconfig/libusb.pc
 
 $(pkg)-uninstall:
-	$(RM) $(LIBUSB_TARGET_DIR)/libusb-$(LIBUSB_SHORT_VERSION).so* $(LIBUSB_TARGET_DIR)/libusb.so
+	$(RM) $(LIBUSB0_TARGET_DIR)/libusb-$(LIBUSB0_SHORT_VERSION).so* $(LIBUSB0_TARGET_DIR)/libusb.so
 
 $(PKG_FINISH)
