@@ -224,7 +224,7 @@ Index: [A](#a) - [B](#b) - [C](#c) - [D](#d) - [E](#e) - [F](#f) - [G](#g) - [H]
   * **[liburcu (liburcu.so) 0.15.6](liburcu.md)<a id='liburcu'></a>**<br>
     liburcu is a LGPLv2.1 userspace RCU (read-copy-update) library. This data synchronization library provides read-side access which scales linearly with the number of cores.
 
-  * **[libusb-0.1 (libusb-0.1.so) 0.1.12/0.1.9](libusb.md)<a id='libusb'></a>**<br>
+  * **[libusb0: libusb-0.1 (libusb-0.1.so) 0.1.12/0.1.9](libusb0.md)<a id='libusb0'></a>**<br>
     A library for accessing Linux USB devices (legacy API).
 
   * **[libusb1: libusb-1.0 (libusb-1.0.so) 1.0.23/1.0.30](libusb1.md)<a id='libusb1'></a>**<br>
