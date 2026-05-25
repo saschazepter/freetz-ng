@@ -128,7 +128,7 @@ Latest changes
     * OpenVPN 2.4.12/2.5.11/2.6.20/2.7.4
     * procps-ng 4.0.6
     * Python 3.14.3
-    * RRDtool 1.2.30/1.10.2
+    * RRDtool 1.2.30/1.10.3
     * rsync 3.4.2/3.4.3
     * sslh 2.2.4/2.3.1
     * Stunnel 5.78
