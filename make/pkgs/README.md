@@ -640,9 +640,6 @@ Index: [A](#a) - [B](#b) - [C](#c) - [D](#d) - [E](#e) - [F](#f) - [G](#g) - [H]
      - [Neue, simple GUI (GUI2)](../../docs/make/openvpn.md#neue-simple-gui-gui2)
      - [Weitere Konfigs anlegen](../../docs/make/openvpn.md#weitere-konfigs-anlegen)
 
-  * **[owfs 2.7p32 (binary only) - DEPRECATED](../../docs/make/owfs.md)<a id='owfs'></a>**<br>
-    OWFS - 1-Wire Filesystem This package includes: - owserver for easy, world wide access to serial and USB 1-wire bus masters and attached devices - httpd and ftpd to control owserver over http or ftp - shellprograms like owdir, owwrite, owread, owpresent to control owserver via shell scripts
-
 ### P
 
   * **[p7zip 16.02 (binary only)](../../docs/make/p7zip.md)<a id='p7zip'></a>**<br>
@@ -799,7 +796,7 @@ Index: [A](#a) - [B](#b) - [C](#c) - [D](#d) - [E](#e) - [F](#f) - [G](#g) - [H]
   * **[RPCBind 1.2.7 (binary only)](../../docs/make/rpcbind.md)<a id='rpcbind'></a>**<br>
     The rpcbind utility is a server that converts RPC program numbers into universal addresses.
 
-  * **[RRDtool 1.2.30/1.10.2 (binary only)](../../docs/make/rrdtool.md)<a id='rrdtool'></a>**<br>
+  * **[RRDtool 1.2.30/1.10.3 (binary only)](../../docs/make/rrdtool.md)<a id='rrdtool'></a>**<br>
     RRDtool is the OpenSource industry standard, high performance data logging and graphing system for time series data. Use it to write your custom monitoring shell scripts or create whole applications using its PHP bindings.
      - [Einleitung](../../docs/make/rrdtool.md#einleitung)
      - [RRDstats](../../docs/make/rrdtool.md#rrdstats)
@@ -1210,6 +1207,9 @@ Index: [A](#a) - [B](#b) - [C](#c) - [D](#d) - [E](#e) - [F](#f) - [G](#g) - [H]
 
   * **[MySQL 6.0.11-alpha - DEPRECATED](../../docs/make/mysql.md)<a id='mysql'></a>**<br>
     MySQL is a very fast, multi-threaded, multi-user and robust SQL (Structured Query Language) database server. Unstable, as this version is quite old, but runs well on Fritzbox. Do not expose this daemon to the internet!
+
+  * **[owfs 2.7p32 (binary only) - DEPRECATED](../../docs/make/owfs.md)<a id='owfs'></a>**<br>
+    OWFS - 1-Wire Filesystem This package includes: - owserver for easy, world wide access to serial and USB 1-wire bus masters and attached devices - httpd and ftpd to control owserver over http or ftp - shellprograms like owdir, owwrite, owread, owpresent to control owserver via shell scripts
 
   * **[PHP 5.6.40 (binary only) - DEPRECATED](../../docs/make/php.md)<a id='php'></a>**<br>
     PHP: Hypertext Preprocessor PHP is a widely-used general-purpose scripting language that is especially suited for Web development and can be embedded into HTML. Much of its syntax is borrowed from C, Java and Perl with a couple of unique PHP-specific features thrown in. The goal of the language is to allow web developers to write dynamically generated pages quickly.
