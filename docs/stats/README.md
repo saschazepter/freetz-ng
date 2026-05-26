@@ -168,7 +168,7 @@
 
 <table>
 <caption style='background-color:gray'>&nbsp;</caption>
-<thead><tr><th style='width:450px'>Name</th><th style='width:300px'>Produkte</th></tr></thead>
+<thead><tr><th style='width:450px'>Name</th><th style='width:300px'>Produkt</th></tr></thead>
 <tbody>
 <tr><td>FRITZ!Box 2170</td><td>Fritz_Box_2170</td></tr>
 <tr><td>FRITZ!Box WLAN 3030</td><td>Fritz_Box_3030</td></tr>
