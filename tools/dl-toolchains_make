@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 # packs toolchains to dl/*freetz-VERSION-shared-glibc.tar.lzma in 20-35min each, all ~15h
 #Arg $1: <VERSION>
-#Arg $2: <aall|a1|a2|a3|a4|a5>
+#Arg $2: <aall|a1|a2|a3|a4|a5|a6|mipsel|mips|x86|arm|armeb|aarch64>
 #Arg $3: <all|new|old|FREETZ_TYPE_...>
 
 VERSION="$(tools/freetz_revision short)"
