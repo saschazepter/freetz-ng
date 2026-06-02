@@ -89,5 +89,4 @@
   - [Freetz in Presse und Web](70_Various/FreetzPress.md)
   - [Downloads](70_Various/FreetzRelease.md)
   - [Produktname und Historisches](70_Various/origin_and_history.md)
-  - [ssh_firmware_update.py [EN]](70_Various/ssh_firmware_update.en.md)
 
