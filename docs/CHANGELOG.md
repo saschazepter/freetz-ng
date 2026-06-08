@@ -130,7 +130,7 @@ Latest changes
     * Python 3.14.3
     * RRDtool 1.2.30/1.10.3
     * radvd 1.9.3/2.21
-    * rsync 3.4.1/3.4.3
+    * rsync 3.4.1/3.4.4
     * sslh 2.2.4/2.3.1
     * Stunnel 5.78
     * SQLite 3.40.1/3.53.1
