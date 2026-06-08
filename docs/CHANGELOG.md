@@ -100,7 +100,7 @@ Latest changes
 
   - Packages:
     * ACME.sh 3.1.3
-    * Apache2 2.4.67
+    * Apache2 2.4.68
     * Atop 2.12.1
     * Bftpd 6.6
     * BIND 9.11.37/9.20.23
