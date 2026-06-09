@@ -77,7 +77,7 @@ Latest changes
     * file 5.47
     * kconfig 7.0
     * meson 1.11.1
-    * openssl 3.5.6
+    * openssl 3.5.7
     * pseudo 1.9.7
     * python3 3.14.5
     * python3-attrs 26.1.0
@@ -124,7 +124,7 @@ Latest changes
     * Nano 9.0
     * Nmap 4.76/5.51/7.99
     * OpenSSH 9.3p2/10.3p1
-    * OpenSSL 0.9.8zh/1.0.2u/1.1.1w/3.0.20/3.5.6
+    * OpenSSL 0.9.8zh/1.0.2u/1.1.1w/3.0.21/3.5.7
     * OpenVPN 2.4.12/2.5.11/2.6.20/2.7.4
     * procps-ng 4.0.6
     * Python 3.14.3
