@@ -655,7 +655,7 @@
 <tr><td>FRITZ.Box_5690_Pro-07.62.image</td><td>FREETZ_TYPE_5690_PRO &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_07_5X</td></tr>
 <tr><td>FRITZ.Box_5690_Pro-08.03.image</td><td>FREETZ_TYPE_5690_PRO &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_0X</td></tr>
 <tr><td>FRITZ.Box_5690_Pro-08.22.image</td><td>FREETZ_TYPE_5690_PRO &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_2X</td></tr>
-<tr><td>FRITZ.Box_5690_XGS-08.20.image</td><td>FREETZ_TYPE_5690_XGS &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_2X</td></tr>
+<tr><td>FRITZ.Box_5690_XGS-08.25.image</td><td>FREETZ_TYPE_5690_XGS &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_2X</td></tr>
 <tr><td>FRITZ.Repeater_6000-07.31-V2.image/FRITZ.Repeater_6000-07.31.image</td><td>FREETZ_TYPE_6000 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_07_2X</td></tr>
 <tr><td>FRITZ.Repeater_6000-07.58.image</td><td>FREETZ_TYPE_6000 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_07_5X</td></tr>
 <tr><td>FRITZ.Repeater_6000-08.20.image</td><td>FREETZ_TYPE_6000 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_2X</td></tr>
