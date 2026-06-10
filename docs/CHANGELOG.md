@@ -90,6 +90,7 @@ Latest changes
     * util-linux 2.42
 
   - AVM sources:
+    * 5690 XGS 8.25 - 5.4.293
 
   - Scripts:
     * zensical_httpserver.sh - run local zensical http server to develop docs
