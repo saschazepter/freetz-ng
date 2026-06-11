@@ -243,6 +243,9 @@ Currently supported devices and firmwares
   * __Fritz!Box 6820 LTE v4__
     - 142.07.59 rev116427 {INT} [MOVE21NL2]
 
+  * __Fritz!Box 6825 4G (UNTESTED)__
+    - 306.08.24 rev132381 {ALL} [Smart24 P2 NL1] (Labor)
+
   * __Fritz!Box 6840 LTE__
     - 105.06.30 rev31187 {GER}
     - 105.06.50 rev33168 {GER}
