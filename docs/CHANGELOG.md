@@ -79,7 +79,7 @@ Latest changes
     * meson 1.11.1
     * openssl 3.5.7
     * pseudo 1.9.7
-    * python3 3.14.5
+    * python3 3.14.6
     * python3-attrs 26.1.0
     * python3-jsonschema 4.26.0
     * python3-packaging 26.2
