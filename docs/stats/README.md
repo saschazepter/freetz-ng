@@ -24,7 +24,7 @@
 </tbody></table>
 </details>
 
-<details><summary>131 verschiedene HWR</summary>
+<details><summary>132 verschiedene HWR</summary>
 
 <table>
 <caption style='background-color:gray'>&nbsp;</caption>
@@ -159,12 +159,13 @@
 <tr><td>FRITZ!Repeater 2700</td><td>301</td></tr>
 <tr><td>FRITZ!Box 7632</td><td>303</td></tr>
 <tr><td>FRITZ!Repeater 1610 Outdoor</td><td>305</td></tr>
+<tr><td>FRITZ!Box 6825 4G</td><td>306</td></tr>
 <tr><td>FRITZ!Box 4630</td><td>307</td></tr>
 <tr><td>FRITZ!Box 6690 Pro</td><td>308</td></tr>
 </tbody></table>
 </details>
 
-<details><summary>132 verschiedene Produkte</summary>
+<details><summary>133 verschiedene Produkte</summary>
 
 <table>
 <caption style='background-color:gray'>&nbsp;</caption>
@@ -293,6 +294,7 @@
 <tr><td>FRITZ!Repeater 2700</td><td>Fritz_Box_HW301</td></tr>
 <tr><td>FRITZ!Box 7632</td><td>Fritz_Box_HW303</td></tr>
 <tr><td>FRITZ!Repeater 1610 Outdoor</td><td>Fritz_Box_HW305</td></tr>
+<tr><td>FRITZ!Box 6825 4G</td><td>Fritz_Box_HW306</td></tr>
 <tr><td>FRITZ!Box 4630</td><td>Fritz_Box_HW307</td></tr>
 <tr><td>FRITZ!Box 6690 Pro</td><td>Fritz_Box_HW308</td></tr>
 <tr><td>FRITZ!WLAN Repeater 300E</td><td>Fritz_Box_Neon</td></tr>
@@ -1035,7 +1037,7 @@
 <tr><td>FRITZ!Box 6690 Pro</td><td>FREETZ_TYPE_6690_PRO</td></tr>
 </tbody></table>
 <table>
-<caption style='background-color:gray'>Gen5: fit-boot (25)</caption>
+<caption style='background-color:gray'>Gen5: fit-boot (26)</caption>
 <thead><tr><th style='width:450px'>Name</th><th style='width:300px'>Symbol</th></tr></thead>
 <tbody>
 <tr><td>FRITZ!Box 4050</td><td>FREETZ_TYPE_4050</td></tr>
@@ -1047,6 +1049,7 @@
 <tr><td>FRITZ!Box 5690</td><td>FREETZ_TYPE_5690_NIX</td></tr>
 <tr><td>FRITZ!Box 5690 Pro</td><td>FREETZ_TYPE_5690_PRO</td></tr>
 <tr><td>FRITZ!Box 5690 XGS</td><td>FREETZ_TYPE_5690_XGS</td></tr>
+<tr><td>FRITZ!Box 6825 4G</td><td>FREETZ_TYPE_6825</td></tr>
 <tr><td>FRITZ!Box 6860 5G</td><td>FREETZ_TYPE_6860</td></tr>
 <tr><td>FRITZ!Box 7510</td><td>FREETZ_TYPE_7510</td></tr>
 <tr><td>FRITZ!Box 7530 AX</td><td>FREETZ_TYPE_7530_W6_V1</td></tr>
