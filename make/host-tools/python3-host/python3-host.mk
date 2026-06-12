@@ -22,7 +22,6 @@ $(PKG)_CONFIGURE_OPTIONS += --build=$(GNU_HOST_NAME)
 $(PKG)_CONFIGURE_OPTIONS += --host=$(GNU_HOST_NAME)
 $(PKG)_CONFIGURE_OPTIONS += --target=$(GNU_HOST_NAME)
 $(PKG)_CONFIGURE_OPTIONS += --prefix=/usr
-$(PKG)_CONFIGURE_OPTIONS += --enable-optimizations
 $(PKG)_CONFIGURE_OPTIONS += --disable-test-modules
 
 $(PKG)_CFLAGS := $(TOOLS_CFLAGS)
