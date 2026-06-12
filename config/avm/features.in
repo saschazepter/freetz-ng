@@ -213,6 +213,7 @@ config FREETZ_AVM_HAS_FIT_SIZE
 	depends on FREETZ_AVM_HAS_FWLAYOUT_5
 	help
 		The maximum size (in MB) of the filesystem inside a fit-image.
+		TODO: 999 = unknown
 
 
 
