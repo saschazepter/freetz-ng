@@ -95,7 +95,7 @@ Content: [FOS-Release](#fos-release) - [FOS-Labor](#fos-labor) - [FOS-Inhaus](#f
   - HWR 267: [FRITZ.Box_6690_Cable-08.24-132432-LabBETA.image](http://download.example.com/labor/Smart24P2NL1/6690Cable/FRITZ.Box_6690_Cable-08.24-132432-LabBETA.image)
   - HWR 270: [FRITZ.Repeater_3000_AX-08.24-133438-LabBETA.image](http://download.example.com/labor/Smart24P2NL1/3000AX/FRITZ.Repeater_3000_AX-08.24-133438-LabBETA.image)
   - HWR 271: [FRITZ.Box_7510-08.24-133269-LabBETA.image](http://download.example.com/labor/Smart24P2NL1/7510/FRITZ.Box_7510-08.24-133269-LabBETA.image)
-  - HWR 272: [FRITZ.Box_5590_Fiber-08.24-133270-LabBETA.image](http://download.example.com/labor/Smart24P2NL1/5590Fiber/FRITZ.Box_5590_Fiber-08.24-133270-LabBETA.image)
+  - HWR 272: [FRITZ.Box_5590_Fiber-08.24-133570-LabBETA.image](http://download.example.com/labor/Smart24P2NL1/5590Fiber/FRITZ.Box_5590_Fiber-08.24-133570-LabBETA.image)
   - HWR 276: [FRITZ.Box_7520_B-08.24-132253-LabBETA.image](http://download.example.com/labor/Smart24P2NL1/7520B/FRITZ.Box_7520_B-08.24-132253-LabBETA.image)
 
 ### FOS-Inhaus
