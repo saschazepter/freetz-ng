@@ -28,13 +28,20 @@ $(PKG)_CONFIGURE_ENV += ac_cv_lib_supcpp___cxa_demangle=no
 $(PKG)_CONFIGURE_OPTIONS += --with-libelf="$(TARGET_TOOLCHAIN_STAGING_DIR)/usr"
 $(PKG)_CONFIGURE_OPTIONS += --with-libunwind=no
 
+$(PKG)_CFLAGS := $(TARGET_CFLAGS)
+$(PKG)_CFLAGS += -Wno-error=switch-unreachable
+
+$(PKG)_LDFLAGS := $(TARGET_LDFLAGS)
 
 $(PKG_SOURCE_DOWNLOAD)
 $(PKG_UNPACKED)
 $(PKG_CONFIGURED_CONFIGURE)
 
 $($(PKG)_BINARY): $($(PKG)_DIR)/.configured
-	$(SUBMAKE) -C $(LTRACE_DIR)
+	$(SUBMAKE) -C $(LTRACE_DIR) \
+		CFLAGS="$(LTRACE_CFLAGS)" \
+		LDFLAGS="$(LTRACE_LDFLAGS)" \
+		all
 
 $($(PKG)_TARGET_BINARY): $($(PKG)_BINARY)
 	$(INSTALL_BINARY_STRIP)
