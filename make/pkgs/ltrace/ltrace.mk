@@ -29,7 +29,9 @@ $(PKG)_CONFIGURE_OPTIONS += --with-libelf="$(TARGET_TOOLCHAIN_STAGING_DIR)/usr"
 $(PKG)_CONFIGURE_OPTIONS += --with-libunwind=no
 
 $(PKG)_CFLAGS := $(TARGET_CFLAGS)
+ifeq ($(strip $(FREETZ_TARGET_GCC_13_MIN)),y)
 $(PKG)_CFLAGS += -Wno-error=switch-unreachable
+endif
 
 $(PKG)_LDFLAGS := $(TARGET_LDFLAGS)
 
