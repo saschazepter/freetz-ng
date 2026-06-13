@@ -16,11 +16,9 @@ $(PKG)_CONFIGS            := libacl.so.conf libc.so.conf libc.so-types.conf libm
 $(PKG)_CONFIGS_BUILD_DIR  := $($(PKG)_CONFIGS:%=$($(PKG)_DIR)/etc/%)
 $(PKG)_CONFIGS_TARGET_DIR := $($(PKG)_CONFIGS:%=$($(PKG)_DEST_DIR)/usr/share/ltrace/%)
 
-$(PKG)_DEPENDS_ON += config-host
 $(PKG)_DEPENDS_ON += libelf
 
 $(PKG)_CONFIGURE_PRE_CMDS += ./autogen.sh;
-$(PKG)_CONFIGURE_PRE_CMDS += $(call PKG_UPDATE_CONFIGS,./config/autoconf)
 
 # disable demangling support
 $(PKG)_CONFIGURE_ENV += ac_cv_lib_iberty_cplus_demangle=no
