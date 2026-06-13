@@ -2,7 +2,7 @@ config FREETZ_PACKAGE_LTRACE
 	bool "ltrace 0.7.3checkpoint1-git (binary only) - DEPRECATED"
 	default n
 	depends on FREETZ_TARGET_GCC_4_7_MIN
-	depends on (FREETZ_TARGET_ARCH_ARM && FREETZ_TARGET_ARCH_BE && FREETZ_TARGET_BITS_32)  # no armeb, feel free to fix
+	depends on !(FREETZ_TARGET_ARCH_ARM && FREETZ_TARGET_ARCH_BE && FREETZ_TARGET_BITS_32)  # no armeb, feel free to fix
 	select FREETZ_LIB_libelf
 	help
 		ltrace - library call tracer
