@@ -16,9 +16,11 @@ $(PKG)_CONFIGS            := libacl.so.conf libc.so.conf libc.so-types.conf libm
 $(PKG)_CONFIGS_BUILD_DIR  := $($(PKG)_CONFIGS:%=$($(PKG)_DIR)/etc/%)
 $(PKG)_CONFIGS_TARGET_DIR := $($(PKG)_CONFIGS:%=$($(PKG)_DEST_DIR)/usr/share/ltrace/%)
 
+$(PKG)_DEPENDS_ON += config-host
 $(PKG)_DEPENDS_ON += libelf
 
 $(PKG)_CONFIGURE_PRE_CMDS += ./autogen.sh;
+$(PKG)_CONFIGURE_PRE_CMDS += $(call PKG_UPDATE_CONFIGS,./config/autoconf)
 
 # disable demangling support
 $(PKG)_CONFIGURE_ENV += ac_cv_lib_iberty_cplus_demangle=no
@@ -31,6 +33,8 @@ $(PKG)_CONFIGURE_OPTIONS += --with-libunwind=no
 $(PKG)_CFLAGS := $(TARGET_CFLAGS)
 ifeq ($(strip $(FREETZ_TARGET_GCC_13_MIN)),y)
 $(PKG)_CFLAGS += -Wno-error=switch-unreachable
+else
+$(PKG)_CFLAGS += -Wno-error=maybe-uninitialized
 endif
 
 $(PKG)_LDFLAGS := $(TARGET_LDFLAGS)
