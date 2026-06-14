@@ -35,6 +35,7 @@ Variables:
 
 	Name		Default if not set      Comment
 	----------------------------------------------------------------------------------------------------------------------------------------------------------
+	Bearer		[unauthenticated]	Enables mTLS with dca.avm.de and replaces "Serial" and "HW" if not yet set. Uses ~/.juis_bearer if created by juis_bearer.sh
 	HW		[mandatory]		The HWR code of the device, eg "226" for Fritzbox 7590
 	Version		[HW].00.00-00000	The "HW" as "Major" does not work with HW<150
 	Name		[random]		There is no space in the name but a zero-width space: "printf '\342\200\212'". Or copy & paste examples below.
@@ -79,11 +80,18 @@ exit
 js() { [ -e "$1" ] && sed -rn "s/^<.:$2>(.*)<.*/\1/p" "$1" ; }
 
 main() {
-	local x soap avmca url host sdir docsis flags Envelope body post cache info payload day ser
+	local x auth soap avmca url host sdir docsis flags Envelope body post cache info payload day ser
 	local line='################################################################'
 	local type='text/xml; charset="utf-8"'
 	local zwsp="$(printf '\342\200\212')"
 	#soap='SOAPAction: "http://jason.avm.de/updatecheck/BoxFirmwareUpdateCheck"'
+
+	[ -z "$Bearer" ] && [ -s "$HOME/.juis_bearer" ] && Bearer="$(cat $HOME/.juis_bearer)"
+	if [ -n "$Bearer" ]; then
+		auth="Authorization: Bearer $Bearer"
+		[ -z "$Serial" ] && Serial="$(echo "$Bearer" | cut -d. -f2 | base64 -d | sed 's/.*"client_id":"//;s/".*//')"  # maca
+		[ -z "$HW" ]     &&     HW="$(echo "$Bearer" | cut -d. -f2 | base64 -d | sed 's/.*"hardware_id"://;s/,.*//')"  # HWR
+	fi
 
 	[ -z "$Nonce" ] && Nonce="$(dd if=/dev/urandom bs=16 count=1 2>/dev/null | base64)"
 
@@ -273,6 +281,7 @@ EOX
 		  -H "Connection: close" \
 		  -H "Content-Length: ${#body}" \
 		  -H "Content-Type: ${type}" \
+		  ${auth:+-H "$auth"} \
 		  ${soap:+-H "$soap"} \
 		  -d "${body}" \
 		  "https://${url}" \
