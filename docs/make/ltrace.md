@@ -1,7 +1,7 @@
-# ltrace 0.8.1 (binary only)
+# ltrace 0.7.3-git/0.8.1 (binary only)
   - Homepage: [https://www.ltrace.org/](https://www.ltrace.org/)
   - Manpage: [https://linux.die.net/man/1/ltrace](https://linux.die.net/man/1/ltrace)
-  - Changelog: [https://gitlab.com/cespedes/ltrace/-/commits/main](https://gitlab.com/cespedes/ltrace/-/commits/main)
+  - Changelog: [https://gitlab.com/cespedes/ltrace/commits/main](https://gitlab.com/cespedes/ltrace/commits/main)
   - Repository: [https://gitlab.com/cespedes/ltrace](https://gitlab.com/cespedes/ltrace)
   - Package: [master/make/pkgs/ltrace/](https://github.com/Freetz-NG/freetz-ng/tree/master/make/pkgs/ltrace/)
   - Steward: -
