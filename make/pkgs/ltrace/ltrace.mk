@@ -1,13 +1,19 @@
-$(call PKG_INIT_BIN, cb68587699398d3865ab0c04c6ee886646877b17)
-$(PKG)_SOURCE:=ltrace-$($(PKG)_VERSION).tar.xz
-$(PKG)_HASH:=10b15c33ad2e5ee8ab87210f536a66586532ac5c0bec445d8e4e2089c518c935
-$(PKG)_SITE:=git@https://gitlab.com/cespedes/ltrace.git
+$(call PKG_INIT_BIN, $(if $(FREETZ_PACKAGE_LTRACE_VERSION_ABANDON),82c66409c7a93ca6ad2e4563ef030dfb7e6df4d4,0.8.1))
+$(PKG)_SOURCE:=ltrace-$($(PKG)_VERSION).tar.bz2
+$(PKG)_HASH_ABANDON:=49b881aa79388985b4fcd232fb00edb1a198a2f094ab00bcea8f543c4abf44e6
+$(PKG)_HASH_CURRENT:=2e18c2a976db50da58788c742fccddfcb41029a00399c03f747733025442673f
+$(PKG)_HASH:=$($(PKG)_HASH_$(if $(FREETZ_PACKAGE_LTRACE_VERSION_ABANDON),ABANDON,CURRENT))
+$(PKG)_SITE_ABANDON:=git@https://github.com/dkogan/ltrace.git
+$(PKG)_SITE_CURRENT:=$(PKG)_SITE:=https://gitlab.com/cespedes/ltrace/archive/$($(PKG)_VERSION)
+$(PKG)_SITE:=$($(PKG)_SITE_$(if $(FREETZ_PACKAGE_LTRACE_VERSION_ABANDON),ABANDON,CURRENT))
 ### WEBSITE:=https://www.ltrace.org/
 ### MANPAGE:=https://linux.die.net/man/1/ltrace
-### CHANGES:=https://gitlab.com/cespedes/ltrace/-/commits/main
+### CHANGES:=https://gitlab.com/cespedes/ltrace/commits/main
 ### CVSREPO:=https://gitlab.com/cespedes/ltrace
 
 $(PKG)_CATEGORY:=Debug helpers
+
+$(PKG)_CONDITIONAL_PATCHES+=$(if $(FREETZ_PACKAGE_LTRACE_VERSION_ABANDON),abandon,current)
 
 $(PKG)_BINARY:=$($(PKG)_DIR)/ltrace
 $(PKG)_TARGET_BINARY:=$($(PKG)_DEST_DIR)/usr/sbin/ltrace

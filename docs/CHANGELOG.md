@@ -121,6 +121,7 @@ Latest changes
     * LCD4linux 63fffafb
     * Iptables 1.4.11.1/1.4.21/1.6.2/1.8.13
     * ldd 0.1/1.0.58
+    * ltrace 0.7.3-git/0.8.1
     * Minicom 2.11.1
     * Nano 9.0
     * Nmap 4.76/5.51/7.99
