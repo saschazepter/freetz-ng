@@ -4,7 +4,7 @@ $(PKG)_HASH_ABANDON:=49b881aa79388985b4fcd232fb00edb1a198a2f094ab00bcea8f543c4ab
 $(PKG)_HASH_CURRENT:=2e18c2a976db50da58788c742fccddfcb41029a00399c03f747733025442673f
 $(PKG)_HASH:=$($(PKG)_HASH_$(if $(FREETZ_PACKAGE_LTRACE_VERSION_ABANDON),ABANDON,CURRENT))
 $(PKG)_SITE_ABANDON:=git@https://github.com/dkogan/ltrace.git
-$(PKG)_SITE_CURRENT:=$(PKG)_SITE:=https://gitlab.com/cespedes/ltrace/archive/$($(PKG)_VERSION)
+$(PKG)_SITE_CURRENT:=https://gitlab.com/cespedes/ltrace/-/archive/$($(PKG)_VERSION)
 $(PKG)_SITE:=$($(PKG)_SITE_$(if $(FREETZ_PACKAGE_LTRACE_VERSION_ABANDON),ABANDON,CURRENT))
 ### WEBSITE:=https://www.ltrace.org/
 ### MANPAGE:=https://linux.die.net/man/1/ltrace
