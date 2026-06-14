@@ -91,6 +91,8 @@ main() {
 		auth="Authorization: Bearer $Bearer"
 		[ -z "$Serial" ] && Serial="$(echo "$Bearer" | cut -d. -f2 | base64 -d | sed 's/.*"client_id":"//;s/".*//')"  # maca
 		[ -z "$HW" ]     &&     HW="$(echo "$Bearer" | cut -d. -f2 | base64 -d | sed 's/.*"hardware_id"://;s/,.*//')"  # HWR
+		SSL='y'
+		[ -z "$(command -v curl)" ] && echo 'Curl is mandatory for mTLS.' 1>&2 && exit 1
 	fi
 
 	[ -z "$Nonce" ] && Nonce="$(dd if=/dev/urandom bs=16 count=1 2>/dev/null | base64)"
