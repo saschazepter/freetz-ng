@@ -1,11 +1,11 @@
-$(call PKG_INIT_BIN, 82c66409c7a93ca6ad2e4563ef030dfb7e6df4d4)
+$(call PKG_INIT_BIN, cb68587699398d3865ab0c04c6ee886646877b17)
 $(PKG)_SOURCE:=ltrace-$($(PKG)_VERSION).tar.xz
 $(PKG)_HASH:=10b15c33ad2e5ee8ab87210f536a66586532ac5c0bec445d8e4e2089c518c935
-$(PKG)_SITE:=git@https://github.com/dkogan/ltrace.git
+$(PKG)_SITE:=git@https://gitlab.com/cespedes/ltrace.git
 ### WEBSITE:=https://www.ltrace.org/
 ### MANPAGE:=https://linux.die.net/man/1/ltrace
-### CHANGES:=https://github.com/dkogan/ltrace/commits/master
-### CVSREPO:=https://github.com/dkogan/ltrace
+### CHANGES:=https://gitlab.com/cespedes/ltrace/-/commits/main
+### CVSREPO:=https://gitlab.com/cespedes/ltrace
 
 $(PKG)_CATEGORY:=Debug helpers
 
