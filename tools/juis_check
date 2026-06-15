@@ -88,6 +88,11 @@ main() {
 
 	[ -z "$Bearer" ] && [ -s "$HOME/.juis_bearer" ] && Bearer="$(cat $HOME/.juis_bearer)"
 	if [ -n "$Bearer" ]; then
+		local ticks_end="$(echo "$Bearer" | cut -d. -f2 | base64 -d | sed 's/.*"exp"://;s/,.*//')"
+		local ticks_now="$(date +%s)"
+		[ "$(( $ticks_end - $ticks_now ))" -gt 0 ] 2>/dev/null || Bearer=""
+	fi
+	if [ -n "$Bearer" ]; then
 		auth="Authorization: Bearer $Bearer"
 		[ -z "$Serial" ] && Serial="$(echo "$Bearer" | cut -d. -f2 | base64 -d | sed 's/.*"client_id":"//;s/".*//')"  # maca
 		[ -z "$HW" ]     &&     HW="$(echo "$Bearer" | cut -d. -f2 | base64 -d | sed 's/.*"hardware_id"://;s/,.*//')"  # HWR
