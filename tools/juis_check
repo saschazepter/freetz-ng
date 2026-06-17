@@ -35,7 +35,7 @@ Variables:
 
 	Name		Default if not set      Comment
 	----------------------------------------------------------------------------------------------------------------------------------------------------------
-	Bearer		[unauthenticated]	Enables mTLS with dca.avm.de and replaces "Serial" and "HW" if not yet set. Uses ~/.juis_bearer if created by juis_bearer.sh
+	Bearer		[unauthenticated]	Enables mTLS with dca.avm.de and "HW" if not yet set. Uses ~/.juis_bearer if created by juis_bearer.sh
 	HW		[mandatory]		The HWR code of the device, eg "226" for Fritzbox 7590
 	Version		[HW].00.00-00000	The "HW" as "Major" does not work with HW<150
 	Name		[random]		There is no space in the name but a zero-width space: "printf '\342\200\212'". Or copy & paste examples below.
@@ -94,7 +94,6 @@ main() {
 	fi
 	if [ -n "$Bearer" ]; then
 		auth="Authorization: Bearer $Bearer"
-		[ -z "$Serial" ] && Serial="$(echo "$Bearer" | cut -d. -f2 | base64 -d | sed 's/.*"client_id":"//;s/".*//')"  # maca
 		[ -z "$HW" ]     &&     HW="$(echo "$Bearer" | cut -d. -f2 | base64 -d | sed 's/.*"hardware_id"://;s/,.*//')"  # HWR
 		SSL='y'
 		[ -z "$(command -v curl)" ] && echo 'Curl is mandatory for mTLS.' 1>&2 && exit 1
