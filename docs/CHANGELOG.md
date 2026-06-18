@@ -77,7 +77,6 @@ Latest changes
     * file 5.47
     * kconfig 7.1
     * meson 1.11.1
-    * mosquitto 2.1.2
     * openssl 3.5.7
     * pseudo 1.9.7
     * python3 3.14.6
@@ -125,6 +124,7 @@ Latest changes
     * Lighttpd 1.4.83
     * ltrace 0.7.3-git/0.8.1
     * Minicom 2.11.1
+    * Mosquitto 2.1.2
     * Nano 9.0
     * Nmap 4.76/5.51/7.99
     * OpenSSH 9.3p2/10.3p1
