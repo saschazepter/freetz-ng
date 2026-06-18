@@ -124,7 +124,7 @@ Latest changes
     * Lighttpd 1.4.83
     * ltrace 0.7.3-git/0.8.1
     * Minicom 2.11.1
-    * Mosquitto 2.1.2
+    * Mosquitto 2.0.22/2.1.2
     * Nano 9.0
     * Nmap 4.76/5.51/7.99
     * OpenSSH 9.3p2/10.3p1
