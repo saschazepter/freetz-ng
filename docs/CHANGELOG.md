@@ -76,7 +76,6 @@ Latest changes
     * fakeroot 1.38.1
     * file 5.47
     * kconfig 7.1
-    * libcjson 1.7.5
     * meson 1.11.1
     * mosquitto 2.1.2
     * openssl 3.5.7
@@ -162,6 +161,7 @@ Latest changes
     * harfbuzz 14.2.1
     * libcap 2.49/2.78
     * libcap-ng 0.9.3
+    * libcjson 1.7.19
     * libexif 0.6.26
     * libmaxminddb 1.13.3
     * libpng 1.6.58
