@@ -58,14 +58,6 @@ if FREETZ_PACKAGE_MOSQUITTO
 		help
 			Adds the mosquitto_passwd utility to the image
 
-	config FREETZ_PACKAGE_MOSQUITTO_WITH_UUID
-		bool "enable uuid support in mosquitto"
-		depends on FREETZ_PACKAGE_MOSQUITTO_CLIENTS
-		select FREETZ_LIB_libuuid
-		default y
-		help
-			Build using libuuid for clientid generation.
-
 	comment "SSL support not available, needs OpenSSL 1.0 or newer"
 		depends on !FREETZ_OPENSSL_VERSION_10_MIN
 
