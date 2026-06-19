@@ -561,7 +561,7 @@ Currently supported devices and firmwares
 
   * __Fritz!Powerline 1240 AX__
     - 275.07.58 rev114298 {ALL} [MOVE21NL1]
-    - 275.08.20 rev127613 {ALL} [Smart24 P2]
+    - 275.08.25 rev133713 {ALL} [Smart24 P2 NL1]
   * __Fritz!Powerline 1260E__
     - 157.07.01 rev63181 {ALL}
     - 157.07.12 rev70670 {ALL} [MESH18 NL2]
