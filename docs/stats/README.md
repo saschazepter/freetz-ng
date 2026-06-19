@@ -24,7 +24,7 @@
 </tbody></table>
 </details>
 
-<details><summary>133 verschiedene HWR</summary>
+<details><summary>134 verschiedene HWR</summary>
 
 <table>
 <caption style='background-color:gray'>&nbsp;</caption>
@@ -163,10 +163,11 @@
 <tr><td>FRITZ!Box 6825 4G</td><td>306</td></tr>
 <tr><td>FRITZ!Box 4630</td><td>307</td></tr>
 <tr><td>FRITZ!Box 6690 Pro</td><td>308</td></tr>
+<tr><td>FRITZ!Box 6850 5G v2</td><td>312</td></tr>
 </tbody></table>
 </details>
 
-<details><summary>134 verschiedene Produkte</summary>
+<details><summary>135 verschiedene Produkte</summary>
 
 <table>
 <caption style='background-color:gray'>&nbsp;</caption>
@@ -299,6 +300,7 @@
 <tr><td>FRITZ!Box 6825 4G</td><td>Fritz_Box_HW306</td></tr>
 <tr><td>FRITZ!Box 4630</td><td>Fritz_Box_HW307</td></tr>
 <tr><td>FRITZ!Box 6690 Pro</td><td>Fritz_Box_HW308</td></tr>
+<tr><td>FRITZ!Box 6850 5G v2</td><td>Fritz_Box_HW312</td></tr>
 <tr><td>FRITZ!WLAN Repeater 300E</td><td>Fritz_Box_Neon</td></tr>
 <tr><td>FRITZ!Box 6360 Cable</td><td>Fritz_Box_Puma</td></tr>
 <tr><td>FRITZ!Box SL WLAN</td><td>Fritz_Box_SL_WLAN</td></tr>
@@ -984,7 +986,7 @@
 <tr><td>Speedport W 501V</td><td>FREETZ_TYPE_W501V</td></tr>
 </tbody></table>
 <table>
-<caption style='background-color:gray'>Gen2: ram-boot (36)</caption>
+<caption style='background-color:gray'>Gen2: ram-boot (37)</caption>
 <thead><tr><th style='width:450px'>Name</th><th style='width:300px'>Symbol</th></tr></thead>
 <tbody>
 <tr><td>FRITZ!Box 3272</td><td>FREETZ_TYPE_3272</td></tr>
@@ -999,6 +1001,7 @@
 <tr><td>FRITZ!Box 6840 LTE</td><td>FREETZ_TYPE_6840</td></tr>
 <tr><td>FRITZ!Box 6850 4G</td><td>FREETZ_TYPE_6850_4G_V2</td></tr>
 <tr><td>FRITZ!Box 6850 5G</td><td>FREETZ_TYPE_6850_5G_V1</td></tr>
+<tr><td>FRITZ!Box 6850 5G v2</td><td>FREETZ_TYPE_6850_5G_V2</td></tr>
 <tr><td>FRITZ!Box 6850 LTE</td><td>FREETZ_TYPE_6850_4G_V1</td></tr>
 <tr><td>FRITZ!Box 6890 LTE</td><td>FREETZ_TYPE_6890</td></tr>
 <tr><td>FRITZ!Box 7272</td><td>FREETZ_TYPE_7272</td></tr>
