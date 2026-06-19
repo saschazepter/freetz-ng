@@ -338,7 +338,7 @@ choice
 		bool "6690 Pro - UNTESTED"
 
 
-	comment "LTE"
+	comment "Cellular"
 		depends on FREETZ_SERIES_3 || FREETZ_SERIES_4 || FREETZ_SERIES_5
 
 	config FREETZ_TYPE_6810
