@@ -235,13 +235,14 @@ image() {
 			fi
 
 		else
-			if [ -s ${d}/filesystem.image ] && file ${d}/filesystem.image | grep -iqv 'Squashfs filesystem'; then
-				echo "This is no squashfs" >> "$nfo"
-				cat ${d}/filesystem.image | gunzip > kernelsquashfs.raw  # cpio ?
-			else
-				mv ${d}/filesystem.image kernelsquashfs.raw
-			fi
 			mv ${d}/kernel.image kernel.raw
+			if [ -s ${d}/filesystem.image ] && file ${d}/filesystem.image | grep -iqv 'Squashfs filesystem'; then
+				cat ${d}/filesystem.image | gunzip > kernelsquashfs.raw  # cpio ?
+				echo "This is no squashfs" >> "$nfo"
+			else
+				$FTOOLS/find-squashfs ${d}/filesystem.image 2>&1 | grep 'signature found' >> "$nfo"
+			fi
+			rm -f ${d}/filesystem.image
 		fi
 		SIZE_K2="$(stat -c %s kernel.raw)"
 		SIZE_F2="$(stat -c %s kernelsquashfs.raw)"
