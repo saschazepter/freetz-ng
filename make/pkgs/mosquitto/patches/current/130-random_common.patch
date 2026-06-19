@@ -1,5 +1,5 @@
---- libcommon/random_common.c	2026-06-15 15:21:56.319689971 +0000
-+++ libcommon/random_common.c	2026-06-15 15:21:56.319689971 +0000
+--- libcommon/random_common.c
++++ libcommon/random_common.c
 @@ -17,6 +17,8 @@
  */
  
