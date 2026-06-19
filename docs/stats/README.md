@@ -309,7 +309,7 @@
 </tbody></table>
 </details>
 
-<details><summary>130 verschiedene Geräte</summary>
+<details><summary>131 verschiedene Geräte</summary>
 
 <table>
 <caption style='background-color:gray'>T-Com (2)</caption>
@@ -391,7 +391,7 @@
 <tr><td>6690 Pro</td><td>FREETZ_TYPE_6690_PRO</td></tr>
 </tbody></table>
 <table>
-<caption style='background-color:gray'>LTE (13)</caption>
+<caption style='background-color:gray'>LTE (14)</caption>
 <thead><tr><th style='width:450px'>Name</th><th style='width:300px'>Symbol</th></tr></thead>
 <tbody>
 <tr><td>6810</td><td>FREETZ_TYPE_6810</td></tr>
@@ -405,6 +405,7 @@
 <tr><td>6850 LTE</td><td>FREETZ_TYPE_6850_4G_V1</td></tr>
 <tr><td>6850 4G</td><td>FREETZ_TYPE_6850_4G_V2</td></tr>
 <tr><td>6850 5G</td><td>FREETZ_TYPE_6850_5G_V1</td></tr>
+<tr><td>6850 5G v2</td><td>FREETZ_TYPE_6850_5G_V2</td></tr>
 <tr><td>6860 5G</td><td>FREETZ_TYPE_6860</td></tr>
 <tr><td>6890</td><td>FREETZ_TYPE_6890</td></tr>
 </tbody></table>
@@ -503,7 +504,7 @@
 </tbody></table>
 </details>
 
-<details><summary>404 verschiedene Images</summary>
+<details><summary>405 verschiedene Images</summary>
 
 <table>
 <caption style='background-color:gray'>&nbsp;</caption>
@@ -730,6 +731,7 @@
 <tr><td>FRITZ.Box_6850_5G-07.59.image</td><td>FREETZ_TYPE_6850_5G_V1 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_07_5X</td></tr>
 <tr><td>FRITZ.Box_6850_5G-08.03.image</td><td>FREETZ_TYPE_6850_5G_V1 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_0X</td></tr>
 <tr><td>FRITZ.Box_6850_5G-08.20.image</td><td>FREETZ_TYPE_6850_5G_V1 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_2X</td></tr>
+<tr><td>FRITZ.Box_6850_5G_v2-08.24-133801-LabBETA.image</td><td>FREETZ_TYPE_6850_5G_V2 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_2X</td></tr>
 <tr><td>FRITZ.Box_6860_5G-08.03.image</td><td>FREETZ_TYPE_6860 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_0X</td></tr>
 <tr><td>FRITZ.Box_6860_5G-08.20.image</td><td>FREETZ_TYPE_6860 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_2X</td></tr>
 <tr><td>FRITZ.Box_6890_LTE.en-de-es-it-fr-pl-nl.162.06.87.image</td><td>FREETZ_TYPE_6890 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_06_8X</td></tr>
