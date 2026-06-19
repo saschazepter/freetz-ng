@@ -404,7 +404,7 @@
 <tr><td>6842</td><td>FREETZ_TYPE_6842</td></tr>
 <tr><td>6850 LTE</td><td>FREETZ_TYPE_6850_4G_V1</td></tr>
 <tr><td>6850 4G</td><td>FREETZ_TYPE_6850_4G_V2</td></tr>
-<tr><td>6850 5G</td><td>FREETZ_TYPE_6850_5G</td></tr>
+<tr><td>6850 5G</td><td>FREETZ_TYPE_6850_5G_V1</td></tr>
 <tr><td>6860 5G</td><td>FREETZ_TYPE_6860</td></tr>
 <tr><td>6890</td><td>FREETZ_TYPE_6890</td></tr>
 </tbody></table>
@@ -726,10 +726,10 @@
 <tr><td>FRITZ.Box_6850_LTE-08.03.image</td><td>FREETZ_TYPE_6850_4G_V1 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_0X</td></tr>
 <tr><td>FRITZ.Box_6850_LTE-08.20.image</td><td>FREETZ_TYPE_6850_4G_V1 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_2X</td></tr>
 <tr><td>FRITZ.Box_6850_4G-08.20.image</td><td>FREETZ_TYPE_6850_4G_V2 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_2X</td></tr>
-<tr><td>FRITZ.Box_6850_5G-07.30.image</td><td>FREETZ_TYPE_6850_5G &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_07_2X</td></tr>
-<tr><td>FRITZ.Box_6850_5G-07.59.image</td><td>FREETZ_TYPE_6850_5G &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_07_5X</td></tr>
-<tr><td>FRITZ.Box_6850_5G-08.03.image</td><td>FREETZ_TYPE_6850_5G &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_0X</td></tr>
-<tr><td>FRITZ.Box_6850_5G-08.20.image</td><td>FREETZ_TYPE_6850_5G &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_2X</td></tr>
+<tr><td>FRITZ.Box_6850_5G-07.30.image</td><td>FREETZ_TYPE_6850_5G_V1 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_07_2X</td></tr>
+<tr><td>FRITZ.Box_6850_5G-07.59.image</td><td>FREETZ_TYPE_6850_5G_V1 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_07_5X</td></tr>
+<tr><td>FRITZ.Box_6850_5G-08.03.image</td><td>FREETZ_TYPE_6850_5G_V1 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_0X</td></tr>
+<tr><td>FRITZ.Box_6850_5G-08.20.image</td><td>FREETZ_TYPE_6850_5G_V1 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_2X</td></tr>
 <tr><td>FRITZ.Box_6860_5G-08.03.image</td><td>FREETZ_TYPE_6860 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_0X</td></tr>
 <tr><td>FRITZ.Box_6860_5G-08.20.image</td><td>FREETZ_TYPE_6860 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_2X</td></tr>
 <tr><td>FRITZ.Box_6890_LTE.en-de-es-it-fr-pl-nl.162.06.87.image</td><td>FREETZ_TYPE_6890 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_06_8X</td></tr>
@@ -996,7 +996,7 @@
 <tr><td>FRITZ!Box 6820v3 LTE</td><td>FREETZ_TYPE_6820_V3</td></tr>
 <tr><td>FRITZ!Box 6840 LTE</td><td>FREETZ_TYPE_6840</td></tr>
 <tr><td>FRITZ!Box 6850 4G</td><td>FREETZ_TYPE_6850_4G_V2</td></tr>
-<tr><td>FRITZ!Box 6850 5G</td><td>FREETZ_TYPE_6850_5G</td></tr>
+<tr><td>FRITZ!Box 6850 5G</td><td>FREETZ_TYPE_6850_5G_V1</td></tr>
 <tr><td>FRITZ!Box 6850 LTE</td><td>FREETZ_TYPE_6850_4G_V1</td></tr>
 <tr><td>FRITZ!Box 6890 LTE</td><td>FREETZ_TYPE_6890</td></tr>
 <tr><td>FRITZ!Box 7272</td><td>FREETZ_TYPE_7272</td></tr>
