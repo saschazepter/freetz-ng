@@ -21,7 +21,7 @@ usage() {
 cat << EOX
 
 Usage: $0 [ import_tgz <tgz> | unpack_tgz <tgz|hwr> | get_token <tgz|hwr> | show_auth <tgz|hwr> ]
-Usage: $0 [ export_tgz <tgz> | check_avm <pem|der|tgz|hwr> | kids_update <tgz|hwr> | token_check <tgz|hwr> ]
+Usage: $0 [ export_tgz <tgz|hwr> | check_avm <pem|der|tgz|hwr> | kids_update <tgz|hwr> | token_check <tgz|hwr> ]
 
   first step (on a computer):
 	i|import_tgz	imports an avmzertifikate
@@ -32,7 +32,7 @@ Usage: $0 [ export_tgz <tgz> | check_avm <pem|der|tgz|hwr> | kids_update <tgz|hw
 	s|show_auth	shows bearer from token of an avmzertifikate/hwr
 
   first step (on a fritzbox):
-	e|export_tgz	shows a bas64 encoded avmzertifikate to import
+	e|export_tgz	shows a bas64 encoded avmzertifikate/hwr to import
 
   manual (by user):
 	c|check_avm	checks an certificate/avmzertifikate/hwr without import
