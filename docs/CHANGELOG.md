@@ -123,6 +123,7 @@ Latest changes
     * ldd 0.1/1.0.58
     * Lighttpd 1.4.84
     * ltrace 0.7.3-git/0.8.1
+    * mini-snmpd 1.7
     * Minicom 2.11.1
     * Mosquitto 2.0.22/2.1.2
     * Nano 9.0
