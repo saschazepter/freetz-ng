@@ -21,7 +21,7 @@ usage() {
 cat << EOX
 
 Usage: $0 [ import_tgz <tgz> | unpack_tgz <tgz|hwr> | get_token <tgz|hwr> | show_auth <tgz|hwr> ]
-Usage: $0 [ export_tgz <tgz|hwr> | check_avm <pem|der|tgz|hwr> | kids_update <tgz|hwr> | token_check <tgz|hwr> ]
+Usage: $0 [ export_tgz <tgz|hwr> | check_avm <pem|der|tgz|hwr> | kids_update <tgz|hwr> | token_data <tgz|hwr> ]
 
   first step (on a computer):
 	i|import_tgz	imports an avmzertifikate
@@ -37,7 +37,7 @@ Usage: $0 [ export_tgz <tgz|hwr> | check_avm <pem|der|tgz|hwr> | kids_update <tg
   manual (by user):
 	c|check_avm	checks an certificate/avmzertifikate/hwr without import
 	k|kids_update	updates key-ids of pub-keys with avmzertifikate/hwr
-	t|token_check	checks a bearer token of an avmzertifikate/hwr
+	t|token_data	show data of a bearer token for an avmzertifikate/hwr
 
   additional:
 	On a fritzbox and without tgz/hwr parameters 'avmzertifikate' are used.
@@ -421,7 +421,7 @@ function kids_update() {
 		[ -s "$KIDS/${MD5}.json" ] && [ -s "$KIDS/${MD5}.pem" ] && \
 		  echo "Skipped, kid already exists: ${KID}" && continue
 
-		echo -e "Creating kid:\t${KID}" >&2  # for token_check
+		echo -e "Creating kid:\t${KID}" >&2  # for token_data
 		echo "$JSON" | jq > "$KIDS/${MD5}.json"
 
 		MOD="$(echo "$JSON" | jq -r '.n' | base64_pad | tr '_-' '/+' | base64 -d | xxd -p -c 100000 | tr -d '\n')"
@@ -450,7 +450,7 @@ EOF
 }
 
 # sets HWR variable for other, if not exists
-function token_check() {
+function token_data() {
 	local arg="${1}"
 	local rv="0"
 
@@ -541,7 +541,7 @@ case "$1" in
 	e|export_tgz)	export_tgz  "$2" ;;
 	c|check_avm)	check_avm   "$2" ;;
 	k|kids_update)	kids_update "$2" ;;
-	t|token_check)	token_check "$2" ;;
+	t|token_data)	token_data "$2" ;;
 
 	*)		usage ;;
 esac
