@@ -287,6 +287,7 @@ Latest changes
     * harfbuzz 12.3.2
     * libcap 2.49/2.77
     * libdeflate 1.25
+    * libffi 3.6.0
     * libpcap 1.1.1/1.10.6
     * libpng 1.6.55
     * liburcu 0.15.6
