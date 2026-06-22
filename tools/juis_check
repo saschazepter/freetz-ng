@@ -164,7 +164,7 @@ main() {
 	[ -z "$HW"      ] && echo "You have to provide 'HW'." 1>&2 && exit 1
 	[ -z "$Version" ] && echo "You have to provide 'HW' and 'Version'." 1>&2 && exit 1
 
-	local MTLS='n'
+	local MTLS="$SSL"
 	# add more devices that require mtls !
 	[ "$HW" -eq 265 ] 2>/dev/null && MTLS='y'
 	[ "$HW" -ge 277 ] 2>/dev/null && MTLS='y'
