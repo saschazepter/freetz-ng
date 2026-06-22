@@ -21,7 +21,7 @@ usage() {
 cat << EOX
 
 Usage: $0 [ import_tgz <tgz> | unpack_tgz <tgz|hwr> | get_token <tgz|hwr> | show_auth <tgz|hwr> ]
-Usage: $0 [ check_avm <pem|der|tgz|hwr> | kids_update <tgz|hwr> | token_check <tgz|hwr> ]
+Usage: $0 [ export_tgz <tgz> | check_avm <pem|der|tgz|hwr> | kids_update <tgz|hwr> | token_check <tgz|hwr> ]
 
   first step (on a computer):
 	i|import_tgz	imports an avmzertifikate
@@ -30,6 +30,9 @@ Usage: $0 [ check_avm <pem|der|tgz|hwr> | kids_update <tgz|hwr> | token_check <t
 	u|unpack_tgz	unpacks an avmzertifikate/hwr
 	g|get_token	gets token of avm avmzertifikate/hwr
 	s|show_auth	shows bearer from token of an avmzertifikate/hwr
+
+  first step (on a fritzbox):
+	e|export_tgz	shows a bas64 encoded avmzertifikate to import
 
   manual (by user):
 	c|check_avm	checks an certificate/avmzertifikate/hwr without import
@@ -273,6 +276,44 @@ function show_auth() {
 
 
 # independend
+function export_tgz() {
+	local arg="${1}"
+	local tfm="cat"
+	local tgz
+	local HWR
+
+	# tgz
+	if [ -z "$arg" ]; then
+		[ -z "$tgz" ] && [ -f "$PROC_CRT" ] && tgz="$PROC_CRT"
+		[ -z "$tgz" ] && [ -f "$PROC_ENV" ] && errnex "No embedded avmzertifikate found"
+		HWR="$(env_hwrevision)"
+	else
+		for x in "$arg" "$CERT/$arg.tgz"; do
+			[ -f "$x" ] && tgz="$x" && break
+		done
+	fi
+	[ -z "$tgz" ] && errnex "Source avmzertifikate not found"
+	[ -f "$tgz" ] || errnex "Source avmzertifikate not found: $arg or $CERT/$arg.tgz"
+	echo "Source file: $tgz"
+
+	# hwr
+	[ "$tgz" == "$CERT/$arg.tgz" ] && HWR="$arg"
+	if [ -z "$HWR" ]; then
+		echo "Checking file: $tgz"
+		[ "$(head -c2 "$tgz" | base64 -w0)" == "H4s=" ] || tfm='base64 -d'
+
+		local DAT="$(cat "$tgz" | $tfm | tar xzOf - "avm_dev_cert.cer" | base64 -w0)"
+		local SAN="$(openssl x509 -inform DER -noout -in <(echo "$DAT" | base64 -d) -ext subjectAltName)"
+		# Example: DNS:MACA=ab:cd:ef:12:34:56, DNS:HWRevision=999, DNS:HWSubRevision=0, DNS:SecLevel=1
+		HWR="$(echo "$SAN" | sed -n 's/.*DNS:HWRevision=//p' | sed 's/, .*//')"
+		[ -z "$HWR" ] && errnex "Can not find HWRevision"
+	fi
+	echo "Found HWRevision: $HWR"
+
+	cat "$tgz" | $tfm | base64 -w120 "$tgz"
+}
+
+# independend
 function check_avm() {
 	local arg="${1}"
 	local src
@@ -497,6 +538,7 @@ case "$1" in
 	g|get_token)	get_token   "$2" ;;
 	s|show_auth)	show_auth   "$2" ;;
 
+	e|export_tgz)	export_tgz  "$2" ;;
 	c|check_avm)	check_avm   "$2" ;;
 	k|kids_update)	kids_update "$2" ;;
 	t|token_check)	token_check "$2" ;;
