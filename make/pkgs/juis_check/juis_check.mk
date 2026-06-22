@@ -1,4 +1,4 @@
-$(call PKG_INIT_BIN, 1.3)
+$(call PKG_INIT_BIN, 1.4)
 ### STEWARD:=fda77
 
 $(PKG)_BINARY:=$($(PKG)_DIR)/$(pkg)

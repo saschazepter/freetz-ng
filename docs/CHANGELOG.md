@@ -120,6 +120,7 @@ Latest changes
     * iPerf3 3.3/3.21
     * jq 1.8.2
     * juis_bearer 1.0
+    * juis_check 1.4
     * LCD4linux 63fffafb
     * Iptables 1.4.11.1/1.4.21/1.6.2/1.8.13
     * ldd 0.1/1.0.58
