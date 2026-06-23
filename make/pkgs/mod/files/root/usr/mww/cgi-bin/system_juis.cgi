@@ -1,5 +1,6 @@
 #!/bin/sh
 # For options.cfg: FREETZ_ADD_JUIS_CHECK__SSL need to be set to use https by default
+# For options.cfg: FREETZ_ADD_JUIS_CHECK__MTLS need to be set to use mtls by default
 
 echo "<h1>$(lang de:"Aktuelle Firmwareversion" en:"Latest firmware version")</h1>"
 
