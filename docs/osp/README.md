@@ -587,6 +587,7 @@ Content: [FritzBox](#fritzbox) - [FritzDect](#fritzdect) - [FritzPowerline](#fri
   * fritzrepeater-1200-ax/
     - [source-files-FRITZ.Repeater_1200_AX-07.58.tar.gz](https://osp.avm.de/fritzwlan/fritzrepeater-1200-ax/source-files-FRITZ.Repeater_1200_AX-07.58.tar.gz)
     - [source-files-FRITZ.Repeater_1200_AX-08.20.tar.gz](https://osp.avm.de/fritzwlan/fritzrepeater-1200-ax/source-files-FRITZ.Repeater_1200_AX-08.20.tar.gz)
+    - [source-files-FRITZ.Repeater_1200_AX-08.25.tar.gz](https://osp.avm.de/fritzwlan/fritzrepeater-1200-ax/source-files-FRITZ.Repeater_1200_AX-08.25.tar.gz)
   * fritzrepeater-1610-outdoor/
     - [source-files-FRITZ.Repeater_1610_Outdoor-08.20.tar.gz](https://osp.avm.de/fritzwlan/fritzrepeater-1610-outdoor/source-files-FRITZ.Repeater_1610_Outdoor-08.20.tar.gz)
   * fritzrepeater-1700/
@@ -610,6 +611,7 @@ Content: [FritzBox](#fritzbox) - [FritzDect](#fritzdect) - [FritzPowerline](#fri
   * fritzrepeater-6000/
     - [source-files-FRITZ.Repeater_6000-07.58.tar.gz](https://osp.avm.de/fritzwlan/fritzrepeater-6000/source-files-FRITZ.Repeater_6000-07.58.tar.gz)
     - [source-files-FRITZ.Repeater_6000-08.20.tar.gz](https://osp.avm.de/fritzwlan/fritzrepeater-6000/source-files-FRITZ.Repeater_6000-08.20.tar.gz)
+    - [source-files-FRITZ.Repeater_6000-08.25.tar.gz](https://osp.avm.de/fritzwlan/fritzrepeater-6000/source-files-FRITZ.Repeater_6000-08.25.tar.gz)
   * fritzrepeater-600v2/
     - [source-files-FRITZ.Repeater_600v2-08.20.tar.gz](https://osp.avm.de/fritzwlan/fritzrepeater-600v2/source-files-FRITZ.Repeater_600v2-08.20.tar.gz)
     - [source-files-FRITZ.Repeater_600v2-08.25.tar.gz](https://osp.avm.de/fritzwlan/fritzrepeater-600v2/source-files-FRITZ.Repeater_600v2-08.25.tar.gz)
