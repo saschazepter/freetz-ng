@@ -108,7 +108,7 @@ Latest changes
     * Binutils 2.46.0
     * BusyBox 1.27.2/1.38.0
     * CA-bundle 2026-05-14
-    * Curl 8.12.1/8.20.0
+    * Curl 8.12.1/8.21.0
     * davfs2 1.5.2/1.7.3
     * Dnsmasq 2.80/2.93
     * Dropbear 2026.91
