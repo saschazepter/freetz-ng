@@ -623,7 +623,7 @@ Currently supported devices and firmwares
     - 268.08.25 rev133939 {ALL} [Smart24 P2 NL1]
   * __Fritz!Repeater 1200 AX v2 (UNTESTED)__
     - 296.08.03 rev120165 {ALL} [Smart24 P1 FCS]
-    - 296.08.20 rev128093 {ALL} [Smart24 P2]
+    - 296.08.25 rev134127 {ALL} [Smart24 P2 NL1]
   * __Fritz!Repeater 1610 Outdoor (UNTESTED)__
     - 305.08.20 rev129034 {ALL} [Smart24 P2]
   * __Fritz!Repeater 1700 (UNTESTED)__
