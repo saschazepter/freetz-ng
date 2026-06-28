@@ -1,0 +1,7 @@
+config FREETZ_LIB_libzip
+	bool "libzip (libzip.so)"
+	select FREETZ_LIB_libz
+	default n
+	help
+		libzip is a C library for reading, creating, and modifying zip archives.
+		It supports encryption, compression, and Zip64 extensions.
