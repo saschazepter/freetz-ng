@@ -52,7 +52,7 @@ Variables:
 	UserAgent	[shuffle]		Values: "Box", "TestClient" or "BoxInternetCheck"
 	Provider	[shuffle]		Examples: "tonline", "vodafone2_vdsl", "vodafone2_adsl", "1und1", "otwored", "empty" (if you want no value)
 	ProviderName	[shuffle]		Examples: "Telekom", "Vodafone", "1&1 Telecom GmbH", "o2", "empty" (if you want no value), "notset" (don't add variable)
-	ManualRequest	[true]			Values: "true" or "false"
+	ManualRequest	true			Values: "true" or "false"
 	UpdateConfig	[shuffle]		Values: "1" or "3"
 	DHW (dect)	[mandatory]		The MHW code of the device, eg "06.08" for Dect 302
 	DSW (dect)	00.00			The firmware version of the dect device to check, "00.00" works always.
