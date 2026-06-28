@@ -1215,10 +1215,6 @@ Index: [A](#a) - [B](#b) - [C](#c) - [D](#d) - [E](#e) - [F](#f) - [G](#g) - [H]
   * **[owfs 2.7p32 (binary only) - DEPRECATED](../../docs/make/owfs.md)<a id='owfs'></a>**<br>
     OWFS - 1-Wire Filesystem This package includes: - owserver for easy, world wide access to serial and USB 1-wire bus masters and attached devices - httpd and ftpd to control owserver over http or ftp - shellprograms like owdir, owwrite, owread, owpresent to control owserver via shell scripts
 
-  * **[PHP 5.6.40 (binary only) - DEPRECATED](../../docs/make/php.md)<a id='php'></a>**<br>
-    PHP: Hypertext Preprocessor PHP is a widely-used general-purpose scripting language that is especially suited for Web development and can be embedded into HTML. Much of its syntax is borrowed from C, Java and Perl with a couple of unique PHP-specific features thrown in. The goal of the language is to allow web developers to write dynamically generated pages quickly.
-     - [Memory usage](../../docs/make/php.md#memory-usage)
-
   * **[sane-backends: SANE 1.0.27 - DEPRECATED](../../docs/make/sane-backends.md)<a id='sane-backends'></a>**<br>
     SANE - Scanner support (initial Freetz package by Michael Denk, tehron @ http://www.ip-phone-forum.de/)
      - [Beschreibung](../../docs/make/sane-backends.md#beschreibung)
