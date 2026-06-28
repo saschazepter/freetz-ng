@@ -50,7 +50,6 @@ $($(PKG)_STAGING_BINARY): $($(PKG)_BINARY)
 		DESTDIR="$(TARGET_TOOLCHAIN_STAGING_DIR)" \
 		install
 	$(PKG_FIX_LIBTOOL_LA) \
-		$(TARGET_TOOLCHAIN_STAGING_DIR)/lib/pkgconfig/zip.pc \
 		$(TARGET_TOOLCHAIN_STAGING_DIR)/lib/pkgconfig/libzip.pc
 	@touch -c $@
 
