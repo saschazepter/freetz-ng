@@ -168,6 +168,7 @@ Latest changes
     * libcap 2.49/2.78
     * libcap-ng 0.9.3
     * libcjson 1.7.19
+    * libevent 2.1.13
     * libexif 0.6.26
     * libmaxminddb 1.13.3
     * libpng 1.6.58
