@@ -73,6 +73,7 @@ Latest changes
     * ca-bundle 2026-05-14
     * cmake 4.3.4
     * dos2unix 7.5.5
+    * dtc 1.8.1
     * fakeroot 1.38.1
     * file 5.47
     * kconfig 7.1
@@ -112,6 +113,7 @@ Latest changes
     * davfs2 1.5.2/1.7.3
     * Dnsmasq 2.80/2.93
     * Dropbear 2026.91
+    * dtc 1.8.1
     * Git 2.26.2/2.53.0
     * HAProxy 2.6.29
     * htop 1.0.3/3.5.1
