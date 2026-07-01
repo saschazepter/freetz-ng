@@ -137,7 +137,7 @@ Index: [A](#a) - [B](#b) - [C](#c) - [D](#d) - [E](#e) - [F](#f) - [G](#g) - [H]
   * **[libev (libev.so) 4.33](libev.md)<a id='libev'></a>**<br>
     libev provides a full-featured and high-performance event loop that is loosely modelled after libevent. It includes relative timers, absolute timers with customized rescheduling, synchronous signals, process status change events, event watchers dealing with the event loop itself, file watchers, and even limited support for fork events. It uses a priority queue to manage timers and uses arrays as fundamental data structure. It has no artificial limitations on the number of watchers waiting for the same event.
 
-  * **[libevent (libevent.so) 2.1.12-stable](libevent.md)<a id='libevent'></a>**<br>
+  * **[libevent (libevent.so) 2.1.13](libevent.md)<a id='libevent'></a>**<br>
     libevent is an asynchronous event notification software library. The libevent API provides a mechanism to execute a callback function when a specific event occurs on a file descriptor or after a timeout has been reached. Furthermore, libevent also support callbacks due to signals or regular timeouts. libevent is meant to replace the event loop found in event-driven network servers. An application just needs to call event_dispatch() and then add or remove events dynamically without having to change the event loop.
 
   * **[libexif: EXIF library (libexif.so) 0.6.26](libexif.md)<a id='libexif'></a>**<br>
