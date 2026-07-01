@@ -146,7 +146,7 @@ Latest changes
     * Tinyproxy 1.11.3
     * tmux 3.7b
     * Tor 0.4.8.25
-    * Transmission 3.00/4.1.2
+    * Transmission 3.00/4.1.3
     * Tree 1.8.0/2.3.2
     * Unbound 1.25.1
     * UnRAR 6.1.7/7.2.5
