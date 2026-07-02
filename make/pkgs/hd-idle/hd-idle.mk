@@ -1,7 +1,7 @@
 $(call PKG_INIT_BIN, 0.99)
 $(PKG)_SOURCE:=$(pkg)-$($(PKG)_VERSION).tar.bz2
 $(PKG)_HASH:=f7e6307af82def443a8783c17c2b82be576f133448fa2587d69ff24fa4297cbb
-$(PKG)_SITE:=@MIRROR/
+$(PKG)_SITE:=@MIRROR
 
 $(PKG)_BINARY:=$($(PKG)_DIR)/hd-idle
 $(PKG)_TARGET_BINARY:=$($(PKG)_DEST_DIR)/usr/bin/hd-idle
