@@ -132,11 +132,11 @@ jobs:
 #         echo "Sleeping $SLEEP seconds ..."
 #         sleep $SLEEP
 
-#     - name: myips
-#       run: |
-#         echo -n "IP: " ; wget -q https://ipaddress.ai    -O - || echo none
-##        echo -n "V4: " ; wget -q https://ipaddress.ai -4 -O - || echo none
-##        echo -n "V6: " ; wget -q https://ipaddress.ai -6 -O - || echo none
+      - name: myips
+        run: |
+          echo -n "IP: " ; wget -q https://ipaddress.ai    -O - || echo none
+#         echo -n "V4: " ; wget -q https://ipaddress.ai -4 -O - || echo none
+#         echo -n "V6: " ; wget -q https://ipaddress.ai -6 -O - || echo none
 
       - name: clone
         env:
