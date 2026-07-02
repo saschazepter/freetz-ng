@@ -388,7 +388,6 @@ enumerate_mirrors_official() {
 				sites[${#sites[@]}]=https://cdn.kernel.org/pub/$subpath
 				sites[${#sites[@]}]=https://mirrors.kernel.org/pub/$subpath
 				sites[${#sites[@]}]=https://www.kernel.org/pub/$subpath
-				sites[${#sites[@]}]=https://ftp.mpi-inf.mpg.de/mirrors/linux/mirror/www.kernel.org/pub/$subpath
 			elif [ ${url:0:8} == "@TELEKOM" ]; then
 				sites[${#sites[@]}]=https://www.telekom.de/hilfe/downloads/$subpath
 				sites[${#sites[@]}]=http://www.telekom.de/dlp/eki/downloads/$subpath
