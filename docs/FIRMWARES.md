@@ -121,7 +121,7 @@ Currently supported devices and firmwares
     - 307.08.25 rev134090 {ALL} [Smart24 P2 NL1]
   * __Fritz!Box 4690 (UNTESTED)__
     - 291.08.03 rev118786 {ALL} [Smart24 P1 FCS]
-    - 291.08.22 rev129540 {ALL} [Smart24 P2]
+    - 291.08.25 rev134165 {ALL} [Smart24 P2 NL1]
 
 ### Fritz!Box Fon (50xx/51xx)
 
