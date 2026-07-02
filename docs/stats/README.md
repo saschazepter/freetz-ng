@@ -506,7 +506,7 @@
 </tbody></table>
 </details>
 
-<details><summary>405 verschiedene Images</summary>
+<details><summary>406 verschiedene Images</summary>
 
 <table>
 <caption style='background-color:gray'>&nbsp;</caption>
@@ -637,9 +637,10 @@
 <tr><td>FRITZ.Box_4060-07.30.image</td><td>FREETZ_TYPE_4060 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_07_2X</td></tr>
 <tr><td>FRITZ.Box_4060-07.59.image</td><td>FREETZ_TYPE_4060 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_07_5X</td></tr>
 <tr><td>FRITZ.Box_4060-08.02.image</td><td>FREETZ_TYPE_4060 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_0X</td></tr>
+<tr><td>FRITZ.Box_4060-08.25.image</td><td>FREETZ_TYPE_4060 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_2X</td></tr>
 <tr><td>FRITZ.Box_4630-08.25.image</td><td>FREETZ_TYPE_4630 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_2X</td></tr>
 <tr><td>FRITZ.Box_4690-08.03.image</td><td>FREETZ_TYPE_4690 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_0X</td></tr>
-<tr><td>FRITZ.Box_4690-08.22.image</td><td>FREETZ_TYPE_4690 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_2X</td></tr>
+<tr><td>FRITZ.Box_4690-08.25.image</td><td>FREETZ_TYPE_4690 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_2X</td></tr>
 <tr><td>fritz.box_fon_5010.annexa.48.04.43.image</td><td>FREETZ_TYPE_5010 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_04_XX</td></tr>
 <tr><td>fritz.box_fon_5050.12.04.31.image</td><td>FREETZ_TYPE_5050 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_04_XX</td></tr>
 <tr><td>FRITZ.Box_Fon_5124.AnnexA.en.57.04.77.image</td><td>FREETZ_TYPE_5124 &amp;&amp;<br> FREETZ_TYPE_LANG_EN &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_04_XX &amp;&amp;<br> FREETZ_TYPE_ANNEX_A</td></tr>
@@ -907,7 +908,7 @@
 <tr><td>FRITZ.Box_7590_AX-08.02.image</td><td>FREETZ_TYPE_7590_W6 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_0X</td></tr>
 <tr><td>FRITZ.Box_7590_AX-08.25.image</td><td>FREETZ_TYPE_7590_W6 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_2X</td></tr>
 <tr><td>FRITZ.Box_7590_AX-08.40-132802-LabBETA.image</td><td>FREETZ_TYPE_7590_W6 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_5X</td></tr>
-<tr><td>FRITZ.Box_7630-08.24-133524-Inhaus.image</td><td>FREETZ_TYPE_7630 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_2X</td></tr>
+<tr><td>FRITZ.Box_7630-08.25.image</td><td>FREETZ_TYPE_7630 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_2X</td></tr>
 <tr><td>FRITZ.Box_7632-08.24-129095-Inhaus.image</td><td>FREETZ_TYPE_7632 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_2X</td></tr>
 <tr><td>FRITZ.Box_7682-08.03.image</td><td>FREETZ_TYPE_7682 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_08_0X</td></tr>
 <tr><td>FRITZ.Box_7690-07.62.image</td><td>FREETZ_TYPE_7690 &amp;&amp;<br> FREETZ_TYPE_FIRMWARE_07_5X</td></tr>
