@@ -1,17 +1,19 @@
 --- hd-idle.c
 +++ hd-idle.c
-@@ -66,7 +66,41 @@
+@@ -66,7 +66,39 @@
  #include <sys/types.h>
  #include <sys/stat.h>
  #include <sys/ioctl.h>
 -#include <scsi/sg.h>
 +
-+#if defined(__has_include)
-+# if __has_include(<scsi/sg.h>)
-+#  include <scsi/sg.h>
-+# else
-+#  define SG_IO 0x2285
-+#  define SG_DXFER_NONE (-1)
++#ifndef SG_IO
++#define SG_IO 0x2285
++#endif
++
++#ifndef SG_DXFER_NONE
++#define SG_DXFER_NONE (-1)
++#endif
++
 +typedef struct sg_io_hdr {
 +    int interface_id;
 +    int dxfer_direction;
@@ -36,10 +38,6 @@
 +    unsigned int duration;
 +    unsigned int info;
 +} sg_io_hdr;
-+# endif
-+#else
-+# include <scsi/sg.h>
-+#endif
  
  #define STAT_FILE "/proc/diskstats"
  #define dprintf if (debug) printf
