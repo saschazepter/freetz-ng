@@ -14977,6 +14977,8 @@ config FREETZ_AVM_HAS_TELNETD
 	def_bool y
 config FREETZ_AVM_HAS_DMESG_LINK
 	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
+	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
 config FREETZ_AVM_HAS_SAMBA_SMBD
@@ -15065,6 +15067,8 @@ config FREETZ_AVM_HAS_TR069_FWUPDATE
 config FREETZ_AVM_HAS_TELNETD
 	def_bool y
 config FREETZ_AVM_HAS_DMESG_LINK
+	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
 	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
@@ -30282,6 +30286,8 @@ config FREETZ_AVM_HAS_TELNETD
 	def_bool y
 config FREETZ_AVM_HAS_DMESG_LINK
 	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
+	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
 config FREETZ_AVM_HAS_SAMBA_SMBD
@@ -30456,6 +30462,8 @@ config FREETZ_AVM_HAS_TELNETD
 	def_bool y
 config FREETZ_AVM_HAS_DMESG_LINK
 	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
+	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
 config FREETZ_AVM_HAS_SAMBA_SMBD
@@ -30550,6 +30558,8 @@ config FREETZ_AVM_HAS_TR069_FWUPDATE
 config FREETZ_AVM_HAS_TELNETD
 	def_bool y
 config FREETZ_AVM_HAS_DMESG_LINK
+	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
 	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
@@ -30653,6 +30663,8 @@ config FREETZ_AVM_HAS_MINID
 config FREETZ_AVM_HAS_TELNETD
 	def_bool y
 config FREETZ_AVM_HAS_DMESG_LINK
+	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
 	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
@@ -30844,6 +30856,8 @@ config FREETZ_AVM_HAS_TELNETD
 	def_bool y
 config FREETZ_AVM_HAS_DMESG_LINK
 	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
+	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
 config FREETZ_AVM_HAS_SAMBA_SMBD
@@ -30949,6 +30963,8 @@ config FREETZ_AVM_HAS_TELNETD
 	def_bool y
 config FREETZ_AVM_HAS_DMESG_LINK
 	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
+	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
 config FREETZ_AVM_HAS_SAMBA_SMBD
@@ -31046,6 +31062,8 @@ config FREETZ_AVM_HAS_TELNETD
 	def_bool y
 config FREETZ_AVM_HAS_DMESG_LINK
 	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
+	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
 config FREETZ_AVM_HAS_SAMBA_SMBD
@@ -31142,6 +31160,8 @@ config FREETZ_AVM_HAS_TR069_FWUPDATE
 config FREETZ_AVM_HAS_TELNETD
 	def_bool y
 config FREETZ_AVM_HAS_DMESG_LINK
+	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
 	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
@@ -31523,6 +31543,8 @@ config FREETZ_AVM_HAS_TELNETD
 config FREETZ_AVM_HAS_UMTS
 	def_bool y
 config FREETZ_AVM_HAS_DMESG_LINK
+	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
 	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
@@ -48794,6 +48816,8 @@ config FREETZ_AVM_HAS_TELNETD
 config FREETZ_AVM_HAS_UMTS
 	def_bool y
 config FREETZ_AVM_HAS_DMESG_LINK
+	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
 	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
