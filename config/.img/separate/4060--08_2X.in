@@ -1,20 +1,20 @@
-if FREETZ_TYPE_4690 && FREETZ_AVM_VERSION_08_2X
+if FREETZ_TYPE_4060 && FREETZ_AVM_VERSION_08_2X
 
 config FREETZ_AVM_PROP_NAME
 	string
-	default "FRITZ!Box 4690"
+	default "FRITZ!Box 4060"
 
 config FREETZ_AVM_PROP_MAJOR
 	string
-	default "291"
+	default "261"
 
 config FREETZ_AVM_PROP_HWREV
 	string
-	default "291"
+	default "261"
 
 config FREETZ_AVM_PROP_PRODUKT
 	string
-	default "Fritz_Box_HW291"
+	default "Fritz_Box_HW261"
 
 config FREETZ_AVM_PROP_ALL_REGIONS
 	def_bool y
@@ -52,9 +52,6 @@ config FREETZ_AVM_HAS_LANGUAGE_nl
 config FREETZ_AVM_HAS_LANGUAGE_pl
 	def_bool y
 
-config FREETZ_AVM_HAS_LANGUAGE_sl
-	def_bool y
-
 config FREETZ_AVM_HAS_SIGNATURE
 	def_bool y
 
@@ -78,6 +75,9 @@ config FREETZ_AVM_HAS_MYFRITZ
 	def_bool y
 
 config FREETZ_AVM_HAS_NAS
+	def_bool y
+
+config FREETZ_AVM_HAS_AURA_USB
 	def_bool y
 
 config FREETZ_AVM_HAS_WEBDAV
