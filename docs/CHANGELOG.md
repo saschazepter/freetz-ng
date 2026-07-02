@@ -100,7 +100,7 @@ Latest changes
   - Patches:
     * New Patch: Remove hd-idle binary
     * Various Fritzos 8.5 related changes
-    * Still are some patches not yet adapted for Fritzos 8.2x
+    * Still are some patches not yet adapted for Fritzos 8.2x + 8.5x
 
   - Packages:
     * ACME.sh 3.1.3
