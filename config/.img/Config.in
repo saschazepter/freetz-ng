@@ -13002,6 +13002,8 @@ config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
 	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
+	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
 config FREETZ_AVM_HAS_SAMBA_NQCS
@@ -13332,6 +13334,8 @@ config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
 	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
+	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
 config FREETZ_AVM_HAS_SAMBA_NQCS
@@ -13496,6 +13500,8 @@ config FREETZ_AVM_HAS_FAX
 config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
+	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
 	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
@@ -13996,6 +14002,8 @@ config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
 	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
+	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
 config FREETZ_AVM_HAS_SAMBA_NQCS
@@ -14163,6 +14171,8 @@ config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
 	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
+	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
 config FREETZ_AVM_HAS_SAMBA_NQCS
@@ -14328,6 +14338,8 @@ config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
 	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
+	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
 config FREETZ_AVM_HAS_SAMBA_NQCS
@@ -14490,6 +14502,8 @@ config FREETZ_AVM_HAS_FAX
 config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
+	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
 	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
@@ -14655,6 +14669,8 @@ config FREETZ_AVM_HAS_FAX
 config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
+	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
 	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
@@ -17092,6 +17108,8 @@ config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
 	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
+	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
 config FREETZ_AVM_HAS_SAMBA_NQCS
@@ -17261,6 +17279,8 @@ config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
 	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
+	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
 config FREETZ_AVM_HAS_SAMBA_NQCS
@@ -17425,6 +17445,8 @@ config FREETZ_AVM_HAS_FAX
 config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
+	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
 	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
@@ -17592,6 +17614,8 @@ config FREETZ_AVM_HAS_FAX
 config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
+	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
 	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
@@ -17925,6 +17949,8 @@ config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
 	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
+	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
 config FREETZ_AVM_HAS_SAMBA_NQCS
@@ -18092,6 +18118,8 @@ config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
 	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
+	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
 config FREETZ_AVM_HAS_SAMBA_NQCS
@@ -18258,6 +18286,8 @@ config FREETZ_AVM_HAS_FAX
 config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
+	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
 	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
@@ -21874,6 +21904,8 @@ config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
 	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
+	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
 config FREETZ_AVM_HAS_SAMBA_NQCS
@@ -22046,6 +22078,8 @@ config FREETZ_AVM_HAS_BASH_FILE
 config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
+	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
 	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
@@ -22705,6 +22739,8 @@ config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
 	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
+	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
 config FREETZ_AVM_HAS_SAMBA_NQCS
@@ -22869,6 +22905,8 @@ config FREETZ_AVM_HAS_BASH_FILE
 config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
+	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
 	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
@@ -23196,6 +23234,8 @@ config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
 	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
+	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
 config FREETZ_AVM_HAS_SAMBA_NQCS
@@ -23360,6 +23400,8 @@ config FREETZ_AVM_HAS_BASH_FILE
 config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
+	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
 	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
@@ -23864,6 +23906,8 @@ config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
 	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
+	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
 config FREETZ_AVM_HAS_SAMBA_NQCS
@@ -24031,6 +24075,8 @@ config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
 	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
+	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
 config FREETZ_AVM_HAS_SAMBA_NQCS
@@ -24197,6 +24243,8 @@ config FREETZ_AVM_HAS_BASH_FILE
 config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
+	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
 	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
@@ -27319,6 +27367,8 @@ config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
 	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
+	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
 config FREETZ_AVM_HAS_SAMBA_NQCS
@@ -27486,6 +27536,8 @@ config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
 	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
+	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
 config FREETZ_AVM_HAS_SAMBA_NQCS
@@ -27650,6 +27702,8 @@ config FREETZ_AVM_HAS_FAX
 config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
+	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
 	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
@@ -28152,6 +28206,8 @@ config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
 	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
+	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
 config FREETZ_AVM_HAS_SAMBA_NQCS
@@ -28319,6 +28375,8 @@ config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
 	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
+	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
 config FREETZ_AVM_HAS_SAMBA_NQCS
@@ -28485,6 +28543,8 @@ config FREETZ_AVM_HAS_FAX
 config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
+	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
 	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
@@ -42922,6 +42982,8 @@ config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
 	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
+	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
 config FREETZ_AVM_HAS_SAMBA_NQCS
@@ -43094,6 +43156,8 @@ config FREETZ_AVM_HAS_FAX
 config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
+	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
 	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
@@ -43612,6 +43676,8 @@ config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
 	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
+	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
 config FREETZ_AVM_HAS_SAMBA_NQCS
@@ -43784,6 +43850,8 @@ config FREETZ_AVM_HAS_FAX
 config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
+	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
 	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
@@ -44451,6 +44519,8 @@ config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
 	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
+	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
 config FREETZ_AVM_HAS_SAMBA_NQCS
@@ -44621,6 +44691,8 @@ config FREETZ_AVM_HAS_FAX
 config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
+	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
 	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
@@ -45139,6 +45211,8 @@ config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
 	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
+	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
 config FREETZ_AVM_HAS_SAMBA_NQCS
@@ -45311,6 +45385,8 @@ config FREETZ_AVM_HAS_FAX
 config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
+	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
 	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
@@ -46459,6 +46535,8 @@ config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
 	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
+	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
 config FREETZ_AVM_HAS_SAMBA_NQCS
@@ -46638,6 +46716,8 @@ config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
 	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
+	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
 config FREETZ_AVM_HAS_SAMBA_NQCS
@@ -46814,6 +46894,8 @@ config FREETZ_AVM_HAS_FAX
 config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
+	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
 	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
@@ -50084,6 +50166,8 @@ config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
 	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
+	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
 config FREETZ_AVM_HAS_SAMBA_NQCS
@@ -50256,6 +50340,8 @@ config FREETZ_AVM_HAS_FAX
 config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
+	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
 	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
@@ -51100,6 +51186,8 @@ config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
 	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
+	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
 config FREETZ_AVM_HAS_SAMBA_NQCS
@@ -51272,6 +51360,8 @@ config FREETZ_AVM_HAS_FAX
 config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
+	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
 	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
@@ -51804,6 +51894,8 @@ config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
 	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
+	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
 config FREETZ_AVM_HAS_SAMBA_NQCS
@@ -51978,6 +52070,8 @@ config FREETZ_AVM_HAS_FAX
 config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
+	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
 	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
@@ -53585,6 +53679,8 @@ config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
 	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
+	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
 config FREETZ_AVM_HAS_SAMBA_NQCS
@@ -53758,6 +53854,8 @@ config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
 	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
+	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
 config FREETZ_AVM_HAS_SAMBA_NQCS
@@ -53930,6 +54028,8 @@ config FREETZ_AVM_HAS_FAX
 config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
+	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
 	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
@@ -54106,6 +54206,8 @@ config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
 	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
+	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
 config FREETZ_AVM_HAS_SAMBA_NQCS
@@ -54277,6 +54379,8 @@ config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
 	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
+	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
 config FREETZ_AVM_HAS_SAMBA_NQCS
@@ -54443,6 +54547,8 @@ config FREETZ_AVM_HAS_FAX
 config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
+	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
 	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
@@ -54776,6 +54882,8 @@ config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
 	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
+	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
 config FREETZ_AVM_HAS_SAMBA_NQCS
@@ -54944,6 +55052,8 @@ config FREETZ_AVM_HAS_FAX
 config FREETZ_AVM_HAS_DMESG_FILE
 	def_bool y
 config FREETZ_AVM_HAS_UDEV
+	def_bool y
+config FREETZ_AVM_HAS_HD_IDLE
 	def_bool y
 config FREETZ_AVM_HAS_TC
 	def_bool y
