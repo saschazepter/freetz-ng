@@ -1,4 +1,4 @@
-# ser2net 3.5.4 - DEPRECATED
+# ser2net 3.5.4/4.6.8
   - Homepage: [https://ser2net.sourceforge.net/](https://ser2net.sourceforge.net/)
   - Manpage: [https://linux.die.net/man/8/ser2net](https://linux.die.net/man/8/ser2net)
   - Changelog: [https://sourceforge.net/p/ser2net/news/](https://sourceforge.net/p/ser2net/news/)

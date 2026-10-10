@@ -833,8 +833,8 @@ Index: [A](#a) - [B](#b) - [C](#c) - [D](#d) - [E](#e) - [F](#f) - [G](#g) - [H]
      - [einhängen/attach](../../docs/make/screen.md#einhängenattach)
      - [PuTTY-Tip: Änderung der Fensterbreite beim Screen-Start verhindern](../../docs/make/screen.md#putty-tip-änderung-der-fensterbreite-beim-screen-start-verhindern)
 
-  * **[ser2net 3.5.4 - DEPRECATED](../../docs/make/ser2net.md)<a id='ser2net'></a>**<br>
-    Ser2net is a program for allowing network connections to serial ports. It supports RFC 2217 (remote control of serial port parameters), but you must have a complient client.
+  * **[ser2net 3.5.4/4.6.8](../../docs/make/ser2net.md)<a id='ser2net'></a>**<br>
+    Serial to network interface, allows TCP/UDP to serial port connections. Configuration format differs by version (see help).
 
   * **[SFK 2.0.0.3](../../docs/make/sfk.md)<a id='sfk'></a>**<br>
     Swiss File Knife - A Command Line Tools Collection This packages provides the freeware version of SFK, see http://stahlworks.com/dev/swiss-file-knife.html for further information
